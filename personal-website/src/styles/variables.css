@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #c69874; /* indigo-700 */
+  --secondary-color: #000000; /* indigo-500 */
+  --text-color: #050505; /* White */
+  --font-size: 1.5rem; /* 24px */
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.navbar .logo {
+  color: var(--text-color);
+  font-size: var(--font-size);
+}

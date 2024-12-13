@@ -1,0 +1,39 @@
+/* Reset some default browser styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply consistent font-family globally */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5; /* Light background color */
+  color: var(--text-color); /* Text color from variables.css */
+  line-height: 1.6;
+}
+
+/* Ensure anchor tags look consistent */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Basic button style */
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}

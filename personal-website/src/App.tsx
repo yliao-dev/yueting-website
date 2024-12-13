@@ -4,6 +4,9 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+
+import "./styles/global.css"; // Importing global styles once
+
 import PageNotFound from "./pages/PageNotFound";
 
 import MainLayout from "./components/layouts/MainLayout";
