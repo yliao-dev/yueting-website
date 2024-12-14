@@ -1,12 +1,8 @@
 /* Root Variables: Common Across All Pages */
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #ffffff;
   --text-color: #ffffff; /* White for text */
   --selected-text-color: #828282;
 
-  --navbar-background-color: #000000;
-  --navbar-text-color: #ffffff;
   --hover-text-color: #828282;
   --link-padding-x: 1.25rem; /* px-5 */
   --link-padding-y: 0.5rem; /* py-2 */

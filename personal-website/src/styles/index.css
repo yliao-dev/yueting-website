@@ -1,5 +1,6 @@
 @import "./variables.css"; /* Custom variables for consistent styling */
 @import "./global.css"; /* Global styles (like resets, body styling, etc.) */
+@import "./navbar.css"; /* Global styles (like resets, body styling, etc.) */
 
 @tailwind base;
 @tailwind components;
