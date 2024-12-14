@@ -1,39 +1,64 @@
-/* Reset some default browser styles */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Navbar container */
+.navbar {
+  background-color: var(--navbar-background-color);
+  border-bottom: 2px solid var(--navbar-link-color);
 }
 
-/* Apply consistent font-family globally */
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f5f5f5; /* Light background color */
-  color: var(--text-color); /* Text color from variables.css */
-  line-height: 1.6;
+/* Navbar inner content */
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem; /* 20px * 5 */
 }
 
-/* Ensure anchor tags look consistent */
-a {
-  text-decoration: none;
-  color: inherit;
+/* Logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem; /* 4px */
 }
 
-a:hover {
-  text-decoration: underline;
+.logo-img {
+  height: 2.5rem; /* 40px */
+  width: auto;
 }
 
-/* Basic button style */
-button {
-  background-color: var(--primary-color);
+.logo-text {
+  display: none;
+  margin-left: 0.5rem;
   color: var(--text-color);
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+  font-size: var(--font-size-lg);
+  font-weight: bold;
 }
 
-button:hover {
-  background-color: var(--secondary-color);
+@media (min-width: 768px) {
+  .logo-text {
+    display: block;
+  }
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Inactive link style */
+.inactive-link {
+  color: var(--text-color);
+  padding: var(--link-padding-y) var(--link-padding-x);
+  border-radius: 0.375rem; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.inactive-link:hover {
+  color: var(--hover-text-color);
+}
+
+/* Active link style */
+.active-link {
+  color: var(--selected-text-color);
+  padding: var(--link-padding-y) var(--link-padding-x);
+  border-radius: 0.375rem; /* Rounded corners */
 }

@@ -1,16 +1,39 @@
+/* Root Variables: Common Across All Pages */
 :root {
-  --primary-color: #c69874; /* indigo-700 */
-  --secondary-color: #000000; /* indigo-500 */
-  --text-color: #050505; /* White */
-  --font-size: 1.5rem; /* 24px */
+  --primary-color: #ffffff;
+  --secondary-color: #ffffff;
+  --text-color: #ffffff; /* White for text */
+  --selected-text-color: #828282;
+
+  --navbar-background-color: #000000;
+  --navbar-text-color: #ffffff;
+  --hover-text-color: #828282;
+  --link-padding-x: 1.25rem; /* px-5 */
+  --link-padding-y: 0.5rem; /* py-2 */
+  --font-size-lg: 1.25rem; /* 20px */
 }
 
-.navbar {
-  background-color: var(--primary-color);
-  border-bottom: 2px solid var(--secondary-color);
+/* Home Page Variables */
+:root.home {
+  --background-color: #f3f4f6; /* Light gray */
+  --section-header-color: #1a1a1a; /* Dark gray for headings */
+  --card-background-color: #ffffff; /* White for cards */
+  --accent-color: #ff5722; /* Orange accent for Home */
 }
 
-.navbar .logo {
-  color: var(--text-color);
-  font-size: var(--font-size);
+/* Blog Page Variables */
+:root.blog {
+  --background-color: #ffffff; /* White */
+  --post-title-color: #1a73e8; /* Blue for titles */
+  --text-color: #333333; /* Dark text */
+  --accent-color: #ffc107; /* Yellow for Blog-specific elements */
+}
+
+/* Portfolio Page Variables */
+:root.portfolio {
+  --background-color: #e0e7ff; /* Light blue */
+  --card-border-color: #4c51bf; /* Indigo */
+  --card-hover-color: #667eea; /* Hover effect */
+  --text-color: #1a202c; /* Darker gray */
+  --accent-color: #ed64a6; /* Pink accent for Portfolio */
 }
