@@ -7,6 +7,14 @@
   align-items: center;
 }
 
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
 /* Logo Styles */
 .logo-img {
   height: 3rem; /* 40px */
@@ -71,13 +79,14 @@
   cursor: pointer;
 }
 
-/* Open State (Expanded Navbar) */
-#open {
-  height: 100vh;
-}
-
-#open .links {
-  display: none;
+/* Dropdown links for small screens */
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background: #333333;
 }
 
 /* Responsive Styles */
@@ -94,7 +103,6 @@ viewport width is 830 or less
   .toggleButton {
     display: flex;
   }
-
   .links {
     display: none;
   }
@@ -104,8 +112,10 @@ viewport width is 830 or less
   .toggleButton {
     display: none;
   }
-
   .links {
     display: flex;
+  }
+  .dropdown-links {
+    display: none; /* Prevent dropdown links from showing */
   }
 }
