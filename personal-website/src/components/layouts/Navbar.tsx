@@ -14,19 +14,10 @@ const Navbar = () => {
   }, [location]);
   return (
     <nav className="navbar" id={expandNavbar ? "open" : "close"}>
-      <div className="toggleButton">
-        <button
-          onClick={() => {
-            setExpandNavbar((prev) => !prev);
-          }}
-        >
-          <ReorderIcon />
-        </button>
-      </div>
       <NavLink className="logo" to="/">
         <img className="logo-img" src={logo} />
       </NavLink>
-      <div className="nav-links">
+      <div className="links">
         <NavLink
           to="/about"
           className={({ isActive }) => linkClass({ isActive })}
@@ -45,6 +36,16 @@ const Navbar = () => {
         >
           blog
         </NavLink>
+      </div>
+
+      <div className="toggleButton">
+        <button
+          onClick={() => {
+            setExpandNavbar((prev) => !prev);
+          }}
+        >
+          <ReorderIcon />
+        </button>
       </div>
     </nav>
   );
