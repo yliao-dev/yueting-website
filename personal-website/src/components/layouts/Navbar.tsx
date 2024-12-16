@@ -55,15 +55,23 @@ const Navbar = () => {
 
       {expandNavbar && (
         <div className="dropdown-links">
-          <NavLink to="/about" className="dropdown-link">
-            About
-          </NavLink>
-          <NavLink to="/portfolio" className="dropdown-link">
-            Portfolio
-          </NavLink>
-          <NavLink to="/blog" className="dropdown-link">
-            Blog
-          </NavLink>
+          <ul>
+            <li>
+              <NavLink to="/about" className="dropdown-link">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/portfolio" className="dropdown-link">
+                Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/blog" className="dropdown-link">
+                Blog
+              </NavLink>
+            </li>
+          </ul>
         </div>
       )}
     </>
