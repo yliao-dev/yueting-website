@@ -38,9 +38,9 @@ const PortfolioPage = () => {
 
       {/* Additional Portfolio Content can go here */}
 
-      <section className="projects">
+      <section className="portfolio">
         <h2>Code Portfolio</h2>
-        <div className="project-list">
+        <div className="portfolio__project-list">
           <ProjectItemMap />
         </div>
       </section>

@@ -1,4 +1,5 @@
-.projects {
+/* Portfolio Section */
+.portfolio {
   width: 100%;
   height: auto;
   display: flex;
@@ -6,38 +7,43 @@
   align-items: center;
   flex-direction: column;
 }
-.projects .projectTitle {
+
+/* Portfolio Title */
+.portfolio__title {
   text-align: center;
   color: #3e497a;
   font-size: 60px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
-.projectList {
+/* Project List Container */
+.portfolio__project-list {
   width: 70vw;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  gap: 1rem; /* Space between project items */
 }
 
-/* MENU ITEM STYLING */
-
-.projectItem {
+/* Individual Project Item */
+.portfolio__project-item {
   border-radius: 15px;
   width: 300px;
   height: 300px;
   margin: 40px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  transition: box-shadow 0.3s ease-in; /* Smooth hover effect */
 }
-.projectItem:hover {
+
+.portfolio__project-item:hover {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in;
   cursor: pointer;
 }
 
-.projectItem .bgImage {
+/* Project Image Background */
+.portfolio__project-item__bg-image {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
@@ -47,28 +53,29 @@
   background-size: cover;
 }
 
-.projectItem h1 {
+/* Project Item Title */
+.portfolio__project-item h1 {
   font-size: 25px;
 }
 
+/* Responsive Styles */
+
+/* Medium Screens (max-width: 1300px) */
 @media only screen and (max-width: 1300px) {
-  .projectList {
+  .portfolio__project-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
+/* Small Screens (max-width: 800px) */
 @media only screen and (max-width: 800px) {
-  .projectList {
+  .portfolio__project-list {
     grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .projectList {
     width: 100%;
   }
-  .projectItem {
-    width: 300px;
-    height: 300px;
+
+  .portfolio__project-item {
+    width: 100%; /* Adjust width to fit */
+    height: auto; /* Let the height adjust based on content */
   }
 }
