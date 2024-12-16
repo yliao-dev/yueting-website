@@ -5,39 +5,47 @@
   background: #000000;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Separate logo and links */
+  padding: 0 1rem; /* Add padding for spacing */
 }
 
 .navbar-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   width: 100%;
 }
 
 /* Logo Styles */
 .logo-img {
-  height: 3rem; /* 40px */
-  width: auto;
+  width: 55px; /* Fixed width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Navigation Links */
 .navbar a {
   text-decoration: none;
   margin: 20px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end; /* Push links to the end */
   color: white;
+  gap: 1rem; /* Space between links */
+  margin-right: 1rem; /* Add margin near the toggle button */
 }
 
 #open a {
   width: 100%;
   text-align: center;
+}
+
+#open .logo-img {
+  width: 55px; /* Retain fixed width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Link Styles */
@@ -60,15 +68,13 @@
 
 /* Toggle Button */
 .toggleButton {
-  width: 100%;
-  height: 100px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: flex-end;
 }
 
 .toggleButton svg {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .toggleButton button {
@@ -87,13 +93,6 @@
   width: 100%;
   padding: 1rem;
   background: #333333;
-}
-
-/* Responsive Styles */
-@media only screen and (max-width: 900) {
-  .navbar a {
-    width: 70px;
-  }
 }
 
 /*
