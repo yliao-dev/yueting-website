@@ -4,15 +4,15 @@
   height: 5rem; /* Consistent height */
   background: #000000;
   display: flex;
-  align-items: center; /* Vertically center everything in the navbar */
+  align-items: center; /* Vertically center items in the navbar */
   justify-content: space-between; /* Separate logo and links */
   padding: 0 1rem; /* Add padding for spacing */
-  position: relative; /* Needed for absolute positioning of the logo */
+  position: relative; /* For absolute positioning of logo */
 }
 
 /* Logo Styles */
-.logo-img {
-  width: 55px; /* Default width */
+.navbar__logo {
+  width: 55px; /* Default logo width */
   height: auto; /* Maintain aspect ratio */
   transition: width 0.3s; /* Smooth size transition */
   flex-shrink: 0; /* Prevent shrinking */
@@ -20,55 +20,50 @@
 }
 
 /* Navigation Links */
-.navbar a {
+.navbar__links {
+  display: flex;
+  align-items: center; /* Vertically center the links */
+  justify-content: flex-end; /* Align links to the right */
+  color: white;
+  gap: 1rem; /* Space between links */
+}
+
+.navbar__links a {
   text-decoration: none;
   margin: 20px;
   font-size: 20px;
 }
 
-.links {
-  display: flex;
-  align-items: center; /* Ensure links are vertically centered */
-  justify-content: flex-end; /* Push links to the end */
-  color: white;
-  gap: 1rem; /* Space between links */
-}
-
-#open a {
-  width: 100%;
-  text-align: center;
-}
-
 /* Link Styles */
-.inactive-link {
+.navbar__link--inactive {
   color: var(--text-color);
   padding: var(--link-padding-y) var(--link-padding-x);
   border-radius: 0.375rem; /* Rounded corners */
   transition: background-color 0.3s, color 0.3s;
 }
 
-.inactive-link:hover {
+.navbar__link--inactive:hover {
   color: var(--hover-text-color);
 }
 
-.active-link {
+.navbar__link--active {
   color: var(--selected-text-color);
   padding: var(--link-padding-y) var(--link-padding-x);
   border-radius: 0.375rem; /* Rounded corners */
 }
 
 /* Toggle Button */
-.toggleButton {
+.navbar__toggle-button {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.toggleButton svg {
+.navbar__toggle-button svg {
   font-size: 40px;
 }
 
-.toggleButton button {
+.navbar__toggle-button button {
   margin-right: 20px;
   background-color: transparent;
   border: none;
@@ -77,7 +72,7 @@
 }
 
 /* Dropdown Links */
-.dropdown-links {
+.navbar__dropdown-links {
   display: none; /* Hidden by default */
   background: #333;
   width: 100%;
@@ -86,30 +81,30 @@
   border-radius: 0.375rem; /* Rounded corners */
 }
 
-.dropdown-links ul {
+.navbar__dropdown-links ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.dropdown-links ul li {
+.navbar__dropdown-links ul li {
   padding: 10px 0;
   text-align: center;
 }
 
-.dropdown-links ul li a {
+.navbar__dropdown-links ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
 }
 
-.dropdown-links ul li a:hover {
+.navbar__dropdown-links ul li a:hover {
   background-color: #444;
 }
 
-/* Slide down effect when expandNavbar is true */
-.dropdown-links.slide-down {
+/* Slide down effect when dropdown is visible */
+.navbar__dropdown-links--active {
   display: block;
   max-height: 300px; /* Adjust the max-height as needed */
   transition: max-height 0.5s ease-out;
@@ -117,45 +112,41 @@
 
 /* Responsive Styles */
 @media only screen and (max-width: 830px) {
-  /* Logo Resizing and Positioning */
-  .logo-img {
-    width: 35px; /* Resize logo when screen is small */
+  .navbar__logo {
+    width: 35px; /* Resize logo on small screens */
     position: absolute;
-    left: 1rem; /* Move logo to the left edge */
+    left: 1rem; /* Move logo to the left */
     top: 50%; /* Vertically center the logo */
-    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    transform: translateY(-50%); /* Adjust for perfect centering */
   }
 
-  /* Show the Toggle Button */
-  .toggleButton {
-    display: flex;
+  .navbar__toggle-button {
+    display: flex; /* Show the toggle button */
   }
 
-  /* Hide Navigation Links */
-  .links {
-    display: none;
+  .navbar__links {
+    display: none; /* Hide links on small screens */
   }
 
-  .dropdown-links {
-    display: block; /* Always show in smaller screens */
+  .navbar__dropdown-links {
+    display: block; /* Always show dropdown on small screens */
   }
-  .dropdown-links ul {
+
+  .navbar__dropdown-links ul {
     padding-left: 0; /* Remove extra padding */
   }
 }
 
 @media only screen and (min-width: 831px) {
-  /* Default State - Links and Logo */
-  .toggleButton {
-    display: none;
+  .navbar__toggle-button {
+    display: none; /* Hide the toggle button on larger screens */
   }
 
-  .links {
-    display: flex;
+  .navbar__links {
+    display: flex; /* Show links */
   }
 
-  /* Keep the Logo Size */
-  .logo-img {
-    width: 55px;
+  .navbar__logo {
+    width: 55px; /* Keep logo size consistent */
   }
 }

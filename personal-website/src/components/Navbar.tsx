@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.png";
 import ReorderIcon from "@mui/icons-material/Reorder";
 const Navbar = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
-    isActive ? "active-link" : "inactive-link";
+    isActive ? "navbar__link--active" : "navbar__link--inactive";
   const [expandNavbar, setExpandNavbar] = useState(false);
   const toggleNavbar = () => {
     setExpandNavbar((prev) => !prev);
@@ -19,9 +19,9 @@ const Navbar = () => {
     <>
       <nav className="navbar" id={expandNavbar ? "open" : "close"}>
         <NavLink className="logo" to="/">
-          <img className="logo-img" src={logo} />
+          <img className="navbar__logo" src={logo} />
         </NavLink>
-        <div className="links">
+        <div className="navbar__links">
           <NavLink
             to="/about"
             className={({ isActive }) => linkClass({ isActive })}
@@ -42,7 +42,7 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        <div className="toggleButton">
+        <div className="navbar__toggle-button">
           <button onClick={toggleNavbar}>
             <ReorderIcon />
           </button>
@@ -50,7 +50,7 @@ const Navbar = () => {
       </nav>
 
       {expandNavbar && (
-        <div className="dropdown-links">
+        <div className="navbar__dropdown-links">
           <ul>
             <li>
               <NavLink to="/about" className="dropdown-link">

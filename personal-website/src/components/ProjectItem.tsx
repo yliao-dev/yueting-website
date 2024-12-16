@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 type ProjectItemProps = {
-  image: string; // URL of the image
   name: string; // Name of the project
+  image: string; // URL of the image
   id: string | number; // ID of the project (type can be adjusted as needed)
 };
 
@@ -15,7 +15,7 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
         navigate("/project" + id);
       }}
     >
-      <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
+      <div className="bgImage" style={{ backgroundImage: `url(${image})` }} />
       <h1>{name}</h1>
     </div>
   );
