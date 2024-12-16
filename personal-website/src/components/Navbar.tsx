@@ -1,19 +1,15 @@
 import { useEffect, useState } from "react";
-import logo from "../../assets/images/logo.png";
 import { NavLink, useLocation } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 import ReorderIcon from "@mui/icons-material/Reorder";
 const Navbar = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? "active-link" : "inactive-link";
-
   const [expandNavbar, setExpandNavbar] = useState(false);
-
   const toggleNavbar = () => {
     setExpandNavbar((prev) => !prev);
   };
-
   const location = useLocation();
-
   useEffect(() => {
     setExpandNavbar(false);
   }, [location]);

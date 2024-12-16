@@ -7,7 +7,6 @@ const PortfolioLayout: React.FC = () => {
     <>
       <Navbar />
       <Outlet />
-
       <Footer />
     </>
   );
