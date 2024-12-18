@@ -14,8 +14,7 @@ function BlogPost({ name, title, image }: BlogPostProp) {
         <img src={image} alt={title} className="blogPostImage" />
         <h2>{title}</h2>
         <Link to={`${name}`} className="blogPostAuthorLink">
-          {" "}
-          {name}{" "}
+          {name}
         </Link>
       </div>
     </>

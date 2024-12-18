@@ -5,11 +5,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import "./styles/global.css"; // Importing global styles once
-
 import PageNotFound from "./pages/PageNotFound";
-
 import MainLayout from "./components/layouts/MainLayout";
+
 import HomePage from "./pages/HomePage";
 
 import BlogLayout from "./components/layouts/BlogLayout";

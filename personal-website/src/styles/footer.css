@@ -1,0 +1,24 @@
+.footer {
+  background: #c3c0c0;
+  color: white;
+  display: center;
+  align-items: center;
+  border-style: double;
+}
+
+/* Icon container */
+.footer__icons {
+  margin-top: 10px;
+}
+
+/* Icon styles */
+.footer__icons svg {
+  font-size: 32px; /* Increase icon size */
+  margin: 0 10px; /* Add spacing between icons */
+  color: #fff; /* Icon color */
+  transition: color 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.footer__icons svg:hover {
+  color: #0072b1; /* Change color on hover (LinkedIn blue) */
+}
