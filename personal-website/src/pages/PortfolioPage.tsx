@@ -7,7 +7,12 @@ const PortfolioPage = () => {
     return (
       <>
         {ProjectItemData.map((project, index) => (
-          <ProjectItem id={index} name={project.name} image={project.image} />
+          <ProjectItem
+            key={index}
+            id={index}
+            name={project.name}
+            image={project.image}
+          />
         ))}
       </>
     );
