@@ -1,4 +1,7 @@
 const BlogPage = () => {
+  const blogPosts = () => {
+    return <>{}</>;
+  };
   return <></>;
 };
 

@@ -1,4 +1,4 @@
-import ProjectItem from "../components/ProjectItem";
+import ProjectItem from "../components/portfolio/ProjectItem";
 import { ProjectItemData } from "../data/portfolio/ProjectItemData";
 import "../styles/portfolio.css";
 const PortfolioPage = () => {
