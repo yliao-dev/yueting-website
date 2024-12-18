@@ -3,7 +3,7 @@ import { Email, LinkedIn, GitHub } from "@mui/icons-material";
 const Footer: React.FC = () => {
   return (
     <footer className="footer">
-      <p>&copy; 2024 Yueting Liao. </p>
+      <h2 className="footer__text">&copy; 2024 Yueting Liao.</h2>
       <div className="footer__icons">
         <LinkedIn />
         <Email />
