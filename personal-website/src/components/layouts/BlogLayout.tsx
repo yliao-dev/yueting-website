@@ -7,7 +7,6 @@ const BlogLayout: React.FC = () => {
     <>
       <Navbar />
       <Outlet />
-
       <Footer />
     </>
   );

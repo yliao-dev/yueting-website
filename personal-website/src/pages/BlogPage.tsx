@@ -1,5 +1,6 @@
 import BlogPost from "../components/blog/blogPost";
 import { PhotographyItemData } from "../data/blog/photography/photographyItemData";
+import "../styles/blog.css";
 
 const BlogPage = () => {
   const BlogPostsMap = () => {

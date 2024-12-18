@@ -1,0 +1,75 @@
+/* Blog post container */
+.blog__post {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Image with border and rounded edges */
+.blog__post-image {
+  display: block; /* Ensure it's a block element for proper centering */
+  margin-left: auto;
+  margin-right: auto; /* Center the image */
+  width: 100%;
+  max-width: 500px; /* Max width for the image */
+  border-radius: 12px; /* Rounded corners */
+  border: 2px solid #ddd; /* Border around the image */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the blog post image */
+.blog__post-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Title as a link */
+.blog__post-title h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog__post-title:hover h2 {
+  color: #0072b1; /* Change to blue on hover */
+}
+
+/* Author name centered, larger, with spacing */
+.blog__post-link {
+  font-size: 18px;
+  color: #555;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog__post-link:hover {
+  color: #0072b1; /* LinkedIn blue on hover */
+}
+
+/* Optional: Blog post hover effect */
+.blog__post:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+  .blog__post-title h2 {
+    font-size: 20px; /* Slightly smaller title on mobile */
+  }
+
+  .blog__post-link {
+    font-size: 16px; /* Smaller author name on mobile */
+  }
+
+  .blog__post-image {
+    max-width: 90%; /* Allow image to take up more space on small screens */
+  }
+}

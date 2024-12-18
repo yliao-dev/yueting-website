@@ -7,7 +7,6 @@ const AboutLayout: React.FC = () => {
     <>
       <Navbar />
       <Outlet />
-
       <Footer />
     </>
   );

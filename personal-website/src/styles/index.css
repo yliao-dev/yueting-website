@@ -5,3 +5,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Reset margin and padding globally */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Optional: Set a baseline font size */
+body {
+  font-family: Arial, sans-serif; /* Set a consistent font */
+}
