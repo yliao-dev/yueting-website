@@ -1,9 +1,9 @@
-import Proj1 from "../assets/images/london.png";
-import Proj2 from "../assets/images/london.png";
-import Proj3 from "../assets/images/london.png";
-import Proj4 from "../assets/images/london.png";
-import Proj5 from "../assets/images/london.png";
-import Proj6 from "../assets/images/london.png";
+import Proj1 from "../../assets/images/london.png";
+import Proj2 from "../../assets/images/london.png";
+import Proj3 from "../../assets/images/london.png";
+import Proj4 from "../../assets/images/london.png";
+import Proj5 from "../../assets/images/london.png";
+import Proj6 from "../../assets/images/london.png";
 
 export const ProjectItemData = [
   {

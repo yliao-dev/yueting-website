@@ -12,7 +12,7 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
     <div
       className="portfolio__project-item"
       onClick={() => {
-        navigate("/project" + id);
+        navigate("project/" + id);
       }}
     >
       <div

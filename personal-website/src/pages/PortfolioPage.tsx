@@ -1,28 +1,24 @@
 import ProjectItem from "../components/ProjectItem";
-import { ProjectItemData } from "../data/ProjectItemData";
+import { ProjectItemData } from "../data/portfolio/ProjectItemData";
+import "../styles/portfolio.css";
 const PortfolioPage = () => {
   // Map through the project data and generate ProjectItem components
   const ProjectItemMap = () => {
     return (
       <>
         {ProjectItemData.map((project, index) => (
-          <ProjectItem
-            key={index}
-            id={index}
-            name={project.name}
-            image={project.image}
-          />
+          <ProjectItem id={index} name={project.name} image={project.image} />
         ))}
       </>
     );
   };
   return (
     <>
-      {/* <div>
-        <section className="portfolio-intro">
-          <div className="text-content">
-            <h1 className="portfolio-title">My Portfolio</h1>
-            <h2 className="portfolio-description">
+      <div>
+        <section className="portfolio">
+          <div className="TODO text-content">
+            <h1 className="TODO portfolio-title">My Portfolio</h1>
+            <h2 className="TODO portfolio-description">
               Welcome to my portfolio! Here you'll find a collection of my work,
               including web development projects, design, and photography.
               Explore my projects and feel free to reach out for collaboration
@@ -30,11 +26,11 @@ const PortfolioPage = () => {
             </h2>
           </div>
           <div className="portfolio-image">
-            <img src="https://via.placeholder.com/700x400" />
-            <img src="https://via.placeholder.com/600x400" />
+            <img src="https://via.placeholder.com/300x300" />
+            <img src="https://via.placeholder.com/300x300" />
           </div>
         </section>
-      </div> */}
+      </div>
 
       {/* Additional Portfolio Content can go here */}
 
