@@ -37,10 +37,9 @@ const PortfolioPage = () => {
         </section>
       </div>
 
-      {/* Additional Portfolio Content can go here */}
+      <div className="portfolio-divider"></div>
 
       <section className="portfolio">
-        <h2>Code Portfolio</h2>
         <div className="portfolio__project-list">
           <ProjectItemMap />
         </div>
