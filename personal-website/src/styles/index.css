@@ -18,3 +18,12 @@
 body {
   font-family: Arial, sans-serif; /* Set a consistent font */
 }
+
+.page-divider {
+  width: 100%; /* Full width of the parent container */
+  height: 2px; /* Thickness of the line */
+  background-color: #ccc; /* Grey color */
+  border: none; /* Remove any default border styles */
+  margin: 2rem 0; /* Add spacing above and below the divider */
+  opacity: 0.8; /* Slight transparency for elegance */
+}

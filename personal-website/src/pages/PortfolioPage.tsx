@@ -32,7 +32,7 @@ const PortfolioPage = () => {
           <img src={DSCF4076} className="portfolio__intro__image" />
         </section>
 
-        <div className="portfolio-divider"></div>
+        <div className="page-divider"></div>
 
         <section className="portfolio__project-list">
           <ProjectItemMap />
