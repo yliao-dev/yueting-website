@@ -24,7 +24,7 @@ const PortfolioPage = () => {
         <section className="portfolio__intro">
           <h1>Portfolio</h1>
           <h3>
-            Welcome to my portfolio! Here you'll find a collection of my work,
+            Welcome to my portfolio. Here you'll find a collection of my work,
             including web development projects, design, and photography. Explore
             my projects and feel free to reach out for collaboration
             opportunities.
