@@ -1,7 +1,6 @@
 /* Portfolio Section */
 .portfolio {
   width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +10,6 @@
 /* Intro Section */
 .portfolio__intro {
   width: 80%;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +43,7 @@
 }
 
 .portfolio__intro__image {
-  width: 100%;
+  width: 50%;
   max-width: 500px;
   border-radius: 15px;
   margin-top: 2rem;
@@ -67,19 +65,20 @@
   place-items: center;
   transition: grid-template-columns 0.3s ease-in-out;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Individual Project Item */
 .portfolio__project-item {
   border-radius: 15px;
-  padding: 1rem;
+  padding: 1em;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
-  margin: 20px;
-  display: flex;
+  height: auto;
   flex-direction: column;
   transition: box-shadow 0.3s ease-in;
+  overflow: hidden;
 }
 
 .portfolio__project-item:hover {
@@ -87,8 +86,42 @@
   cursor: pointer;
 }
 
-.portfolio__project-item h1 {
-  font-size: 25px;
+.portfolio__project-item__image {
+  border-radius: 15px;
+}
+/* Project Item Description */
+.portfolio__project-item_description {
+  width: 100%;
+  text-align: left;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent overflow of content */
+  height: 100%; /* Make sure description takes available space */
+}
+
+/* Title Styling */
+.portfolio__project-item_description h4 {
+  font-size: 1.1rem;
+  color: #929397;
+  font-weight: 300;
+  margin: 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap; /* Prevent wrapping of text */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis when text overflows */
+}
+
+/* Project Type Styling */
+.portfolio__project-item_description p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, color 0.3s ease;
+  white-space: nowrap; /* Prevent wrapping of text */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis when text overflows */
 }
 
 /* Responsive Styling */
@@ -100,14 +133,14 @@
   }
 }
 
-/* For screens larger than 830px but smaller than 1024px (2 columns) */
+/* For screens between 830px and 1024px (display 2 columns) */
 @media only screen and (min-width: 831px) and (max-width: 1024px) {
   .portfolio__project-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* For screens larger than 1024px (3 columns) */
+/* For screens larger than 1024px (display 3 columns) */
 @media only screen and (min-width: 1025px) {
   .portfolio__project-list {
     grid-template-columns: repeat(3, 1fr);
