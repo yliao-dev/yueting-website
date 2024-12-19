@@ -30,10 +30,6 @@ const PortfolioPage = () => {
               opportunities.
             </h2>
           </div>
-          <div className="portfolio-image">
-            <img src="https://via.placeholder.com/300x300" />
-            <img src="https://via.placeholder.com/300x300" />
-          </div>
         </section>
       </div>
 
