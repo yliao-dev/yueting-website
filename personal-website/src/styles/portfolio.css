@@ -49,6 +49,7 @@
   margin: 0; /* Remove default margin */
 }
 
+/* Project List Container */
 .portfolio__project-list {
   width: 80vw; /* Adjust width of the project list */
   height: auto;
@@ -57,6 +58,7 @@
   gap: 1rem; /* Space between project items */
   place-items: center; /* Center the grid */
   transition: grid-template-columns 0.3s ease-in-out; /* Smooth column change */
+  margin-top: 20px; /* Add some space above the grid */
 }
 
 /* Individual Project Item */
@@ -65,7 +67,7 @@
   padding: 1rem; /* Add space inside the item */
   background-color: rgb(255, 255, 255); /* Background color for the item */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  width: 100%; /* Fixed width */
+  width: 100%; /* Make project item full width */
   height: auto; /* Automatically adjust height */
   margin: 20px; /* Space around the item */
   display: flex; /* Flexbox for content layout */
@@ -94,19 +96,29 @@
   font-size: 25px;
 }
 
+/* Responsive Styling */
+
+/* For screens smaller than 830px (display 2 columns) */
 @media only screen and (max-width: 830px) {
   .portfolio__project-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
   }
 
   .portfolio__project-item {
-    width: 100%; /* Adjust width to fit */
-    height: auto; /* Let the height adjust based on content */
+    width: 100%; /* Ensure project item fills the available space */
+    height: auto; /* Adjust height based on content */
   }
 }
 
-/* For screens larger than 830px */
-@media only screen and (min-width: 831px) {
+/* For screens larger than 830px but smaller than 1024px (2 columns) */
+@media only screen and (min-width: 831px) and (max-width: 1024px) {
+  .portfolio__project-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+/* For screens larger than 1024px (3 columns) */
+@media only screen and (min-width: 1025px) {
   .portfolio__project-list {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
   }
