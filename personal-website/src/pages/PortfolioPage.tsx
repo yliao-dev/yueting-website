@@ -1,5 +1,6 @@
 import ProjectItem from "../components/portfolio/ProjectItem";
 import { ProjectItemData } from "../data/portfolio/ProjectItemData";
+import DSCF4076 from "../assets/images/DSCF4076.jpg";
 import "../styles/portfolio.css";
 const PortfolioPage = () => {
   // Map through the project data and generate ProjectItem components
@@ -19,27 +20,24 @@ const PortfolioPage = () => {
   };
   return (
     <>
-      <div>
-        <section className="portfolio">
-          <div className="TODO text-content">
-            <h1 className="TODO portfolio-title">My Portfolio</h1>
-            <h2 className="TODO portfolio-description">
-              Welcome to my portfolio! Here you'll find a collection of my work,
-              including web development projects, design, and photography.
-              Explore my projects and feel free to reach out for collaboration
-              opportunities.
-            </h2>
-          </div>
+      <div className="portfolio">
+        <section className="portfolio__intro">
+          <h1>Portfolio</h1>
+          <h3>
+            Welcome to my portfolio! Here you'll find a collection of my work,
+            including web development projects, design, and photography. Explore
+            my projects and feel free to reach out for collaboration
+            opportunities.
+          </h3>
+          <img src={DSCF4076} className="portfolio__intro__image" />
+        </section>
+
+        <div className="portfolio-divider"></div>
+
+        <section className="portfolio__project-list">
+          <ProjectItemMap />
         </section>
       </div>
-
-      <div className="portfolio-divider"></div>
-
-      <section className="portfolio">
-        <div className="portfolio__project-list">
-          <ProjectItemMap />
-        </div>
-      </section>
     </>
   );
 };
