@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.jpg";
 import ReorderIcon from "@mui/icons-material/Reorder";
 const Navbar = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
