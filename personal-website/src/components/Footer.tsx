@@ -5,9 +5,22 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <h2 className="footer__text">&copy; 2024 Yueting Liao.</h2>
       <div className="footer__icons">
-        <LinkedIn />
+        <a
+          href="https://www.linkedin.com/in/yueting-liao-83b216171/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedIn />
+        </a>
+
         <Email />
-        <GitHub />
+        <a
+          href="https://github.com/yliao-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHub />
+        </a>
       </div>
     </footer>
   );
