@@ -1,6 +1,7 @@
 @import "./variables.css"; /* Custom variables for consistent styling */
 @import "./navbar.css"; /* Global styles (like resets, body styling, etc.) */
 @import "./footer.css";
+@import "./home.css";
 
 @tailwind base;
 @tailwind components;
@@ -23,7 +24,20 @@ body {
   width: 100%; /* Full width of the parent container */
   height: 2px; /* Thickness of the line */
   background-color: #ccc; /* Grey color */
-  border: none; /* Remove any default border styles */
   margin: 2rem 0; /* Add spacing above and below the divider */
-  opacity: 0.8; /* Slight transparency for elegance */
+  opacity: 0.8; /* Slight transparency for a subtle look */
+}
+
+.page-divider-gradient {
+  width: 100%; /* Set the width of the divider */
+  height: 3px; /* Thickness of the line */
+  background: linear-gradient(
+    to right,
+    transparent,
+    #000000,
+    transparent
+  ); /* Gradient for tapering effect */
+  margin: 2rem auto; /* Center the divider horizontally and add spacing */
+  border: none; /* Remove any default border styles */
+  opacity: 0.5; /* Slight transparency for elegance */
 }

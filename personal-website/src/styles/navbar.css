@@ -8,6 +8,8 @@
   justify-content: space-between; /* Separate logo and links */
   padding: 0 1rem; /* Add padding for spacing */
   position: relative; /* For absolute positioning of logo */
+  animation: dropDownFadeIn 1s ease-out; /* Apply drop-down fade-in */
+  animation-delay: 0.2s; /* Optional: Delay the animation slightly */
 }
 
 /* Logo Styles */
@@ -148,5 +150,17 @@
 
   .navbar__logo {
     width: 55px; /* Keep logo size consistent */
+  }
+}
+
+/* Drop-Down Fade-In Animation */
+@keyframes dropDownFadeIn {
+  from {
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Start 20px above */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* End at normal position */
   }
 }

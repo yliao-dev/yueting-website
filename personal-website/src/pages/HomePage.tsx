@@ -1,19 +1,16 @@
-import image1 from "../assets/images/london.png";
+import DSCF0961 from "../assets/images/DSCF0961.jpg";
+import "../styles/home.css";
 
 const HomePage = () => {
   return (
     <>
-      {/* Personal Image Section */}
-      <section
-        className="flex-grow bg-cover bg-center h-screen"
-        style={{ backgroundImage: `url(${image1})` }}
-      >
-        <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
-          <h1 className="text-white text-4xl font-semibold">
-            Welcome to My Website
-          </h1>
+      <section className="home">
+        <img src={DSCF0961} className="portfolio__intro__image" />
+        <div className="home__intro">
+          <h1>Welcome to My Website</h1>
         </div>
       </section>
+      <div className="page-divider-gradient"></div>
     </>
   );
 };
