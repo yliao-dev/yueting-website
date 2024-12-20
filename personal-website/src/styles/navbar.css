@@ -8,7 +8,7 @@
   justify-content: space-between; /* Separate logo and links */
   padding: 0 1rem; /* Add padding for spacing */
   position: relative; /* For absolute positioning of logo */
-  animation: dropDownFadeIn 1s ease-out; /* Apply drop-down fade-in */
+  animation: dropDownFadeIn 2s ease-out; /* Apply drop-down fade-in */
   animation-delay: 0.2s; /* Optional: Delay the animation slightly */
 }
 
@@ -156,7 +156,7 @@
 /* Drop-Down Fade-In Animation */
 @keyframes dropDownFadeIn {
   from {
-    opacity: 0; /* Start invisible */
+    opacity: 0.8; /* Start invisible */
     transform: translateY(-20px); /* Start 20px above */
   }
   to {
