@@ -21,10 +21,7 @@ const BlogPage = () => {
   return (
     <>
       <section className="blog">
-        <h2>Blog</h2>
-        <div className="blog-something">
-          <BlogPostsMap />
-        </div>
+        <BlogPostsMap />
       </section>
     </>
   );
