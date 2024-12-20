@@ -2,6 +2,7 @@
 @import "./navbar.css"; /* Global styles (like resets, body styling, etc.) */
 @import "./footer.css";
 @import "./home.css";
+@import "./about.css";
 
 @tailwind base;
 @tailwind components;
