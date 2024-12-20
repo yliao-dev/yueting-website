@@ -16,6 +16,7 @@
   font-size: 46px;
   color: #333;
   overflow-wrap: break-word;
+  display: inline-block;
 }
 
 .blog__post__title:hover h1 {
@@ -51,7 +52,7 @@
   color: #888; /* Slightly lighter color for the date */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 830px) {
   .blog__post__title h2 {
     font-size: 20px;
   }
