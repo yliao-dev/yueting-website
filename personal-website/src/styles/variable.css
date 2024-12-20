@@ -1,0 +1,30 @@
+:root {
+  --text-color: #ffffff;
+  --selected-text-color: #828282;
+  --hover-text-color: #828282;
+  --link-padding-x: 1.25rem;
+  --link-padding-y: 0.5rem;
+  --font-size-lg: 1.25rem;
+}
+
+:root.home {
+  --background-color: #f3f4f6;
+  --section-header-color: #1a1a1a;
+  --card-background-color: #ffffff;
+  --accent-color: #ff5722;
+}
+
+:root.blog {
+  --background-color: #ffffff;
+  --post-title-color: #1a73e8;
+  --text-color: #333333;
+  --accent-color: #ffc107;
+}
+
+:root.portfolio {
+  --background-color: #e0e7ff;
+  --card-border-color: #4c51bf;
+  --card-hover-color: #667eea;
+  --text-color: #1a202c;
+  --accent-color: #ed64a6;
+}
