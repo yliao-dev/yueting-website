@@ -1,4 +1,3 @@
-@import "./variables.css"; /* Custom variables for consistent styling */
 @import "./navbar.css"; /* Global styles (like resets, body styling, etc.) */
 @import "./footer.css";
 @import "./home.css";
@@ -21,7 +20,7 @@ body {
   font-family: Arial, sans-serif; /* Set a consistent font */
 }
 
-.page-divider {
+.page__divider {
   width: 100%; /* Full width of the parent container */
   height: 2px; /* Thickness of the line */
   background-color: #ccc; /* Grey color */
@@ -29,7 +28,7 @@ body {
   opacity: 0.8; /* Slight transparency for a subtle look */
 }
 
-.page-divider-gradient {
+.page__divider__gradient {
   width: 100%; /* Set the width of the divider */
   height: 3px; /* Thickness of the line */
   background: linear-gradient(

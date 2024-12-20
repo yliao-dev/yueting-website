@@ -10,7 +10,7 @@ const HomePage = () => {
           <h1>Welcome to My Website</h1>
         </div>
       </section>
-      <div className="page-divider-gradient"></div>
+      <div className="page__divider-gradient"></div>
     </>
   );
 };

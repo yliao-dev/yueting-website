@@ -10,14 +10,14 @@ const AboutPage = () => {
           <img src={DSCF4076} className="about__intro__image" />
         </section>
 
-        <div className="page-divider" />
+        <div className="page__divider" />
 
         <section className="about__my__skill">
           <h1>My Skills</h1>
           <img src={DSCF4076} className="about__my__skill__image" />
         </section>
 
-        <div className="page-divider" />
+        <div className="page__divider" />
 
         <section className="about__my__story">
           <h1>My Storys</h1>

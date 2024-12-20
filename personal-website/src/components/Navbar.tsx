@@ -14,7 +14,6 @@ const Navbar = () => {
     setExpandNavbar(false);
   }, [location]);
 
-  // TODO: Dropdown toggle list, for everylink, add a row to the list
   return (
     <>
       <nav className="navbar" id={expandNavbar ? "open" : "close"}>

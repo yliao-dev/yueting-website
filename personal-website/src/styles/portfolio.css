@@ -69,7 +69,7 @@
 }
 
 /* Individual Project Item */
-.portfolio__project-item {
+.portfolio__project {
   border-radius: 15px;
   padding: 1em;
   background-color: rgb(255, 255, 255);
@@ -81,39 +81,39 @@
   overflow: hidden;
 }
 
-.portfolio__project-item:hover {
+.portfolio__project:hover {
   box-shadow: 0px 3px 15px rgba(21, 0, 80, 0.3);
   cursor: pointer;
 }
 
-.portfolio__project-item__image {
+.portfolio__project__image {
   border-radius: 15px;
 }
 /* Project Item Description */
-.portfolio__project-item_description {
+.portfolio__project__desc {
   width: 100%;
   text-align: left;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevent overflow of content */
-  height: 100%; /* Make sure description takes available space */
+  height: 100%;
 }
 
 /* Title Styling */
-.portfolio__project-item_description h4 {
+.portfolio__project__desc h4 {
   font-size: 1.1rem;
   color: #929397;
   font-weight: 300;
   margin: 0;
   transition: color 0.3s ease, transform 0.3s ease;
-  white-space: nowrap; /* Prevent wrapping of text */
-  overflow: hidden; /* Hide overflow */
-  text-overflow: ellipsis; /* Add ellipsis when text overflows */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Project Type Styling */
-.portfolio__project-item_description p {
+.portfolio__project__desc p {
   font-size: 1rem;
   color: #666;
   margin: 0;

@@ -1,12 +1,12 @@
 import BlogPost from "../components/blog/blogPost";
-import { PhotographyItemData } from "../data/blog/photography/photographyItemData";
+import { PhotographyData } from "../data/blog/photography/photographyData";
 import "../styles/blog.css";
 
 const BlogPage = () => {
   const BlogPostsMap = () => {
     return (
       <>
-        {PhotographyItemData.map((blog, index) => (
+        {PhotographyData.map((blog, index) => (
           <BlogPost
             key={index}
             id={blog.id}

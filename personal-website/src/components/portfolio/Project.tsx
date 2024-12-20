@@ -17,7 +17,7 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
         }}
       >
         <img src={image} className="portfolio__project-item__image" />
-        <div className="portfolio__project-item_description">
+        <div className="portfolio__project-item__desc">
           <h4>{name}</h4>
           <p>Project Type</p>
         </div>

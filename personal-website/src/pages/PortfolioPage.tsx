@@ -1,14 +1,14 @@
-import ProjectItem from "../components/portfolio/ProjectItem";
-import { ProjectItemData } from "../data/portfolio/ProjectItemData";
+import Project from "../components/portfolio/Project";
+import { ProjectData } from "../data/portfolio/ProjectData";
 import DSCF4076 from "../assets/images/DSCF4076.jpg";
 import "../styles/portfolio.css";
 const PortfolioPage = () => {
   // Map through the project data and generate ProjectItem components
-  const ProjectItemMap = () => {
+  const ProjectMap = () => {
     return (
       <>
-        {ProjectItemData.map((project, index) => (
-          <ProjectItem
+        {ProjectData.map((project, index) => (
+          <Project
             key={index}
             id={index}
             name={project.name}
@@ -32,10 +32,10 @@ const PortfolioPage = () => {
           <img src={DSCF4076} className="portfolio__intro__image" />
         </section>
 
-        <div className="page-divider" />
+        <div className="page__divider" />
 
         <section className="portfolio__project-list">
-          <ProjectItemMap />
+          <ProjectMap />
         </section>
       </div>
     </>
