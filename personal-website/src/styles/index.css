@@ -1,4 +1,4 @@
-@import "./navbar.css"; /* Global styles (like resets, body styling, etc.) */
+@import "./navbar.css";
 @import "./footer.css";
 @import "./home.css";
 @import "./about.css";
@@ -7,7 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reset margin and padding globally */
 *,
 *::before,
 *::after {
@@ -15,29 +14,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Optional: Set a baseline font size */
+
 body {
-  font-family: Arial, sans-serif; /* Set a consistent font */
+  font-family: Arial, sans-serif;
 }
 
 .page__divider {
-  width: 100%; /* Full width of the parent container */
-  height: 2px; /* Thickness of the line */
-  background-color: #ccc; /* Grey color */
-  margin: 2rem 0; /* Add spacing above and below the divider */
-  opacity: 0.8; /* Slight transparency for a subtle look */
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 2rem 0;
+  opacity: 0.8;
 }
 
 .page__divider-gradient {
-  width: 100%; /* Set the width of the divider */
-  height: 3px; /* Thickness of the line */
-  background: linear-gradient(
-    to right,
-    transparent,
-    #000000,
-    transparent
-  ); /* Gradient for tapering effect */
-  margin: 2rem auto; /* Center the divider horizontally and add spacing */
-  border: none; /* Remove any default border styles */
-  opacity: 0.5; /* Slight transparency for elegance */
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #000000, transparent);
+  margin: 2rem auto;
+  border: none;
+  opacity: 0.5;
 }

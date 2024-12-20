@@ -6,28 +6,25 @@
   text-align: center;
 }
 
-/* Icon container */
 .footer__icons {
   margin-top: 10px;
-  display: flex; /* Align icons horizontally */
-  justify-content: center; /* Center icons */
-  flex-wrap: wrap; /* Wrap icons if needed on smaller screens */
-  gap: 10px; /* Space between icons */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-/* Icon styles */
 .footer__icons svg {
-  font-size: 55px; /* Increase icon size */
-  margin: 0 10px; /* Add spacing between icons */
-  color: #fff; /* Icon color */
-  transition: color 0.3s ease-in-out; /* Smooth hover effect */
+  font-size: 55px;
+  margin: 0 10px;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer__icons svg:hover {
-  color: #0072b1; /* Change color on hover (LinkedIn blue) */
+  color: #0072b1;
 }
 
-/* Responsive styling */
 @media only screen and (max-width: 830px) {
   .footer {
     padding: 15px;
@@ -35,6 +32,6 @@
   }
 
   .navbar__icons svg {
-    font-size: 32px; /* Slightly smaller icons for smaller screens */
+    font-size: 32px;
   }
 }
