@@ -11,13 +11,13 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
   return (
     <>
       <div
-        className="portfolio__project-item"
+        className="portfolio__project"
         onClick={() => {
           navigate("project/" + id);
         }}
       >
-        <img src={image} className="portfolio__project-item__image" />
-        <div className="portfolio__project-item__desc">
+        <img src={image} className="portfolio__project__image" />
+        <div className="portfolio__project__desc">
           <h4>{name}</h4>
           <p>Project Type</p>
         </div>

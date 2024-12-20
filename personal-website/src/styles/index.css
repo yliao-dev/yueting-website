@@ -28,7 +28,7 @@ body {
   opacity: 0.8; /* Slight transparency for a subtle look */
 }
 
-.page__divider__gradient {
+.page__divider-gradient {
   width: 100%; /* Set the width of the divider */
   height: 3px; /* Thickness of the line */
   background: linear-gradient(

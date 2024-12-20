@@ -11,11 +11,11 @@ function BlogPost({ name, title, image }: BlogPostProp) {
   return (
     <>
       <div className="blog__post">
-        <img src={image} alt={title} className="blog__post-image" />
-        <Link to={`${name}`} className="blog__post-title">
+        <img src={image} alt={title} className="blog__post__image" />
+        <Link to={`${name}`} className="blog__post__title">
           <h2>{title}</h2>
         </Link>
-        <Link to={`${name}`} className="blog__post-link">
+        <Link to={`${name}`} className="blog__post__link">
           {name}
         </Link>
       </div>
