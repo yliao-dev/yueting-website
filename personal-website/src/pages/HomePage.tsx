@@ -5,12 +5,13 @@ const HomePage = () => {
   return (
     <>
       <section className="home">
-        <img src={DSCF0961} className="portfolio__intro__image" />
-        <div className="home__intro">
-          <h1>Welcome to My Website</h1>
-        </div>
+        <img src={DSCF0961} className="home__intro__image" />
       </section>
       <div className="page__divider-gradient"></div>
+
+      <div className="home__intro">
+        <h1>Welcome to My Website</h1>
+      </div>
     </>
   );
 };
