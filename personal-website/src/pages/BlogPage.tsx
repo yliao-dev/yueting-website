@@ -10,8 +10,8 @@ const BlogPage = () => {
           <BlogPost
             key={index}
             id={blog.id}
-            name={blog.name}
             title={blog.title}
+            description={blog.description}
             image={blog.image}
           />
         ))}

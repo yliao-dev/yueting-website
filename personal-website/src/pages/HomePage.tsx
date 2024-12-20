@@ -7,7 +7,7 @@ const HomePage = () => {
       <section className="home">
         <img src={DSCF0961} className="home__intro__image" />
       </section>
-      <div className="page__divider-gradient"></div>
+      <div className="page__divider-gradient" />
 
       <div className="home__intro">
         <h1>Welcome to My Website</h1>
