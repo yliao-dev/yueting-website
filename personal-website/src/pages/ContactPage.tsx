@@ -14,7 +14,14 @@ const ContactPage = () => {
             <LinkedIn />
           </a>
 
-          <Instagram />
+          <a
+            href="https://www.instagram.com/_yuetingl/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram />
+          </a>
+
           <a
             href="https://github.com/yliao-dev"
             target="_blank"
