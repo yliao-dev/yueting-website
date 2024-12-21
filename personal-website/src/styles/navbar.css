@@ -110,6 +110,38 @@
   transition: max-height 0.5s ease-out;
 }
 
+.footer {
+  background: #ebebeb;
+  color: #000000;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footer__arrow {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: solid 5px #b1b1b1;
+  border-width: 7px 7px 0 0;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer__arrow:hover {
+  transform: translateY(-5px) rotate(-45deg) scale(1.2);
+}
+
 /* Responsive Styles */
 @media only screen and (max-width: 830px) {
   .navbar__logo {
@@ -130,6 +162,11 @@
 
   .navbar__dropdown-links {
     display: block;
+  }
+
+  .footer {
+    padding: 15px;
+    font-size: 12px;
   }
 }
 
