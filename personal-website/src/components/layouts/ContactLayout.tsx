@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 
-const AboutLayout: React.FC = () => {
+const ContactLayout: React.FC = () => {
   return (
     <>
       <Navbar />
@@ -12,4 +12,4 @@ const AboutLayout: React.FC = () => {
   );
 };
 
-export default AboutLayout;
+export default ContactLayout;

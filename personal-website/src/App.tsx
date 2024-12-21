@@ -16,8 +16,8 @@ import BlogPage from "./pages/BlogPage";
 import PortfolioLayout from "./components/layouts/PortfolioLayout";
 import PortfolioPage from "./pages/PortfolioPage";
 
-import AboutLayout from "./components/layouts/AboutLayout";
-import AboutPage from "./pages/AboutPage";
+import ContactLayout from "./components/layouts/ContactLayout";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -28,12 +28,6 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
-
-        {/* about */}
-        <Route path="/about" element={<AboutLayout />}>
-          <Route index element={<AboutPage />} />
-        </Route>
-
         {/* portfolio */}
         <Route path="/portfolio" element={<PortfolioLayout />}>
           <Route index element={<PortfolioPage />} />
@@ -43,6 +37,10 @@ const App = () => {
           <Route index element={<BlogPage />} />
           {/* <Route path="kendo" element={<KendoBlogPage />} />
           <Route path="workout" element={<WorkoutBlogPage />} /> */}
+        </Route>
+        {/* contact */}
+        <Route path="/contact" element={<ContactLayout />}>
+          <Route index element={<ContactPage />} />
         </Route>
       </>
     )

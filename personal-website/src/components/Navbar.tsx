@@ -22,22 +22,23 @@ const Navbar = () => {
         </NavLink>
         <div className="navbar__links">
           <NavLink
-            to="/about"
-            className={({ isActive }) => linkClass({ isActive })}
-          >
-            about
-          </NavLink>
-          <NavLink
             to="/portfolio"
             className={({ isActive }) => linkClass({ isActive })}
           >
-            portfolio
+            PORTFOLIO
           </NavLink>
           <NavLink
             to="/blog"
             className={({ isActive }) => linkClass({ isActive })}
           >
-            blog
+            BLOG
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => linkClass({ isActive })}
+          >
+            CONTACT
           </NavLink>
         </div>
 
