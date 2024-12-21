@@ -2,6 +2,7 @@ import Project from "../components/portfolio/Project";
 import { ProjectData } from "../data/portfolio/ProjectData";
 import DSCF4076 from "../assets/images/DSCF4076.jpg";
 import "../styles/portfolio.css";
+import LineBreak from "../components/LineBreak";
 const PortfolioPage = () => {
   // Map through the project data and generate ProjectItem components
   const ProjectMap = () => {
@@ -32,7 +33,7 @@ const PortfolioPage = () => {
           <img src={DSCF4076} className="portfolio__intro__image" />
         </section>
 
-        <div className="page__divider" />
+        <LineBreak variant="plain" />
 
         <section className="portfolio__project-list">
           <ProjectMap />

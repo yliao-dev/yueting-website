@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import LineBreak from "../LineBreak";
 
 type BlogPostProp = {
   id: string | number;
@@ -25,7 +26,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
           <span className="blog__post__author-date">{date}</span>
         </section>
       </div>
-      <div className="page__divider-gradient" />
+      <LineBreak variant="gradient" />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
 import DSCF4076 from "../assets/images/DSCF4076.jpg";
 import "../styles/contact.css";
+import LineBreak from "../components/LineBreak";
 const ContactPage = () => {
   return (
     <>
@@ -33,7 +34,7 @@ const ContactPage = () => {
         <img src={DSCF4076} className="contact__image" />
       </section>
 
-      <div className="page__divider" />
+      <LineBreak variant="plain" />
 
       <section className="contact__my__skill">
         <h1>Email Me</h1>

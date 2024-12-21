@@ -1,4 +1,5 @@
-import BlogPost from "../components/blog/blogPost";
+import BlogCategory from "../components/Blog/blogCategory";
+import BlogPost from "../components/Blog/blogPost";
 import { PhotographyData } from "../data/blog/photography/photographyData";
 import "../styles/blog.css";
 
@@ -20,9 +21,11 @@ const BlogPage = () => {
   };
   return (
     <>
-      <section className="blog">
+      <div className="blog">
+        <BlogCategory />
+
         <BlogPostsMap />
-      </section>
+      </div>
     </>
   );
 };
