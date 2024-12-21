@@ -1,10 +1,10 @@
 import Project from "../components/portfolio/Project";
 import { ProjectData } from "../data/portfolio/ProjectData";
-import DSCF4076 from "../assets/images/DSCF4076.jpg";
-import "../styles/portfolio.css";
+import DSCF2312 from "../assets/images/blog/photography/DSCF2312.jpg";
 import LineBreak from "../components/LineBreak";
+import "../styles/portfolio.css";
+
 const PortfolioPage = () => {
-  // Map through the project data and generate ProjectItem components
   const ProjectMap = () => {
     return (
       <>
@@ -30,7 +30,7 @@ const PortfolioPage = () => {
             my projects and feel free to reach out for collaboration
             opportunities.
           </h3>
-          <img src={DSCF4076} className="portfolio__intro__image" />
+          <img src={DSCF2312} className="portfolio__intro__image" />
         </section>
 
         <LineBreak variant="plain" />

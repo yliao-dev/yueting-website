@@ -23,7 +23,6 @@ const BlogPage = () => {
     <>
       <div className="blog">
         <BlogCategory />
-
         <BlogPostsMap />
       </div>
     </>

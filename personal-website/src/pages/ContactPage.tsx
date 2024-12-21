@@ -1,7 +1,8 @@
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
 import DSCF4076 from "../assets/images/DSCF4076.jpg";
-import "../styles/contact.css";
 import LineBreak from "../components/LineBreak";
+import "../styles/contact.css";
+
 const ContactPage = () => {
   return (
     <>
