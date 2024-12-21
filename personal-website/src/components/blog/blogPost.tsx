@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo.png";
 
 type BlogPostProp = {
   id: string | number;
@@ -19,7 +20,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
         </Link>
         <p className="blog__post__desc">{description}</p>
         <section className="blog__post__author">
-          <span className="blog__post__author-icon">🖊️</span>
+          <img className="blog__post__author-icon" src={logo} />
           <span className="blog__post__author-name">{author}</span>
           <span className="blog__post__author-date">{date}</span>
         </section>

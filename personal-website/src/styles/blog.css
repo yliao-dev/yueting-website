@@ -41,7 +41,9 @@
 }
 
 .blog__post__author-icon {
-  font-size: 18px; /* Adjust icon size */
+  width: 20px; /* Set the width of the image */
+  height: 20px; /* Set the height of the image */
+  object-fit: cover;
 }
 
 .blog__post__author-name {

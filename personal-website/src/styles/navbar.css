@@ -18,6 +18,7 @@
   height: auto;
   transition: width 0.3s;
   flex-shrink: 0;
+  margin-left: 40px;
 }
 
 /* Navigation Links */
@@ -147,7 +148,6 @@
   .navbar__logo {
     width: 35px;
     position: absolute;
-    left: 1rem;
     top: 50%;
     transform: translateY(-50%);
   }
