@@ -17,7 +17,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  height: 100%; /* Ensures the page height fills the viewport */
+  height: 100%;
 }
 
 .page__divider {
