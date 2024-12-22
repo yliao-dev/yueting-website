@@ -15,6 +15,11 @@
   gap: 5px;
 }
 
+.social-media-icons svg {
+  font-size: 50px;
+  transition: color 0.3s ease-in-out;
+}
+
 .social-media-icons.horizontal {
   flex-direction: row;
   justify-content: center;
@@ -26,19 +31,19 @@
   margin: 0 5px;
 }
 
+.social-media-icons.horizontal svg:hover {
+  color: var(--icon-hover-color);
+  transform: none;
+}
+
 .social-media-icons.vertical {
   display: flex;
   flex-direction: column;
-}
-
-.social-media-icons svg {
-  font-size: 50px;
-  margin: 0 10px;
   transition: color 0.3s ease-in-out;
 }
 
-.social-media-icons svg:hover {
-  color: var(--icon-hover-color);
+.social-media-icons.vertical svg:hover {
+  transform: scale(1.1);
 }
 
 .linkedin-icon {

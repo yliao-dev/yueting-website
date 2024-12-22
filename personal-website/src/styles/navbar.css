@@ -71,7 +71,6 @@
   display: none;
   background: var(--primary-theme-color);
   width: 100%;
-  padding: 0 10px;
   overflow: hidden;
   opacity: 0;
   animation: rollDown 0.7s ease-out forwards;
@@ -79,7 +78,6 @@
 
 .navbar__dropdown-links.show {
   display: block;
-  max-height: 300px;
   transition: max-height 0.5s ease-out;
 }
 
@@ -93,7 +91,7 @@
   padding: 10px 0;
   text-align: center;
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateY(-20px);
   animation: rollIn 0.4s ease-out forwards;
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(
