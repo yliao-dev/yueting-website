@@ -22,7 +22,7 @@
 
 .social-media-icons.horizontal svg {
   font-size: 40px;
-  color: #ffffff;
+  color: var(--secondary-theme-color);
   margin: 0 5px;
 }
 
@@ -34,10 +34,21 @@
 .social-media-icons svg {
   font-size: 50px;
   margin: 0 10px;
-  color: #000000;
   transition: color 0.3s ease-in-out;
 }
 
 .social-media-icons svg:hover {
-  color: #0072b1;
+  color: var(--icon-hover-color);
+}
+
+.linkedin-icon {
+  color: var(--linkedln-color);
+}
+
+.github-icon {
+  color: var(--github-color);
+}
+
+.instagram-icon {
+  color: var(--instagram-color);
 }

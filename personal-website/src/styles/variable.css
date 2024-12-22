@@ -1,32 +1,33 @@
 :root {
-  --text-color: #ffffff;
-  --selected-text-color: #828282;
-  --hover-text-color: #828282;
+  --primary-theme-color: #3b444b;
+  --secondary-theme-color: #ffffff;
+  --icon-hover-color: #0072b1;
+
+  /* navbar */
+  --link-hover-color: #b0b0b0;
+  --link-selected-color: #b0b0b0;
   --link-padding-x: 1.25rem;
   --link-padding-y: 0.5rem;
-  --font-size-lg: 1.25rem;
-  --background-color: #f3f4f6; /* Default */
-}
+  --dropdown-border-color: #b0b0b0;
 
-.home {
-  --background-color: #f3f4f6;
-  --section-header-color: #1a1a1a;
-  --card-background-color: #ffffff;
-  --accent-color: #ff5722;
-}
+  /* footer */
+  --footer-bg-color: #f3f3f3;
+  --footer-arrow-color: #b1b1b1;
 
-.blog {
-  --background-color: #ffffff;
-  --post-title-color: #1a73e8;
-  --text-color: #333333;
-  --accent-color: #ffc107;
-  --hover-icon-color: #0072b1;
-}
+  /* home */
+  --home-text-color: #353535;
+  --home-intro-bg-color: #c4c4c4;
 
-.portfolio {
-  --background-color: #e0e7ff;
-  --card-border-color: #4c51bf;
-  --card-hover-color: #667eea;
-  --text-color: #1a202c;
-  --accent-color: #ed64a6;
+  /* portfolio */
+  --project-text-color: #353535;
+
+  /* blog */
+  --blog-title-color: #353535;
+  --blog-desc-color: #6b6b6b;
+  --blog-category-color: #8b8a8a;
+
+  /* contact */
+  --linkedln-color: #0077b5;
+  --github-color: #171515;
+  --instagram-color: #e4405f;
 }

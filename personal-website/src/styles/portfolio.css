@@ -15,8 +15,8 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #c1846e, #040303);
-  color: white;
+  background: linear-gradient(135deg, #3cceff, #040303);
+  color: var(--secondary-theme-color);
   text-align: center;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -72,7 +72,7 @@
 .portfolio__project {
   border-radius: 15px;
   padding: 1em;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--secondary-theme-color);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   height: auto;
@@ -101,11 +101,9 @@
   margin-top: 5px;
 }
 
-/* Title Styling */
 .portfolio__project__desc h4 {
   font-size: 1.1rem;
-  color: #929397;
-  font-weight: 300;
+  color: var(--project-text-color);
   margin: 0;
   transition: color 0.3s ease, transform 0.3s ease;
   white-space: nowrap;
@@ -113,12 +111,11 @@
   text-overflow: ellipsis;
 }
 
-/* Project Type Styling */
 .portfolio__project__desc p {
   font-size: 1rem;
-  color: #666;
+  color: var(--project-text-color);
   margin: 0;
-  opacity: 0.8;
+  font-weight: 300;
   transition: opacity 0.3s ease, color 0.3s ease;
   white-space: nowrap;
   overflow: hidden;
@@ -128,20 +125,20 @@
 /* For screens smaller than 830px (display 1 column) */
 @media only screen and (max-width: 830px) {
   .portfolio__project-list {
-    grid-template-columns: repeat(1, 1fr); /* 1 column */
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 /* For screens between 831px and 1024px (display 2 columns) */
 @media only screen and (min-width: 831px) and (max-width: 1024px) {
   .portfolio__project-list {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* For screens larger than 1024px (display 3 columns) */
 @media only screen and (min-width: 1025px) {
   .portfolio__project-list {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
   }
 }

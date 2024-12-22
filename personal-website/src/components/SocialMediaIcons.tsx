@@ -13,21 +13,21 @@ const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({ orientation }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <LinkedIn />
+        <LinkedIn className="linkedin-icon" />
       </a>
       <a
         href="https://www.instagram.com/_yuetingl/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Instagram />
+        <Instagram className="instagram-icon" />
       </a>
       <a
         href="https://github.com/yliao-dev"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <GitHub />
+        <GitHub className="github-icon" />
       </a>
     </div>
   );

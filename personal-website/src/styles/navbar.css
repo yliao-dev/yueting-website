@@ -1,8 +1,7 @@
-/* Navbar Container */
 .navbar {
   width: 100%;
   height: 5rem;
-  background: #000;
+  background: var(--primary-theme-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,7 +11,6 @@
   animation-delay: 0.2s;
 }
 
-/* Logo */
 .navbar__logo {
   width: 55px;
   height: auto;
@@ -21,12 +19,11 @@
   margin-left: 40px;
 }
 
-/* Navigation Links */
 .navbar__links {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: white;
+  color: var(--secondary-theme-color);
   gap: 1rem;
 }
 
@@ -36,25 +33,22 @@
   font-size: 20px;
 }
 
-/* Link States */
 .navbar__link--inactive {
-  color: var(--text-color);
+  color: var(--secondary-theme-color);
   padding: var(--link-padding-y) var(--link-padding-x);
   border-radius: 0.375rem;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar__link--inactive:hover {
-  color: var(--hover-text-color);
+  color: var(--link-hover-color);
 }
 
 .navbar__link--active {
-  color: var(--selected-text-color);
+  color: var(--link-selected-color);
   padding: var(--link-padding-y) var(--link-padding-x);
   border-radius: 0.375rem;
 }
 
-/* Toggle Button */
 .navbar__toggle-button {
   display: flex;
   align-items: center;
@@ -69,14 +63,13 @@
   margin-right: 20px;
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--secondary-theme-color);
   cursor: pointer;
 }
 
-/* Dropdown Links */
 .navbar__dropdown-links {
   display: none;
-  background: #333;
+  background: var(--primary-theme-color);
   width: 100%;
   padding: 0 10px;
   overflow: hidden;
@@ -99,10 +92,17 @@
 .navbar__dropdown-links ul li {
   padding: 10px 0;
   text-align: center;
-  border-bottom: 2px solid #555;
   opacity: 0;
   transform: translateY(-10px);
   animation: rollIn 0.4s ease-out forwards;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      var(--dropdown-border-color),
+      transparent
+    )
+    1;
 }
 
 .navbar__dropdown-links ul li:last-child {
@@ -110,14 +110,14 @@
 }
 
 .navbar__dropdown-links ul li a {
-  color: white;
+  color: var(--secondary-theme-color);
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
 }
 
 .navbar__dropdown-links ul li a:hover {
-  color: var(--selected-text-color);
+  color: var(--link-selected-color);
   padding: var(--link-padding-y) var(--link-padding-x);
 }
 
@@ -140,8 +140,7 @@
 
 /* Footer */
 .footer {
-  background: #ebebeb;
-  color: #000;
+  background: var(--footer-bg-color);
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -159,7 +158,7 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: solid 5px #b1b1b1;
+  border: solid 5px var(--footer-arrow-color);
   border-width: 7px 7px 0 0;
   transform: rotate(-45deg);
   cursor: pointer;
