@@ -14,6 +14,8 @@ function BlogPost({ title, description, image }: BlogPostProp) {
   const date = "Dec 20, 2024";
   return (
     <>
+      <LineBreak variant="gradient" />
+
       <div className="blog__post">
         <img src={image} className="blog__post__image" />
         <Link to={`${title}`} className="blog__post__title">
@@ -26,7 +28,6 @@ function BlogPost({ title, description, image }: BlogPostProp) {
           <span className="blog__post__author-date">{date}</span>
         </section>
       </div>
-      <LineBreak variant="gradient" />
     </>
   );
 }

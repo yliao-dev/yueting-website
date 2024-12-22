@@ -1,22 +1,29 @@
 .blog__post {
   max-width: 700px;
   padding: 20px;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .blog__post__image {
   display: block;
   width: 100%;
+  max-width: 100%;
   border-radius: 20px;
+  margin: 0 auto;
 }
 
 .blog__post__title h1 {
   margin-top: 20px;
-  font-size: 46px;
+  font-size: 3vw;
   color: #333;
   overflow-wrap: break-word;
   display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 0 5px;
 }
 
 .blog__post__title:hover h1 {
@@ -24,25 +31,28 @@
 }
 
 .blog__post__desc {
-  font-size: 23px;
+  font-size: 1.5vw;
   color: #555;
   margin-top: 5px;
   overflow-wrap: break-word;
-  white-space: normal; /* Ensure text can wrap normally */
+  white-space: normal;
+  width: 100%;
+  padding: 0 5px;
 }
 
 .blog__post__author {
   display: flex;
-  align-items: center;
-  gap: 10px; /* Space between icon, name, and date */
+  gap: 10px;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 1vw;
   color: #555;
+  margin-left: auto;
+  padding: 0 5px;
 }
 
 .blog__post__author-icon {
-  width: 20px; /* Set the width of the image */
-  height: 20px; /* Set the height of the image */
+  width: 1.5vw;
+  height: 1.5vw;
   object-fit: cover;
 }
 
@@ -51,22 +61,22 @@
 }
 
 .blog__post__author-date {
-  color: #888; /* Slightly lighter color for the date */
+  color: #888;
 }
 
 .blog__category {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 140px;
-  margin-top: 50px;
+  gap: 10vw;
+  margin: 6% 0% 0%;
 }
 
 .blog__category-button svg {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 80px;
+  font-size: 6vw;
   color: #000;
   transition: transform 0.3s, color 0.3s;
 }
@@ -77,15 +87,28 @@
 }
 
 @media only screen and (max-width: 830px) {
-  .blog__post__title h2 {
-    font-size: 20px;
+  .blog__post__title h1 {
+    font-size: 5vw;
   }
 
-  .blog__post__link {
-    font-size: 16px;
+  .blog__post__desc {
+    font-size: 2.5vw;
   }
 
-  .blog__post__image {
-    max-width: 90%;
+  .blog__post__author {
+    font-size: 2vw;
+  }
+
+  .blog__post__author-icon {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+  .blog__category {
+    flex-direction: row;
+    gap: 15vw;
+  }
+
+  .blog__category-button svg {
+    font-size: 12vw;
   }
 }
