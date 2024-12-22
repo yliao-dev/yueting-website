@@ -1,13 +1,38 @@
-import BlogCategory from "../components/Blog/blogCategory";
-import BlogPost from "../components/Blog/blogPost";
-import { PhotographyData } from "../data/blog/photography/photographyData";
+import { useState } from "react";
+import BlogCategory from "../components/Blog/BlogCategory";
+import BlogPost from "../components/Blog/BlogPost";
+import { PhotographyEntries } from "../data/blog/photography/PhotographyEntries";
+import { KendoEntries } from "../data/blog/kendo/KendoEntries";
+import { FitnessEntries } from "../data/blog/fitness/fitnessEntries";
+
 import "../styles/blog.css";
 
-const BlogPage = () => {
-  const BlogPostsMap = () => {
+const BlogPage: React.FC = () => {
+  const [selectedCategory, setCategory] = useState<string>("");
+  const categoryFilter = (category: string) => {
+    setCategory(category);
+  };
+  const BlogPostsMap: React.FC<{ category: string }> = ({ category }) => {
+    let selectedData: any[] = [];
+
+    // Dynamically select the data based on the category
+    switch (category) {
+      case "kendo":
+        selectedData = KendoEntries;
+        break;
+      case "photography":
+        selectedData = PhotographyEntries;
+        break;
+      case "fitness":
+        selectedData = FitnessEntries;
+        break;
+      default:
+        selectedData = KendoEntries; // Default to Kendo if no category is matched
+    }
+
     return (
       <>
-        {PhotographyData.map((blog, index) => (
+        {selectedData.map((blog, index) => (
           <BlogPost
             key={index}
             id={blog.id}
@@ -22,8 +47,8 @@ const BlogPage = () => {
   return (
     <>
       <div className="blog">
-        <BlogCategory />
-        <BlogPostsMap />
+        <BlogCategory onSelect={categoryFilter} />
+        <BlogPostsMap category={selectedCategory} />
       </div>
     </>
   );

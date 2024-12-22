@@ -5,23 +5,25 @@
   --link-padding-x: 1.25rem;
   --link-padding-y: 0.5rem;
   --font-size-lg: 1.25rem;
+  --background-color: #f3f4f6; /* Default */
 }
 
-:root.home {
+.home {
   --background-color: #f3f4f6;
   --section-header-color: #1a1a1a;
   --card-background-color: #ffffff;
   --accent-color: #ff5722;
 }
 
-:root.blog {
+.blog {
   --background-color: #ffffff;
   --post-title-color: #1a73e8;
   --text-color: #333333;
   --accent-color: #ffc107;
+  --hover-icon-color: #0072b1;
 }
 
-:root.portfolio {
+.portfolio {
   --background-color: #e0e7ff;
   --card-border-color: #4c51bf;
   --card-hover-color: #667eea;

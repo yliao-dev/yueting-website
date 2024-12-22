@@ -1,25 +1,27 @@
+import React from "react";
 import { Camera, SportsMartialArts, FitnessCenter } from "@mui/icons-material";
-import { NavLink } from "react-router-dom";
 
-const BlogCategory = () => {
+type BlogCategoryProps = {
+  onSelect: (category: string) => void;
+};
+
+const BlogCategory: React.FC<BlogCategoryProps> = ({ onSelect }) => {
   const categories = [
-    { id: "camera", icon: <Camera />, path: "/camera" },
-    { id: "sports", icon: <SportsMartialArts />, path: "/sports" },
-    { id: "fitness", icon: <FitnessCenter />, path: "/fitness" },
+    { id: "photography", icon: <Camera />, value: "photography" },
+    { id: "kendo", icon: <SportsMartialArts />, value: "kendo" },
+    { id: "fitness", icon: <FitnessCenter />, value: "fitness" },
   ];
-  const categoryClass = ({ isActive }: { isActive: boolean }) =>
-    `blog__category-icon ${isActive ? "active" : ""}`;
 
   return (
     <div className="blog__category">
       {categories.map((category) => (
-        <NavLink
+        <button
           key={category.id}
-          to={category.path}
-          className={({ isActive }) => categoryClass({ isActive })}
+          className="blog__category-button"
+          onClick={() => onSelect(category.value)}
         >
           {category.icon}
-        </NavLink>
+        </button>
       ))}
     </div>
   );

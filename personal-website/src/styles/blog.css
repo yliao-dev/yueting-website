@@ -62,20 +62,18 @@
   margin-top: 50px;
 }
 
-.blog__category-icon svg {
-  font-size: 80px; /* Icon size */
+.blog__category-button svg {
+  background: none;
+  border: none;
   cursor: pointer;
+  font-size: 80px;
+  color: #000;
   transition: transform 0.3s, color 0.3s;
-  color: #000; /* Default icon color */
 }
 
-.blog__category-icon:hover svg {
-  transform: scale(1.2); /* Enlarge icon on hover */
-  color: #0072b1; /* Highlight color on hover */
-}
-
-.blog__category-icon.active {
-  color: #ff6347; /* Different color for the active (clicked) icon */
+.blog__category-button svg:hover {
+  transform: scale(1.1);
+  color: var(--hover-icon-color);
 }
 
 @media only screen and (max-width: 830px) {
