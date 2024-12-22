@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import ReorderIcon from "@mui/icons-material/Reorder";
+import SocialMediaIcons from "./SocialMediaIcons";
 const Navbar = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? "navbar__link--active" : "navbar__link--inactive";
@@ -53,20 +54,17 @@ const Navbar = () => {
         <div className="navbar__dropdown-links">
           <ul>
             <li>
-              <NavLink to="/portfolio" className="dropdown-link">
-                PORTFOLIO
-              </NavLink>
+              <NavLink to="/portfolio">PORTFOLIO</NavLink>
             </li>
             <li>
-              <NavLink to="/blog" className="dropdown-link">
-                BLOG
-              </NavLink>
+              <NavLink to="/blog">BLOG</NavLink>
             </li>
 
             <li>
-              <NavLink to="/contact" className="dropdown-link">
-                CONTACT
-              </NavLink>
+              <NavLink to="/contact">CONTACT</NavLink>
+            </li>
+            <li>
+              <SocialMediaIcons orientation="horizontal" />
             </li>
           </ul>
         </div>
