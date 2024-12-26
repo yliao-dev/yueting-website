@@ -1,6 +1,6 @@
-import DSCF00008 from "../../../assets/images/blog/photography/DSCF00008.jpg";
-import DSCF00570 from "../../../assets/images/blog/photography/DSC00570.jpg";
-import DSCF0408 from "../../../assets/images/blog/photography/DSCF0408.jpg";
+import DSCF00008 from "../../../assets/images/photography/DSCF00008.jpg";
+import DSCF00570 from "../../../assets/images/photography/DSC00570.jpg";
+import DSCF0408 from "../../../assets/images/photography/DSCF0408.jpg";
 
 export const PhotographyEntries = [
   {

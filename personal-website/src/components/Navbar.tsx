@@ -42,7 +42,6 @@ const Navbar = () => {
             CONTACT
           </NavLink>
         </div>
-
         <div className="navbar__toggle-button">
           <button onClick={toggleNavbar}>
             <ReorderIcon />

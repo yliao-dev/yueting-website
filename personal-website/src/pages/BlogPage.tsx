@@ -1,9 +1,9 @@
 import { useState } from "react";
 import BlogCategory from "../components/Blog/BlogCategory";
 import BlogPost from "../components/Blog/BlogPost";
-import { PhotographyEntries } from "../data/blog/photography/PhotographyEntries";
-import { KendoEntries } from "../data/blog/kendo/KendoEntries";
-import { FitnessEntries } from "../data/blog/fitness/fitnessEntries";
+import { PhotographyEntries } from "../data/blog/PhotographyEntries";
+import { KendoEntries } from "../data/blog/KendoEntries";
+import { FitnessEntries } from "../data/blog/FitnessEntries";
 
 import "../styles/blog.css";
 
