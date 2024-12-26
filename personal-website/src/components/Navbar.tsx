@@ -6,6 +6,7 @@ import SocialMediaIcons from "./SocialMediaIcons";
 const Navbar = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? "navbar__link--active" : "navbar__link--inactive";
+
   const [expandNavbar, setExpandNavbar] = useState(false);
   const toggleNavbar = () => {
     setExpandNavbar((prev) => !prev);
@@ -53,14 +54,29 @@ const Navbar = () => {
         <div className="navbar__dropdown-links">
           <ul>
             <li>
-              <NavLink to="/portfolio">PORTFOLIO</NavLink>
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) => linkClass({ isActive })}
+              >
+                <span>PORTFOLIO</span>
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/blog">BLOG</NavLink>
+              <NavLink
+                to="/blog"
+                className={({ isActive }) => linkClass({ isActive })}
+              >
+                <span>BLOG</span>
+              </NavLink>
             </li>
 
             <li>
-              <NavLink to="/contact">CONTACT</NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => linkClass({ isActive })}
+              >
+                <span>CONTACT</span>
+              </NavLink>
             </li>
             <li>
               <SocialMediaIcons orientation="horizontal" />
