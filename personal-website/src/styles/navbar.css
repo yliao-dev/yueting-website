@@ -174,7 +174,7 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: solid 5px var(--footer-arrow-color);
+  border: double var(--footer-arrow-color);
   border-width: 7px 7px 0 0;
   transform: rotate(-45deg);
   cursor: pointer;
