@@ -29,6 +29,14 @@ const Navbar = () => {
           >
             PORTFOLIO
           </NavLink>
+
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) => linkClass({ isActive })}
+          >
+            GALLERY
+          </NavLink>
+
           <NavLink
             to="/blog"
             className={({ isActive }) => linkClass({ isActive })}
@@ -61,6 +69,16 @@ const Navbar = () => {
                 <span>PORTFOLIO</span>
               </NavLink>
             </li>
+
+            <li>
+              <NavLink
+                to="/gallery"
+                className={({ isActive }) => linkClass({ isActive })}
+              >
+                <span>GALLERY</span>
+              </NavLink>
+            </li>
+
             <li>
               <NavLink
                 to="/blog"

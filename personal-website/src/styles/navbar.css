@@ -150,6 +150,10 @@
   animation-delay: 0.8s;
 }
 
+.navbar__dropdown-links ul li:nth-child(5) {
+  animation-delay: 1s;
+}
+
 /* Footer */
 .footer {
   background: var(--footer-bg-color);

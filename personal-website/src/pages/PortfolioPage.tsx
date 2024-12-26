@@ -6,7 +6,7 @@ import LineBreak from "../components/LineBreak";
 
 import ProjectMap from "../components/portfolio/ProjectMap";
 import { ProjectData } from "../data/portfolio/ProjectData";
-import PhotographyMap from "../components/portfolio/PhotographyMap";
+import PhotographyMap from "../components/Gallery/PhotographyMap";
 import { PhotoData } from "../data/portfolio/PhotoData";
 
 const PortfolioPage = () => {

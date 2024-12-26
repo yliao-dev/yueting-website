@@ -18,7 +18,7 @@ import PortfolioPage from "./pages/PortfolioPage";
 
 import ContactLayout from "./components/layouts/ContactLayout";
 import ContactPage from "./pages/ContactPage";
-import PhotographyPage from "./pages/PhotographyPage";
+import GalleryPage from "./pages/GalleryPage";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -32,7 +32,10 @@ const App = () => {
         {/* portfolio */}
         <Route path="/portfolio" element={<PortfolioLayout />}>
           <Route index element={<PortfolioPage />} />
-          <Route path="photography" element={<PhotographyPage />} />
+        </Route>
+        {/* gallery */}
+        <Route path="/gallery" element={<MainLayout />}>
+          <Route index element={<GalleryPage />} />
         </Route>
         {/* blog */}
         <Route path="/blog" element={<BlogLayout />}>

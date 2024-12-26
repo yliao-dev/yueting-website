@@ -1,7 +1,7 @@
-import PhotographyMap from "../components/portfolio/PhotographyMap";
+import PhotographyMap from "../components/Gallery/PhotographyMap";
 import { PhotoData } from "../data/portfolio/PhotoData";
 
-const PhotographyPage = () => {
+const GalleryPage = () => {
   return (
     <>
       <div className="photography__grid">
@@ -10,4 +10,4 @@ const PhotographyPage = () => {
     </>
   );
 };
-export default PhotographyPage;
+export default GalleryPage;
