@@ -70,7 +70,7 @@
 .navbar__dropdown-links .navbar__link--active span {
   position: relative;
   display: inline-block;
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 }
 
 .navbar__dropdown-links .navbar__link--active span::after {
