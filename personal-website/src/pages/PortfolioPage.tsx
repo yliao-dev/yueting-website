@@ -1,24 +1,15 @@
-import Project from "../components/portfolio/Project";
-import { ProjectData } from "../data/portfolio/ProjectData";
+import "../styles/portfolio.css";
+import "../styles/photography.css";
+
 import DSCF4076 from "../assets/images/DSCF4076.jpg";
 import LineBreak from "../components/LineBreak";
-import "../styles/portfolio.css";
+
+import ProjectMap from "../components/portfolio/ProjectMap";
+import { ProjectData } from "../data/portfolio/ProjectData";
+import PhotographyMap from "../components/portfolio/PhotographyMap";
+import { PhotoData } from "../data/portfolio/PhotoData";
 
 const PortfolioPage = () => {
-  const ProjectMap = () => {
-    return (
-      <>
-        {ProjectData.map((project, index) => (
-          <Project
-            key={index}
-            id={index}
-            name={project.name}
-            image={project.image}
-          />
-        ))}
-      </>
-    );
-  };
   return (
     <>
       <div className="portfolio">
@@ -35,10 +26,10 @@ const PortfolioPage = () => {
 
         <LineBreak variant="plain" />
 
-        <section className="portfolio__project-list">
-          <ProjectMap />
-        </section>
+        <ProjectMap projectData={ProjectData} />
       </div>
+      <LineBreak variant="plain" />
+      <PhotographyMap photoData={PhotoData} />
     </>
   );
 };

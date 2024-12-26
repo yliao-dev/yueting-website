@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
-type ProjectItemProps = {
-  name: string; // Name of the project
-  image: string; // URL of the image
-  id: string | number; // ID of the project (type can be adjusted as needed)
+export type ProjectItemProps = {
+  name: string;
+  image: string;
+  id: string | number;
 };
 
 function ProjectItem({ image, name, id }: ProjectItemProps) {
