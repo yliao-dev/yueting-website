@@ -1,13 +1,11 @@
 import "../styles/portfolio.css";
-import "../styles/photography.css";
+import "../styles/gallery.css";
 
 import DSCF4076 from "../assets/images/DSCF4076.jpg";
 import LineBreak from "../components/LineBreak";
 
 import ProjectMap from "../components/portfolio/ProjectMap";
 import { ProjectData } from "../data/portfolio/ProjectData";
-import PhotographyMap from "../components/Gallery/PhotographyMap";
-import { PhotoData } from "../data/portfolio/PhotoData";
 
 const PortfolioPage = () => {
   return (
@@ -29,7 +27,6 @@ const PortfolioPage = () => {
         <ProjectMap projectData={ProjectData} />
       </div>
       <LineBreak variant="plain" />
-      <PhotographyMap photoData={PhotoData} />
     </>
   );
 };

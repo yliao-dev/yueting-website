@@ -1,0 +1,149 @@
+/* ====== Photography Grid ====== */
+.photography__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.masonry__item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry__item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.photography__item-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.masonry__item:hover .photography__item-image {
+  opacity: 0.8;
+}
+
+.masonry__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(85, 85, 85, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.masonry__item:hover::after {
+  opacity: 1;
+}
+
+/* ====== Modal Overlay ====== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.modal-overlay.interactive {
+  pointer-events: auto;
+}
+
+/* ====== Modal Content ====== */
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+/* ====== Close Button ====== */
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1100;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #ff4d4d;
+}
+
+.close-button:focus {
+  outline: none;
+}
+
+/* ====== Modal Navigation ====== */
+.modal-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1100;
+}
+
+.modal-navigation button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 16px;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.modal-navigation button:hover {
+  color: #ffcc00;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-navigation button:focus {
+  outline: none;
+}
+
+.modal-navigation .prev {
+  text-align: left;
+  padding-left: 24px;
+}
+
+.modal-navigation .next {
+  text-align: right;
+  padding-right: 24px;
+}

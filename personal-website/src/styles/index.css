@@ -2,6 +2,8 @@
 @import "./navbar.css";
 @import "./home.css";
 @import "./contact.css";
+@import "./blog.css";
+@import "./gallery.css";
 
 @tailwind base;
 @tailwind components;
