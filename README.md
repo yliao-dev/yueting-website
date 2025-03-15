@@ -26,3 +26,4 @@ Further design details will be discussed in the future.
 - https://www.adhamdannaway.com/about
 - https://medium.com/@skhans/the-25-best-personal-portfolio-website-design-inspiration-examples-e2eb1c8734df
 - https://www.wix.com/website/templates/html/blog/personal-blog
+- https://juliaandgil.com/gallery

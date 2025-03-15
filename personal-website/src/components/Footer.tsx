@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="page__gradient-white" />
       <footer className="footer">
         <div className="footer__arrow" onClick={scrollToTop} />
-        <h2>&copy; 2024 Yueting Liao.</h2>
+        <h2>&copy; 2025 Yueting Liao.</h2>
       </footer>
     </>
   );
