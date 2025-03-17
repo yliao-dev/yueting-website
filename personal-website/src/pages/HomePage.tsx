@@ -1,4 +1,3 @@
-import DSCF9770 from "../assets/images/logo.png";
 import LineBreak from "../components/LineBreak";
 import "../styles/home.css";
 
@@ -6,7 +5,11 @@ const HomePage = () => {
   return (
     <>
       <section className="home">
-        <img src={DSCF9770} className="home__intro__image" />
+        <img
+          src="/images/photography/DSCF9770.jpg"
+          className="home__intro__image"
+          alt="Home Intro"
+        />
       </section>
       <LineBreak variant="plain" />
       <div className="home__intro">
