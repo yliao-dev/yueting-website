@@ -1,7 +1,7 @@
 import "../styles/portfolio.css";
 import "../styles/gallery.css";
 
-import DSCF4076 from "../assets/images/DSCF4076.jpg";
+import DSCF4076 from "../assets/images/logo.png";
 import LineBreak from "../components/LineBreak";
 
 import ProjectMap from "../components/portfolio/ProjectMap";

@@ -1,25 +1,22 @@
-import DSCF00008 from "../../assets/images/photography/DSCF00008.jpg";
-import DSCF00570 from "../../assets/images/photography/DSC00570.jpg";
-import DSCF0408 from "../../assets/images/photography/DSCF0408.jpg";
 export const PhotographyEntries = [
   {
     id: "1",
     title: "PhotographyEntries New York",
     description:
       "In the heart of the forest, tall trees stand like guardians of nature.",
-    image: DSCF00008,
+    image: "/images/photography/DSCF2312.jpg",
   },
   {
     id: "2",
     title: "PhotographyEntries Florida",
     description: "The sun rises slowly over the hills.",
-    image: DSCF00570,
+    image: "/images/photography/DSC00570.jpg",
   },
   {
     id: "3",
     title: "PhotographyEntries California",
     description:
-      "The forest is a peaceful place filled with tall trees and soft sounds. ",
-    image: DSCF0408,
+      "The forest is a peaceful place filled with tall trees and soft sounds.",
+    image: "/images/photography/DSCF0408.jpg",
   },
 ];

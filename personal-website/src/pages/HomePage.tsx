@@ -1,4 +1,4 @@
-import DSCF9770 from "../assets/images/DSCF9770.jpg";
+import DSCF9770 from "../assets/images/logo.png";
 import LineBreak from "../components/LineBreak";
 import "../styles/home.css";
 
