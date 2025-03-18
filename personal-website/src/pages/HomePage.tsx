@@ -1,7 +1,30 @@
-import LineBreak from "../components/LineBreak";
+import { useEffect, useState, useRef } from "react";
 import "../styles/home.css";
 
 const HomePage = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 } // Adjust this value to control when the animation triggers
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   return (
     <>
       <section className="home">
@@ -34,15 +57,19 @@ const HomePage = () => {
         />
       </section>
 
-      <section className="home_my_skill">
-        <div>
+      <section
+        ref={sectionRef}
+        className={`home__my_skill ${isVisible ? "animate" : ""}`}
+      >
+        <div className="home__my_skill__text">
           <h1>My Skills</h1>
-          <img
-            src="/images/photography/DSCF9770.jpg"
-            className="home__intro__image"
-            alt="Home Intro"
-          />
         </div>
+
+        <img
+          src="/images/photography/DSCF9770.jpg"
+          className="home__my_skill__image"
+          alt="Home Intro"
+        />
       </section>
 
       <section className="home_my_story">

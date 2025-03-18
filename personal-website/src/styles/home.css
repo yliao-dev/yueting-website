@@ -47,25 +47,58 @@
   border-radius: 15px;
   margin-top: 2rem;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  animation: slideInRight 1s ease-in;
+  animation: slideInBottom 1.2s ease-in;
 }
 
 .home__intro__image:hover {
   box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
 }
 
-.home_my_skill {
+.home__my_skill {
   background: var(--footer-bg-color);
-  text-align: center;
   height: 100%;
   width: 100%;
   box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.4);
-  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 5px 0;
+
+  /* Initial hidden state for animation */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Once it enters the viewport, animate */
+.home__my_skill.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Text container */
+.home__my_skill__text {
+  padding: 2rem 3rem;
+  text-align: left;
+}
+
+/* Heading inside text container */
+.home__my_skill__text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--home-text-color);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Image styling */
+.home__my_skill__image {
+  width: 70%;
+  max-width: 700px;
+  border-radius: 15px;
+  margin-top: 2rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .home_my_story {
@@ -115,11 +148,28 @@
   }
 }
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @keyframes slideInRight {
   from {
     transform: translateX(300px);
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes slideInBottom {
+  from {
+    transform: translateY(70px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
