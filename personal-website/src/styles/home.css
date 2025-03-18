@@ -62,6 +62,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   padding: 5px 0;
   opacity: 0;
 }
@@ -72,11 +73,11 @@
 }
 /* Apply animations only when animate class is added */
 .home__my_skill.animate .home__my_skill__text {
-  animation: slideInLeft 1s ease-in-out;
+  animation: slideInLeft 1.2s ease-in-out;
 }
 
 .home__my_skill.animate .home__my_skill__image {
-  animation: slideInRight 1s ease-in-out;
+  animation: slideInRight 1.2s ease-in-out;
 }
 
 /* Text container */
