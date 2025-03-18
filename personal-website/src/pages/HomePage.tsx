@@ -76,7 +76,7 @@ const HomePage = () => {
         <h1>My Storys</h1>
         <img
           src="/images/photography/DSCF9770.jpg"
-          className="home__intro__image"
+          // className="home__intro__image"
           alt="Home Intro"
         />
       </section>
@@ -85,7 +85,7 @@ const HomePage = () => {
         <h1>Interactive world Map</h1>
         <img
           src="/images/photography/DSCF9770.jpg"
-          className="home__intro__image"
+          // className="home__intro__image"
           alt="Home Intro"
         />
       </section>

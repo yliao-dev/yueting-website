@@ -63,17 +63,20 @@
   align-items: center;
   justify-content: center;
   padding: 5px 0;
-
-  /* Initial hidden state for animation */
   opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 /* Once it enters the viewport, animate */
 .home__my_skill.animate {
   opacity: 1;
-  transform: translateY(0);
+}
+/* Apply animations only when animate class is added */
+.home__my_skill.animate .home__my_skill__text {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.home__my_skill.animate .home__my_skill__image {
+  animation: slideInRight 1s ease-in-out;
 }
 
 /* Text container */

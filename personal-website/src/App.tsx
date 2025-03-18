@@ -19,6 +19,7 @@ import PortfolioPage from "./pages/PortfolioPage";
 import ContactLayout from "./components/layouts/ContactLayout";
 import ContactPage from "./pages/ContactPage";
 import GalleryPage from "./pages/GalleryPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -48,7 +49,12 @@ const App = () => {
       </>
     )
   );
-  return <RouterProvider router={router} />;
+
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 };
 
 export default App;
