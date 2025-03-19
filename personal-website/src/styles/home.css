@@ -59,11 +59,7 @@
 }
 
 .home__skill {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  padding: 5px 0;
   opacity: 0;
 }
 
@@ -98,7 +94,6 @@
 }
 
 .home_journey {
-  min-height: 100vh;
   scroll-snap-align: start;
 }
 
