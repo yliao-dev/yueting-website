@@ -70,7 +70,7 @@
   box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
 }
 
-.home__my_skill {
+.home__skill {
   background: var(--footer-bg-color);
   height: 100%;
   width: 100%;
@@ -84,22 +84,22 @@
 }
 
 /* Once it enters the viewport, animate */
-.home__my_skill.animate {
+.home__skill.animate {
   opacity: 1;
 }
 /* Apply animations only when animate class is added */
-.home__my_skill.animate .home__my_skill__image {
+.home__skill.animate .home__skill__image {
   animation: slideInLeft 1.2s ease-in-out;
 }
 
 /* Text container */
-.home__my_skill__text {
+.home__skill__text {
   padding: 2rem 3rem;
   text-align: left;
 }
 
 /* Heading inside text container */
-.home__my_skill__text h1 {
+.home__skill__text h1 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--home-text-color);
@@ -117,7 +117,7 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.home_my_story {
+.home_journey {
   background: var(--secondary-theme-color);
   text-align: left;
   height: 100%;

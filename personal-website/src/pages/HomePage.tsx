@@ -53,7 +53,7 @@ const HomePage = () => {
 
         <section
           ref={sectionRef}
-          className={`home__my_skill ${isVisible ? "animate" : ""}`}
+          className={`home__skill ${isVisible ? "animate" : ""}`}
         >
           <div className="home__skill__chart">
             <SkillPieChart />
