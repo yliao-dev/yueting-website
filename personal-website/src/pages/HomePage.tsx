@@ -66,7 +66,7 @@ const HomePage = () => {
         </div>
 
         <img
-          src="/images/photography/DSCF9770.jpg"
+          src="/images/skills_graph.jpg"
           className="home__my_skill__image"
           alt="Home Intro"
         />
