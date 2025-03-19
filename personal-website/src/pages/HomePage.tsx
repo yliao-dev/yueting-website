@@ -12,7 +12,7 @@ const HomePage = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 } // Adjust this value to control when the animation triggers
+      { threshold: 0 } // Adjust this value to control when the animation triggers
     );
 
     if (sectionRef.current) {
@@ -28,66 +28,38 @@ const HomePage = () => {
   return (
     <>
       <section className="home">
-        <div className="home__intro">
-          <h1>About Me</h1>
-          <br />
-          <h2>
-            I am ... <br />
-            Software Engineer <br />
-            Kendoka <br />
-            Someone who pursuit harmony in mind & body
-          </h2>
-          <br />
+        <section className="home__intro">
+          <h1>Who I am.</h1>
+          <h2>Software Engineer | Kendoka | Photographer</h2>
+          <h2>Based in the United States.</h2>
           <p>
-            Here, I share my unique journey and path.
-            <br />
-            spaceholder
-            <br />
-            spaceholder
-            <br />
-            To honestly represent myself through understanding of body
-            <br />
-            To express who am I
+            Pursuing harmony between mind, body, and observation. Here you’ll
+            find my coding projects, reflections from my Kendo journey,
+            photography exploring how I see the world, and insights from
+            experiences that shape who I am.
           </p>
-        </div>
-        <img
-          src="/images/photography/DSCF7886.jpg"
-          className="home__intro__image"
-          alt="Home Intro"
-        />
-      </section>
 
-      <section
-        ref={sectionRef}
-        className={`home__my_skill ${isVisible ? "animate" : ""}`}
-      >
-        <div className="home__my_skill__text">
-          <h1>My Skills</h1>
-        </div>
+          <img
+            src="/images/photography/DSCF7886.jpg"
+            className="home__intro__image"
+            alt="Home Intro"
+          />
+        </section>
 
-        <img
-          src="/images/skills_graph.jpg"
-          className="home__my_skill__image"
-          alt="Home Intro"
-        />
-      </section>
+        <section
+          ref={sectionRef}
+          className={`home__my_skill ${isVisible ? "animate" : ""}`}
+        >
+          <img
+            src="/images/skills_graph.jpg"
+            className="home__my_skill__image"
+            alt="Home Intro"
+          />
 
-      <section className="home_my_story">
-        <h1>My Storys</h1>
-        <img
-          src="/images/photography/DSCF9770.jpg"
-          // className="home__intro__image"
-          alt="Home Intro"
-        />
-      </section>
-
-      <section className="home_interactive_map">
-        <h1>Interactive world Map</h1>
-        <img
-          src="/images/photography/DSCF9770.jpg"
-          // className="home__intro__image"
-          alt="Home Intro"
-        />
+          <div className="home__my_skill__text">
+            <h1>Balance of Skills</h1>
+          </div>
+        </section>
       </section>
     </>
   );
