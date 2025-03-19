@@ -7,19 +7,60 @@ import TimelineContent from "@mui/lab/TimelineContent";
 
 const JourneyTimeline = () => {
   return (
-    <Timeline position="alternate">
+    <Timeline position="alternate-reverse">
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot color="secondary" />
+          <TimelineDot color="success" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Secondary</TimelineContent>
+        <TimelineContent>Hunan, China</TimelineContent>
       </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="success" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>New York City, NY, USA</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="success" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>New York City, NY, USA</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="success" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Troy, NY, USA</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="success" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Los Angeles, CA, USA</TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="success" />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>Provo, Utah, USA</TimelineContent>
+      </TimelineItem>
+
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="success" />
         </TimelineSeparator>
-        <TimelineContent>Success</TimelineContent>
+        <TimelineContent>Łódź, Poland</TimelineContent>
       </TimelineItem>
     </Timeline>
   );
