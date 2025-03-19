@@ -1,7 +1,8 @@
-import { useEffect, useState, useRef } from "react";
 import "../styles/home.css";
+import { useEffect, useState, useRef } from "react";
 import SkillPieChart from "../components/Home/PieChart";
 import JourneyTimeline from "../components/Home/Timeline";
+import LineBreak from "../components/LineBreak";
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +30,7 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      <section className="home">
+      <div className="home">
         <section className="home__intro">
           <h1>Who I am.</h1>
           <h2>Software Engineer | Kendoka | Photographer</h2>
@@ -48,6 +49,8 @@ const HomePage = () => {
           />
         </section>
 
+        <LineBreak />
+
         <section
           ref={sectionRef}
           className={`home__my_skill ${isVisible ? "animate" : ""}`}
@@ -56,15 +59,16 @@ const HomePage = () => {
             <SkillPieChart />
           </div>
 
-          <div className="home__my_skill__text">
+          <div className="home__skill__text">
             <h1>Balance of Skills</h1>
           </div>
         </section>
 
+        <LineBreak />
         <section className="home__journey">
           <JourneyTimeline />
         </section>
-      </section>
+      </div>
     </>
   );
 };
