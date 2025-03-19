@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import "../styles/home.css";
+import SkillPieChart from "../components/Home/PieChart";
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -42,7 +43,7 @@ const HomePage = () => {
           <img
             src="/images/photography/DSCF7886.jpg"
             className="home__intro__image"
-            alt="Home Intro"
+            alt="portrait"
           />
         </section>
 
@@ -50,11 +51,9 @@ const HomePage = () => {
           ref={sectionRef}
           className={`home__my_skill ${isVisible ? "animate" : ""}`}
         >
-          <img
-            src="/images/skills_graph.jpg"
-            className="home__my_skill__image"
-            alt="Home Intro"
-          />
+          <div className="home__skill__chart">
+            <SkillPieChart />
+          </div>
 
           <div className="home__my_skill__text">
             <h1>Balance of Skills</h1>
