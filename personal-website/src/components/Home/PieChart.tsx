@@ -1,5 +1,4 @@
 import { PieChart } from "@mui/x-charts";
-import React, { useState } from "react";
 
 const skillsData = [
   { label: "Coding", value: 40, color: "#345c72" },
@@ -9,13 +8,7 @@ const skillsData = [
 ];
 
 const SkillPieChart = () => (
-    const [clickedSkill, setClickedSkill] = useState(null);
-    const handleClick = (_event: any, data: React.SetStateAction<null>) => {
-        setClickedSkill(data)
-    };
-    return (
-        <div>
-<PieChart
+  <PieChart
     series={[
       {
         data: skillsData,
@@ -30,10 +23,6 @@ const SkillPieChart = () => (
     width={400}
     height={400}
   />
-
-    </div>
-    )
-  
 );
 
 export default SkillPieChart;
