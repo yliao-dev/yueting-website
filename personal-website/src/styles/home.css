@@ -8,6 +8,15 @@
   flex-wrap: wrap; /* Prevents overflow */
 }
 
+.home__timeline__image {
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 1rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease-in;
+}
+
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
   .home {

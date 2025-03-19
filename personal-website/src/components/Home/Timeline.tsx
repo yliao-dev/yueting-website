@@ -13,7 +13,10 @@ const JourneyTimeline = () => {
           <TimelineDot color="success" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Hunan, China</TimelineContent>
+        <TimelineContent>
+          Hunan, China
+          <img className="home__timeline__image" src={"/images/london.png"} />
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
@@ -21,7 +24,10 @@ const JourneyTimeline = () => {
           <TimelineDot color="success" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>New York City, NY, USA</TimelineContent>
+        <TimelineContent>
+          New York City, NY, USA
+          <img className="home__timeline__image" src={"/images/london.png"} />
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
@@ -29,7 +35,10 @@ const JourneyTimeline = () => {
           <TimelineDot color="success" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>New York City, NY, USA</TimelineContent>
+        <TimelineContent>
+          Troy, NY, USA
+          <img className="home__timeline__image" src={"/images/london.png"} />
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
@@ -37,7 +46,10 @@ const JourneyTimeline = () => {
           <TimelineDot color="success" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Troy, NY, USA</TimelineContent>
+        <TimelineContent>
+          Los Angeles, CA, USA
+          <img className="home__timeline__image" src={"/images/london.png"} />
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
@@ -45,22 +57,20 @@ const JourneyTimeline = () => {
           <TimelineDot color="success" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Los Angeles, CA, USA</TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="success" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Provo, Utah, USA</TimelineContent>
+        <TimelineContent>
+          Provo, Utah, USA
+          <img className="home__timeline__image" src={"/images/london.png"} />
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="success" />
         </TimelineSeparator>
-        <TimelineContent>Łódź, Poland</TimelineContent>
+        <TimelineContent>
+          Łódź, Poland
+          <img className="home__timeline__image" src={"/images/london.png"} />
+        </TimelineContent>
       </TimelineItem>
     </Timeline>
   );
