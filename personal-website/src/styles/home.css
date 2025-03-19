@@ -17,17 +17,6 @@
   animation: fadeIn 1.2s ease-in;
 }
 
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-    justify-content: flex-start; /* Ensures content starts from the top */
-    align-items: center;
-    padding-left: 10%; /* Adds space on the left */
-    padding-right: 10%;
-  }
-}
-
 .home__intro {
   padding: 3rem;
   text-align: left;
@@ -71,10 +60,8 @@
 }
 
 .home__skill {
-  background: var(--footer-bg-color);
   height: 100%;
   width: 100%;
-  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,6 +115,14 @@
 }
 
 @media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures content starts from the top */
+    align-items: center;
+    padding-left: 10%; /* Adds space on the left */
+    padding-right: 10%;
+  }
+
   .home__intro {
     padding: 1.5rem 2rem;
   }
@@ -152,22 +147,5 @@
   }
   to {
     transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateX(300px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInBottom {
-  from {
-    transform: translateY(70px);
-  }
-  to {
-    transform: translateY(0);
   }
 }
