@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import "../styles/home.css";
 import SkillPieChart from "../components/Home/PieChart";
+import JourneyTimeline from "../components/Home/Timeline";
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -58,6 +59,10 @@ const HomePage = () => {
           <div className="home__my_skill__text">
             <h1>Balance of Skills</h1>
           </div>
+        </section>
+
+        <section className="home__journey">
+          <JourneyTimeline />
         </section>
       </section>
     </>
