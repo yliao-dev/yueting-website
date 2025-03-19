@@ -30,7 +30,7 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      <div className="home">
+      <div className="home-container">
         <section className="home__intro">
           <h1>Who I am.</h1>
           <h2>Software Engineer | Kendoka | Photographer</h2>

@@ -1,4 +1,4 @@
-.home {
+.home-container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -6,15 +6,6 @@
   position: relative;
   flex-direction: row; /* Default: Items are side by side */
   flex-wrap: wrap; /* Prevents overflow */
-}
-
-.home__timeline__image {
-  height: auto;
-  width: 100%;
-  border-radius: 15px;
-  margin-top: 1rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 1.2s ease-in;
 }
 
 .home__intro {
@@ -60,8 +51,6 @@
 }
 
 .home__skill {
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,6 +101,15 @@
   align-items: center;
   justify-content: center;
   padding: 5px 0;
+}
+
+.home__timeline__image {
+  height: auto;
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 1rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease-in;
 }
 
 @media (max-width: 768px) {
