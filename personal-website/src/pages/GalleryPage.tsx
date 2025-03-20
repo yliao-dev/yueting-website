@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import PhotoMap from "../components/Gallery/PhotoMap";
 import { PhotoData } from "../data/portfolio/PhotoData";
+import PhotoMasonry from "../components/Gallery/PhotoMasonry";
 
 const GalleryPage = () => {
   const location = useLocation();
@@ -19,7 +19,7 @@ const GalleryPage = () => {
           </p>
         </section>
         <section className="photography__grid">
-          <PhotoMap photoData={PhotoData} currentItem={currentItem} />
+          <PhotoMasonry photoData={PhotoData} currentItem={currentItem} />
         </section>
       </div>
     </>
