@@ -4,7 +4,6 @@ import PhotoViewer from "./PhotoViewer";
 
 interface PhotoMasonryProps {
   photoData: PhotoItemProps[];
-  currentItem: string | null;
 }
 
 const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {

@@ -1,12 +1,7 @@
-import { useLocation } from "react-router-dom";
 import { PhotoData } from "../data/portfolio/PhotoData";
 import PhotoMasonry from "../components/Gallery/PhotoMasonry";
 
 const GalleryPage = () => {
-  const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const currentItem = params.get("item");
-
   return (
     <>
       <div className="gallery">
@@ -18,7 +13,7 @@ const GalleryPage = () => {
             my lens.
           </p>
         </section>
-        <PhotoMasonry photoData={PhotoData} currentItem={currentItem} />
+        <PhotoMasonry photoData={PhotoData} />
       </div>
     </>
   );
