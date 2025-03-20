@@ -1,7 +1,6 @@
 /* Footer */
 .footer {
   background: var(--primary-theme-color);
-  text-align: center;
   bottom: 0;
   width: 100%;
   display: flex;
@@ -13,6 +12,10 @@
 .footer h2 {
   font-weight: bold;
   color: var(--secondary-theme-color);
+  align-self: flex-end; /* Moves the h2 to the right */
+  text-align: right; /* Ensures text is aligned to the right */
+  width: 100%; /* Ensures it spans the full width */
+  padding-right: 20px; /* Adds some spacing from the edge */
 }
 
 .footer__arrow {
