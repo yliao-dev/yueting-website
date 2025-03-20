@@ -7,13 +7,13 @@ interface PhotoMasonryProps {
 
 const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
   return (
-    <div className="masonry">
+    <div className="masonry-grid">
       {photoData.map((photo) => (
         <div key={photo.id} className="masonry__item">
           <img
             src={photo.image}
             alt={photo.title}
-            className="photography__item-image"
+            className="masonry__item-image"
           />
         </div>
       ))}

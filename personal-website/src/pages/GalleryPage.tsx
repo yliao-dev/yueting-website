@@ -18,9 +18,7 @@ const GalleryPage = () => {
             my lens.
           </p>
         </section>
-        <section className="photography__grid">
-          <PhotoMasonry photoData={PhotoData} currentItem={currentItem} />
-        </section>
+        <PhotoMasonry photoData={PhotoData} currentItem={currentItem} />
       </div>
     </>
   );
