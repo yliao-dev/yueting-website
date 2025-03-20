@@ -10,11 +10,7 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
     <div className="masonry-grid">
       {photoData.map((photo) => (
         <div key={photo.id} className="masonry__item">
-          <img
-            src={photo.image}
-            alt={photo.title}
-            className="masonry__item-image"
-          />
+          <img src={photo.image} alt={photo.title} />
         </div>
       ))}
     </div>
