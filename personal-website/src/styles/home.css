@@ -6,15 +6,15 @@
   flex-direction: row; /* Default: Items are side by side */
   flex-wrap: wrap; /* Prevents overflow */
 
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
+  height: 100vh; */
 }
 
 /* If your sections are direct children of .home */
-.home-container > section {
+/* .home-container > section {
   scroll-snap-align: start;
-}
+} */
 
 .home__intro {
   padding: 3rem;

@@ -68,6 +68,9 @@ const HomePage = () => {
         <section className="home__journey">
           <JourneyTimeline />
         </section>
+
+        <LineBreak />
+        <section className="home__worldMap">{/* <WorldMap /> */}</section>
       </div>
     </>
   );
