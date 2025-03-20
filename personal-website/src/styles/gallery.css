@@ -1,15 +1,17 @@
-/* ====== Photography Grid ====== */
-
 .gallery {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+}
+.gallery section {
+  width: 80%;
 }
 
 .gallery__intro {
-  width: 50%;
+  align-items: center;
+  text-align: left;
 }
 
 .gallery__intro h1 {
