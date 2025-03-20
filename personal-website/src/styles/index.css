@@ -5,7 +5,7 @@
 @import "./contact.css";
 @import "./blog.css";
 @import "./gallery.css";
-
+@import "./photoViewer.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
