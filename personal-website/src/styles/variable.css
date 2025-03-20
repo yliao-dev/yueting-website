@@ -21,6 +21,11 @@
   /* portfolio */
   --project-text-color: #353535;
 
+  --light-oak-color: rgba(210, 180, 140, 1);
+  --medium-walnut: rgba(139, 69, 19, 1);
+  --dark-mahogany: rgba(92, 51, 23, 1);
+  --grayish-driftwood: rgba(112, 87, 65, 1);
+
   /* blog */
   --blog-title-color: #353535;
   --blog-desc-color: #6b6b6b;

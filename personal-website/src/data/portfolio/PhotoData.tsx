@@ -57,4 +57,24 @@ export const PhotoData = [
     image: "/images/photography/DSCF0430.jpg",
     tags: ["123"],
   },
+
+  {
+    id: 10,
+    title: "img_title",
+    image: "/images/photography/DSCF1677.jpg",
+    tags: ["123"],
+  },
+
+  {
+    id: 11,
+    title: "img_title",
+    image: "/images/photography/DSCF2406.jpg",
+    tags: ["123"],
+  },
+  {
+    id: 12,
+    title: "img_title",
+    image: "/images/photography/DSCF0430.jpg",
+    tags: ["123"],
+  },
 ];

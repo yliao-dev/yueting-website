@@ -13,7 +13,9 @@ const GalleryPage = () => {
             my lens.
           </p>
         </section>
-        <PhotoMasonry photoData={PhotoData} />
+        <section>
+          <PhotoMasonry photoData={PhotoData} />
+        </section>
       </div>
     </>
   );
