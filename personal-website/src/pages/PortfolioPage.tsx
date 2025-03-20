@@ -11,13 +11,12 @@ const PortfolioPage = () => {
     <>
       <div className="portfolio">
         <section className="portfolio__intro">
-          <h1>A Collection of Code and Creativity</h1>
+          <h1>Projects</h1>
           <p>
             My journey in coding started with curiosity and grew into a passion.
             Here, you’ll find projects that solve problems, automate tasks, and
-            bring ideas to life. Whether it’s a small experiment or a larger
-            project, each one is a step toward mastering the art of programming.
-            Take a look at my work and see what I’ve been building.
+            bring ideas to life. Whether it’s a small experiment or a full
+            project, I hope you can see how my ideas come to life through code.
           </p>
         </section>
 

@@ -38,7 +38,7 @@ const HomePage = () => {
           <p>
             Pursuing harmony between mind, body, and observation. Here you’ll
             find my coding projects, reflections from my Kendo journey,
-            photography exploring how I see the world, and insights from
+            photography exploring how I feel the world, and insights from
             experiences that shape who I am.
           </p>
 
@@ -60,7 +60,7 @@ const HomePage = () => {
           </div>
 
           <div className="home__skill__text">
-            <h1>Balance of Skills</h1>
+            <h1>Skills</h1>
           </div>
         </section>
 
