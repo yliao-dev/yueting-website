@@ -6,16 +6,14 @@ const ProjectMap: React.FC<{ projectData: ProjectItemProps[] }> = ({
 }) => {
   return (
     <>
-      <div className="portfolio__project-list">
-        {projectData.map((project, index) => (
-          <Project
-            key={index}
-            id={index}
-            name={project.name}
-            image={project.image}
-          />
-        ))}
-      </div>
+      {projectData.map((project, index) => (
+        <Project
+          key={index}
+          id={index}
+          name={project.name}
+          image={project.image}
+        />
+      ))}
     </>
   );
 };

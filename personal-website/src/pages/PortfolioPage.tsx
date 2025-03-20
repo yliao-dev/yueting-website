@@ -1,7 +1,6 @@
 import "../styles/portfolio.css";
 import "../styles/gallery.css";
 
-import DSCF4076 from "../assets/images/logo.png";
 import LineBreak from "../components/LineBreak";
 
 import ProjectMap from "../components/portfolio/ProjectMap";
@@ -12,21 +11,21 @@ const PortfolioPage = () => {
     <>
       <div className="portfolio">
         <section className="portfolio__intro">
-          <h1>Portfolio</h1>
-          <h3>
-            Welcome to my portfolio. Here you'll find a collection of my work,
-            including web development projects, design, and photography. Explore
-            my projects and feel free to reach out for collaboration
-            opportunities.
-          </h3>
-          <img src={DSCF4076} className="portfolio__intro__image" />
+          <h1>A Collection of Code and Creativity</h1>
+          <p>
+            My journey in coding started with curiosity and grew into a passion.
+            Here, you’ll find projects that solve problems, automate tasks, and
+            bring ideas to life. Whether it’s a small experiment or a larger
+            project, each one is a step toward mastering the art of programming.
+            Take a look at my work and see what I’ve been building.
+          </p>
         </section>
 
-        <LineBreak variant="plain" />
-
-        <ProjectMap projectData={ProjectData} />
+        <LineBreak />
+        <div className="portfolio__project-list">
+          <ProjectMap projectData={ProjectData} />
+        </div>
       </div>
-      <LineBreak variant="plain" />
     </>
   );
 };
