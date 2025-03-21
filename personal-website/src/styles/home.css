@@ -13,6 +13,15 @@
   align-items: center;
 }
 
+.divider {
+  margin: 0 0.75rem;
+  color: var(--home-text-color); /* Or #999 or #ccc */
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Courier New", monospace; /* Optional, for stylistic contrast */
+  opacity: 0.7;
+}
+
 /* Ensure spacing remains consistent on smaller screens */
 @media (max-width: 1024px) {
   .home-container section {
@@ -22,37 +31,46 @@
 }
 
 .home__intro {
-  padding: 3rem;
-  animation: fadeIn 1s ease-in;
-  align-items: center;
-  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.home__intro h1 {
-  font-size: 2rem;
+.home__intro__text {
+  padding: 3rem;
+  text-align: left;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.home__intro__text h1 {
+  text-align: left;
+  font-size: 2.25rem;
   font-weight: 700;
   color: var(--home-text-color);
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
+  margin: 0;
 }
 
-.home__intro h2 {
+.home__intro__text h2 {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--home-text-color);
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
+  margin: 0;
 }
 
-.home__intro p {
-  font-size: 0.8rem;
-  font-weight: 700;
+.home__intro__text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 400;
   color: var(--home-text-color);
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-  letter-spacing: 1px;
+  margin: 0;
 }
 .home__intro__image {
-  width: 70%;
+  width: 50%;
   max-width: 700px;
   border-radius: 15px;
   margin-top: 2rem;

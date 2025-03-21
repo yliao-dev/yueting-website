@@ -32,16 +32,19 @@ const HomePage = () => {
     <>
       <div className="home-container">
         <section className="home__intro">
-          <h1>Who I am.</h1>
-          <h2>Software Engineer | Kendoka | Photographer</h2>
-          <h2>Based in the United States.</h2>
-          <p>
-            Pursuing harmony between mind, body, and observation. Here you’ll
-            find my coding projects, reflections from my Kendo journey,
-            photography exploring how I feel the world, and insights from
-            experiences that shape who I am.
-          </p>
-
+          <div className="home__intro__text">
+            <h1>About</h1>
+            <h2>
+              Developer <span className="divider">|</span> Swordsman{" "}
+              <span className="divider">|</span> Photographer
+            </h2>{" "}
+            <p>
+              I'm on a path toward harmony between mind, body, and observation.
+              Here you’ll find coding projects, reflections shaped by Kendo, and
+              photography that captures how I see the world. Based in the United
+              States, often between lines of code and a Dojo floor.
+            </p>
+          </div>
           <img
             src="/images/photography/DSCF7886.jpg"
             className="home__intro__image"
