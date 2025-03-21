@@ -9,8 +9,7 @@
 }
 
 /* Slide animation container */
-.contact__intro,
-.social-media-contact__intro.vertical {
+.contact__intro {
   opacity: 0;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
