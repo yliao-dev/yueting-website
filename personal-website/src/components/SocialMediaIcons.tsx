@@ -1,11 +1,10 @@
-import React from "react";
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
 
 interface SocialMediaIconsProps {
   orientation: "horizontal" | "vertical"; // Define the prop for orientation
 }
 
-const SocialMediaIcons: React.FC<SocialMediaIconsProps> = ({ orientation }) => {
+const SocialMediaIcons = ({ orientation }: SocialMediaIconsProps) => {
   return (
     <div className={`social-media-icons ${orientation}`}>
       <a
