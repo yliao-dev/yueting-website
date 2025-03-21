@@ -30,7 +30,7 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      <div className="home-container">
+      <div className="home">
         <section className="home__intro">
           <div className="home__intro__text">
             <h1>About</h1>
