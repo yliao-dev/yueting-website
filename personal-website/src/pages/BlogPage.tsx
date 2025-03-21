@@ -7,12 +7,16 @@ import { FitnessEntries } from "../data/blog/FitnessEntries";
 
 import "../styles/blog.css";
 
-const BlogPage: React.FC = () => {
+type BlogPostsMapProps = {
+  category: string;
+};
+
+const BlogPage = () => {
   const [selectedCategory, setCategory] = useState<string>("");
   const categoryFilter = (category: string) => {
     setCategory(category);
   };
-  const BlogPostsMap: React.FC<{ category: string }> = ({ category }) => {
+  const BlogPostsMap = ({ category }: BlogPostsMapProps) => {
     let selectedData: any[] = [];
 
     // Dynamically select the data based on the category
