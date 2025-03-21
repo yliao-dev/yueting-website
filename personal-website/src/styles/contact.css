@@ -4,7 +4,6 @@
   align-items: center;
   padding: 5rem 2rem;
   gap: 40px;
-  overflow: hidden;
   min-height: 90vh;
 }
 
@@ -41,6 +40,28 @@
 
 .social-media-icons.vertical svg:hover {
   transform: scale(1.1);
+}
+
+.contact__facts {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.fact-card {
+  background-color: var(--secondary-theme-color);
+  color: var(--text-on-secondary);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+  transform: translateY(-3px);
 }
 
 /* icons horizontal */
