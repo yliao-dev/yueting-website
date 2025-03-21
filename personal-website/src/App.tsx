@@ -10,13 +10,10 @@ import MainLayout from "./components/layouts/MainLayout";
 
 import HomePage from "./pages/HomePage";
 
-import BlogLayout from "./components/layouts/BlogLayout";
 import BlogPage from "./pages/BlogPage";
 
-import PortfolioLayout from "./components/layouts/PortfolioLayout";
 import PortfolioPage from "./pages/PortfolioPage";
 
-import ContactLayout from "./components/layouts/ContactLayout";
 import ContactPage from "./pages/ContactPage";
 import GalleryPage from "./pages/GalleryPage";
 
@@ -30,7 +27,7 @@ const App = () => {
           <Route path="*" element={<PageNotFound />} />
         </Route>
         {/* portfolio */}
-        <Route path="/portfolio" element={<PortfolioLayout />}>
+        <Route path="/portfolio" element={<MainLayout />}>
           <Route index element={<PortfolioPage />} />
         </Route>
         {/* gallery */}
@@ -38,11 +35,11 @@ const App = () => {
           <Route index element={<GalleryPage />} />
         </Route>
         {/* blog */}
-        <Route path="/blog" element={<BlogLayout />}>
+        <Route path="/blog" element={<MainLayout />}>
           <Route index element={<BlogPage />} />
         </Route>
         {/* contact */}
-        <Route path="/contact" element={<ContactLayout />}>
+        <Route path="/contact" element={<MainLayout />}>
           <Route index element={<ContactPage />} />
         </Route>
       </>

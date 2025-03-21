@@ -5,6 +5,7 @@
   padding: 5rem 2rem;
   gap: 40px;
   overflow: hidden;
+  min-height: 100%;
 }
 
 /* Slide animation container */
@@ -51,14 +52,13 @@
 }
 
 .social-media-icons.horizontal svg {
-  font-size: 40px;
+  font-size: 35px;
   color: var(--secondary-theme-color);
   margin: 0 5px;
 }
 
 .social-media-icons.horizontal svg:hover {
   color: var(--icon-hover-color);
-  transform: none;
 }
 
 .linkedin-icon {

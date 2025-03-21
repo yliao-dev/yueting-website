@@ -1,8 +1,7 @@
-import React from "react";
 import { ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
