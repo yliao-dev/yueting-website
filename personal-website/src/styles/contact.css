@@ -48,25 +48,28 @@
 }
 
 .contact__facts {
+  width: 80%;
+  margin: 2rem auto 0;
+  padding: 0;
+  text-align: left;
+}
+
+.fact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--home-text-color);
   display: grid;
-  justify-content: center;
-  grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
-  margin-top: 2rem;
 }
 
-.fact-card {
-  background-color: var(--secondary-theme-color);
-  color: var(--text-on-secondary);
-  border-radius: 8px;
-  padding: 1rem;
-  font-size: 0.95rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.fact-card:hover {
-  transform: translateY(-3px);
+.fact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.6;
 }
 
 /* icons horizontal */

@@ -23,10 +23,13 @@ const ContactPage = () => {
         <LineBreak variant="plain" />
 
         <section className="contact__facts">
-          <div className="fact-card">📷 I shoot mostly with Fujifilm</div>
-          <div className="fact-card">🥋 Kendo taught me patience</div>
-          <div className="fact-card">💻 Dark mode, always</div>
-          <div className="fact-card">🌿 Quiet places, soft light</div>
+          <h1> Random facts about me </h1>
+          <ul className="fact-list">
+            <li>📷 I shoot mostly with Fujifilm</li>
+            <li>🥋 Kendo taught me patience</li>
+            <li>💻 Dark mode, always</li>
+            <li>🌿 Quiet places, soft light</li>
+          </ul>
         </section>
       </section>
     </>
