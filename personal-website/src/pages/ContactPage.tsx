@@ -23,7 +23,7 @@ const ContactPage = () => {
         <LineBreak variant="plain" />
 
         <section className="contact__facts">
-          <h1> Random facts about me </h1>
+          <h1> Random things </h1>
           <ul className="fact-list">
             <li>📷 I shoot mostly with Fujifilm</li>
             <li>🥋 Kendo taught me patience</li>

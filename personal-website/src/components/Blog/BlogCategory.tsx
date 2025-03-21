@@ -13,17 +13,20 @@ const BlogCategory: React.FC<BlogCategoryProps> = ({ onSelect }) => {
   ];
 
   return (
-    <div className="blog__category">
-      {categories.map((category) => (
-        <button
-          key={category.id}
-          className="blog__category-button"
-          onClick={() => onSelect(category.value)}
-        >
-          {category.icon}
-        </button>
-      ))}
-    </div>
+    <>
+      <div className="blog__category">
+        <h1 className="blog__intro">Journal</h1>
+        {categories.map((category) => (
+          <button
+            key={category.id}
+            className="blog__category-button"
+            onClick={() => onSelect(category.value)}
+          >
+            {category.icon}
+          </button>
+        ))}
+      </div>
+    </>
   );
 };
 
