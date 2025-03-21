@@ -9,7 +9,12 @@ const ContactPage = () => {
         <SocialMediaIcons orientation="vertical" />
         <LineBreak variant="plain" />
         <section className="contact__my__skill">
-          <h1>Email Me</h1>
+          <h1>Connect</h1>
+          <p>
+            If any part of my journey resonates with you, feel free to reach
+            out.I’m here for creative collaboration, thoughtful conversation, or
+            simply to connect.
+          </p>
         </section>
       </section>
     </>
