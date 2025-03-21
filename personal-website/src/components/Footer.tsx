@@ -1,4 +1,7 @@
 import React from "react";
+import { ChevronUp } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const Footer: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -8,10 +11,17 @@ const Footer: React.FC = () => {
   };
   return (
     <>
-      <div className="page__gradient-white" />
       <footer className="footer">
-        <div className="footer__arrow" onClick={scrollToTop} />
-        <h2>&copy; 2025 Yueting Liao.</h2>
+        <div className="footer__arrow" onClick={scrollToTop}>
+          <ChevronUp />
+        </div>
+
+        <div className="footer__info">
+          <span>&copy; 2025 Yueting Liao | </span>
+          <span className="footer__links">
+            <Link to="/contact">Contact</Link>
+          </span>
+        </div>
       </footer>
     </>
   );
