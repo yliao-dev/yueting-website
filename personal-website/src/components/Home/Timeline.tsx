@@ -7,7 +7,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 
 const JourneyTimeline = () => {
   return (
-    <Timeline position="alternate-reverse">
+    <Timeline className="timeline-horizontal">
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="success" />
