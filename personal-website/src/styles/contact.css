@@ -71,13 +71,12 @@
 
 .social-media-icons.horizontal {
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
 }
 
 .social-media-icons.horizontal svg {
   font-size: 35px;
   color: var(--secondary-theme-color);
-  margin: 0 5px;
 }
 
 .social-media-icons.horizontal svg:hover {
