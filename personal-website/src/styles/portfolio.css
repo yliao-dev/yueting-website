@@ -1,15 +1,16 @@
 /* Portfolio Section */
 .portfolio {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Intro Section */
 .portfolio__intro {
-  width: 50%;
+  text-align: center;
 }
 
 .portfolio__intro h1 {
