@@ -21,9 +21,9 @@ const PortfolioPage = () => {
         </section>
 
         <LineBreak />
-        <div className="portfolio__project-list">
+        <section className="portfolio__project-list">
           <ProjectMap projectData={ProjectData} />
-        </div>
+        </section>
       </div>
     </>
   );
