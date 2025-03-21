@@ -1,24 +1,49 @@
 .contact {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
   padding: 5rem 2rem;
+  gap: 40px;
+  overflow: hidden;
 }
 
-.contact__image {
-  width: 70%;
-  height: auto;
+/* Slide animation container */
+.contact__intro,
+.social-media-contact__intro.vertical {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Slide in from left */
+.contact__intro {
+  animation-name: slideInLeft;
+}
+
+.contact__intro h1 {
+  font-weight: bold;
 }
 
 .social-media-icons {
   gap: 5px;
 }
 
-.social-media-icons svg {
+.social-media-icons.vertical {
+  display: flex;
+  flex-direction: column;
+  transition: color 0.3s ease-in-out;
+}
+.social-media-icons.vertical svg {
   font-size: 50px;
   transition: color 0.3s ease-in-out;
 }
+
+.social-media-icons.vertical svg:hover {
+  transform: scale(1.1);
+}
+
+/* icons horizontal */
 
 .social-media-icons.horizontal {
   flex-direction: row;
@@ -36,16 +61,6 @@
   transform: none;
 }
 
-.social-media-icons.vertical {
-  display: flex;
-  flex-direction: column;
-  transition: color 0.3s ease-in-out;
-}
-
-.social-media-icons.vertical svg:hover {
-  transform: scale(1.1);
-}
-
 .linkedin-icon {
   color: var(--linkedln-color);
 }
@@ -56,4 +71,15 @@
 
 .instagram-icon {
   color: var(--instagram-color);
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
