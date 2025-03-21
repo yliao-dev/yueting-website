@@ -96,9 +96,6 @@ const Navbar = () => {
                 <span>CONTACT</span>
               </NavLink>
             </li>
-            <li>
-              <SocialMediaIcons orientation="horizontal" />
-            </li>
           </ul>
         </div>
       )}
