@@ -5,7 +5,7 @@
   padding: 5rem 2rem;
   gap: 40px;
   overflow: hidden;
-  min-height: 90vh; /* Adjust based on your footer height */
+  min-height: 90vh;
 }
 
 /* Slide animation container */
