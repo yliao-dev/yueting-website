@@ -1,14 +1,14 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers the content */
+  align-items: center;
   justify-content: center;
 }
 
 .home section {
-  width: 90%; /* Adjusts the width of sections */
-  max-width: 1200px; /* Prevents sections from becoming too wide */
-  margin: auto auto; /* Adds even spacing above and below */
+  width: 90%;
+  max-width: 1200px;
+  margin: auto auto;
   padding: 2rem;
   align-items: center;
 }
