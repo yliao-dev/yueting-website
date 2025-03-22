@@ -3,6 +3,7 @@ import { PieChart } from "@mui/x-charts";
 const skillsData = [
   { label: "Coding", value: 40, color: "#345c72" },
   { label: "Kendo", value: 30, color: "#2a2e30" },
+  { label: "Iaido", value: 10, color: "#2a2e30" },
   { label: "Fitness", value: 20, color: "#f46530" },
   { label: "Photography", value: 10, color: "#8064A2" },
 ];
