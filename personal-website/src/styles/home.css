@@ -57,7 +57,7 @@
 .home__intro__text p {
   font-size: 0.95rem;
   font-weight: 400;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   line-height: 2;
   letter-spacing: 1px;
 }
@@ -73,17 +73,15 @@
 .home__skill {
   display: flex;
   justify-content: center;
-  gap: 3rem;
 }
 
 .home__skill__chart {
-  flex-shrink: 0;
+  gap: 0rem;
 }
 
 .home__skill__text {
-  color: var(--text-secondary);
-  width: 300px;
-  max-width: 400px;
+  width: 400px;
+  max-width: 600px;
   font-size: 0.95rem;
   text-align: left;
 }
@@ -94,6 +92,14 @@
   color: var(--text-primary);
   letter-spacing: 2px;
   margin-bottom: 1rem;
+}
+
+.home__skill__text p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 2;
+  letter-spacing: 1px;
 }
 
 /* ========== Home Journey ========== */
