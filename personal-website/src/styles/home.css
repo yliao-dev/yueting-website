@@ -72,7 +72,7 @@
 /* ========== Home Skill ========== */
 .home__skill {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .home__skill__chart {
@@ -102,6 +102,16 @@
   letter-spacing: 1px;
 }
 
+.skill__stack {
+  margin-top: 1rem;
+}
+
+.skill__list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+  text-align: left;
+}
 /* ========== Home Journey ========== */
 .home_journey {
   width: 60%;

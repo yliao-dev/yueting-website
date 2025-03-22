@@ -27,16 +27,16 @@ const skillsData: SkillItem[] = [
           solve real problems. This site you’re exploring is built with React
           and Go — keeping things fast, clean, and purposeful.
         </p>
-        <p>
-          Tools I often work with:
-          <ul>
+        <div className="skill__stack">
+          <p>What I usually build with:</p>
+          <ul className="skill__list">
             <li>React</li>
             <li>Go</li>
             <li>Python</li>
             <li>Jenkins</li>
             <li>Git</li>
           </ul>
-        </p>
+        </div>
       </>
     ),
   },
