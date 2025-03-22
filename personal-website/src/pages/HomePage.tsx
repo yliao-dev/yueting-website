@@ -70,7 +70,6 @@ const HomePage = () => {
           </div>
 
           <div className="home__skill__text">
-            <h1>Skills</h1>
             {selectedSkill && (
               <div className="home__skill__context">
                 <h3>{selectedSkill.label}</h3>
