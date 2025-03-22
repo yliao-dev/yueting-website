@@ -18,7 +18,7 @@ const skillColors = {
 const skillsData: SkillItem[] = [
   {
     label: "Coding",
-    value: 40,
+    value: 35,
     color: skillColors.coding,
     context: (
       <>
@@ -42,7 +42,7 @@ const skillsData: SkillItem[] = [
   },
   {
     label: "Kendo",
-    value: 30,
+    value: 25,
     color: skillColors.kendo,
     context:
       "Kendo sharpens not only the body, but also the mind. It teaches presence, patience, and respect—both on and off the dojo floor.",
@@ -65,8 +65,23 @@ const skillsData: SkillItem[] = [
     label: "Photography",
     value: 10,
     color: skillColors.photography,
-    context:
-      "I enjoy capturing quiet details and unspoken moments—photography helps me observe the world more slowly and intentionally.",
+    context: (
+      <>
+        <p>
+          Photography lets me chase light, frame feeling, and preserve moments
+          that might quietly disappear.
+        </p>
+        <div className="skill__stack">
+          <p>My usual captures:</p>
+          <ul className="skill__list">
+            <li>Street</li>
+            <li>Travel</li>
+            <li>Portrait</li>
+            <li>Everyday scenes</li>
+          </ul>
+        </div>
+      </>
+    ),
   },
 ];
 
