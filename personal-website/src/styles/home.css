@@ -8,7 +8,6 @@
 .home section {
   width: 90%;
   max-width: 1200px;
-  margin: auto auto;
   padding: 2rem;
   align-items: center;
 }
@@ -35,6 +34,7 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 2rem;
+  margin-top: 4rem;
 }
 
 .home__intro__text {
@@ -74,7 +74,6 @@
   width: 50%;
   max-width: 700px;
   border-radius: 15px;
-  margin-top: 2rem;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   animation: slideInBottom 1.2s ease-in;
 }
