@@ -13,10 +13,11 @@ const PortfolioPage = () => {
         <section className="portfolio__intro">
           <h1>Projects</h1>
           <p>
-            My journey in coding started with curiosity and grew into a passion.
-            Here, you’ll find projects that solve problems, automate tasks, and
-            bring ideas to life. Whether it’s a small experiment or a full
-            project, I hope you can see how my ideas come to life through code.
+            Each project here starts with a practical need—or a spark of
+            curiosity. I began coding while studying Computer Science at
+            Rensselaer Polytechnic Institute, followed by two years of
+            full-stack development work. I’m always open to collaborating on
+            meaningful or fun projects.
           </p>
         </section>
 
