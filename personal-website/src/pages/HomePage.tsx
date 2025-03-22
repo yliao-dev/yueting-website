@@ -35,8 +35,9 @@ const HomePage = () => {
           <div className="home__intro__text">
             <h1>About</h1>
             <h2>
-              Developer <span className="divider">|</span> Swordsman{" "}
-              <span className="divider">|</span> Photographer
+              Developer <span className="home__intro__text__divider">|</span>{" "}
+              Swordsman <span className="home__intro__text__divider">|</span>{" "}
+              Photographer
             </h2>{" "}
             <p>
               I'm on a path toward harmony between mind, body, and observation.

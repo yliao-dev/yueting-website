@@ -1,3 +1,6 @@
+/* -------------------------
+   LAYOUT & GLOBAL STRUCTURE
+------------------------- */
 .home {
   display: flex;
   flex-direction: column;
@@ -12,23 +15,9 @@
   align-items: center;
 }
 
-.divider {
-  margin: 0 0.75rem;
-  color: var(--home-text-color); /* Or #999 or #ccc */
-  font-weight: 500;
-  font-size: 1.1rem;
-  font-family: "Courier New", monospace; /* Optional, for stylistic contrast */
-  opacity: 0.7;
-}
-
-/* Ensure spacing remains consistent on smaller screens */
-@media (max-width: 1024px) {
-  .home-container section {
-    width: 90%; /* Slightly wider for better mobile experience */
-    padding: 1.5rem;
-  }
-}
-
+/* -------------------------
+   HOME INTRO SECTION
+------------------------- */
 .home__intro {
   display: flex;
   flex-direction: row;
@@ -58,7 +47,6 @@
   font-size: 1rem;
   font-weight: 600;
   color: var(--home-text-color);
-  margin: 0;
   letter-spacing: 2px;
   margin-bottom: 1rem;
 }
@@ -70,6 +58,16 @@
   color: var(--home-text-color);
   letter-spacing: 1px;
 }
+
+.home__intro__text__divider {
+  margin: 0 0.75rem;
+  color: var(--home-text-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Courier New", monospace;
+  opacity: 0.7;
+}
+
 .home__intro__image {
   width: 50%;
   max-width: 700px;
@@ -82,27 +80,27 @@
   box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
 }
 
+/* -------------------------
+   SKILL SECTION
+------------------------- */
 .home__skill {
   justify-content: center;
   opacity: 0;
 }
 
-/* Once it enters the viewport, animate */
 .home__skill.animate {
   opacity: 1;
 }
-/* Apply animations only when animate class is added */
+
 .home__skill.animate .home__skill__image {
   animation: slideInLeft 1.2s ease-in-out;
 }
 
-/* Text container */
 .home__skill__text {
   padding: 2rem 3rem;
   text-align: left;
 }
 
-/* Heading inside text container */
 .home__skill__text h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -116,6 +114,9 @@
   width: 60%;
 }
 
+/* -------------------------
+   JOURNEY SECTION
+------------------------- */
 .home_journey {
   scroll-snap-align: start;
   width: 60%;
@@ -130,12 +131,22 @@
   animation: fadeIn 1.2s ease-in;
 }
 
+/* -------------------------
+   RESPONSIVE STYLES
+------------------------- */
+@media (max-width: 1024px) {
+  .home-container section {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .home {
     flex-direction: column;
-    justify-content: flex-start; /* Ensures content starts from the top */
+    justify-content: flex-start;
     align-items: center;
-    padding-left: 10%; /* Adds space on the left */
+    padding-left: 10%;
     padding-right: 10%;
   }
 
@@ -148,6 +159,9 @@
   }
 }
 
+/* -------------------------
+   ANIMATIONS
+------------------------- */
 @keyframes fadeIn {
   from {
     opacity: 0;
