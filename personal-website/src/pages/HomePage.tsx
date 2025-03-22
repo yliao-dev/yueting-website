@@ -1,5 +1,5 @@
 import "../styles/home.css";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 import SkillPieChart from "../components/Home/PieChart";
 import JourneyTimeline from "../components/Home/Timeline";
 import LineBreak from "../components/LineBreak";
