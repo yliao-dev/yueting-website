@@ -1,6 +1,4 @@
-/* -------------------------
-   LAYOUT & GLOBAL STRUCTURE
-------------------------- */
+/* ========== Global ========== */
 .home {
   display: flex;
   flex-direction: column;
@@ -15,9 +13,17 @@
   align-items: center;
 }
 
-/* -------------------------
-   HOME INTRO SECTION
-------------------------- */
+/* ========== Divider ========== */
+.divider {
+  margin: 0 0.75rem;
+  color: var(--home-text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Courier New", monospace;
+  opacity: 0.7;
+}
+
+/* ========== Home Intro ========== */
 .home__intro {
   display: flex;
   flex-direction: row;
@@ -27,20 +33,20 @@
 }
 
 .home__intro__text {
-  padding: 0rem;
-  text-align: left;
+  display: flex;
   flex-direction: column;
+  text-align: left;
   margin: 0 auto;
 }
 
 .home__intro__text h1 {
-  text-align: left;
   font-size: 3rem;
   font-weight: 500;
   color: var(--home-text-color);
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   margin-bottom: 1rem;
+  text-align: left;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .home__intro__text h2 {
@@ -53,37 +59,27 @@
 
 .home__intro__text p {
   font-size: 0.95rem;
-  line-height: 2;
   font-weight: 400;
   color: var(--home-text-color);
+  line-height: 2;
   letter-spacing: 1px;
-}
-
-.home__intro__text__divider {
-  margin: 0 0.75rem;
-  color: var(--home-text-color);
-  font-weight: 500;
-  font-size: 1.1rem;
-  font-family: "Courier New", monospace;
-  opacity: 0.7;
 }
 
 .home__intro__image {
   width: 50%;
   max-width: 700px;
   border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   animation: slideInBottom 1.2s ease-in;
 }
 
 .home__intro__image:hover {
-  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* -------------------------
-   SKILL SECTION
-------------------------- */
+/* ========== Home Skill ========== */
 .home__skill {
+  display: flex;
   justify-content: center;
   opacity: 0;
 }
@@ -105,63 +101,31 @@
   font-size: 2rem;
   font-weight: 700;
   color: var(--home-text-color);
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .home__skill__chart {
   width: 60%;
 }
 
-/* -------------------------
-   JOURNEY SECTION
-------------------------- */
+/* ========== Home Journey ========== */
 .home_journey {
-  scroll-snap-align: start;
   width: 60%;
+  scroll-snap-align: start;
 }
 
 .home__timeline__image {
-  height: auto;
   width: 60%;
-  border-radius: 15px;
+  height: auto;
   margin-top: 1rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   animation: fadeIn 1.2s ease-in;
 }
 
-/* -------------------------
-   RESPONSIVE STYLES
-------------------------- */
-@media (max-width: 1024px) {
-  .home-container section {
-    width: 90%;
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  .home__intro {
-    padding: 1.5rem 2rem;
-  }
-
-  .home__intro h1 {
-    font-size: 2rem;
-  }
-}
-
-/* -------------------------
-   ANIMATIONS
-------------------------- */
+/* ========== Animations ========== */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -177,5 +141,34 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(70px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .home__intro {
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+  }
+
+  .home__intro h1 {
+    font-size: 2rem;
   }
 }
