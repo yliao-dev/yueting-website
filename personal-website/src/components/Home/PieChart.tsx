@@ -41,7 +41,7 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
         ]}
         width={350}
         height={450}
-        onItemClick={(_, d) => onSelect(skillsData[d.dataIndex])}
+        onItemClick={(_, d) => onSelect(skillsData[d.dataIndex])} // d: PieItemIdentifier
         slotProps={{
           legend: {
             direction: "column", // or 'row'
