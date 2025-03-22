@@ -5,30 +5,6 @@ import JourneyTimeline from "../components/Home/Timeline";
 import LineBreak from "../components/LineBreak";
 
 const HomePage = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0 } // Adjust this value to control when the animation triggers
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
   const [selectedSkill, setSelectedSkill] = useState<{
     label: string;
     context: string;
@@ -61,10 +37,7 @@ const HomePage = () => {
 
         <LineBreak />
 
-        <section
-          ref={sectionRef}
-          className={`home__skill ${isVisible ? "animate" : ""}`}
-        >
+        <section className="home__skill">
           <div className="home__skill__chart">
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>

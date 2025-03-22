@@ -73,15 +73,6 @@
 .home__skill {
   display: flex;
   justify-content: center;
-  opacity: 0;
-}
-
-.home__skill.animate {
-  opacity: 1;
-}
-
-.home__skill.animate .home__skill__image {
-  animation: slideFromLeft 1.2s ease-in-out;
 }
 
 .home__skill__text {

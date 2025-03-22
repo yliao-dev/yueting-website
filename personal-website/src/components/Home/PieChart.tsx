@@ -73,7 +73,7 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
             direction: "column", // or 'row'
             position: {
               vertical: "middle", // 'top' | 'middle' | 'bottom'
-              horizontal: "right", // 'left' | 'center' | 'right'
+              horizontal: "left", // 'left' | 'center' | 'right'
             },
             itemMarkWidth: 20,
             itemGap: 10,
