@@ -9,15 +9,41 @@ const skillColors = {
 };
 
 const skillsData = [
-  { label: "Coding", value: 40, color: skillColors.coding },
-  { label: "Kendo", value: 30, color: skillColors.kendo },
-  { label: "Iaido", value: 10, color: skillColors.iaido },
-  { label: "Fitness", value: 20, color: skillColors.fitness },
-  { label: "Photography", value: 10, color: skillColors.photography },
+  {
+    label: "Coding",
+    value: 40,
+    color: skillColors.coding,
+    context:
+      "I spend most of my time writing code across full-stack projects, from frontend UI to backend APIs.",
+  },
+  {
+    label: "Kendo",
+    value: 30,
+    color: skillColors.kendo,
+    context: "Kendo info ...",
+  },
+  {
+    label: "Iaido",
+    value: 10,
+    color: skillColors.iaido,
+    context: "Iaido info ...",
+  },
+  {
+    label: "Fitness",
+    value: 20,
+    color: skillColors.fitness,
+    context: "Fitness info ...",
+  },
+  {
+    label: "Photography",
+    value: 10,
+    color: skillColors.photography,
+    context: "Photography info ...",
+  },
 ];
 
 type SkillPieChartProps = {
-  onSelect: (data: { label: string; value: number }) => void;
+  onSelect: (data: { label: string; context: string }) => void;
 };
 
 const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {

@@ -97,8 +97,18 @@
   margin: 0;
 }
 
-.home__skill__chart {
-  width: 60%;
+.skill__context {
+  margin-top: 1.5rem;
+  color: var(--text-secondary);
+  max-width: 400px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.skill__context h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
 }
 
 /* ========== Home Journey ========== */

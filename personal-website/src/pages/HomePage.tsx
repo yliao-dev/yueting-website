@@ -31,7 +31,7 @@ const HomePage = () => {
 
   const [selectedSkill, setSelectedSkill] = useState<{
     label: string;
-    value: number;
+    context: string;
   } | null>(null);
 
   return (
@@ -49,7 +49,7 @@ const HomePage = () => {
               I'm on a path toward harmony between mind, body, and observation.
               Here you’ll find coding projects, reflections shaped by Kendo, and
               photography that captures how I see the world. I'm based in the
-              United States, often between lines of code and a Dojo floor.
+              United States, often between lines of code and a dojo floor.
             </p>
           </div>
           <img
@@ -72,9 +72,10 @@ const HomePage = () => {
           <div className="home__skill__text">
             <h1>Skills</h1>
             {selectedSkill && (
-              <p>
-                {selectedSkill.label}: {selectedSkill.value}%
-              </p>
+              <div className="home__skill__context">
+                <h3>{selectedSkill.label}</h3>
+                <p>{selectedSkill.context}</p>
+              </div>
             )}
           </div>
         </section>
