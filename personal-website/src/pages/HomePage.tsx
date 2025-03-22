@@ -1,14 +1,11 @@
 import "../styles/home.css";
 import { useState } from "react";
-import SkillPieChart from "../components/Home/PieChart";
+import SkillPieChart, { SkillItem } from "../components/Home/PieChart";
 import JourneyTimeline from "../components/Home/Timeline";
 import LineBreak from "../components/LineBreak";
 
 const HomePage = () => {
-  const [selectedSkill, setSelectedSkill] = useState<{
-    label: string;
-    context: string;
-  } | null>(null);
+  const [selectedSkill, setSelectedSkill] = useState<SkillItem | null>(null);
 
   return (
     <>

@@ -1,5 +1,12 @@
 import { PieChart } from "@mui/x-charts";
 
+export type SkillItem = {
+  label: string;
+  value: number;
+  color: string;
+  context: string | JSX.Element; // <== This allows either plain text or JSX
+};
+
 const skillColors = {
   coding: "rgba(76, 110, 145, 1)",
   kendo: "rgba(44, 62, 80, 1)",
@@ -8,13 +15,30 @@ const skillColors = {
   photography: "rgba(110, 90, 140, 1)",
 };
 
-const skillsData = [
+const skillsData: SkillItem[] = [
   {
     label: "Coding",
     value: 40,
     color: skillColors.coding,
-    context:
-      "I spend most of my time writing code across full-stack projects—bringing ideas to life through design systems, APIs, and user experiences.",
+    context: (
+      <>
+        <p>
+          I like writing code to simplify life by building applications that
+          solve real problems. This site you’re exploring is built with React
+          and Go — keeping things fast, clean, and purposeful.
+        </p>
+        <p style={{ marginTop: "0.75rem" }}>
+          Tools I often work with:
+          <ul style={{ paddingLeft: "1.25rem", marginTop: "0.5rem" }}>
+            <li>React</li>
+            <li>Go</li>
+            <li>Python</li>
+            <li>Jenkins</li>
+            <li>Git</li>
+          </ul>
+        </p>
+      </>
+    ),
   },
   {
     label: "Kendo",
@@ -47,7 +71,7 @@ const skillsData = [
 ];
 
 type SkillPieChartProps = {
-  onSelect: (data: { label: string; context: string }) => void;
+  onSelect: (data: SkillItem) => void;
 };
 
 const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
