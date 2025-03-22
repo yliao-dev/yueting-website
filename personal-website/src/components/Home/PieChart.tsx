@@ -27,9 +27,9 @@ const skillsData: SkillItem[] = [
           solve real problems. This site you’re exploring is built with React
           and Go — keeping things fast, clean, and purposeful.
         </p>
-        <p style={{ marginTop: "0.75rem" }}>
+        <p>
           Tools I often work with:
-          <ul style={{ paddingLeft: "1.25rem", marginTop: "0.5rem" }}>
+          <ul>
             <li>React</li>
             <li>Go</li>
             <li>Python</li>
