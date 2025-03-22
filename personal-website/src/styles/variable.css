@@ -1,38 +1,27 @@
 :root {
-  --primary-theme-color: #3b444b;
-  --secondary-theme-color: #ffffff;
-  --icon-hover-color: #0072b1;
+  /* === Base Colors === */
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
 
-  /* navbar */
-  --link-hover-color: #b0b0b0;
-  --link-selected-color: #b0b0b0;
-  --link-padding-x: 1.25rem;
-  --link-padding-y: 0.5rem;
-  --dropdown-border-color: #b0b0b0;
+  /* === Grayscale Palette === */
+  --gray-400: rgba(176, 176, 176, 1);
+  --gray-600: rgba(107, 107, 107, 1);
+  --gray-700: rgba(53, 53, 53, 1);
 
-  /* footer */
-  --footer-bg-color: #f3f3f3;
-  --footer-arrow-color: #b1b1b1;
+  /* === Theme Colors === */
+  --primary: rgba(59, 68, 75, 1); /* primary site theme color */
 
-  /* home */
-  --home-text-color: #353535;
-  --home-intro-bg-color: #c4c4c4;
+  /* === Typography Colors === */
+  --text-primary: var(--gray-700); /* for main body text */
+  --text-secondary: var(--gray-600); /* for muted/secondary text */
 
-  /* portfolio */
-  --project-text-color: #353535;
+  /* === Interactive Elements === */
+  --icon-hover: rgba(0, 114, 177, 1); /* hover state for icons */
+  --nav-hover: var(--gray-400); /* hover state for navbar links */
 
-  --light-oak-color: rgba(210, 180, 140, 1);
-  --medium-walnut: rgba(139, 69, 19, 1);
-  --dark-mahogany: rgba(92, 51, 23, 1);
-  --grayish-driftwood: rgba(112, 87, 65, 1);
-
-  /* blog */
-  --blog-title-color: #353535;
-  --blog-desc-color: #6b6b6b;
-  --blog-category-color: #8b8a8a;
-
-  /* contact */
-  --linkedln-color: #0077b5;
-  --github-color: #171515;
-  --instagram-color: #ee2a7b;
+  /* === Social Media Brand Colors === */
+  --linkedln: rgba(0, 119, 181, 1);
+  --github: rgba(26, 11, 11, 1);
+  --instagram: rgba(238, 42, 123, 1);
+  --light-oak: rgba(210, 180, 140, 1);
 }

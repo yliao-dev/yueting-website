@@ -31,7 +31,7 @@
   width: 100%;
   margin-bottom: 5%;
   break-inside: avoid; /* Prevents breaking inside columns */
-  background-color: var(--light-oak-color);
+  background-color: var(--light-oak);
   border-radius: 8px;
   padding: 8px;
   opacity: 0;

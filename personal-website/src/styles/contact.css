@@ -60,7 +60,7 @@
   margin: 0;
   font-size: 1rem;
   font-weight: 500;
-  color: var(--home-text-color);
+  color: var(--text-primary);
   display: grid;
   gap: 1rem;
 }
@@ -81,23 +81,23 @@
 
 .social-media-icons.horizontal svg {
   font-size: 35px;
-  color: var(--secondary-theme-color);
+  color: var(--white);
 }
 
 .social-media-icons.horizontal svg:hover {
-  color: var(--icon-hover-color);
+  color: var(--icon-hover);
 }
 
 .linkedin-icon {
-  color: var(--linkedln-color);
+  color: var(--linkedln);
 }
 
 .github-icon {
-  color: var(--github-color);
+  color: var(--github);
 }
 
 .instagram-icon {
-  color: var(--instagram-color);
+  color: var(--instagram);
 }
 
 @keyframes slideInLeft {

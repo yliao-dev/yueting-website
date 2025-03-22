@@ -7,7 +7,7 @@
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: var(--home-text-color);
+  color: var(--text-primary);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -32,7 +32,7 @@
 .blog__post__title h1 {
   margin-top: 20px;
   font-size: 3vw;
-  color: var(--blog-title-color);
+  color: var(--text-primary);
   overflow-wrap: break-word;
   display: inline-block;
   text-align: center;
@@ -41,12 +41,12 @@
 }
 
 .blog__post__title:hover h1 {
-  color: var(--icon-hover-color);
+  color: var(--icon-hover);
 }
 
 .blog__post__desc {
   font-size: 1.5vw;
-  color: var(--blog-desc-color);
+  color: var(--text-primary);
   margin-top: 5px;
   overflow-wrap: break-word;
   white-space: normal;
@@ -59,7 +59,7 @@
   gap: 10px;
   margin-top: 10px;
   font-size: 1vw;
-  color: var(--blog-desc-color);
+  color: var(--text-primary);
   margin-left: auto;
   padding: 0 5px;
 }
@@ -72,11 +72,11 @@
 
 .blog__post__author-name {
   font-weight: bold;
-  color: var(--blog-title-color);
+  color: var(--text-primary);
 }
 
 .blog__post__author-date {
-  color: var(--blog-desc-color);
+  color: var(--text-primary);
 }
 
 .blog__category {
@@ -92,13 +92,13 @@
   border: none;
   cursor: pointer;
   font-size: 6vw;
-  color: var(--blog-category-color);
+  color: var(--text-secondary);
   transition: transform 0.3s, color 0.3s;
 }
 
 .blog__category-button svg:hover {
   transform: scale(1.1);
-  color: var(--icon-hover-color);
+  color: var(--icon-hover);
 }
 
 @media only screen and (max-width: 830px) {
