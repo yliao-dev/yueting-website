@@ -56,17 +56,17 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
             data: skillsData,
             startAngle: -20,
             innerRadius: 20,
-            outerRadius: 100,
+            outerRadius: 120,
             paddingAngle: 2,
             cornerRadius: 5,
-            cx: 150,
+            cx: "70%",
 
             highlightScope: { fade: "global", highlight: "item" },
             faded: { innerRadius: 20, additionalRadius: -10, color: "gray" },
           },
         ]}
-        width={350}
-        height={450}
+        width={500}
+        height={500}
         onItemClick={(_, d) => onSelect(skillsData[d.dataIndex])} // d: PieItemIdentifier
         slotProps={{
           legend: {
@@ -76,8 +76,8 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
               horizontal: "left", // 'left' | 'center' | 'right'
             },
             itemMarkWidth: 20,
-            itemGap: 10,
-            markGap: 6,
+            itemGap: 18,
+            markGap: 7,
             labelStyle: {
               fontSize: 14,
               fontWeight: 500,
