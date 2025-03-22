@@ -73,33 +73,27 @@
 .home__skill {
   display: flex;
   justify-content: center;
+  gap: 3rem;
+}
+
+.home__skill__chart {
+  flex-shrink: 0;
 }
 
 .home__skill__text {
-  padding: 2rem 3rem;
+  color: var(--text-secondary);
+  width: 300px;
+  max-width: 400px;
+  font-size: 0.95rem;
   text-align: left;
 }
 
-.home__skill__text h1 {
-  font-size: 2rem;
-  font-weight: 700;
+.home__skill__text h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
   color: var(--text-primary);
   letter-spacing: 2px;
-  margin: 0;
-}
-
-.home__skill__context {
-  margin-top: 1.5rem;
-  color: var(--text-secondary);
-  max-width: 400px;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.home__skill__context h3 {
-  font-size: 1.2rem;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* ========== Home Journey ========== */
