@@ -42,8 +42,8 @@ const HomePage = () => {
             <p>
               I'm on a path toward harmony between mind, body, and observation.
               Here you’ll find coding projects, reflections shaped by Kendo, and
-              photography that captures how I see the world. Based in the United
-              States, often between lines of code and a Dojo floor.
+              photography that captures how I see the world. I'm based in the
+              United States, often between lines of code and a Dojo floor.
             </p>
           </div>
           <img
