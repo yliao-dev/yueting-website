@@ -14,31 +14,35 @@ const skillsData = [
     value: 40,
     color: skillColors.coding,
     context:
-      "I spend most of my time writing code across full-stack projects, from frontend UI to backend APIs.",
+      "I spend most of my time writing code across full-stack projects—bringing ideas to life through design systems, APIs, and user experiences.",
   },
   {
     label: "Kendo",
     value: 30,
     color: skillColors.kendo,
-    context: "Kendo info ...",
+    context:
+      "Kendo sharpens not only the body, but also the mind. It teaches presence, patience, and respect—both on and off the dojo floor.",
   },
   {
     label: "Iaido",
     value: 10,
     color: skillColors.iaido,
-    context: "Iaido info ...",
+    context:
+      "Iaido is about precision, awareness, and intention in every movement. A quiet practice that continues to teach me stillness in action.",
   },
   {
     label: "Fitness",
     value: 20,
     color: skillColors.fitness,
-    context: "Fitness info ...",
+    context:
+      "Training is my way to reset and recharge. I focus on strength and mobility, always chasing balance between performance and longevity.",
   },
   {
     label: "Photography",
     value: 10,
     color: skillColors.photography,
-    context: "Photography info ...",
+    context:
+      "I enjoy capturing quiet details and unspoken moments—photography helps me observe the world more slowly and intentionally.",
   },
 ];
 
