@@ -28,6 +28,12 @@ const HomePage = () => {
       }
     };
   }, []);
+
+  const [selectedSkill, setSelectedSkill] = useState<{
+    label: string;
+    value: number;
+  } | null>(null);
+
   return (
     <>
       <div className="home">
@@ -60,11 +66,16 @@ const HomePage = () => {
           className={`home__skill ${isVisible ? "animate" : ""}`}
         >
           <div className="home__skill__chart">
-            <SkillPieChart />
+            <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>
 
           <div className="home__skill__text">
             <h1>Skills</h1>
+            {selectedSkill && (
+              <p>
+                {selectedSkill.label}: {selectedSkill.value}%
+              </p>
+            )}
           </div>
         </section>
 
