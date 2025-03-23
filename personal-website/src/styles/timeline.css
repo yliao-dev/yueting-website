@@ -1,6 +1,5 @@
 .timeline-container {
   overflow-x: auto;
-  padding: 2rem 0;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -40,12 +39,12 @@
 
 .timeline-connector {
   height: 2px;
-  width: 100px;
+  width: 120px;
   background-color: var(--timeline);
   flex-shrink: 0;
 }
 
-.timeline-label {
+.timeline-text {
   color: var(--text-primary);
   text-align: left;
   margin-top: 0.5rem;
@@ -54,7 +53,7 @@
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 1.5px;
-  height: 200px;
+  height: 260px;
   font-weight: bold;
 }
 
@@ -68,7 +67,7 @@
 /* Detail text shown when active */
 .timeline-detail {
   color: var(--text-secondary);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   margin-top: 0.5rem;
   font-weight: 400;
   line-height: 1.5;
