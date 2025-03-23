@@ -140,19 +140,55 @@
   fill: white !important;
 }
 /* ========== Home Journey ========== */
-.home_journey {
-  width: 60%;
-  scroll-snap-align: start;
+.horizontal-timeline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin: 2rem 0;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.timeline-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  margin: 0 1rem;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-connector {
+  position: absolute;
+  top: 6px;
+  left: 100%;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+.timeline-label {
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .home__timeline__image {
-  width: 60%;
+  width: 60px;
   height: auto;
-  margin-top: 1rem;
-  border-radius: 15px;
+  margin-top: 0.5rem;
+  border-radius: 10px;
   animation: fadeIn 1.2s ease-in;
 }
-
 /* ========== Animations ========== */
 @keyframes fadeIn {
   from {

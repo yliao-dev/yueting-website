@@ -1,78 +1,32 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineDot from "@mui/lab/TimelineDot";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
+const timelineItems = [
+  "Hunan, China",
+  "New York City, NY, USA",
+  "Troy, NY, USA",
+  "Los Angeles, CA, USA",
+  "Provo, Utah, USA",
+  "Łódź, Poland",
+];
 
 const JourneyTimeline = () => {
   return (
-    <Timeline className="timeline-horizontal">
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="success" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          Hunan, China
-          <img className="home__timeline__image" src={"/images/london.png"} />
-        </TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="success" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          New York City, NY, USA
-          <img className="home__timeline__image" src={"/images/london.png"} />
-        </TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="success" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          Troy, NY, USA
-          <img className="home__timeline__image" src={"/images/london.png"} />
-        </TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="success" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          Los Angeles, CA, USA
-          <img className="home__timeline__image" src={"/images/london.png"} />
-        </TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="success" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          Provo, Utah, USA
-          <img className="home__timeline__image" src={"/images/london.png"} />
-        </TimelineContent>
-      </TimelineItem>
-
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="success" />
-        </TimelineSeparator>
-        <TimelineContent>
-          Łódź, Poland
-          <img className="home__timeline__image" src={"/images/london.png"} />
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
+    <div className="horizontal-timeline">
+      {timelineItems.map((location, index) => (
+        <div className="timeline-step" key={index}>
+          <div className="timeline-dot" />
+          {index < timelineItems.length - 1 && (
+            <div className="timeline-connector" />
+          )}
+          <div className="timeline-label">
+            <p>{location}</p>
+            <img
+              src="/images/london.png"
+              alt="location"
+              className="home__timeline__image"
+            />
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 
