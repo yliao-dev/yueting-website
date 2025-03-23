@@ -139,59 +139,8 @@
 .MuiPieArcLabel-root {
   fill: white !important;
 }
-/* ========== Home Journey ========== */
-.horizontal-timeline {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem 1rem;
-  overflow-x: auto;
-}
+/* ========== Home WorldMap ========== */
 
-.timeline-step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  flex: 1;
-  min-width: 120px;
-}
-
-.timeline-top {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.timeline-dot {
-  width: 14px;
-  height: 14px;
-  background-color: #4caf50;
-  border-radius: 50%;
-  z-index: 2;
-  flex-shrink: 0;
-}
-
-.timeline-connector {
-  flex-grow: 1;
-  height: 2px;
-  background-color: #ccc;
-  margin-left: 0.5rem;
-  z-index: 1;
-}
-
-.timeline-label {
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
-.home__timeline__image {
-  width: 60px;
-  height: auto;
-  margin-top: 0.5rem;
-  border-radius: 10px;
-  animation: fadeIn 1.2s ease-in;
-}
 /* ========== Animations ========== */
 @keyframes fadeIn {
   from {

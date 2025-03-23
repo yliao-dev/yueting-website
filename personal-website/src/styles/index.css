@@ -6,6 +6,7 @@
 @import "./blog.css";
 @import "./gallery.css";
 @import "./photoViewer.css";
+@import "./timeline.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
