@@ -1,9 +1,10 @@
-import React from "react";
 import Project, { ProjectItemProps } from "./Project";
 
-const ProjectMap: React.FC<{ projectData: ProjectItemProps[] }> = ({
-  projectData,
-}) => {
+type ProjectMapProps = {
+  projectData: ProjectItemProps[];
+};
+
+const ProjectMap = ({ projectData }: ProjectMapProps) => {
   return (
     <>
       {projectData.map((project, index) => (
