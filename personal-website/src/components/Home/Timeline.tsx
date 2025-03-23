@@ -36,15 +36,17 @@ const timelineItems = [
     detail: "Designed and coded this portfolio to share my journey and work.",
   },
   {
-    label: "Next Chapter",
+    label: "Next Move",
     year: "Today",
     detail:
-      "Exploring software roles that combine technical growth, impact, and teamwork.",
+      "Seeking software roles with technical challenge, meaningful work, and growth. Open to relocation for the next step in my journey.",
   },
 ];
 
 const JourneyTimeline = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(
+    timelineItems.length - 1
+  );
   return (
     <div className="timeline-container">
       <div className="timeline-wrapper">
