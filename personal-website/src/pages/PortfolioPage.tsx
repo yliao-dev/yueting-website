@@ -11,7 +11,7 @@ const PortfolioPage = () => {
   return (
     <>
       <div className="portfolio">
-        <section className="portfolio__intro">
+        <section className="portfolio__intro__text">
           <h1>Projects</h1>
           <p>
             Each project here starts with a practical need—or a spark of
@@ -22,7 +22,7 @@ const PortfolioPage = () => {
           </p>
         </section>
 
-        <section className="home__journey">
+        <section>
           <JourneyTimeline />
         </section>
 

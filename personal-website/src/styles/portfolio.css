@@ -1,24 +1,39 @@
-/* Portfolio Section */
 .portfolio {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio section {
   width: 90%;
-  margin: 0 auto;
+  padding: 2rem;
 }
 
 /* Intro Section */
-.portfolio__intro {
-  text-align: center;
+
+.portfolio__intro__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-.portfolio__intro h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+.portfolio__intro__text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-primary);
   letter-spacing: 2px;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.portfolio__intro__text p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 2;
+  letter-spacing: 1px;
 }
 
 /* Project List Container */
