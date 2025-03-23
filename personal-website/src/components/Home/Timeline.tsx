@@ -31,15 +31,15 @@ const timelineItems = [
       "Took a break to reflect, travel, and grow beyond the code — visited 14 countries across Europe and Asia.",
   },
   {
-    label: "Portfolio Website",
+    label: "This Site",
     year: "2025",
     detail: "Designed and coded this portfolio to share my journey and work.",
   },
   {
     label: "Next Chapter",
-    year: "2025+",
+    year: "Today",
     detail:
-      "Open to creative and meaningful opportunities that challenge and inspire me.",
+      "Exploring software roles that combine technical growth, impact, and teamwork.",
   },
 ];
 
