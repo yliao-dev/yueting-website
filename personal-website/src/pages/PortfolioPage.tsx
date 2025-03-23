@@ -5,6 +5,7 @@ import LineBreak from "../components/LineBreak";
 
 import ProjectMap from "../components/portfolio/ProjectMap";
 import { ProjectData } from "../data/portfolio/ProjectData";
+import JourneyTimeline from "../components/Home/Timeline";
 
 const PortfolioPage = () => {
   return (
@@ -19,6 +20,10 @@ const PortfolioPage = () => {
             full-stack development work. I’m always open to collaborating on
             meaningful or fun projects.
           </p>
+        </section>
+
+        <section className="home__journey">
+          <JourneyTimeline />
         </section>
 
         <LineBreak />
