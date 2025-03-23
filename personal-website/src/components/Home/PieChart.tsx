@@ -15,7 +15,7 @@ const skillColors = {
   photography: "rgba(110, 90, 140, 1)",
 };
 
-const skillsData: SkillItem[] = [
+export const skillsData: SkillItem[] = [
   {
     label: "Coding",
     value: 35,

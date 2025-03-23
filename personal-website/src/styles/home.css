@@ -77,7 +77,20 @@
 }
 
 .home__skill__chart {
-  gap: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 0;
+  margin-bottom: -3rem;
+}
+
+.home__skill__chart h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  margin-bottom: -7rem;
+  margin-top: 2rem;
 }
 
 .home__skill__text {
@@ -101,6 +114,7 @@
   color: var(--text-primary);
   letter-spacing: 2px;
   margin-bottom: 1rem;
+  margin-top: -1rem;
 }
 
 .home__skill__text p {

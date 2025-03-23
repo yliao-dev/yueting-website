@@ -1,11 +1,14 @@
 import "../styles/home.css";
 import { useState } from "react";
-import SkillPieChart, { SkillItem } from "../components/Home/PieChart";
+import SkillPieChart, {
+  SkillItem,
+  skillsData,
+} from "../components/Home/PieChart";
 import JourneyTimeline from "../components/Home/Timeline";
 import LineBreak from "../components/LineBreak";
 
 const HomePage = () => {
-  const [selectedSkill, setSelectedSkill] = useState<SkillItem | null>(null);
+  const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
 
   return (
     <>
@@ -36,9 +39,9 @@ const HomePage = () => {
 
         <section className="home__skill">
           <div className="home__skill__chart">
+            <h1>Skills</h1>
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>
-
           <div className="home__skill__text">
             <div className="home__skill__content">
               {selectedSkill && (
