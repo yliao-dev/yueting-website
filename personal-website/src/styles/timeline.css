@@ -24,10 +24,11 @@
 }
 
 .timeline-dot {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   background-color: var(--timeline);
-  border-radius: 50%;
+  border-radius: 100%;
+  border: 2px solid white;
 }
 
 .timeline-dot.active {
