@@ -5,50 +5,42 @@
 
 .timeline-wrapper {
   display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  min-width: max-content;
 }
 
+/* Each step (dot + label) */
 .timeline-step {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Row with dot + connector */
+/* Top row: dots + connectors in one horizontal line */
 .timeline-top {
-  position: relative;
   display: flex;
   align-items: center;
 }
 
 /* Dot */
 .timeline-dot {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--text-secondary);
   border-radius: 50%;
-  background-color: #888;
-  z-index: 1;
+  flex-shrink: 0;
 }
 
-/* Connector (line between dots) */
+/* Connector line between dots */
 .timeline-connector {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   height: 2px;
-  width: 100%;
+  width: 100px;
   background-color: #888;
-  z-index: 0;
-  transform: translateY(-50%);
+  flex-shrink: 0;
 }
 
-/* Label below dot */
+/* Label below each dot */
 .timeline-label {
   margin-top: 0.5rem;
-  text-align: center;
   font-size: 0.8rem;
   width: 100px;
+  text-align: center;
 }
