@@ -2,38 +2,33 @@ import { useState } from "react";
 const timelineItems = [
   {
     label: "University",
-    year: "2018–2022",
+    year: "2018",
     detail:
-      "Studied Computer Science at Rensselaer Polytechnic Institute, Troy, NY.",
+      "Started first real coding at Rensselaer Polytechnic Institute, Troy, NY.",
   },
   {
     label: "Internship",
     year: "2020",
     detail:
-      "Software engineering internship — real-world experience during university.",
+      "Remote full-stack internship at a startup, building CRUD features using RESTful APIs and MySQL.",
   },
   {
     label: "Graduation",
     year: "2022",
     detail:
-      "Earned B.S. in Computer Science from RPI with a focus on full-stack development.",
+      "Earned B.S. in Computer Science from RPI with a focus on software development.",
   },
   {
     label: "First Job",
-    year: "2022–2024",
+    year: "2022",
     detail:
-      "Worked at Qualtrics as a full-stack developer, building user-facing tools.",
+      "Full-stack dev at Qualtrics — React, Go, CI/CD, APIs, and prod deployment. Collaborated with a an awesome team.",
   },
   {
     label: "Career Break",
     year: "2024",
-    detail: "Left my role to reflect, recharge, and explore new directions.",
-  },
-  {
-    label: "Remote Life",
-    year: "2024–2025",
     detail:
-      "Traveled and worked remotely while building side projects and freelancing.",
+      "Took a break to reflect, travel, and grow beyond the code — visited 14 countries across Europe and Asia.",
   },
   {
     label: "Portfolio Website",
@@ -69,7 +64,7 @@ const JourneyTimeline = () => {
                 <div className="timeline-connector" />
               )}
             </div>
-            <div className="timeline-label">
+            <div className="timeline-text">
               <div>{item.label}</div>
               <div className="timeline-year">{item.year}</div>
               {index === activeIndex && (
