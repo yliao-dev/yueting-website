@@ -33,7 +33,9 @@ const skillsData: SkillItem[] = [
             <li>React</li>
             <li>Go</li>
             <li>Python</li>
+            <li>Postman</li>
             <li>Jenkins</li>
+            <li>Splunk</li>
             <li>Git</li>
           </ul>
         </div>
@@ -44,22 +46,65 @@ const skillsData: SkillItem[] = [
     label: "Kendo",
     value: 25,
     color: skillColors.kendo,
-    context:
-      "Kendo sharpens not only the body, but also the mind. It teaches presence, patience, and respect—both on and off the dojo floor.",
+    context: (
+      <>
+        <p>
+          Kendo shapes more than just physical skill—it builds presence,
+          patience, and awareness. It’s a practice of clarity, both in movement
+          and mindset. I started Kendo as a freshman in university, earned my
+          shodan in early 2024, and have trained in dojos across the U.S. and
+          around the world.
+        </p>
+        <div className="skill__stack">
+          <p>My Go-to Waza:</p>
+          <ul className="skill__list">
+            <li>Debana-Men</li>
+            <li>Katate-Tsuki</li>
+            <li>Gyaku-Do</li>
+          </ul>
+        </div>
+      </>
+    ),
   },
   {
     label: "Iaido",
     value: 10,
     color: skillColors.iaido,
-    context:
-      "Iaido is about precision, awareness, and intention in every movement. A quiet practice that continues to teach me stillness in action.",
+    context: (
+      <>
+        <p>
+          For me, Iaido is a calm practice that sharpens precision and control.
+          I began learning Musō Jikiden Eishin-ryū in Salt Lake City, Utah, with
+          a brief experience in Toyama Ryū in Orem. Though still early in my
+          journey, it complements my path in Kendo and deepens my appreciation
+          for disciplined movement.
+        </p>
+      </>
+    ),
   },
   {
     label: "Fitness",
     value: 20,
     color: skillColors.fitness,
-    context:
-      "Training is my way to reset and recharge. I focus on strength and mobility, always chasing balance between performance and longevity.",
+    context: (
+      <>
+        <p>
+          My training centers on strength, explosiveness, and stability. Injury
+          prevention comes before aesthetics, and athletic performance over
+          appearance. Most of it happens with just a barbell.
+        </p>
+        <div className="skill__stack">
+          <p>My Go-to lifts:</p>
+          <ul className="skill__list">
+            <li>Power clean</li>
+            <li>Jump squat</li>
+            <li>Weighted pull-ups</li>
+            <li>Standing press</li>
+            <li>Turkish Get-Up</li>
+          </ul>
+        </div>
+      </>
+    ),
   },
   {
     label: "Photography",
