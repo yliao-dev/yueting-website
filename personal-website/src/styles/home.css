@@ -73,7 +73,7 @@
 .home__skill {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .home__skill__chart {
@@ -83,14 +83,16 @@
 .home__skill__text {
   width: 400px;
   max-width: 600px;
-  height: 500px;
-  font-size: 0.95rem;
-  text-align: left;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 
+.home__skill__content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow: hidden;
 }
 
 .home__skill__text h3 {

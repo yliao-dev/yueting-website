@@ -40,12 +40,14 @@ const HomePage = () => {
           </div>
 
           <div className="home__skill__text">
-            {selectedSkill && (
-              <>
-                <h3>{selectedSkill.label}</h3>
-                <p>{selectedSkill.context}</p>
-              </>
-            )}
+            <div className="home__skill__content">
+              {selectedSkill && (
+                <>
+                  <h3>{selectedSkill.label}</h3>
+                  <p>{selectedSkill.context}</p>
+                </>
+              )}
+            </div>
           </div>
         </section>
 
