@@ -18,7 +18,7 @@ const timelineItems = [
     detail: "Created this portfolio to showcase my journey (2025)",
   },
   {
-    label: "To Be Continued",
+    label: "?",
     detail: "Looking for meaningful new projects ✨",
   },
 ];
