@@ -83,8 +83,14 @@
 .home__skill__text {
   width: 400px;
   max-width: 600px;
+  height: 500px;
   font-size: 0.95rem;
   text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .home__skill__text h3 {
