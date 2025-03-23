@@ -4,7 +4,6 @@ import SkillPieChart, {
   SkillItem,
   skillsData,
 } from "../components/Home/PieChart";
-import JourneyTimeline from "../components/Home/Timeline";
 import LineBreak from "../components/LineBreak";
 
 const HomePage = () => {
@@ -53,12 +52,6 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-
-        <LineBreak />
-        <section className="home__journey">
-          <JourneyTimeline />
-        </section>
-
         <LineBreak />
         <section className="home__worldMap">{/* <WorldMap /> */}</section>
       </div>
