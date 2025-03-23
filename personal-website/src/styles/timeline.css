@@ -57,10 +57,17 @@
   height: 200px;
 }
 
+.timeline-year {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
 /* Detail text shown when active */
 .timeline-detail {
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 0.5rem;
   font-weight: 400;
   line-height: 1.5;
