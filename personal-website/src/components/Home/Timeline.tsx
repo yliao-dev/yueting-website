@@ -1,25 +1,50 @@
 import { useState } from "react";
-
 const timelineItems = [
   {
-    label: "RPI",
-    detail: "Studied CS at Rensselaer Polytechnic Institute (2018–2022)",
-  },
-  { label: "Internship", detail: "Software engineering internship (2020)" },
-  { label: "Graduated", detail: "Earned B.S. in Computer Science (2022)" },
-  {
-    label: "Qualtrics",
-    detail: "Worked as a full-stack developer (2022–2024)",
-  },
-  { label: "Transition", detail: "Left job to explore and reflect (2024)" },
-  { label: "Travel", detail: "Lived abroad, worked remotely (2024–2025)" },
-  {
-    label: "This Site",
-    detail: "Created this portfolio to showcase my journey (2025)",
+    label: "University",
+    year: "2018–2022",
+    detail:
+      "Studied Computer Science at Rensselaer Polytechnic Institute, Troy, NY.",
   },
   {
-    label: "?",
-    detail: "Looking for meaningful new projects ✨",
+    label: "Internship",
+    year: "2020",
+    detail:
+      "Software engineering internship — real-world experience during university.",
+  },
+  {
+    label: "Graduation",
+    year: "2022",
+    detail:
+      "Earned B.S. in Computer Science from RPI with a focus on full-stack development.",
+  },
+  {
+    label: "First Job",
+    year: "2022–2024",
+    detail:
+      "Worked at Qualtrics as a full-stack developer, building user-facing tools.",
+  },
+  {
+    label: "Career Break",
+    year: "2024",
+    detail: "Left my role to reflect, recharge, and explore new directions.",
+  },
+  {
+    label: "Remote Life",
+    year: "2024–2025",
+    detail:
+      "Traveled and worked remotely while building side projects and freelancing.",
+  },
+  {
+    label: "Portfolio Website",
+    year: "2025",
+    detail: "Designed and coded this portfolio to share my journey and work.",
+  },
+  {
+    label: "Next Chapter",
+    year: "2025+",
+    detail:
+      "Open to creative and meaningful opportunities that challenge and inspire me.",
   },
 ];
 
@@ -45,11 +70,12 @@ const JourneyTimeline = () => {
               )}
             </div>
             <div className="timeline-label">
-              {item.label}
+              <div>{item.label}</div>
+              <div className="timeline-year">{item.year}</div>
               {index === activeIndex && (
                 <div className="timeline-detail">{item.detail}</div>
               )}
-            </div>{" "}
+            </div>
           </div>
         ))}
       </div>
