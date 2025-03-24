@@ -150,6 +150,31 @@
   margin-top: 2rem;
 }
 
+.worldMap__legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.legend__box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 0.4rem;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.lived {
+  background-color: var(--icon-hover);
+}
+
+.travelled {
+  background-color: rgba(137, 194, 217, 1);
+}
+
 /* ========== Animations ========== */
 @keyframes fadeIn {
   from {

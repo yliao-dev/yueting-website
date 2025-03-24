@@ -62,6 +62,17 @@ const HomePage = () => {
             <WorldMap setTooltipContent={setContent} />
             <Tooltip id="map-tooltip" content={content} />
           </div>
+
+          <div className="worldMap__legend">
+            <div>
+              <span className="legend__box lived" />
+              <span> Lived</span>
+            </div>
+            <div>
+              <span className="legend__box travelled" />
+              <span> Travelled</span>
+            </div>
+          </div>
         </section>
       </div>
     </>
