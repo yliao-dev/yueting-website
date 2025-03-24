@@ -57,13 +57,13 @@
   width: 100%;
   height: auto;
   flex-direction: column;
-  transition: box-shadow 0.3s ease-in;
   overflow: hidden;
 }
 
 .portfolio__project:hover {
-  box-shadow: 0px 4px 15px rgba(21, 0, 80, 0.3);
+  opacity: 0.8;
   cursor: pointer;
+  box-shadow: 0px 6px 12px rgba(169, 5, 5, 0.2);
 }
 
 .portfolio__project__image {
@@ -85,7 +85,6 @@
   font-size: 1.1rem;
   color: var(--text-primary);
   margin: 0;
-  transition: color 0.3s ease, transform 0.3s ease;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -96,7 +95,6 @@
   color: var(--text-primary);
   margin: 0;
   font-weight: 300;
-  transition: opacity 0.3s ease, color 0.3s ease;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
