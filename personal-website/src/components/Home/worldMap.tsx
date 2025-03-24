@@ -33,10 +33,10 @@ const MapChart = ({ setTooltipContent }: Props) => {
   return (
     <>
       <ComposableMap
-        projection="geoEqualEarth"
+        projection="geoNaturalEarth1"
         projectionConfig={{
           scale: 150,
-          rotate: [0, 0, 0],
+          center: [0, 20],
         }}
       >
         {data.length > 0 && (
