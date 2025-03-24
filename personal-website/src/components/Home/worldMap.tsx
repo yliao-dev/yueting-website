@@ -1,18 +1,50 @@
-import {
-  ZoomableGroup,
-  ComposableMap,
-  Geographies,
-  Geography,
-} from "react-simple-maps";
+import { useEffect, useState } from "react";
+import { csv } from "d3-fetch";
+import { scaleLinear } from "d3-scale";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
-const WorldMap = ({ setTooltipContent }: any) => {
+const geoUrl = "/features.json";
+
+// color scale for the 2025 values
+const colorScale = scaleLinear<string>()
+  .domain([0.29, 0.68])
+  .range(["#ffedea", "#ff5233"]);
+
+type CountryData = {
+  ISO3: string;
+  [year: string]: number | string;
+};
+
+type Props = {
+  setTooltipContent: (content: string) => void;
+};
+
+const MapChart = ({ setTooltipContent }: Props) => {
+  const [data, setData] = useState<CountryData[]>([]);
+
+  useEffect(() => {
+    csv("/vulnerability.csv", (row) => ({
+      ISO3: row.ISO3,
+      "2025": +row["2025"], // convert to number
+    })).then((parsed) => {
+      setData(parsed);
+    });
+  }, []);
+
   return (
-    <div>
-      <ComposableMap>
-        <ZoomableGroup>
-          <Geographies geography="/features.json">
-            {({ geographies }) =>
-              geographies.map((geo) => (
+    <ComposableMap
+      projectionConfig={{
+        rotate: [-10, 0, 0],
+        scale: 147,
+      }}
+    >
+      {data.length > 0 && (
+        <Geographies geography={geoUrl}>
+          {({ geographies }) =>
+            geographies.map((geo) => {
+              const d = data.find((s) => s.ISO3 === geo.id);
+              const fillColor = d ? colorScale(d["2025"] as number) : "#F5F4F6";
+              return (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
@@ -24,11 +56,10 @@ const WorldMap = ({ setTooltipContent }: any) => {
                   }}
                   style={{
                     default: {
-                      fill: "#D6D6DA",
-                      outline: "none",
+                      fill: fillColor,
                     },
                     hover: {
-                      fill: "#F53",
+                      fill: "#0072B1", // hover color
                       outline: "none",
                     },
                     pressed: {
@@ -37,13 +68,13 @@ const WorldMap = ({ setTooltipContent }: any) => {
                     },
                   }}
                 />
-              ))
-            }
-          </Geographies>
-        </ZoomableGroup>
-      </ComposableMap>
-    </div>
+              );
+            })
+          }
+        </Geographies>
+      )}
+    </ComposableMap>
   );
 };
 
-export default WorldMap;
+export default MapChart;
