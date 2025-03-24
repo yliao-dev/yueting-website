@@ -55,6 +55,8 @@ const MapChart = ({ setTooltipContent }: Props) => {
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
+                    tabIndex={-1}
+                    className="focus:outline-none"
                     data-tooltip-id="map-tooltip"
                     onMouseEnter={() => {
                       if (d) {
