@@ -62,7 +62,7 @@ const HomePage = () => {
         <section className="home__worldMap">
           <div>
             <WorldMap setTooltipContent={setContent} />
-            <Tooltip id="map-tooltip" content={content} />{" "}
+            <Tooltip id="map-tooltip" content={content} />
           </div>
         </section>
       </div>
