@@ -5,6 +5,7 @@ import SkillPieChart, {
   skillsData,
 } from "../components/Home/PieChart";
 import LineBreak from "../components/LineBreak";
+import WorldMap from "../components/Home/worldMap";
 
 const HomePage = () => {
   const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
@@ -53,7 +54,9 @@ const HomePage = () => {
           </div>
         </section>
         <LineBreak />
-        <section className="home__worldMap">{/* <WorldMap /> */}</section>
+        <section className="home__worldMap">
+          <WorldMap />
+        </section>
       </div>
     </>
   );
