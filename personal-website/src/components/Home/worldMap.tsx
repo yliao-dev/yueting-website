@@ -1,40 +1,18 @@
-import { useState, useEffect } from "react";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import { csv } from "d3-fetch";
-
-type CountryData = {
-  ISO3: string;
-  [year: string]: string; // Or `number` if you're parsing it later
-};
-
-const geoUrl = "/features.json";
+import {
+  ZoomableGroup,
+  ComposableMap,
+  Geographies,
+  Geography,
+} from "react-simple-maps";
 
 const WorldMap = ({ setTooltipContent }: any) => {
-  const [data, setData] = useState<CountryData[]>([]);
-
-  useEffect(() => {
-    csv("/highlightedRegions.csv").then((rows) => {
-      const parsed = rows.map((row) => ({
-        ISO3: row.ISO3 as string,
-        "2025": row["2025"] as string, // or +row["2025"] for number
-      }));
-      setData(parsed);
-    });
-  }, []);
-
   return (
-    <div>
-      <ComposableMap
-        projectionConfig={{
-          rotate: [-10, 0, 0],
-          scale: 147,
-        }}
-      >
-        <Geographies geography={geoUrl}>
-          {({ geographies }) =>
-            geographies.map((geo) => {
-              const d = data.find((s) => s.ISO3 === geo.id);
-              return (
+    <div data-tip="">
+      <ComposableMap>
+        <ZoomableGroup>
+          <Geographies geography="/features.json">
+            {({ geographies }) =>
+              geographies.map((geo) => (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
@@ -46,23 +24,23 @@ const WorldMap = ({ setTooltipContent }: any) => {
                   }}
                   style={{
                     default: {
-                      fill: d ? d["2025"] : "#0072B1",
+                      fill: "#D6D6DA",
                       outline: "none",
                     },
-                    // hover: {
-                    //   fill: "#0072B1",
-                    //   outline: "none",
-                    // },
-                    // pressed: {
-                    //   fill: "#E42",
-                    //   outline: "none",
-                    // },
+                    hover: {
+                      fill: "#F53",
+                      outline: "none",
+                    },
+                    pressed: {
+                      fill: "#E42",
+                      outline: "none",
+                    },
                   }}
                 />
-              );
-            })
-          }
-        </Geographies>
+              ))
+            }
+          </Geographies>
+        </ZoomableGroup>
       </ComposableMap>
     </div>
   );
