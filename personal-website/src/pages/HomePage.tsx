@@ -57,20 +57,22 @@ const HomePage = () => {
         <LineBreak />
 
         <section className="home__worldMap">
-          <h1>Journey</h1>
-          <p>
-            I’ve lived across the U.S. in cities like New York City, Troy (NY),
-            Los Angeles (CA), and Provo (UT), and have also spent several months
-            to half a year living in other parts of the world.
-          </p>
-          <div className="home__worldMap__legend">
-            <div>
-              <span className="legend__box lived" />
-              <span> Lived</span>
-            </div>
-            <div>
-              <span className="legend__box travelled" />
-              <span> Travelled</span>
+          <div className="home__worldMap__intro">
+            <h1>Journey</h1>
+            <p>
+              I’ve lived across the U.S. in cities like New York City, Troy
+              (NY), Los Angeles (CA), and Provo (UT), and have also spent
+              several months to half a year living in other parts of the world.
+            </p>
+            <div className="home__worldMap__legend">
+              <div>
+                <span className="legend__box lived" />
+                <span> Lived</span>
+              </div>
+              <div>
+                <span className="legend__box travelled" />
+                <span> Travelled</span>
+              </div>
             </div>
           </div>
 

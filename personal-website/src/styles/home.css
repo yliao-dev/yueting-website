@@ -141,7 +141,11 @@
 }
 /* ========== Home WorldMap ========== */
 
-.home__worldMap h1 {
+.home__worldMap {
+  align-items: center;
+}
+
+.home__worldMap__intro h1 {
   font-size: 3rem;
   font-weight: 500;
   color: var(--text-primary);
@@ -150,7 +154,7 @@
   margin-bottom: 1rem;
 }
 
-.home__worldMap p {
+.home__worldMap__intro p {
   font-size: 0.95rem;
   font-weight: 400;
   color: var(--text-secondary);
