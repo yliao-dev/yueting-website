@@ -1,17 +1,19 @@
 .timeline-container {
   overflow-x: auto;
-  max-width: 1000px;
   margin: 0 auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 .timeline-wrapper {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: max-content;
 }
 
 .timeline-step {
-  align-items: center;
   cursor: pointer;
+  scroll-snap-align: start;
 }
 
 /* Dot + connector row */
@@ -39,7 +41,7 @@
 
 .timeline-connector {
   height: 2px;
-  width: 120px;
+  width: 140px;
   background-color: var(--timeline);
   flex-shrink: 0;
 }
@@ -49,7 +51,7 @@
   text-align: left;
   margin-top: 0.5rem;
   margin-left: 0.3rem;
-  width: 120px;
+  width: 140px;
   font-size: 1rem;
   letter-spacing: 1.5px;
   height: 260px;
