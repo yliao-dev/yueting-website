@@ -71,4 +71,14 @@
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 1px;
+  animation: fadeIn 0.7s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
