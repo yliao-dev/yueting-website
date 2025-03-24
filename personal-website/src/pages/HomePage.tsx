@@ -55,9 +55,6 @@ const HomePage = () => {
           </div>
         </section>
         <LineBreak />
-        {/* <section className="home__worldMap">
-          <WorldMap />
-        </section> */}
 
         <section className="home__worldMap">
           <div>

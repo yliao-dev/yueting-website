@@ -7,7 +7,7 @@ import {
 
 const WorldMap = ({ setTooltipContent }: any) => {
   return (
-    <div data-tip="">
+    <div>
       <ComposableMap>
         <ZoomableGroup>
           <Geographies geography="/features.json">
