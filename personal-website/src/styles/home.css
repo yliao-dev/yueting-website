@@ -141,6 +141,15 @@
 }
 /* ========== Home WorldMap ========== */
 
+.home__worldMap h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  margin-bottom: -7rem;
+  margin-top: 2rem;
+}
+
 /* ========== Animations ========== */
 @keyframes fadeIn {
   from {

@@ -57,6 +57,7 @@ const HomePage = () => {
         <LineBreak />
 
         <section className="home__worldMap">
+          <h1>Journey</h1>
           <div>
             <WorldMap setTooltipContent={setContent} />
             <Tooltip id="map-tooltip" content={content} />
