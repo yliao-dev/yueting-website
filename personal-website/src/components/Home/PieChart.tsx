@@ -168,7 +168,7 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
             markGap: 7,
             labelStyle: {
               fontSize: 14,
-              fontWeight: 500,
+              fontWeight: 550,
             },
           },
         }}
