@@ -47,15 +47,14 @@ const JourneyTimeline = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(
     timelineItems.length - 1
   );
-  const isMobile = window.innerWidth <= 768;
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   // Scroll to selected dot on click
   useEffect(() => {
-    if (!isMobile && activeIndex !== null && stepRefs.current[activeIndex]) {
+    if (activeIndex !== null && stepRefs.current[activeIndex]) {
       stepRefs.current[activeIndex]?.scrollIntoView({
         behavior: "smooth",
-        inline: "center", // or 'start' if left-align
+        inline: "end",
         block: "nearest",
       });
     }
