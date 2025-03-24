@@ -4,8 +4,8 @@ import { scaleLinear } from "d3-scale";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
 const geoUrl = "/features.json";
+const csvPath = "/highlightedRegions.csv";
 
-// color scale for the 2025 values
 const colorScale = scaleLinear<string>()
   .domain([0.29, 0.68])
   .range(["#ffedea", "#ff5233"]);
@@ -23,7 +23,7 @@ const MapChart = ({ setTooltipContent }: Props) => {
   const [data, setData] = useState<CountryData[]>([]);
 
   useEffect(() => {
-    csv("/vulnerability.csv", (row) => ({
+    csv(csvPath, (row) => ({
       ISO3: row.ISO3,
       "2025": +row["2025"], // convert to number
     })).then((parsed) => {
@@ -62,10 +62,10 @@ const MapChart = ({ setTooltipContent }: Props) => {
                       fill: "#0072B1", // hover color
                       outline: "none",
                     },
-                    pressed: {
-                      fill: "#E42",
-                      outline: "none",
-                    },
+                    // pressed: {
+                    //   fill: "#E42",
+                    //   outline: "none",
+                    // },
                   }}
                 />
               );
