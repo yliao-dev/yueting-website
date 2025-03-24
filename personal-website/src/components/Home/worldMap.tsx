@@ -23,7 +23,7 @@ const WorldMap = ({ setTooltipContent }: any) => {
   }, []);
 
   return (
-    <div data-tip="">
+    <div>
       <ComposableMap
         projectionConfig={{
           rotate: [-10, 0, 0],
