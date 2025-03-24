@@ -58,12 +58,12 @@ const HomePage = () => {
 
         <section className="home__worldMap">
           <h1>Journey</h1>
-          <div>
-            <WorldMap setTooltipContent={setContent} />
-            <Tooltip id="map-tooltip" content={content} />
-          </div>
-
-          <div className="worldMap__legend">
+          <p>
+            I’ve lived across the U.S. in cities like New York City, Troy (NY),
+            Los Angeles (CA), and Provo (UT), and have also spent several months
+            to half a year living in other parts of the world.
+          </p>
+          <div className="home__worldMap__legend">
             <div>
               <span className="legend__box lived" />
               <span> Lived</span>
@@ -72,6 +72,11 @@ const HomePage = () => {
               <span className="legend__box travelled" />
               <span> Travelled</span>
             </div>
+          </div>
+
+          <div>
+            <WorldMap setTooltipContent={setContent} />
+            <Tooltip id="map-tooltip" content={content} />
           </div>
         </section>
       </div>

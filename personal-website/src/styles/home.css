@@ -146,16 +146,27 @@
   font-weight: 500;
   color: var(--text-primary);
   letter-spacing: 2px;
-  margin-bottom: -7rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.worldMap__legend {
+.home__worldMap p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 2;
+  letter-spacing: 1px;
+  max-width: 500px;
+  margin-left: 1rem;
+}
+
+.home__worldMap__legend {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 14;
+  font-weight: 550;
 }
 
 .legend__box {
