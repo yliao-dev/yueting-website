@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 const timelineItems = [
   {
     label: "University",
@@ -47,6 +47,20 @@ const JourneyTimeline = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(
     timelineItems.length - 1
   );
+
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // Scroll to selected dot on click
+  useEffect(() => {
+    if (activeIndex !== null && stepRefs.current[activeIndex]) {
+      stepRefs.current[activeIndex]?.scrollIntoView({
+        behavior: "smooth",
+        inline: "center", // or 'start' if you prefer left-align
+        block: "nearest",
+      });
+    }
+  }, [activeIndex]);
+
   return (
     <div className="timeline-container">
       <div className="timeline-wrapper">
@@ -55,6 +69,7 @@ const JourneyTimeline = () => {
             key={index}
             className="timeline-step"
             onClick={() => setActiveIndex(index === activeIndex ? null : index)}
+            ref={(el) => (stepRefs.current[index] = el)}
           >
             <div className="timeline-top hoverable">
               <div
