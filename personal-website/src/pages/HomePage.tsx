@@ -5,11 +5,12 @@ import SkillPieChart, {
   skillsData,
 } from "../components/Home/PieChart";
 import LineBreak from "../components/LineBreak";
+import { Tooltip } from "react-tooltip";
 import WorldMap from "../components/Home/worldMap";
 
 const HomePage = () => {
   const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
-
+  const [content, setContent] = useState("");
   return (
     <>
       <div className="home">
@@ -54,8 +55,15 @@ const HomePage = () => {
           </div>
         </section>
         <LineBreak />
-        <section className="home__worldMap">
+        {/* <section className="home__worldMap">
           <WorldMap />
+        </section> */}
+
+        <section className="home__worldMap">
+          <div>
+            <WorldMap setTooltipContent={setContent} />
+            <Tooltip id="map-tooltip" content={content} />{" "}
+          </div>
         </section>
       </div>
     </>
