@@ -148,7 +148,7 @@
 .home__worldMap__intro {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 1rem;
   gap: 1rem;
   flex-wrap: wrap;
@@ -164,9 +164,9 @@
 }
 
 .home__worldMap__intro__text p {
+  color: var(--text-secondary);
   font-size: 0.95rem;
   font-weight: 400;
-  color: var(--text-secondary);
   line-height: 2;
   letter-spacing: 1px;
   max-width: 500px;
@@ -174,12 +174,13 @@
 }
 
 .home__worldMap__legend {
+  color: var(--text-secondary);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   gap: 0.5rem;
   font-size: 0.95rem;
   font-weight: 500;
+  margin-right: 15rem;
 }
 
 .legend__box {
