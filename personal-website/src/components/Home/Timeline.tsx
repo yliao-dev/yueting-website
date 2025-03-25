@@ -81,11 +81,9 @@ const JourneyTimeline = () => {
               )}
             </div>
             <div className="timeline-text">
-              <div>{item.label}</div>
-              <div className="timeline-year">{item.year}</div>
-              {index === activeIndex && (
-                <div className="timeline-detail">{item.detail}</div>
-              )}
+              <h2>{item.label}</h2>
+              <p>{item.year}</p>
+              {index === activeIndex && <p>{item.detail}</p>}
             </div>
           </div>
         ))}

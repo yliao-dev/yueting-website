@@ -27,7 +27,7 @@
   height: 20px;
   background-color: var(--timeline);
   border-radius: 100%;
-  border: 2px solid white;
+  border: 2px solid var(white);
 }
 
 .timeline-dot.active {
@@ -47,32 +47,21 @@
 }
 
 .timeline-text {
-  color: var(--text-primary);
-  text-align: left;
   margin-top: 0.5rem;
   margin-left: 0.3rem;
-  width: 140px;
-  font-size: 1rem;
-  letter-spacing: 1.5px;
+  width: 160px;
   height: 260px;
-  font-weight: bold;
 }
 
-.timeline-year {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.1rem;
-  font-weight: lighter;
+.timeline-text h2 {
+  margin-bottom: 0;
 }
 
 /* Detail text shown when active */
-.timeline-detail {
-  color: var(--text-secondary);
+.timeline-text p {
   font-size: 0.85rem;
   margin-top: 0.5rem;
-  font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 1px;
   animation: fadeIn 0.7s ease-in;
 }
 
