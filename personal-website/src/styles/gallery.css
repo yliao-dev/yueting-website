@@ -17,15 +17,6 @@
   margin: 0 auto;
 }
 
-.gallery__intro h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-}
-
 .gallery__intro p {
   font-size: 0.95rem;
   font-weight: 400;

@@ -12,10 +12,6 @@
   margin: 0 auto;
 }
 
-.portfolio__intro__text h1 {
-  margin-top: 2rem;
-}
-
 /* Project List Container */
 .portfolio__project-list {
   display: grid;
