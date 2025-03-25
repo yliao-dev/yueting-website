@@ -38,47 +38,6 @@
   transform: scale(1.1);
 }
 
-.contact__facts {
-  width: 80%;
-  margin: 2rem auto 0;
-  padding: 0;
-  text-align: left;
-}
-
-.fact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  display: grid;
-  gap: 1rem;
-}
-
-.fact-list li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  line-height: 1.6;
-}
-
-/* icons horizontal */
-
-.social-media-icons.horizontal {
-  justify-content: center;
-  gap: 15px;
-}
-
-.social-media-icons.horizontal svg {
-  font-size: 35px;
-  color: var(--white);
-}
-
-.social-media-icons.horizontal svg:hover {
-  color: var(--hover);
-}
-
 .linkedin-icon {
   color: var(--linkedln);
 }
