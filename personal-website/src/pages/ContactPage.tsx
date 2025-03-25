@@ -1,4 +1,3 @@
-import "../styles/contact.css";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import LineBreak from "../components/LineBreak";
 
@@ -20,7 +19,7 @@ const ContactPage = () => {
           <SocialMediaIcons orientation="vertical" />
         </div>
 
-        <LineBreak variant="plain" />
+        <LineBreak />
 
         <section className="contact__facts">
           <h1> Random things </h1>
