@@ -1,5 +1,6 @@
 :root {
-  /* === Base Colors === */
+  /* === Theme Colors === */
+  --primary: rgba(59, 68, 75, 1); /* primary site theme color */
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
 
@@ -9,24 +10,10 @@
   --gray-600: rgba(107, 107, 107, 1);
   --gray-700: rgba(53, 53, 53, 1);
 
-  /* === Theme Colors === */
-  --primary: rgba(59, 68, 75, 1); /* primary site theme color */
-
-  /* === Typography Colors === */
-  --text-primary: var(--gray-700); /* for main body text */
-  --text-secondary: var(--gray-600); /* for muted/secondary text */
-
-  /* === Interactive Elements === */
-  --hover: rgba(0, 114, 177, 1); /* hover state for icons */
-  --nav-hover: var(--gray-400); /* hover state for navbar links */
-  --timeline: var(--light-oak);
-  /* === Social Media Brand Colors === */
-  --linkedln: rgba(0, 119, 181, 1);
-  --github: rgba(26, 11, 11, 1);
-  --instagram: rgba(238, 42, 123, 1);
-  --light-oak: rgba(210, 180, 140, 1);
-
   /* Typography */
+  --text-primary: var(--gray-700);
+  --text-secondary: var(--gray-600);
+
   --font-primary: "Montserrat", sans-serif;
   --font-size-base: 16px;
   --font-weight-regular: 400;
@@ -36,4 +23,15 @@
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
+
+  /* === Interactive Elements === */
+  --hover: rgba(0, 114, 177, 1);
+  --nav-hover: var(--gray-400);
+  --timeline: var(--light-oak);
+
+  /* === Social Media Brand Colors === */
+  --linkedln: rgba(0, 119, 181, 1);
+  --github: rgba(26, 11, 11, 1);
+  --instagram: rgba(238, 42, 123, 1);
+  --light-oak: rgba(210, 180, 140, 1);
 }
