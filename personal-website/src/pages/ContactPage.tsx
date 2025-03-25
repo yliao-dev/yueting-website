@@ -15,7 +15,7 @@ const ContactPage = () => {
             </p>
           </section>
 
-          <SocialMediaIcons orientation="vertical" />
+          <SocialMediaIcons />
         </div>
 
         <LineBreak />

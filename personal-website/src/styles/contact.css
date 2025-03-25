@@ -20,16 +20,13 @@
 }
 
 .social-media-icons {
-  gap: 5px;
-  justify-content: flex-end;
-}
-
-.social-media-icons.vertical {
   display: flex;
   flex-direction: column;
   transition: color 0.3s ease-in-out;
+  justify-content: flex-end;
+  gap: 5px;
 }
-.social-media-icons.vertical svg {
+.social-media-icons svg {
   font-size: 50px;
   transition: color 0.3s ease-in-out;
 }

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import ReorderIcon from "@mui/icons-material/Reorder";
-import SocialMediaIcons from "./SocialMediaIcons";
 const Navbar = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? "navbar__link--active" : "navbar__link--inactive";

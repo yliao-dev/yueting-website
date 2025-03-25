@@ -1,12 +1,8 @@
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
 
-interface SocialMediaIconsProps {
-  orientation: "horizontal" | "vertical"; // Define the prop for orientation
-}
-
-const SocialMediaIcons = ({ orientation }: SocialMediaIconsProps) => {
+const SocialMediaIcons = () => {
   return (
-    <div className={`social-media-icons ${orientation}`}>
+    <div className={`social-media-icons`}>
       <a
         href="https://www.linkedin.com/in/yueting-liao-83b216171/"
         target="_blank"
