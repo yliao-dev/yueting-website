@@ -43,24 +43,19 @@
 
 .blog__post {
   max-width: 700px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .blog__post__image {
-  display: block;
-  width: 100%;
-  max-width: 100%;
   border-radius: 20px;
-  margin: 0 auto;
 }
 
 .blog__post__title h2 {
   text-align: left;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
   margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .blog__post__title:hover h2 {
@@ -70,6 +65,7 @@
 .blog__author {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 10px;
 }
 

@@ -18,17 +18,20 @@ function BlogPost({ title, description, image }: BlogPostProp) {
 
       <div className="blog__post">
         <img src={image} className="blog__post__image" />
-        <Link to={`${title}`} className="blog__post__title">
-          <h2>{title}</h2>
-        </Link>
-        <p> {description} </p>
-        <section className="blog__author">
+        <div className="blog__post__title">
+          <Link to={`${title}`}>
+            <h2>{title}</h2>
+          </Link>
+          <p> {description} </p>
+        </div>
+
+        <div className="blog__author">
           <img className="blog__author__icon" src={logo} alt="author" />
           <div className="blog__author__info">
             <span>{author}</span>
             <span>{date}</span>
           </div>
-        </section>
+        </div>
       </div>
     </>
   );
