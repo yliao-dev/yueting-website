@@ -4,7 +4,7 @@ import LineBreak from "../components/LineBreak";
 const ContactPage = () => {
   return (
     <>
-      <section className="contact">
+      <div className="contact">
         <div className="contact__row">
           <section className="contact__intro">
             <h1>Connect</h1>
@@ -30,7 +30,7 @@ const ContactPage = () => {
             <li>🌿 Quiet places, soft light</li>
           </ul>
         </section>
-      </section>
+      </div>
     </>
   );
 };

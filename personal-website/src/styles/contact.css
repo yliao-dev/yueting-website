@@ -1,32 +1,21 @@
 .contact {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 2rem;
-  gap: 40px;
-  min-height: 90vh;
-  width: 90%;
-  margin: 0 auto;
+  justify-content: center;
 }
 
-/* Slide animation container */
+.contact__row {
+  display: flex;
+  flex-direction: row;
+}
+
 .contact__intro {
   opacity: 0;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-name: slideInLeft;
-}
-
-.contact__row {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-
-.contact__intro h1 {
-  font-weight: bold;
 }
 
 .social-media-icons {
