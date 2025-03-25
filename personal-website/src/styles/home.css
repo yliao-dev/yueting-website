@@ -29,22 +29,6 @@
   margin: 0 auto;
 }
 
-.home__intro__text h2 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
-}
-
-.home__intro__text p {
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--text-secondary);
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
 .home__intro__image {
   width: 50%;
   max-width: 700px;

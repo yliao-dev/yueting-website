@@ -41,25 +41,25 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: var(--font-weight-bold);
-  letter-spacing: 1px;
-  margin-bottom: 0.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
 }
 
 p {
   font-size: 1rem;
   font-weight: var(--font-weight-regular);
   color: var(--text-secondary);
-  line-height: 1.8;
-  letter-spacing: 0.5px;
+  line-height: 2;
+  letter-spacing: 1px;
 }
 
 .page__divider {
   width: 80%;
   height: 3px;
-  background-color: var(--line-break);
   opacity: 0.8;
+  background-color: var(--line-break);
 }
 
 .page__divider-gradient {
