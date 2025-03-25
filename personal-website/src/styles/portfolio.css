@@ -5,15 +5,7 @@
   justify-content: center;
 }
 
-.portfolio section {
-  width: 90%;
-  max-width: 1200px;
-  padding: 2rem;
-  align-items: center;
-}
-
 /* Intro Section */
-
 .portfolio__intro__text {
   display: flex;
   flex-direction: column;
@@ -21,20 +13,7 @@
 }
 
 .portfolio__intro__text h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
   margin-top: 2rem;
-}
-
-.portfolio__intro__text p {
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--text-secondary);
-  line-height: 2;
-  letter-spacing: 1px;
 }
 
 /* Project List Container */
