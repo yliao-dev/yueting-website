@@ -63,8 +63,8 @@ const HomePage = () => {
             <div className="home__worldMap__intro__text">
               <h1>Journey</h1>
               <p>
-                I’ve lived across the U.S. in cities like New York City, Troy
-                (NY), Los Angeles (CA), and Provo (UT), and have also spent
+                I’ve lived across the U.S. in cities like New York City (NY),
+                Troy (NY), Los Angeles (CA), and Provo (UT), and have also spent
                 several months to half a year living in other parts of the
                 world.
               </p>
