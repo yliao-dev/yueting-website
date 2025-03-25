@@ -5,8 +5,6 @@ import { PhotographyEntries } from "../data/blog/PhotographyEntries";
 import { KendoEntries } from "../data/blog/KendoEntries";
 import { FitnessEntries } from "../data/blog/FitnessEntries";
 
-import "../styles/blog.css";
-
 type BlogPostsMapProps = {
   category: string;
 };
