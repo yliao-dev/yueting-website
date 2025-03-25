@@ -6,7 +6,7 @@ import SkillPieChart, {
 } from "../components/Home/PieChart";
 import LineBreak from "../components/LineBreak";
 import { Tooltip } from "react-tooltip";
-import WorldMap from "../components/Home/worldMap";
+import WorldMap from "../components/Home/WorldMap";
 
 const HomePage = () => {
   const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
