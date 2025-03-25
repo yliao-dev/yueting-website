@@ -111,6 +111,12 @@
   animation: rollDown 0.7s ease-out forwards;
 }
 
+.navbar__dropdown-text {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 2px;
+}
+
 .navbar__dropdown-links.show {
   display: block;
   transition: max-height 0.5s ease-out;

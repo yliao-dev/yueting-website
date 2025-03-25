@@ -33,21 +33,21 @@ const Navbar = () => {
             to="/gallery"
             className={({ isActive }) => linkClass({ isActive })}
           >
-            GALLERY
+            <h2>GALLERY</h2>
           </NavLink>
 
           <NavLink
             to="/blog"
             className={({ isActive }) => linkClass({ isActive })}
           >
-            BLOG
+            <h2>BLOG</h2>
           </NavLink>
 
           <NavLink
             to="/contact"
             className={({ isActive }) => linkClass({ isActive })}
           >
-            CONTACT
+            <h2>CONTACT</h2>
           </NavLink>
         </div>
         <div className="navbar__toggle-button">
@@ -65,7 +65,7 @@ const Navbar = () => {
                 to="/portfolio"
                 className={({ isActive }) => linkClass({ isActive })}
               >
-                <span>PORTFOLIO</span>
+                <span className="navbar__dropdown-text">PORTFOLIO</span>
               </NavLink>
             </li>
 
@@ -74,7 +74,7 @@ const Navbar = () => {
                 to="/gallery"
                 className={({ isActive }) => linkClass({ isActive })}
               >
-                <span>GALLERY</span>
+                <span className="navbar__dropdown-text">GALLERY</span>
               </NavLink>
             </li>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
                 to="/blog"
                 className={({ isActive }) => linkClass({ isActive })}
               >
-                <span>BLOG</span>
+                <span className="navbar__dropdown-text">BLOG</span>
               </NavLink>
             </li>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
                 to="/contact"
                 className={({ isActive }) => linkClass({ isActive })}
               >
-                <span>CONTACT</span>
+                <span className="navbar__dropdown-text">CONTACT</span>
               </NavLink>
             </li>
           </ul>
