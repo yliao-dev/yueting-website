@@ -22,10 +22,12 @@ function BlogPost({ title, description, image }: BlogPostProp) {
           <h2>{title}</h2>
         </Link>
         <p> {description} </p>
-        <section className="blog__post__author">
-          <img className="blog__post__author-icon" src={logo} />
-          <span className="blog__post__author-name">{author}</span>
-          <span className="blog__post__author-date">{date}</span>
+        <section className="blog__author">
+          <img className="blog__author__icon" src={logo} alt="author" />
+          <div className="blog__author__info">
+            <span>{author}</span>
+            <span>{date}</span>
+          </div>
         </section>
       </div>
     </>
