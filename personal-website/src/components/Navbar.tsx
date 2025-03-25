@@ -26,7 +26,7 @@ const Navbar = () => {
             to="/portfolio"
             className={({ isActive }) => linkClass({ isActive })}
           >
-            PORTFOLIO
+            <h2>PORTFOLIO</h2>
           </NavLink>
 
           <NavLink

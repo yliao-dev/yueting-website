@@ -11,6 +11,11 @@
   animation-delay: 0.2s;
 }
 
+.navbar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
 .navbar__logo {
   width: 55px;
   height: auto;
