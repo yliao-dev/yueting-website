@@ -8,6 +8,7 @@
 .contact__row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .contact__intro {
