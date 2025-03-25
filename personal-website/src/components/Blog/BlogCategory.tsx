@@ -15,7 +15,6 @@ const BlogCategory: React.FC<BlogCategoryProps> = ({ onSelect }) => {
   return (
     <>
       <div className="blog__category">
-        <h1 className="blog__intro">Journal</h1>
         {categories.map((category) => (
           <button
             key={category.id}

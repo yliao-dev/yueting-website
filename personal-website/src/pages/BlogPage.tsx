@@ -51,8 +51,17 @@ const BlogPage = () => {
   return (
     <>
       <div className="blog">
-        <BlogCategory onSelect={categoryFilter} />
-        <BlogPostsMap category={selectedCategory} />
+        <section className="blog__intro">
+          <h1>Reflections</h1>
+          <p>
+            A space for ideas, lessons, and personal reflections—from everyday
+            thoughts to deeper insights.
+          </p>
+        </section>
+        <section>
+          <BlogCategory onSelect={categoryFilter} />
+          <BlogPostsMap category={selectedCategory} />
+        </section>
       </div>
     </>
   );
