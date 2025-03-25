@@ -17,15 +17,6 @@
   margin: 0 auto;
 }
 
-.gallery__intro p {
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--text-secondary);
-  line-height: 2;
-  letter-spacing: 1px;
-  text-align: left;
-}
-
 .masonry-grid {
   column-count: 5; /* Adjust for different screen sizes */
 }
