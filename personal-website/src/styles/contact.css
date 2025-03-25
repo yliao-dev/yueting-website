@@ -85,7 +85,7 @@
 }
 
 .social-media-icons.horizontal svg:hover {
-  color: var(--icon-hover);
+  color: var(--hover);
 }
 
 .linkedin-icon {

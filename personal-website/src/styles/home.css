@@ -193,7 +193,7 @@
 }
 
 .lived {
-  background-color: var(--icon-hover);
+  background-color: var(--hover);
 }
 
 .travelled {

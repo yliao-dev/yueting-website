@@ -64,7 +64,7 @@
 
 .blog__category-button svg:hover {
   transform: scale(1.1);
-  color: var(--icon-hover);
+  color: var(--hover);
 }
 
 .blog__post {
@@ -95,7 +95,7 @@
 }
 
 .blog__post__title:hover h2 {
-  color: var(--icon-hover);
+  color: var(--hover);
 }
 
 .blog__post__desc {
