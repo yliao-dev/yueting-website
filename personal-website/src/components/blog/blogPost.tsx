@@ -19,7 +19,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
       <div className="blog__post">
         <img src={image} className="blog__post__image" />
         <Link to={`${title}`} className="blog__post__title">
-          <h1>{title}</h1>
+          <h2>{title}</h2>
         </Link>
         <p className="blog__post__desc">{description}</p>
         <section className="blog__post__author">
