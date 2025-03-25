@@ -14,17 +14,14 @@
 .navbar__logo {
   width: 55px;
   height: auto;
-  transition: width 0.3s;
   flex-shrink: 0;
-  margin-left: 40px;
+  margin-left: 3rem;
 }
 
 .navbar__icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -33,7 +30,6 @@
   align-items: center;
   justify-content: flex-end;
   color: var(--white);
-  gap: 1rem;
 }
 
 .navbar__links a {
@@ -45,7 +41,6 @@
 .navbar__link--inactive {
   color: var(--white);
   padding: 0.5rem 1.25rem;
-  border-radius: 0.375rem;
 }
 
 .navbar__link--inactive:hover {
@@ -55,13 +50,13 @@
 .navbar__link--active {
   color: var(--nav-hover);
   padding: 0.5rem 1.25rem;
-  border-radius: 0.375rem;
 }
 
 .navbar__toggle-button {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 2rem;
 }
 
 .navbar__toggle-button svg {
@@ -69,9 +64,7 @@
 }
 
 .navbar__toggle-button button {
-  margin-right: 20px;
   background-color: transparent;
-  border: none;
   color: var(--white);
   cursor: pointer;
 }
