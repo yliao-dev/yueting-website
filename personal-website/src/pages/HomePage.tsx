@@ -1,4 +1,3 @@
-import "../styles/home.css";
 import { useState } from "react";
 import SkillPieChart, {
   SkillItem,

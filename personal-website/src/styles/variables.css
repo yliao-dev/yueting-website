@@ -4,6 +4,7 @@
   --black: rgba(0, 0, 0, 1);
 
   /* === Grayscale Palette === */
+  --line-break: rgba(204, 204, 204, 1);
   --gray-400: rgba(176, 176, 176, 1);
   --gray-600: rgba(107, 107, 107, 1);
   --gray-700: rgba(53, 53, 53, 1);
@@ -31,12 +32,6 @@
   --font-weight-regular: 400;
   --font-weight-bold: 600;
 
-  /* Colors */
-  --text-primary: #1a1a1a;
-  --text-secondary: #888;
-  --icon-hover: #0072b1;
-
-  /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;

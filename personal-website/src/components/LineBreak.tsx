@@ -1,3 +1,5 @@
+import "../styles/typography.css";
+
 interface LineBreakProps {
   variant?: "plain" | "gradient"; // Add variants for plain or gradient divider
 }
