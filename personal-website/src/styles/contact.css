@@ -11,6 +11,7 @@
 }
 
 .contact__intro {
+  max-width: 600px;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
@@ -20,6 +21,7 @@
 
 .social-media-icons {
   gap: 5px;
+  justify-content: flex-end;
 }
 
 .social-media-icons.vertical {
