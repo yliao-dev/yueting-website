@@ -2,11 +2,12 @@
 @import "./navbar.css";
 @import "./footer.css";
 @import "./home.css";
-@import "./contact.css";
-@import "./blog.css";
+@import "./portfolio.css";
+@import "./timeline.css";
 @import "./gallery.css";
 @import "./photoViewer.css";
-@import "./timeline.css";
+@import "./blog.css";
+@import "./contact.css";
 
 @tailwind base;
 @tailwind components;

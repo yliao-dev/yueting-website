@@ -1,8 +1,4 @@
-import "../styles/portfolio.css";
-import "../styles/gallery.css";
-
 import LineBreak from "../components/LineBreak";
-
 import ProjectMap from "../components/portfolio/ProjectMap";
 import { ProjectData } from "../data/portfolio/ProjectData";
 import JourneyTimeline from "../components/Home/Timeline";
