@@ -58,7 +58,7 @@ const BlogPage = () => {
             thoughts to deeper insights.
           </p>
         </section>
-        <section>
+        <section className="blog__contentBlock">
           <BlogCategory onSelect={categoryFilter} />
           <BlogPostsMap category={selectedCategory} />
         </section>
