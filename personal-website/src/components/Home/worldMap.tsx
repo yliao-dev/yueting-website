@@ -38,6 +38,7 @@ const MapChart = ({ setTooltipContent }: Props) => {
           scale: 150,
           center: [0, 20],
         }}
+        height={400}
       >
         {data.length > 0 && (
           <Geographies geography={geoUrl}>
