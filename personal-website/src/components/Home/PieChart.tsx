@@ -26,19 +26,18 @@ export const skillsData: SkillItem[] = [
           I like writing code to simplify life by building applications that
           solve real problems. This site you’re exploring is built with React
           and Go — keeping things fast, clean, and purposeful.
+          <br /> <br />
+          What I usually build with:
         </p>
-        <div className="skill__stack">
-          <p>What I usually build with:</p>
-          <ul className="skill__list">
-            <li>React</li>
-            <li>Go</li>
-            <li>Python</li>
-            <li>Postman</li>
-            <li>Jenkins</li>
-            <li>Splunk</li>
-            <li>Git</li>
-          </ul>
-        </div>
+        <ul>
+          <li>React</li>
+          <li>Go</li>
+          <li>Python</li>
+          <li>Postman</li>
+          <li>Jenkins</li>
+          <li>Splunk</li>
+          <li>Git</li>
+        </ul>
       </>
     ),
   },
@@ -54,15 +53,14 @@ export const skillsData: SkillItem[] = [
           and mindset. I started Kendo as a freshman in university, earned my
           shodan in early 2024, and have trained in dojos across the U.S. and
           around the world.
+          <br /> <br />
+          My Go-to Waza:
         </p>
-        <div className="skill__stack">
-          <p>My Go-to Waza:</p>
-          <ul className="skill__list">
-            <li>Debana-Men</li>
-            <li>Katate-Tsuki</li>
-            <li>Gyaku-Do</li>
-          </ul>
-        </div>
+        <ul>
+          <li>Debana-Men</li>
+          <li>Katate-Tsuki</li>
+          <li>Gyaku-Do</li>
+        </ul>
       </>
     ),
   },
@@ -92,17 +90,16 @@ export const skillsData: SkillItem[] = [
           My training centers on strength, explosiveness, and stability. Injury
           prevention comes before aesthetics, and athletic performance over
           appearance. Most of it happens with just a barbell.
+          <br /> <br />
+          My Go-to lifts:
         </p>
-        <div className="skill__stack">
-          <p>My Go-to lifts:</p>
-          <ul className="skill__list">
-            <li>Power clean</li>
-            <li>Jump squat</li>
-            <li>Weighted pull-ups</li>
-            <li>Standing press</li>
-            <li>Turkish Get-Up</li>
-          </ul>
-        </div>
+        <ul>
+          <li>Power clean</li>
+          <li>Jump squat</li>
+          <li>Weighted pull-ups</li>
+          <li>Standing press</li>
+          <li>Turkish Get-Up</li>
+        </ul>
       </>
     ),
   },
@@ -114,17 +111,14 @@ export const skillsData: SkillItem[] = [
       <>
         <p>
           Photography lets me chase light, frame feeling, and preserve moments
-          that might quietly disappear.
+          that might quietly disappear. <br /> <br /> My usual captures:
         </p>
-        <div className="skill__stack">
-          <p>My usual captures:</p>
-          <ul className="skill__list">
-            <li>Street</li>
-            <li>Travel</li>
-            <li>Portrait</li>
-            <li>Everyday scenes</li>
-          </ul>
-        </div>
+        <ul>
+          <li>Street</li>
+          <li>Travel</li>
+          <li>Portrait</li>
+          <li>Everyday scenes</li>
+        </ul>
       </>
     ),
   },

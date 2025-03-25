@@ -52,10 +52,6 @@
 }
 
 .home__skill__chart h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  letter-spacing: 2px;
   margin-bottom: -7rem;
   margin-top: 2rem;
 }
@@ -75,32 +71,9 @@
   justify-content: flex-start;
 }
 
-.home__skill__text h3 {
+.home__skill__text h2 {
   font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: 2px;
-  margin-bottom: 1rem;
   margin-top: -1rem;
-}
-
-.home__skill__description {
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--text-secondary);
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
-.skill__stack {
-  margin-top: 1rem;
-}
-
-.skill__list {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  line-height: 1.6;
-  text-align: left;
 }
 
 .MuiPieArcLabel-root {

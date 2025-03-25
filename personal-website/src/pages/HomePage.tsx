@@ -46,10 +46,8 @@ const HomePage = () => {
             <div className="home__skill__content">
               {selectedSkill && (
                 <>
-                  <h3>{selectedSkill.label}</h3>
-                  <div className="home__skill__description">
-                    {selectedSkill.context}
-                  </div>
+                  <h2>{selectedSkill.label}</h2>
+                  {selectedSkill.context}
                 </>
               )}
             </div>
