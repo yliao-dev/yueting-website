@@ -16,9 +16,9 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
           navigate("project/" + id);
         }}
       >
-        <img src={image} className="portfolio__project__image" />
-        <div className="portfolio__project__desc">
-          <h4>{name}</h4>
+        <img src={image} />
+        <div className="portfolio__project__text">
+          <h2>{name}</h2>
           <p>Project Type</p>
         </div>
       </div>

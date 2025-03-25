@@ -44,38 +44,22 @@
   box-shadow: 0px 6px 12px rgba(169, 5, 5, 0.2);
 }
 
-.portfolio__project__image {
+.portfolio__project img {
   border-radius: 15px;
 }
 /* Project Item Description */
-.portfolio__project__desc {
+.portfolio__project__text {
   width: 100%;
   text-align: left;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 100%;
-  margin-top: 5px;
+  margin-top: 1rem;
 }
 
-.portfolio__project__desc h4 {
-  font-size: 1.1rem;
-  color: var(--text-primary);
+.portfolio__project__text h2 {
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.portfolio__project__desc p {
-  font-size: 1rem;
-  color: var(--text-primary);
-  margin: 0;
-  font-weight: 300;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* For screens smaller than 830px (display 1 column) */
