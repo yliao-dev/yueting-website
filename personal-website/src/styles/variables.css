@@ -24,4 +24,21 @@
   --github: rgba(26, 11, 11, 1);
   --instagram: rgba(238, 42, 123, 1);
   --light-oak: rgba(210, 180, 140, 1);
+
+  /* Typography */
+  --font-primary: "Montserrat", sans-serif;
+  --font-size-base: 16px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+
+  /* Colors */
+  --text-primary: #1a1a1a;
+  --text-secondary: #888;
+  --icon-hover: #0072b1;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
 }
