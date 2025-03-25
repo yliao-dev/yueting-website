@@ -76,12 +76,7 @@
 }
 
 .navbar__dropdown-links .navbar__link--active span::after {
-  content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
   background: linear-gradient(
     to right,
     var(--nav-hover) 0%,
@@ -91,9 +86,7 @@
 }
 
 .navbar__dropdown-links {
-  display: none;
   background: var(--primary);
-  width: 100%;
   overflow: hidden;
   opacity: 0;
   animation: rollDown 0.7s ease-out forwards;
@@ -106,8 +99,6 @@
 
 .navbar__dropdown-links ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .navbar__dropdown-links ul li {
