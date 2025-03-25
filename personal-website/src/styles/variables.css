@@ -3,6 +3,7 @@
   --primary: rgba(59, 68, 75, 1); /* primary site theme color */
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
+  --light-blue: rgba(137, 194, 217, 1);
 
   /* === Grayscale Palette === */
   --line-break: rgba(204, 204, 204, 1);

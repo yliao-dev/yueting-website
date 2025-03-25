@@ -69,11 +69,11 @@ const HomePage = () => {
             <div className="home__worldMap__legend">
               <div>
                 <span className="legend__box lived" />
-                <span> Lived</span>
+                <p> Lived</p>
               </div>
               <div>
                 <span className="legend__box travelled" />
-                <span> Travelled</span>
+                <p> Travelled</p>
               </div>
             </div>
           </div>
