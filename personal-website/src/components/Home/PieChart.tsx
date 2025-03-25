@@ -26,7 +26,7 @@ export const skillsData: SkillItem[] = [
           I like writing code to simplify life by building applications that
           solve real problems. This site you’re exploring is built with React
           and Go — keeping things fast, clean, and purposeful.
-          <br /> <br />
+          <br />
           What I usually build with:
         </p>
         <ul>
@@ -53,7 +53,7 @@ export const skillsData: SkillItem[] = [
           and mindset. I started Kendo as a freshman in university, earned my
           shodan in early 2024, and have trained in dojos across the U.S. and
           around the world.
-          <br /> <br />
+          <br />
           My Go-to Waza:
         </p>
         <ul>
@@ -111,7 +111,9 @@ export const skillsData: SkillItem[] = [
       <>
         <p>
           Photography lets me chase light, frame feeling, and preserve moments
-          that might quietly disappear. <br /> <br /> My usual captures:
+          that might quietly disappear.
+          <br /> <br />
+          My usual captures:
         </p>
         <ul>
           <li>Street</li>
