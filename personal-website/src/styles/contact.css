@@ -35,13 +35,6 @@
   height: 50px;
 }
 
-.duolingo-icon {
-  width: 50px;
-  height: 50px;
-  border: 3px solid transparent; /* Shrinks the visible part */
-  box-sizing: border-box; /* Ensures total size stays 50x50 */
-}
-
 .social-media-icons.vertical svg:hover {
   transform: scale(1.1);
 }
@@ -56,6 +49,10 @@
 
 .instagram-icon {
   color: var(--instagram);
+}
+
+.duolingo-icon {
+  transform: scale(0.85);
 }
 
 @keyframes slideInLeft {
