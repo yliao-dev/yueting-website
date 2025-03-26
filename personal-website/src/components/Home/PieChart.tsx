@@ -143,28 +143,27 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
             outerRadius: 120,
             paddingAngle: 2,
             cornerRadius: 5,
-            cx: "70%",
+            cx: "40%",
+            cy: "60%",
 
             highlightScope: { fade: "global", highlight: "item" },
             faded: { innerRadius: 20, additionalRadius: -10, color: "gray" },
           },
         ]}
-        width={500}
-        height={500}
         onItemClick={(_, d) => onSelect(skillsData[d.dataIndex])} // d: PieItemIdentifier
         slotProps={{
           legend: {
-            direction: "column", // or 'row'
+            direction: "row", // or 'row'
             position: {
-              vertical: "middle", // 'top' | 'middle' | 'bottom'
+              vertical: "top", // 'top' | 'middle' | 'bottom'
               horizontal: "left", // 'left' | 'center' | 'right'
             },
             itemMarkWidth: 20,
-            itemGap: 18,
-            markGap: 7,
+            itemGap: 20,
+            markGap: 5,
             labelStyle: {
-              fontSize: 14,
-              fontWeight: 550,
+              fontSize: 15,
+              fontWeight: 300,
             },
           },
         }}
