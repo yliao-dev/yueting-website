@@ -5,11 +5,11 @@
   justify-content: center;
 }
 
-.contact__row {
+/* .contact__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
 
 .contact__intro {
   max-width: 600px;
@@ -22,14 +22,22 @@
 
 .social-media-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   transition: color 0.3s ease-in-out;
   justify-content: flex-end;
   gap: 5px;
 }
-.social-media-icons svg {
-  font-size: 50px;
-  transition: color 0.3s ease-in-out;
+.social-media-icons svg,
+.social-media-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.duolingo-icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent; /* Shrinks the visible part */
+  box-sizing: border-box; /* Ensures total size stays 50x50 */
 }
 
 .social-media-icons.vertical svg:hover {

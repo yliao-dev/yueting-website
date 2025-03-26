@@ -1,9 +1,17 @@
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
-// import { ReactComponent as DuolingoIcon } from "../assets/icons/duolingo.svg";
+import DuolingoIcon from "../assets/icons/duolingo.svg";
 
 const SocialMediaIcons = () => {
   return (
     <div className={`social-media-icons`}>
+      <a
+        href="https://github.com/yliao-dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <GitHub className="github-icon" />
+      </a>
+
       <a
         href="https://www.linkedin.com/in/yueting-liao-83b216171/"
         target="_blank"
@@ -19,18 +27,11 @@ const SocialMediaIcons = () => {
         <Instagram className="instagram-icon" />
       </a>
       <a
-        href="https://github.com/yliao-dev"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <GitHub className="github-icon" />
-      </a>
-      <a
         href="https://www.duolingo.com/profile/YuetingLiao"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {/* <DuolingoIcon width={30} height={30} /> */}
+        <img src={DuolingoIcon} alt="Duolingo Icon" className="duolingo-icon" />
       </a>
     </div>
   );
