@@ -40,4 +40,4 @@ lerna-debug.log*
 Thumbs.db
 
 # photos
-src/assets/images*
+src/assets*

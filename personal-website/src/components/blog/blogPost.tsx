@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import favicon from "../../assets/icons/favicon.png";
 import LineBreak from "../LineBreak";
 
 type BlogPostProp = {
@@ -26,7 +26,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
         </div>
 
         <div className="blog__author">
-          <img className="blog__author__icon" src={logo} alt="author" />
+          <img className="blog__author__icon" src={favicon} alt="author" />
           <div className="blog__author__info">
             <span>{author}</span>
             <span>{date}</span>

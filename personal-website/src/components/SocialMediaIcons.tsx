@@ -1,4 +1,5 @@
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
+// import { ReactComponent as DuolingoIcon } from "../assets/icons/duolingo.svg";
 
 const SocialMediaIcons = () => {
   return (
@@ -23,6 +24,13 @@ const SocialMediaIcons = () => {
         rel="noopener noreferrer"
       >
         <GitHub className="github-icon" />
+      </a>
+      <a
+        href="https://www.duolingo.com/profile/YuetingLiao"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {/* <DuolingoIcon style={{ width: 30, height: 30 }} /> */}
       </a>
     </div>
   );
