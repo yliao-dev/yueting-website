@@ -16,10 +16,9 @@ const Footer = () => {
         </div>
 
         <div className="footer__info">
-          <span>&copy; 2025 Yueting Liao | </span>
-          <span className="footer__links">
-            <Link to="/contact">Contact</Link>
-          </span>
+          <h2>
+            &copy; 2025 Yueting Liao | <Link to="/contact">Contact</Link>
+          </h2>
         </div>
       </footer>
     </>
