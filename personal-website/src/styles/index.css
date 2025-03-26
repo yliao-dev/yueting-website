@@ -93,3 +93,25 @@ ul li {
   background-color: var(--white);
   width: 100%;
 }
+
+@keyframes slide-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(var(--slide-distance, -150px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(var(--slide-distance, 150px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
