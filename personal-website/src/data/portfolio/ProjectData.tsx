@@ -2,7 +2,7 @@ export const ProjectData = [
   {
     id: 1,
     name: "Dijkstra Algorithm Visualizer",
-    image: "src/assets/images/temp_image.jpg", // Directly reference the public folder
+    image: "src/assets/images/temp_image.jpg",
     skills: "JavaScript,HTML,CSS",
   },
   {
