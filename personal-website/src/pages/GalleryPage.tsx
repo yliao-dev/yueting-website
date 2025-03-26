@@ -1,4 +1,4 @@
-import { PhotoData } from "../data/portfolio/PhotoData";
+import { PhotoData } from "../data/PhotoData";
 import PhotoMasonry from "../components/Gallery/PhotoMasonry";
 
 const GalleryPage = () => {
