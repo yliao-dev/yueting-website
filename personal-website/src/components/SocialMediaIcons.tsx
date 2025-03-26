@@ -30,7 +30,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {/* <DuolingoIcon style={{ width: 30, height: 30 }} /> */}
+        {/* <DuolingoIcon width={30} height={30} /> */}
       </a>
     </div>
   );
