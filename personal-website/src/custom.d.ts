@@ -1,13 +1,9 @@
-// src/types.d.ts
-
 // For importing SVG as a React component
-declare module "*.svg" {
+declare module "*.svg?react" {
   import * as React from "react";
   export const ReactComponent: React.FC<
     React.SVGProps<SVGSVGElement> & { title?: string }
   >;
-  const src: string;
-  export default src;
 }
 
 // For other image types
