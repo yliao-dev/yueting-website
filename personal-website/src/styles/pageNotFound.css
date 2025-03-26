@@ -37,25 +37,26 @@
   background-color: var(--hover);
 }
 
-.pageNotFound__image {
-  text-align: center;
+.pageNotFound__bison {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.pageNotFound__image img {
+.pageNotFound__bison img {
   max-width: 30%;
-  margin-left: 20px;
 
   --slide-distance: 400px;
-  --slide-destination: 150px;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-name: slide-from-right;
 }
 
-.pageNotFound__image p {
+.pageNotFound__bison p {
   list-style-type: none;
-  padding: 0;
 
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;

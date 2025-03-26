@@ -5,6 +5,7 @@ import bison from "../assets/images/bison.jpg";
 const PageNotFound = () => {
   return (
     <div className="pageNotFound">
+      <section></section>
       <section className="pageNotFound__intro">
         <div className="pageNotFound__text">
           <h1>404 Not Found</h1>
@@ -17,16 +18,16 @@ const PageNotFound = () => {
             Back with Bison
           </Link>
         </div>
-        <section className="pageNotFound__image">
-          <img src={bison} alt="Bison in 404" />
-          <p>
-            Nationality: Poland
-            <br />
-            Species: Horse
-            <br />
-            Favorite Food: Grass
-          </p>
-        </section>
+      </section>
+      <section className="pageNotFound__bison">
+        <img src={bison} alt="Bison in 404" />
+        <p>
+          Nationality: Poland
+          <br />
+          Species: Horse
+          <br />
+          Favorite Food: Grass
+        </p>
       </section>
     </div>
   );
