@@ -47,8 +47,8 @@
   flex-direction: column;
 }
 
-.blog__post__image {
-  border-radius: 20px;
+.blog__post img {
+  object-fit: cover;
 }
 
 .blog__post__title h2 {

@@ -17,7 +17,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
       <LineBreak variant="gradient" />
 
       <div className="blog__post">
-        <img src={image} className="blog__post__image" />
+        <img src={image} />
         <div className="blog__post__title">
           <Link to={`${title}`}>
             <h2>{title}</h2>
