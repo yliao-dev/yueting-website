@@ -29,7 +29,7 @@ const HomePage = () => {
             </p>
           </div>
           <img
-            src="/images/photography/DSCF7886.jpg"
+            src="/images/gallery/DSCF7886.jpg"
             className="home__intro__image"
             alt="portrait"
           />
