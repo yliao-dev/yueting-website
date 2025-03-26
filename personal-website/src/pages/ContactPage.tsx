@@ -20,12 +20,13 @@ const ContactPage = () => {
         <LineBreak />
 
         <section className="contact__facts">
-          <h1> Random things </h1>
-          <ul className="fact-list">
-            <li>📷 I shoot mostly with Fujifilm</li>
-            <li>🥋 Kendo taught me patience</li>
-            <li>💻 Dark mode, always</li>
-            <li>🌿 Quiet places, soft light</li>
+          <h1> Behind the Scenes </h1>
+          <ul>
+            <li>This Website = Travel + Code + Weeks + MacBook Air</li>
+            <li>No PhotoShop for my gallery photos yet</li>
+            <li>I genuinely enjoy bitter coffee.</li>
+            <li>I don’t train chest much.</li>
+            <li>If I could have any pet, it’d be a horse.</li>
           </ul>
         </section>
       </div>
