@@ -14,8 +14,7 @@
   position: relative;
   max-width: 90%;
   max-height: 90%;
-  background-color: #fff;
-  border-radius: 8px;
+  background-color: var(--white);
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }

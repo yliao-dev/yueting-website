@@ -8,7 +8,6 @@
 .gallery section {
   width: 90%;
   max-width: 1200px;
-  padding: 2rem;
   align-items: center;
 }
 .gallery__intro {
@@ -19,16 +18,15 @@
 }
 
 .masonry-grid {
-  column-count: 5; /* Adjust for different screen sizes */
+  column-count: 5;
 }
 
 .masonry__item {
   display: inline-block;
   width: 100%;
   margin-bottom: 5%;
-  break-inside: avoid; /* Prevents breaking inside columns */
+  break-inside: avoid;
   background-color: var(--light-oak);
-  border-radius: 8px;
   padding: 8px;
   opacity: 0;
   animation: fadeIn 0.8s ease-in-out forwards;
@@ -39,7 +37,6 @@
   height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 0px;
 }
 
 .masonry__item:hover img {
