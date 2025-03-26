@@ -7,7 +7,7 @@
   justify-content: space-between;
   padding: 0 1rem;
   position: relative;
-  animation: dropDownFadeIn 1.2s ease-out;
+  animation: drop-down-fade-in 1.2s ease-out;
   animation-delay: 0.2s;
 }
 
@@ -108,7 +108,7 @@
   width: 100%;
   overflow: hidden;
   opacity: 0;
-  animation: rollDown 0.7s ease-out forwards;
+  animation: roll-down 0.7s ease-out forwards;
 }
 
 .navbar__dropdown-text {
@@ -131,7 +131,7 @@
   text-align: center;
   opacity: 0;
   transform: translateY(-20px);
-  animation: rollIn 0.4s ease-out forwards;
+  animation: roll-in 0.4s ease-out forwards;
   border-bottom: 2px solid transparent;
 }
 
@@ -173,7 +173,7 @@
 }
 
 /* Animations */
-@keyframes dropDownFadeIn {
+@keyframes drop-down-fade-in {
   from {
     opacity: 0.2;
     transform: translateY(-20px);
@@ -184,7 +184,7 @@
   }
 }
 
-@keyframes rollIn {
+@keyframes roll-in {
   0% {
     transform: translateY(-10px);
     opacity: 0;
@@ -195,7 +195,7 @@
   }
 }
 
-@keyframes rollDown {
+@keyframes roll-down {
   0% {
     transform: translateY(-20px);
     opacity: 0;
