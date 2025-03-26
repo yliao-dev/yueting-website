@@ -21,7 +21,7 @@ const ContactPage = () => {
 
         <section className="contact__facts">
           <img
-            src="./images/DSCF9770.jpg"
+            src="./images/image1.jpg"
             alt="Behind the Scenes"
             className="contact__facts__image"
           />
