@@ -5,15 +5,16 @@
   justify-content: center;
 }
 
-/* .contact__row {
+.contact__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-} */
+  align-items: baseline;
+}
 
 .contact__intro {
   max-width: 800px;
-  text-align: center;
+  text-align: left;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
@@ -23,11 +24,10 @@
 
 .social-media-icons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   transition: color 0.3s ease-in-out;
   justify-content: center;
-  gap: 100px;
-  margin-top: 2rem;
+  gap: 10px;
 }
 .social-media-icons svg,
 .social-media-icons img {

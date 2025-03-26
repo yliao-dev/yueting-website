@@ -5,15 +5,17 @@ const ContactPage = () => {
   return (
     <>
       <div className="contact">
-        <section className="contact__intro">
-          <h1>Connect</h1>
-          <p>
-            If any part of my journey resonates with you, I’d love to
-            connect—whether it’s through a shared interest, a casual chat, or a
-            meaningful collaboration.
-          </p>
+        <div className="contact__row">
+          <section className="contact__intro">
+            <h1>Connect</h1>
+            <p>
+              If any part of my journey resonates with you, I’d love to
+              connect—whether it’s through a shared interest, a casual chat, or
+              a meaningful collaboration.
+            </p>
+          </section>
           <SocialMediaIcons />
-        </section>
+        </div>
 
         <LineBreak />
 

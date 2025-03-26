@@ -8,6 +8,7 @@
 /* Intro Section */
 .portfolio__intro__text {
   display: flex;
+  text-align: left;
   flex-direction: column;
   margin: 0 auto;
 }
