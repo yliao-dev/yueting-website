@@ -15,7 +15,6 @@
 .contact__intro {
   max-width: 800px;
   text-align: left;
-  opacity: 0;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
@@ -55,10 +54,27 @@
   transform: scale(0.85);
 }
 
-.contact__facts ul {
+.contact__facts {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.contact__facts__image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.contact__facts__text {
   list-style-type: disc;
   padding-left: 1.5rem;
   line-height: 1.8;
+
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-name: slideInLeft;
 }
 
 @keyframes slideInLeft {

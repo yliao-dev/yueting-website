@@ -20,14 +20,21 @@ const ContactPage = () => {
         <LineBreak />
 
         <section className="contact__facts">
-          <h1> Behind the Scenes </h1>
-          <ul>
-            <li>This Website = Travel + Code + Weeks + MacBook Air</li>
-            <li>No PhotoShop for my gallery photos yet</li>
-            <li>I genuinely enjoy bitter coffee.</li>
-            <li>I don’t train chest much.</li>
-            <li>If I could have any pet, it’d be a horse.</li>
-          </ul>
+          <img
+            src="./images/DSCF9770.jpg"
+            alt="Behind the Scenes"
+            className="contact__facts__image"
+          />
+          <div className="contact__facts__text">
+            <h1> Behind the Scenes </h1>
+            <ul>
+              <li>This Website = Travel + Code + Weeks + MacBook Air</li>
+              <li>No PhotoShop for my gallery photos yet</li>
+              <li>I genuinely enjoy bitter coffee.</li>
+              <li>I don’t train chest much.</li>
+              <li>If I could have any pet, it’d be a horse.</li>
+            </ul>
+          </div>
         </section>
       </div>
     </>
