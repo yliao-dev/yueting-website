@@ -12,7 +12,8 @@
 } */
 
 .contact__intro {
-  max-width: 600px;
+  max-width: 800px;
+  text-align: center;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
@@ -24,8 +25,9 @@
   display: flex;
   flex-direction: row;
   transition: color 0.3s ease-in-out;
-  justify-content: flex-end;
-  gap: 5px;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 2rem;
 }
 .social-media-icons svg,
 .social-media-icons img {

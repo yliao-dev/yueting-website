@@ -5,14 +5,6 @@ const SocialMediaIcons = () => {
   return (
     <div className={`social-media-icons`}>
       <a
-        href="https://github.com/yliao-dev"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <GitHub className="github-icon" />
-      </a>
-
-      <a
         href="https://www.linkedin.com/in/yueting-liao-83b216171/"
         target="_blank"
         rel="noopener noreferrer"
@@ -32,6 +24,14 @@ const SocialMediaIcons = () => {
         rel="noopener noreferrer"
       >
         <img src={DuolingoIcon} alt="Duolingo Icon" className="duolingo-icon" />
+      </a>
+
+      <a
+        href="https://github.com/yliao-dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <GitHub className="github-icon" />
       </a>
     </div>
   );
