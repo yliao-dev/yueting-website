@@ -32,7 +32,7 @@ const ContactPage = () => {
               <li>No PhotoShop for my gallery photos yet</li>
               <li>I genuinely enjoy bitter coffee.</li>
               <li>I don’t train chest much.</li>
-              <li>If I could have any pet, it’d be a horse.</li>
+              <li>If I could have any pet, it’d be a horse. 🐴</li>
             </ul>
           </div>
         </section>
