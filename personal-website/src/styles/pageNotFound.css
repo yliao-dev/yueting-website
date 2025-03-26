@@ -2,17 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 80vh;
 }
 
 .pageNotFound__intro {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 .pageNotFound__text {
   text-align: center;
+  max-width: 600px;
 }
 
 .pageNotFound__warning {
@@ -37,12 +40,28 @@
 }
 
 .pageNotFound__image {
-  max-width: 20%;
-  height: auto;
+  text-align: center;
+}
 
+.pageNotFound__image img {
+  max-width: 30%;
+  margin-left: 20px;
   --slide-distance: 200px;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-name: slide-from-right;
+}
+
+.pageNotFound__image ul {
+  list-style-type: none;
+  padding: 0;
+
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-name: fade-in;
+}
+
+.pageNotFound__image ul li {
+  margin: 5px 0;
 }
