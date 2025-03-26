@@ -44,7 +44,7 @@
 /* ========== Home Skill ========== */
 .home__skill {
   display: flex;
-  flex-direction: column; /* Stack vertically for smaller screens */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -56,15 +56,8 @@
   margin: 0 auto;
 }
 
-.home__skill__chart h1 {
-  font-size: 2.5rem;
-  font-weight: var(--font-weight-regular);
-  letter-spacing: 2px;
-  margin-top: 2rem;
-}
-
 .home__skill__text {
-  width: 100%; /* Allow the text to take the full width on mobile */
+  width: 100%;
   max-width: 37.5rem;
   height: auto;
   display: flex;
