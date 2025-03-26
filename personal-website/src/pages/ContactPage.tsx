@@ -5,8 +5,8 @@ const ContactPage = () => {
   return (
     <>
       <div className="contact">
-        <div className="contact__row">
-          <section className="contact__intro">
+        <div className="contact__intro">
+          <section className="contact__intro__text">
             <h1>Connect</h1>
             <p>
               If any part of my journey resonates with you, I’d love to

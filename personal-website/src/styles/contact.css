@@ -2,17 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.contact__row {
+.contact__intro {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.contact__intro {
+.contact__intro__text {
   max-width: 800px;
   text-align: left;
 
