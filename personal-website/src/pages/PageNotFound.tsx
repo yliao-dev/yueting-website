@@ -17,14 +17,16 @@ const PageNotFound = () => {
             Back with Bison
           </Link>
         </div>
-        <div className="pageNotFound__image">
+        <section className="pageNotFound__image">
           <img src={bison} alt="Bison in 404" />
-          <ul>
-            <li>Nationality: Poland</li>
-            <li>Species: Horse</li>
-            <li>Favorite Food: Grass</li>
-          </ul>
-        </div>
+          <p>
+            Nationality: Poland
+            <br />
+            Species: Horse
+            <br />
+            Favorite Food: Grass
+          </p>
+        </section>
       </section>
     </div>
   );

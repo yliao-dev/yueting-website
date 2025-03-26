@@ -1,7 +1,5 @@
 .pageNotFound {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 80vh;
 }
@@ -46,22 +44,20 @@
 .pageNotFound__image img {
   max-width: 30%;
   margin-left: 20px;
-  --slide-distance: 200px;
+
+  --slide-distance: 400px;
+  --slide-destination: 150px;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-name: slide-from-right;
 }
 
-.pageNotFound__image ul {
+.pageNotFound__image p {
   list-style-type: none;
   padding: 0;
 
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-name: fade-in;
-}
-
-.pageNotFound__image ul li {
-  margin: 5px 0;
 }

@@ -121,6 +121,6 @@ ul li {
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(var(--slide-destination, 0));
   }
 }
