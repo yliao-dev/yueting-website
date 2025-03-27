@@ -25,9 +25,14 @@ html {
   overflow-x: hidden;
 }
 
-section {
+/* section {
   width: 90%;
   max-width: 1200px;
+  padding: 2rem;
+  align-items: center;
+} */
+
+section {
   padding: 2rem;
   align-items: center;
 }

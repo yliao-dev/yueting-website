@@ -26,6 +26,11 @@
   text-align: left;
   margin: 0 auto;
 }
+.home__intro__text h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .home__intro__image {
   width: 100%;
