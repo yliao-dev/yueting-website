@@ -17,10 +17,10 @@
 }
 
 .navbar__logo {
-  width: 3rem;
+  width: 2.5rem;
   height: auto;
   transition: width 0.3s;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .navbar__icons {
@@ -33,11 +33,7 @@
 }
 
 .navbar__links {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  color: var(--white);
-  gap: 1rem;
+  display: none;
 }
 
 .navbar__links a {
@@ -46,16 +42,18 @@
   font-size: 20px;
 }
 
+/* ------------ Tab ------------ */
 .navbar__link--inactive {
   color: var(--white);
   padding: 0.5rem 1.25rem;
-  border-radius: 0.375rem;
+  border-radius: 0.4rem;
 }
 
 .navbar__link--inactive:hover {
   color: var(--nav-hover);
 }
 
+/* ------------ Dropdown ------------ */
 .navbar__link--active {
   color: var(--nav-hover);
   padding: 0.5rem 1.25rem;
@@ -63,9 +61,9 @@
 }
 
 .navbar__toggle-button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: block;
+  /* align-items: center;
+  justify-content: flex-end; */
 }
 
 .navbar__toggle-button svg {
@@ -164,6 +162,42 @@
   animation-delay: 0.8s;
 }
 
+/* Responsive Styles */
+
+/* Tablet and larger */
+@media (min-width: 768px) {
+  .navbar__toggle-button {
+    display: none;
+  }
+
+  .navbar__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--white);
+    gap: 1rem;
+  }
+
+  .navbar__dropdown-links {
+    display: none;
+  }
+}
+
+/* Desktop and larger */
+@media (min-width: 1024px) {
+  .navbar__toggle-button {
+    display: none;
+  }
+
+  .navbar__links {
+    display: flex;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+}
+
 /* Animations */
 @keyframes drop-down-fade-in {
   from {
@@ -200,47 +234,4 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-/* Responsive Styles */
-
-/* Tablet and larger */
-@media (min-width: 768px) {
-  .navbar__logo {
-    width: 35px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .navbar__toggle-button {
-    display: flex;
-  }
-
-  .navbar__links {
-    display: none;
-  }
-
-  .navbar__dropdown-links {
-    display: block;
-  }
-}
-
-/* Desktop and larger */
-@media (min-width: 1024px) {
-  .navbar__toggle-button {
-    display: none;
-  }
-
-  .navbar__links {
-    display: flex;
-  }
-
-  .navbar__logo {
-    width: 55px;
-  }
-}
-
-/* Large Desktop */
-@media (min-width: 1440px) {
 }
