@@ -66,6 +66,10 @@
   margin: 0 auto;
 }
 
+.home__journey__intro h1 {
+  margin-top: 0;
+}
+
 .home__journey__legend {
   display: flex;
   flex-direction: row;
