@@ -1,7 +1,7 @@
 import LineBreak from "../components/LineBreak";
 import ProjectMap from "../components/portfolio/ProjectMap";
 import { ProjectData } from "../data/ProjectData";
-import JourneyTimeline from "../components/Home/Timeline";
+import JourneyTimeline from "../components/portfolio/Timeline";
 
 const PortfolioPage = () => {
   return (
