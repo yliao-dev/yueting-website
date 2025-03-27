@@ -34,7 +34,6 @@ const HomePage = () => {
             alt="portrait"
           />
         </section>
-
         <LineBreak />
 
         <section className="home__skills">
