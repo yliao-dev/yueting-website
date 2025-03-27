@@ -66,12 +66,10 @@
 }
 
 .navbar__dropdown-links ul li {
-  padding: 10px 0;
+  padding: 0.7rem;
   text-align: center;
   opacity: 0;
-  transform: translateY(-20px);
   animation: roll-in 0.4s ease-out forwards;
-  border-bottom: 2px solid transparent;
 }
 
 .navbar__dropdown-links ul li:last-child {
