@@ -17,11 +17,10 @@
 }
 
 .navbar__logo {
-  width: 55px;
+  width: 3rem;
   height: auto;
   transition: width 0.3s;
-  flex-shrink: 0;
-  margin-left: 40px;
+  margin-left: 2rem;
 }
 
 .navbar__icons {
@@ -211,7 +210,9 @@
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 830px) {
+
+/* Tablet and larger */
+@media (min-width: 768px) {
   .navbar__logo {
     width: 35px;
     position: absolute;
@@ -232,7 +233,8 @@
   }
 }
 
-@media only screen and (min-width: 831px) {
+/* Desktop and larger */
+@media (min-width: 1024px) {
   .navbar__toggle-button {
     display: none;
   }
@@ -244,4 +246,8 @@
   .navbar__logo {
     width: 55px;
   }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
 }
