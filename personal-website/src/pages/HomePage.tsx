@@ -14,7 +14,7 @@ const HomePage = () => {
     <>
       <div className="home">
         <section className="home__about">
-          <div className="home__about__intro">
+          <div>
             <h1>About</h1>
             <h2>
               Developer <span className="home__about__text__divider">|</span>

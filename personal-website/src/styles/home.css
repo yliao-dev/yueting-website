@@ -22,13 +22,7 @@
   opacity: 0.5;
 }
 
-.home__about__intro {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: 0 auto;
-}
-.home__about__intro h2 {
+.home__about h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
