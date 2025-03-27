@@ -5,12 +5,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  color: var(--white);
 }
 
 .footer__arrow {
   cursor: pointer;
-  color: var(--white);
   margin-bottom: 0.7rem;
 }
 
@@ -20,12 +19,11 @@
 }
 
 .footer__arrow:hover {
-  transform: translateY(-5px) scale(1.2);
+  transform: translateY(-0.5rem) scale(1.2);
 }
 
 .footer__info h2 {
   font-size: 0.85rem;
-  color: var(--white);
 }
 
 .footer__info a:hover {
