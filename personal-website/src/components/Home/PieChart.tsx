@@ -134,6 +134,8 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
   return (
     <>
       <PieChart
+        width={400}
+        height={400}
         series={[
           {
             arcLabel: (item) => `${item.value}%`,
@@ -143,9 +145,8 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
             outerRadius: 120,
             paddingAngle: 2,
             cornerRadius: 5,
-            cx: "40%",
+            cx: "50%",
             cy: "60%",
-
             highlightScope: { fade: "global", highlight: "item" },
             faded: { innerRadius: 20, additionalRadius: -10, color: "gray" },
           },
@@ -159,8 +160,8 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
               horizontal: "left", // 'left' | 'center' | 'right'
             },
             itemMarkWidth: 20,
-            itemGap: 20,
-            markGap: 5,
+            itemGap: 15,
+            markGap: 3,
             labelStyle: {
               fontSize: 15,
               fontWeight: 300,

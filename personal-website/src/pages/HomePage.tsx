@@ -42,15 +42,13 @@ const HomePage = () => {
             <h1>Skills</h1>
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>
-          <div className="home__skill__text">
-            <div className="home__skill__content">
-              {selectedSkill && (
-                <>
-                  <h2>{selectedSkill.label}</h2>
-                  {selectedSkill.context}
-                </>
-              )}
-            </div>
+          <div className="home__skill__content">
+            {selectedSkill && (
+              <>
+                <h2>{selectedSkill.label}</h2>
+                {selectedSkill.context}
+              </>
+            )}
           </div>
         </section>
         <LineBreak />
