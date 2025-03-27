@@ -31,7 +31,6 @@
   margin-top: 2rem;
   width: 100%;
   max-width: 100%;
-  border-radius: 15px;
   animation: fade-in 1.2s ease-in;
 }
 
@@ -82,7 +81,7 @@
   vertical-align: middle;
   width: 1.2rem;
   height: 1.2rem;
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 
 .lived {
@@ -116,7 +115,6 @@
 
   .home__skill__text {
     width: 40%;
-    max-width: 600px;
   }
 
   .home__worldMap__intro {
