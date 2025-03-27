@@ -1,4 +1,4 @@
-/* ========== Global ========== */
+/* ------------ Global ------------ */
 .home {
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-/* ========== Home Intro ========== */
+/* ------------ Home Intro ------------ */
 .home__intro {
   display: flex;
   flex-direction: column;
@@ -39,20 +39,21 @@
   animation: fade-in 1.2s ease-in;
 }
 
-/* ========== Home Skill ========== */
-.home__skill {
+/* ------------ Home Skills ------------ */
+.home__skills {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  gap: 2rem;
 }
 
-.home__skill__text {
+.home__skills__text {
   height: fit-content;
-  max-height: 25vh;
+  max-height: 15rem;
   overflow-y: auto;
 }
 
-.home__skill__text h2 {
+.home__skills__text h2 {
   font-size: 1.4rem;
 }
 
@@ -60,7 +61,7 @@
   fill: white !important;
 }
 
-/* ========== Home WorldMap ========== */
+/* ------------ Home WorldMap ------------ */
 .home__worldMap {
   align-items: center;
 }

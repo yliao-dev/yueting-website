@@ -37,19 +37,19 @@ const HomePage = () => {
 
         <LineBreak />
 
-        <section className="home__skill">
+        <section className="home__skills">
           <div>
             <h1>Skills</h1>
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>
-          <div className="home__skill__text">
+          <section className="home__skills__text">
             {selectedSkill && (
               <>
                 <h2>{selectedSkill.label}</h2>
                 {selectedSkill.context}
               </>
             )}
-          </div>
+          </section>
         </section>
         <LineBreak />
 
