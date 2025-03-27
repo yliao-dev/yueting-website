@@ -46,18 +46,10 @@
   margin: 0 auto;
 }
 
-.home__skill__chart {
-  display: flex;
-  flex-direction: column;
-}
-
 .home__skill__content {
-  display: flex;
-  flex-direction: column;
   height: fit-content;
   max-height: 25vh;
   overflow-y: auto;
-  width: 100%;
 }
 
 .home__skill__content h2 {
