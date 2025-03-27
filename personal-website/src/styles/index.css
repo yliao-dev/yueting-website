@@ -75,7 +75,7 @@ ul li {
 
 .page__divider {
   width: 90%;
-  height: 3px;
+  height: 0.2rem;
   opacity: 0.8;
   background-color: var(--line-break);
 }
