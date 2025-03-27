@@ -55,24 +55,22 @@ const HomePage = () => {
 
         <section className="home__journey">
           <section className="home__journey__intro">
-            <div className="home__journey__intro__text">
-              <h1>Journey</h1>
-              <p>
-                I’ve lived across the U.S. in cities like New York City (NY),
-                Troy (NY), Los Angeles (CA), and Provo (UT), and have also spent
-                several months to half a year living in other parts of the
-                world.
-              </p>
+            <h1>Journey</h1>
+            <p>
+              I’ve lived across the U.S. in cities like New York City (NY), Troy
+              (NY), Los Angeles (CA), and Provo (UT), and have also spent
+              several months to half a year living in other parts of the world.
+            </p>
+          </section>
+
+          <section className="home__journey__legend">
+            <div>
+              <span className="legend__box lived" />
+              <p> Lived</p>
             </div>
-            <div className="home__journey__legend">
-              <div>
-                <span className="legend__box lived" />
-                <p> Lived</p>
-              </div>
-              <div>
-                <span className="legend__box travelled" />
-                <p> Travelled</p>
-              </div>
+            <div>
+              <span className="legend__box travelled" />
+              <p> Travelled</p>
             </div>
           </section>
 
