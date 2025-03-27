@@ -53,27 +53,26 @@ h2 {
 }
 
 p {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: var(--font-weight-regular);
   color: var(--text-secondary);
-  line-height: 2;
   letter-spacing: 0.07rem;
+  line-height: 2;
 }
 
 ul {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: var(--font-weight-regular);
   color: var(--text-secondary);
-  line-height: 1.6;
-  letter-spacing: 1px;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.07rem;
+  padding-left: 1rem;
   list-style-type: disc;
   text-align: left;
 }
 
 ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .page__divider {
