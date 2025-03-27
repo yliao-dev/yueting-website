@@ -38,7 +38,7 @@ const Navbar = () => {
       </nav>
 
       {expandNavbar && (
-        <div className="navbar__dropdown-links">
+        <div className={`navbar__dropdown-links ${expandNavbar ? "show" : ""}`}>
           <ul>
             {navItems.map((item) => (
               <li key={item}>
