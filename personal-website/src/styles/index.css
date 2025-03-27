@@ -82,14 +82,14 @@ ul li {
 
 .page__divider-gradient {
   width: 100%;
-  height: 3px;
+  height: 1rem;
   background: linear-gradient(to right, transparent, var(--black), transparent);
   border: none;
   opacity: 0.5;
 }
 
 .page__gradient-white {
-  height: 50px;
+  height: 1rem;
   background-color: var(--white);
   width: 100%;
 }
