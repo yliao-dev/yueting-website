@@ -6,10 +6,11 @@ import ReorderIcon from "@mui/icons-material/Reorder";
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
   const location = useLocation();
+
   useEffect(() => setExpandNavbar(false), [location]);
-  // Toggle Navbar for mobile view
+
   const toggleNavbar = () => setExpandNavbar((prev) => !prev);
-  // Generate class based on active status
+
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? "navbar__link--active" : "navbar__link--inactive";
 
@@ -17,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar" id={expandNavbar ? "open" : "close"}>
+      <nav className="navbar">
         <NavLink className="logo" to="/">
           <img className="navbar__logo" src={favicon} alt="logo" />
         </NavLink>
@@ -38,7 +39,7 @@ const Navbar = () => {
       </nav>
 
       {expandNavbar && (
-        <div className={`navbar__dropdown-links ${expandNavbar ? "show" : ""}`}>
+        <div className="navbar__dropdown-links show">
           <ul>
             {navItems.map((item) => (
               <li key={item}>

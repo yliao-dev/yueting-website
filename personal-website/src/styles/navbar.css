@@ -47,15 +47,13 @@
 
 .navbar__dropdown-links {
   display: none;
-  background: var(--primary);
-  width: 100%;
-  opacity: 0;
-  animation: roll-down 0.7s ease-out forwards;
 }
 
 .navbar__dropdown-links.show {
   display: block;
+  background: var(--primary);
   transition: max-height 0.5s ease-out;
+  animation: roll-down 0.7s ease-out forwards;
 }
 
 .navbar__dropdown-links .navbar__link--active {
