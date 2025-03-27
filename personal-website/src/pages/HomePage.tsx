@@ -38,10 +38,7 @@ const HomePage = () => {
         <LineBreak />
 
         <section className="home__skills">
-          <div className="home__skills__intro">
-            <h1>Skills</h1>
-          </div>
-
+          <h1>Skills</h1>
           <div>
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>

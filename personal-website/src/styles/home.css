@@ -41,12 +41,8 @@
   flex-direction: column;
   margin: 0 auto;
 }
-
-.home__skills__intro {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  gap: 2rem;
+.home__skills h1 {
+  align-self: flex-start;
 }
 
 .home__skills__text {
