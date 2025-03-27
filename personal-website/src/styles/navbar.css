@@ -1,3 +1,4 @@
+/* ------------ Navbar ------------ */
 .navbar {
   height: 5rem;
   background: var(--primary);
@@ -18,6 +19,7 @@
   margin-left: 2rem;
 }
 
+/* ------------ Links ------------ */
 .navbar__links {
   display: none;
   color: var(--white);
@@ -36,6 +38,7 @@
   padding: 0.5rem 1.25rem;
 }
 
+/* ------------ Button ------------ */
 .navbar__toggle-button svg {
   font-size: 2.5rem;
 }
@@ -45,6 +48,7 @@
   color: var(--white);
 }
 
+/* ------------ Dropdown ------------ */
 .navbar__dropdown-links {
   display: none;
 }
@@ -91,6 +95,7 @@
   animation-delay: 0.8s;
 }
 
+/* ------------ Responsive ------------ */
 @media (min-width: 768px) {
   .navbar__toggle-button {
     display: none;
@@ -115,6 +120,19 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .navbar__toggle-button {
+    display: none;
+  }
+  .navbar__links {
+    display: flex;
+  }
+  .navbar__dropdown-links {
+    display: none !important;
+  }
+}
+
+/* ------------ Animations ------------ */
 @keyframes drop-down-fade-in {
   from {
     opacity: 0.2;
