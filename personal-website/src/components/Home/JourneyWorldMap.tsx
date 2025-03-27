@@ -44,6 +44,7 @@ const MapChart = ({ setTooltipContent }: Props) => {
           center: [0, 20],
         }}
         height={400}
+        width={800}
       >
         <ZoomableGroup center={[-12, 35]} zoom={1.5}>
           {data.length > 0 && (

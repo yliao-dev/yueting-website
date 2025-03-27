@@ -54,7 +54,7 @@ const HomePage = () => {
         <LineBreak />
 
         <section className="home__journey">
-          <div className="home__journey__intro">
+          <section className="home__journey__intro">
             <div className="home__journey__intro__text">
               <h1>Journey</h1>
               <p>
@@ -74,12 +74,12 @@ const HomePage = () => {
                 <p> Travelled</p>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div>
+          <section className="home__journey__map">
             <MapChart setTooltipContent={setContent} />
             <Tooltip id="map-tooltip" content={content} />
-          </div>
+          </section>
         </section>
       </div>
     </>
