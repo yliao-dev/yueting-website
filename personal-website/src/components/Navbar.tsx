@@ -6,13 +6,9 @@ import ReorderIcon from "@mui/icons-material/Reorder";
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
   const location = useLocation();
-
-  // Close the navbar when the location changes
   useEffect(() => setExpandNavbar(false), [location]);
-
   // Toggle Navbar for mobile view
   const toggleNavbar = () => setExpandNavbar((prev) => !prev);
-
   // Generate class based on active status
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? "navbar__link--active" : "navbar__link--inactive";
