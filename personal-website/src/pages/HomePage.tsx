@@ -53,9 +53,9 @@ const HomePage = () => {
         </section>
         <LineBreak />
 
-        <section className="home__worldMap">
-          <div className="home__worldMap__intro">
-            <div className="home__worldMap__intro__text">
+        <section className="home__journey">
+          <div className="home__journey__intro">
+            <div className="home__journey__intro__text">
               <h1>Journey</h1>
               <p>
                 I’ve lived across the U.S. in cities like New York City (NY),
@@ -64,7 +64,7 @@ const HomePage = () => {
                 world.
               </p>
             </div>
-            <div className="home__worldMap__legend">
+            <div className="home__journey__legend">
               <div>
                 <span className="legend__box lived" />
                 <p> Lived</p>

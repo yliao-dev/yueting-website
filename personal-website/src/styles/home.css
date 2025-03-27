@@ -7,7 +7,7 @@
   overflow-x: auto;
 }
 
-/* ------------ Home About ------------ */
+/* ------------ About ------------ */
 .home__about {
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
   animation: fade-in 1.2s ease-in;
 }
 
-/* ------------ Home Skills ------------ */
+/* ------------ Skills ------------ */
 .home__skills {
   display: flex;
   flex-direction: column;
@@ -59,24 +59,24 @@
   fill: white !important;
 }
 
-/* ------------ Home WorldMap ------------ */
-.home__worldMap {
+/* ------------ Journey ------------ */
+.home__journey {
   align-items: center;
   margin: 0 auto;
 }
 
-.home__worldMap__intro {
+.home__journey__intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
 
-.home__worldMap__intro__text p {
+.home__journey__intro__text p {
   max-width: 100%;
 }
 
-.home__worldMap__legend {
+.home__journey__legend {
   display: flex;
   flex-direction: row;
   gap: 5rem;
