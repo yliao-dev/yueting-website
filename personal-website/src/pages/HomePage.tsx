@@ -42,7 +42,7 @@ const HomePage = () => {
             <h1>Skills</h1>
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>
-          <div className="home__skill__content">
+          <div className="home__skill__text">
             {selectedSkill && (
               <>
                 <h2>{selectedSkill.label}</h2>
