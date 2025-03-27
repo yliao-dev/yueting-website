@@ -13,12 +13,12 @@ const HomePage = () => {
   return (
     <>
       <div className="home">
-        <section className="home__intro">
-          <div className="home__intro__text">
+        <section className="home__about">
+          <div className="home__about__intro">
             <h1>About</h1>
             <h2>
-              Developer <span className="home__intro__text__divider">|</span>
-              Swordsman <span className="home__intro__text__divider">|</span>
+              Developer <span className="home__about__text__divider">|</span>
+              Swordsman <span className="home__about__text__divider">|</span>
               Photographer
             </h2>
             <p>
@@ -30,7 +30,7 @@ const HomePage = () => {
           </div>
           <img
             src="/images/gallery/DSCF7886.jpg"
-            className="home__intro__image"
+            className="home__about__image"
             alt="portrait"
           />
         </section>
@@ -38,8 +38,11 @@ const HomePage = () => {
         <LineBreak />
 
         <section className="home__skills">
-          <div>
+          <div className="home__skills__intro">
             <h1>Skills</h1>
+          </div>
+
+          <div>
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>
           <section className="home__skills__text">
