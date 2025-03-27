@@ -83,7 +83,7 @@
 
 .home__worldMap__intro {
   display: flex;
-  flex-direction: column; /* Stack elements vertically on mobile */
+  flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
@@ -94,9 +94,8 @@
 
 .home__worldMap__legend {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-right: 10rem;
+  flex-direction: row;
+  gap: 5rem;
 }
 
 .legend__box {
