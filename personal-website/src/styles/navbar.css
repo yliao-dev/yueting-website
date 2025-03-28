@@ -106,15 +106,44 @@
   .navbar__dropdown-links {
     display: none !important;
   }
+  .navbar__logo {
+    width: 3rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  .navbar {
+    height: 6rem;
+  }
+
+  .navbar h2 {
+    font-size: 1.3rem;
+  }
+
+  .navbar__logo {
+    width: 3.5rem;
+    margin-left: 3rem;
+  }
+
   .navbar__links {
     gap: 2rem;
   }
 }
 
 @media (min-width: 1440px) {
+  .navbar {
+    height: 7rem;
+  }
+
+  .navbar h2 {
+    font-size: 1.4rem;
+  }
+
+  .navbar__logo {
+    width: 4rem;
+    margin-left: 4rem;
+  }
+
   .navbar__links {
     gap: 4rem;
   }
