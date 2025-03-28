@@ -47,6 +47,7 @@ const JourneyTimeline = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(
     timelineItems.length - 1
   );
+  const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   // Scroll to selected dot on click
@@ -60,20 +61,41 @@ const JourneyTimeline = () => {
     // }
   }, [activeIndex]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = Number(entry.target.getAttribute("data-index"));
+          if (entry.isIntersecting) {
+            setVisibleIndex(index);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+        rootMargin: "-40% 0px -40% 0px", // focus near vertical center
+      }
+    );
+
+    stepRefs.current.forEach((ref) => ref && observer.observe(ref));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="timeline-container">
       <div className="timeline-wrapper">
         {timelineItems.map((item, index) => (
           <div
             key={index}
-            className="timeline-step"
+            data-index={index}
             onClick={() => setActiveIndex(index === activeIndex ? null : index)}
             ref={(el) => (stepRefs.current[index] = el)}
+            className="timeline-step"
           >
             <div className="timeline-top hoverable">
               <div
                 className={`timeline-dot ${
-                  index === activeIndex ? "active" : ""
+                  index === visibleIndex ? "active" : ""
                 }`}
               />
               {index < timelineItems.length - 1 && (
@@ -83,7 +105,7 @@ const JourneyTimeline = () => {
             <div className="timeline-text">
               <h2>{item.label}</h2>
               <p>{item.year}</p>
-              {index === activeIndex && <p>{item.detail}</p>}
+              {index === visibleIndex && <p>{item.detail}</p>}
             </div>
           </div>
         ))}
