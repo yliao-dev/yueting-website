@@ -109,26 +109,14 @@
 }
 
 @media (min-width: 1024px) {
-  .navbar__toggle-button {
-    display: none;
-  }
   .navbar__links {
-    display: flex;
-  }
-  .navbar__dropdown-links {
-    display: none !important;
+    gap: 2rem;
   }
 }
 
 @media (min-width: 1440px) {
-  .navbar__toggle-button {
-    display: none;
-  }
   .navbar__links {
-    display: flex;
-  }
-  .navbar__dropdown-links {
-    display: none !important;
+    gap: 4rem;
   }
 }
 
