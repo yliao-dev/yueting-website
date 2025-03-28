@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: var(--font-weight-regular);
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
@@ -97,6 +97,25 @@ ul li {
 
 /* Desktop and above */
 @media (min-width: 1024px) {
+  section {
+    padding: 4rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 1rem;
+  }
 }
 
 /* Monitor and above */
