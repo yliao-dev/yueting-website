@@ -112,10 +112,6 @@ ul li {
   }
 }
 
-/* Monitor and above */
-@media (min-width: 1440) {
-}
-
 .page__divider {
   width: 90%;
   height: 0.2rem;
