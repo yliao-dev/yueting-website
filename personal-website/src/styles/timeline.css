@@ -95,14 +95,15 @@
   }
 
   .timeline-connector {
-    width: 5rem;
+    width: 6rem;
     height: 0.15rem;
     flex-shrink: 0;
   }
 
   .timeline-text {
+    width: 6rem;
     margin: 0.8rem 0 0;
-    width: 5rem;
+    height: 35vh;
   }
 
   .timeline-text h2 {
@@ -149,7 +150,7 @@
   .timeline-text {
     margin: 0.8rem 0 0;
     width: 8rem;
-    height: 30vh;
+    height: 40vh;
   }
 
   .timeline-text h2 {
