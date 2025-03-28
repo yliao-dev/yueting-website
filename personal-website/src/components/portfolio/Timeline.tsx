@@ -86,9 +86,13 @@ const JourneyTimeline = () => {
                   index === visibleIndex ? "active" : ""
                 }`}
               />
-              {index < timelineItems.length - 1 && (
-                <div className="timeline-connector" />
-              )}
+              <div
+                className="timeline-connector"
+                style={{
+                  visibility:
+                    index === timelineItems.length - 1 ? "hidden" : "visible",
+                }}
+              />
             </div>
             <div className="timeline-text">
               <h2>{item.label}</h2>
