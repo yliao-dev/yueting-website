@@ -14,34 +14,12 @@
   position: relative;
   max-width: 90%;
   max-height: 90%;
-  background-color: var(--white);
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Image Styling */
 .modal-image {
-  width: 100%;
-  max-height: 90vh; /* Allows full vertical display */
-  object-fit: contain; /* Keeps original aspect ratio */
+  max-height: 90vh;
+  object-fit: contain;
   height: auto;
   display: block;
-}
-
-/* Close Button */
-.close-button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 28px;
-  font-weight: lighter;
-  transition: color 0.3s ease;
-}
-
-.close-button:hover {
-  color: #9f9f9f;
-  cursor: auto;
 }
