@@ -52,9 +52,12 @@
   animation: fade-in 0.7s ease-in;
 }
 
-.timeline-top.hoverable:hover .timeline-dot,
-.timeline-top.hoverable:hover .timeline-connector {
-  background-color: var(--hover);
+.timeline-step.visible .timeline-text p {
+  display: block;
+}
+
+.timeline-step.active .timeline-text p {
+  display: none;
 }
 
 /* Tablet and above */
@@ -107,6 +110,21 @@
   }
   .timeline-text p {
     font-size: 0.7rem;
+  }
+
+  .timeline-step.visible .timeline-dot {
+    background-color: var(--timeline); /* disable visible effect */
+  }
+
+  .timeline-step.active .timeline-dot {
+    background-color: var(--hover); /* enable click effect */
+  }
+
+  .timeline-step.visible .timeline-text p {
+    display: none;
+  }
+  .timeline-step.active .timeline-text p {
+    display: block;
   }
 }
 

@@ -78,14 +78,12 @@ const JourneyTimeline = () => {
             data-index={index}
             onClick={() => setActiveIndex(index === activeIndex ? null : index)}
             ref={(el) => (stepRefs.current[index] = el)}
-            className="timeline-step"
+            className={`timeline-step ${
+              index === activeIndex ? "active" : ""
+            } ${index === visibleIndex ? "visible" : ""}`}
           >
             <div className="timeline-top hoverable">
-              <div
-                className={`timeline-dot ${
-                  index === visibleIndex ? "active" : ""
-                }`}
-              />
+              <div className="timeline-dot" />
               <div
                 className="timeline-connector"
                 style={{
@@ -97,7 +95,9 @@ const JourneyTimeline = () => {
             <div className="timeline-text">
               <h2>{item.label}</h2>
               <p>{item.year}</p>
-              {index === visibleIndex && <p>{item.detail}</p>}
+              {(index === visibleIndex || index === activeIndex) && (
+                <p>{item.detail}</p>
+              )}
             </div>
           </div>
         ))}
