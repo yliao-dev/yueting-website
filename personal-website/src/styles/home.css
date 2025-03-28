@@ -64,8 +64,8 @@
   margin: 0 auto;
 }
 
-.home__journey__intro h1 {
-  margin-top: 0;
+.home__journey h1 {
+  align-self: flex-start;
 }
 
 .home__journey__legend {
@@ -135,11 +135,6 @@
     max-width: 40%;
     max-height: 30rem;
     align-self: center;
-  }
-
-  .home__journey__intro {
-    flex-direction: row;
-    gap: 2rem;
   }
 
   .home__journey__legend {
