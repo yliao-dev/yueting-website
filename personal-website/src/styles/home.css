@@ -50,7 +50,7 @@
 }
 
 .home__skills__text h2 {
-  font-size: 1.4rem;
+  font-weight: var(--font-weight-bold);
 }
 
 .MuiPieArcLabel-root {
@@ -121,10 +121,13 @@
   .home__skills {
     flex-direction: row;
     justify-content: space-between;
+    min-height: 35rem;
   }
 
   .home__skills__text {
-    width: 45%;
+    width: 40%;
+    max-height: 35rem;
+    overflow-y: auto;
   }
 
   .home__journey__intro {
