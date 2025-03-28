@@ -52,13 +52,12 @@
   animation: fade-in 0.7s ease-in;
 }
 
-.timeline-step.visible .timeline-text p {
-  display: block;
-}
-
-.timeline-step.active .timeline-text p {
+/* .timeline-step.active:not(:last-child) .timeline-text p {
   display: none;
 }
+.timeline-step.visible .timeline-text p {
+  display: block;
+} */
 
 /* Tablet and above */
 @media (min-width: 768px) {
@@ -121,12 +120,13 @@
     background-color: var(--hover); /* enable click effect */
   }
 
-  .timeline-step.visible .timeline-text p {
-    display: none;
-  }
-  .timeline-step.active .timeline-text p {
+  /* .timeline-step.active .timeline-text p {
     display: block;
   }
+
+  .timeline-step.visible .timeline-text p {
+    display: none;
+  } */
 }
 
 /* Desktop and above */
