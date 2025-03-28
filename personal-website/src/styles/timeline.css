@@ -34,15 +34,6 @@
   background-color: var(--timeline);
 }
 
-.timeline-dot.active {
-  background-color: var(--hover);
-}
-
-.timeline-top.hoverable:hover .timeline-dot,
-.timeline-top.hoverable:hover .timeline-connector {
-  background-color: var(--hover);
-}
-
 .timeline-text {
   margin-top: 0.5rem;
   margin-left: 0.6rem;
@@ -74,6 +65,11 @@
     width: max-content;
   }
 
+  .timeline-step {
+    display: flex;
+    align-items: flex-start;
+  }
+
   .timeline-top {
     flex-direction: row;
   }
@@ -86,5 +82,14 @@
   .timeline-text {
     width: 150px;
     height: 260px;
+  }
+
+  .timeline-dot.active {
+    background-color: var(--hover);
+  }
+
+  .timeline-top.hoverable:hover .timeline-dot,
+  .timeline-top.hoverable:hover .timeline-connector {
+    background-color: var(--hover);
   }
 }
