@@ -13,6 +13,11 @@
   margin: 0 auto;
 }
 
+.portfolio__timeline {
+  display: flex;
+  align-self: flex-start;
+}
+
 /* Project List Container */
 .portfolio__project-list {
   display: grid;

@@ -18,7 +18,7 @@ const PortfolioPage = () => {
           </p>
         </section>
 
-        <section>
+        <section className="portfolio__timeline">
           <JourneyTimeline />
         </section>
 
