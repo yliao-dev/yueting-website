@@ -132,11 +132,9 @@
   }
 
   .home__skills__text {
-    flex: 1;
     max-width: 40%;
-    overflow-y: auto;
-    max-height: 35rem;
-    align-self: stretch;
+    margin-top: -5rem;
+    align-self: center;
   }
 
   .home__journey__intro {
