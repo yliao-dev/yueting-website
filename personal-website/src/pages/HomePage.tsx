@@ -38,7 +38,9 @@ const HomePage = () => {
 
         <section className="home__skills">
           <h1>Skills</h1>
-          <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
+          <div className="home__skills__chart">
+            <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
+          </div>
           <section className="home__skills__text">
             {selectedSkill && (
               <>

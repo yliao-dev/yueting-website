@@ -124,10 +124,15 @@
     min-height: 35rem;
   }
 
+  .home__skills__chart {
+    padding: 0 5rem;
+  }
+
   .home__skills__text {
-    width: 40%;
     max-height: 35rem;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .home__journey__intro {
