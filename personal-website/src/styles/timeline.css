@@ -1,33 +1,38 @@
 .timeline-container {
-  overflow-x: auto;
-  margin: 0 auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 
 .timeline-wrapper {
   display: flex;
-  align-items: center;
-  width: max-content;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .timeline-step {
-  cursor: pointer;
-  /* scroll-snap-align: start; */
+  display: flex;
+  align-items: flex-start;
 }
 
-/* Dot + connector row */
 .timeline-top {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .timeline-dot {
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
   background-color: var(--timeline);
   border-radius: 100%;
-  border: 2px solid var(white);
+  border: 2px solid var(--white);
+}
+
+.timeline-connector {
+  width: 2px;
+  height: 8rem;
+  background-color: var(--timeline);
 }
 
 .timeline-dot.active {
@@ -39,18 +44,11 @@
   background-color: var(--hover);
 }
 
-.timeline-connector {
-  height: 2px;
-  width: 140px;
-  background-color: var(--timeline);
-  flex-shrink: 0;
-}
-
 .timeline-text {
   margin-top: 0.5rem;
-  margin-left: 0.3rem;
-  width: 150px;
-  height: 260px;
+  margin-left: 0.6rem;
+  width: 25rem;
+  height: 10rem;
 }
 
 .timeline-text h2 {
@@ -67,4 +65,28 @@
 
 /* Tablet and above */
 @media (min-width: 768px) {
+  .timeline-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .timeline-wrapper {
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+  }
+
+  .timeline-top {
+    flex-direction: row;
+  }
+
+  .timeline-connector {
+    height: 2px;
+    width: 140px;
+  }
+
+  .timeline-text {
+    width: 150px;
+    height: 260px;
+  }
 }
