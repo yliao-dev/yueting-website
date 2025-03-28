@@ -1,6 +1,6 @@
 /* ------------ Navbar ------------ */
 .navbar {
-  height: 5rem;
+  height: 6rem;
   background: var(--primary);
   display: flex;
   align-items: center;
@@ -113,7 +113,7 @@
 
 @media (min-width: 1024px) {
   .navbar {
-    height: 6rem;
+    height: 6.5rem;
   }
 
   .navbar h2 {
