@@ -22,13 +22,6 @@ html {
   box-sizing: border-box;
 }
 
-/* section {
-  width: 90%;
-  max-width: 1200px;
-  padding: 2rem;
-  align-items: center;
-} */
-
 section {
   padding: 1.2rem;
   align-items: center;
@@ -43,7 +36,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: var(--font-weight-regular);
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
@@ -98,15 +91,16 @@ ul li {
 /* Desktop and above */
 @media (min-width: 1024px) {
   section {
-    padding: 4rem;
+    width: 90%;
+    max-width: 75rem;
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   p {
