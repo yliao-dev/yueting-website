@@ -138,6 +138,6 @@
   }
 
   .home__journey__legend {
-    margin-right: 0;
+    justify-content: flex-end;
   }
 }
