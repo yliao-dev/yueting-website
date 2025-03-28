@@ -51,13 +51,13 @@ const JourneyTimeline = () => {
 
   // Scroll to selected dot on click
   useEffect(() => {
-    if (activeIndex !== null && stepRefs.current[activeIndex]) {
-      stepRefs.current[activeIndex]?.scrollIntoView({
-        behavior: "smooth",
-        inline: "end",
-        block: "nearest",
-      });
-    }
+    // if (activeIndex !== null && stepRefs.current[activeIndex]) {
+    //   stepRefs.current[activeIndex]?.scrollIntoView({
+    //     behavior: "smooth",
+    //     inline: "end",
+    //     block: "nearest",
+    //   });
+    // }
   }, [activeIndex]);
 
   return (
