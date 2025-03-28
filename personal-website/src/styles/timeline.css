@@ -52,7 +52,7 @@
   animation: fade-in 0.7s ease-in;
 }
 
-.timeline-step.visible:not(:last-child) .timeline-text p {
+.timeline-step.visible .timeline-text p {
   display: block;
 }
 
@@ -125,14 +125,6 @@
     display: none;
   }
   .timeline-step.active .timeline-text p {
-    display: block;
-  }
-
-  .timeline-step:last-child .timeline-dot {
-    background-color: var(--hover);
-  }
-
-  .timeline-step:last-child .timeline-text p {
     display: block;
   }
 }
