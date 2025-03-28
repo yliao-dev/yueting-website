@@ -21,40 +21,30 @@
 /* Project List Container */
 .portfolio__project-list {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
   transition: grid-template-columns 0.3s ease-in-out;
 }
 
 /* Individual Project Item */
 .portfolio__project {
-  border-radius: 15px;
+  border-radius: 0.2rem;
   padding: 1em;
   background-color: var(--white);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  height: auto;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   flex-direction: column;
-  overflow: hidden;
 }
 
 .portfolio__project:hover {
   opacity: 0.8;
   cursor: pointer;
-  box-shadow: 0px 6px 12px rgba(169, 5, 5, 0.2);
 }
 
-.portfolio__project img {
-  border-radius: 15px;
-}
 /* Project Item Description */
 .portfolio__project__text {
-  width: 100%;
-  text-align: left;
-  padding: 0 0.5rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   margin-top: 1rem;
 }
 
