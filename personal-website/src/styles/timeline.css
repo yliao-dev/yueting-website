@@ -52,6 +52,11 @@
   animation: fade-in 0.7s ease-in;
 }
 
+.timeline-top.hoverable:hover .timeline-dot,
+.timeline-top.hoverable:hover .timeline-connector {
+  background-color: var(--hover);
+}
+
 /* Tablet and above */
 @media (min-width: 768px) {
   .timeline-container {
