@@ -44,9 +44,7 @@ const timelineItems = [
 ];
 
 const JourneyTimeline = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(
-    timelineItems.length - 1
-  );
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
 
