@@ -131,6 +131,7 @@
   .timeline-text {
     margin: 0.8rem 0 0;
     width: 8rem;
+    height: 30vh;
   }
 
   .timeline-text h2 {
