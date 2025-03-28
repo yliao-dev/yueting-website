@@ -27,6 +27,32 @@
   opacity: 0.8;
 }
 
+/* Modal Background */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Image Styling */
+.modal-image {
+  max-height: 90vh;
+  object-fit: contain;
+  height: auto;
+  display: block;
+}
+
 /* Tablet and above */
 @media (min-width: 768px) {
   .masonry-grid {
