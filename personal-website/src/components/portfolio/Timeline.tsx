@@ -65,7 +65,6 @@ const JourneyTimeline = () => {
         rootMargin: "-40% 0px -40% 0px", // focus near vertical center
       }
     );
-
     stepRefs.current.forEach((ref) => ref && observer.observe(ref));
     return () => observer.disconnect();
   }, []);
