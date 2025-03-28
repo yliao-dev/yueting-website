@@ -114,6 +114,9 @@
 
 /* Desktop and above */
 @media (min-width: 1024px) {
+  .timeline-container {
+    width: 90%;
+  }
   .timeline-dot {
     width: 1rem;
     height: 1rem;
