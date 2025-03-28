@@ -17,7 +17,6 @@
 .home__about__text__divider {
   margin: 0 0.3rem;
   font-size: 1rem;
-  font-weight: 350;
   opacity: 0.5;
 }
 
@@ -106,6 +105,13 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 3rem;
+  }
+
+  .home__about__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
   }
 
   .home__about__image {
