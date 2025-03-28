@@ -61,24 +61,28 @@
 @media (min-width: 768px) {
   .timeline-container {
     overflow-x: auto;
-    overflow-y: hidden;
+    margin: 0 auto;
     scroll-snap-type: x mandatory;
   }
 
   .timeline-wrapper {
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    width: max-content;
   }
 
   .timeline-step {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
     scroll-snap-align: start;
-    margin-right: 2rem;
   }
 
   .timeline-top {
-    flex-direction: row;
+    display: flex;
+    align-items: center;
   }
 
   .timeline-dot {
@@ -92,6 +96,7 @@
   .timeline-connector {
     width: 8rem;
     height: 0.15rem;
+    flex-shrink: 0;
   }
 
   .timeline-text {
