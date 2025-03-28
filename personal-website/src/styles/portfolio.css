@@ -16,7 +16,6 @@
 .portfolio__timeline {
   display: flex;
   width: 100%;
-
   align-self: center;
 }
 
@@ -56,6 +55,9 @@
 
 /* Tablet and above */
 @media (min-width: 768px) {
+  .portfolio__timeline {
+    justify-content: center;
+  }
   .portfolio__project-list {
     grid-template-columns: repeat(2, 1fr);
   }
