@@ -18,7 +18,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
 
       <div className="blog__post">
         <img src={image} />
-        <div className="blog__post__title">
+        <div className="blog__post__text">
           <Link to={`${title}`}>
             <h2>{title}</h2>
           </Link>
