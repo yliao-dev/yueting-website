@@ -14,7 +14,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
   const date = "Dec 20, 2024";
   return (
     <>
-      <LineBreak variant="gradient" />
+      <LineBreak />
 
       <div className="blog__post">
         <img src={image} />
