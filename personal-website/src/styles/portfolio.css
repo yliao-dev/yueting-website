@@ -15,7 +15,9 @@
 
 .portfolio__timeline {
   display: flex;
-  align-self: flex-start;
+  width: 100%;
+
+  align-self: center;
 }
 
 /* Project List Container */
