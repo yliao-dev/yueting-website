@@ -61,40 +61,41 @@
 @media (min-width: 768px) {
   .timeline-container {
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
   }
 
   .timeline-wrapper {
     flex-direction: row;
-    align-items: center;
-    width: max-content;
+    align-items: flex-start;
   }
 
   .timeline-step {
     display: flex;
     align-items: flex-start;
+    scroll-snap-align: start;
+    margin-right: 2rem;
   }
 
   .timeline-top {
     flex-direction: row;
   }
 
+  .timeline-dot {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--timeline);
+    border: 0.1rem solid var(--white);
+    border-radius: 100%;
+  }
+
   .timeline-connector {
-    height: 2px;
-    width: 140px;
+    width: 8rem;
+    height: 0.15rem;
   }
 
   .timeline-text {
-    width: 150px;
-    height: 260px;
-  }
-
-  .timeline-dot.active {
-    background-color: var(--hover);
-  }
-
-  .timeline-top.hoverable:hover .timeline-dot,
-  .timeline-top.hoverable:hover .timeline-connector {
-    background-color: var(--hover);
+    margin: 0.8rem 0 0;
+    width: 8rem;
   }
 }
