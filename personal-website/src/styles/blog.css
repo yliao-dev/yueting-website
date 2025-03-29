@@ -107,6 +107,9 @@
 
 /* Desktop and above */
 @media (min-width: 1024px) {
+  .blog__contentBlock {
+    width: 70%;
+  }
   .blog__post__text h2 {
     font-size: 1.6rem;
   }
