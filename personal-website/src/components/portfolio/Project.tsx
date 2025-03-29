@@ -19,7 +19,10 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
         <img src={image} />
         <div className="portfolio__project__text">
           <h2>{name}</h2>
-          <p>Project Type</p>
+          <p>
+            Project Type Project Type Project Type Project Type Project Type
+            Project Type Project Type Project Type
+          </p>
         </div>
       </div>
     </>
