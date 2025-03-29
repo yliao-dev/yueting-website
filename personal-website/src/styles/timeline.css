@@ -95,7 +95,7 @@
   .timeline-text {
     width: 6rem;
     margin: 0.8rem 0 0;
-    height: 35vh;
+    height: 20vh;
   }
 
   .timeline-text h2 {
@@ -133,9 +133,7 @@
     flex-shrink: 0;
   }
   .timeline-text {
-    margin: 0.8rem 0 0;
     width: 8rem;
-    height: 40vh;
   }
 
   .timeline-text h2 {
