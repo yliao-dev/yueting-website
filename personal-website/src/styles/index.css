@@ -143,7 +143,7 @@ ul li {
 @keyframes slide-from-left {
   from {
     opacity: 0;
-    transform: translateX(var(--slide-distance, -150px));
+    transform: translateX(-150px);
   }
   to {
     opacity: 1;
@@ -158,6 +158,6 @@ ul li {
   }
   to {
     opacity: 1;
-    transform: translateX(var(--slide-destination, 0));
+    transform: translateX(0);
   }
 }

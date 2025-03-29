@@ -6,10 +6,17 @@ import SkillPieChart, {
 import LineBreak from "../components/LineBreak";
 import { Tooltip } from "react-tooltip";
 import MapChart from "../components/Home/JourneyWorldMap";
+import { useScrollIndex } from "../hooks/useScrollIndex";
 
 const HomePage = () => {
   const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
   const [content, setContent] = useState("");
+  const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
+  const scrollRefs = useScrollIndex(setVisibleIndex, {
+    threshold: 0.5,
+    rootMargin: "-40% 0px -40% 0px",
+  });
+
   return (
     <>
       <div className="home">
@@ -40,7 +47,15 @@ const HomePage = () => {
           <div className="home__skills__chart">
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
           </div>
-          <section className="home__skills__text">
+          <section
+            className={`home__skills__text ${
+              visibleIndex === 0 ? "animate-slide-in" : ""
+            }`}
+            data-index={0}
+            ref={(el) => {
+              if (el) scrollRefs.current[0] = el;
+            }}
+          >
             {selectedSkill && (
               <>
                 <h2>{selectedSkill.label}</h2>
