@@ -59,13 +59,13 @@
 .contact__facts {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .contact__facts__image {
-  width: 80%;
+  transform: scale(0.5);
   height: auto;
   border-radius: 0.5rem;
+  animation: fade-in 1s ease-in;
 }
 
 .contact__facts__text {
@@ -91,15 +91,19 @@
     animation-fill-mode: forwards;
     animation-duration: 1.2s;
     animation-timing-function: ease-in-out;
-    animation-name: slide-from-right;
+    animation-name: slide-from-left;
   }
 
   .contact__facts {
     flex-direction: row-reverse;
   }
 
-  .contact__facts__image {
-    width: 50%;
+  .contact__facts__text {
+    --slide-distance: 200px;
+    animation-fill-mode: forwards;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-name: slide-from-right;
   }
 
   .contact__facts__text li {

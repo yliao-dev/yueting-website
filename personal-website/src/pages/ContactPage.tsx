@@ -31,7 +31,7 @@ const ContactPage = () => {
             </ul>
           </div>
           <img
-            src="src/assets/images/image1.jpg"
+            src="src/assets/images/bison.jpg"
             alt="Behind the Scenes"
             className="contact__facts__image"
           />
