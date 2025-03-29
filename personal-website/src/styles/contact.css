@@ -4,16 +4,11 @@
   align-items: center;
 }
 
-.contact__intro__text {
+.contact__intro {
   text-align: left;
-  --slide-distance: -200px;
-  animation-fill-mode: forwards;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
-  animation-name: slide-from-left;
 }
 
-.contact__intro__text h1 {
+.contact__intro h1 {
   text-align: center;
 }
 
@@ -24,7 +19,11 @@
   justify-content: center;
   margin-top: 2rem;
   gap: 2rem;
-  animation: fade-in 1s ease-in;
+  --slide-distance: 200px;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-name: slide-from-right;
 }
 .social-media-icons svg,
 .social-media-icons img {
@@ -72,12 +71,6 @@
   list-style-type: disc;
   padding-left: 1.5rem;
   line-height: 1.8;
-
-  --slide-distance: 200px;
-  animation-fill-mode: forwards;
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
-  animation-name: slide-from-right;
 }
 
 /* Tablet and above */
