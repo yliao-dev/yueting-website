@@ -23,6 +23,7 @@ type Props = {
 
 const MapChart = ({ setTooltipContent }: Props) => {
   const [data, setData] = useState<CountryData[]>([]);
+  const [resetKey, setResetKey] = useState(0);
 
   useEffect(() => {
     csv(csvPath, (row) => ({
@@ -37,6 +38,12 @@ const MapChart = ({ setTooltipContent }: Props) => {
 
   return (
     <>
+      <button
+        className="reset__view"
+        onClick={() => setResetKey((prev) => prev + 1)}
+      >
+        Reset View
+      </button>
       <ComposableMap
         projection="geoNaturalEarth1"
         projectionConfig={{
@@ -46,7 +53,11 @@ const MapChart = ({ setTooltipContent }: Props) => {
         height={400}
         width={800}
       >
-        <ZoomableGroup center={[-12, 35]} zoom={1.5}>
+        <ZoomableGroup
+          center={[-12, 35]}
+          zoom={1}
+          key={resetKey} // resetting via key
+        >
           {data.length > 0 && (
             <Geographies geography={geoUrl}>
               {({ geographies }) =>

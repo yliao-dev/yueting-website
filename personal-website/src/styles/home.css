@@ -93,6 +93,19 @@
   width: 100%;
 }
 
+.reset__view {
+  background-color: var(--hover);
+  color: var(--white);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.reset__view:hover {
+  background-color: var(--light-blue);
+}
+
 /* Tablet and above */
 @media (min-width: 768px) {
 }
@@ -137,5 +150,9 @@
 
   .home__journey__legend {
     justify-content: flex-end;
+  }
+  .reset__view {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
   }
 }
