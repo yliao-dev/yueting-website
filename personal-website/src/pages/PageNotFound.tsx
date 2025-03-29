@@ -11,7 +11,7 @@ const PageNotFound = () => {
           <h1>404 Not Found</h1>
           <p>
             Hmm, looks like you’ve wandered into uncharted territory. Don’t
-            worry though, my trusty horse "Bison" will guide you back to safety!
+            worry though, my trusty horse will guide you back to safety!
           </p>
           <FaExclamationTriangle className="pageNotFound__warning" />
           <Link to="/" className="pageNotFound__back-button">
@@ -22,7 +22,9 @@ const PageNotFound = () => {
       <section className="pageNotFound__bison">
         <img src={bison} alt="Bison in 404" />
         <p>
-          Nationality: Poland
+          Name: Bison
+          <br />
+          Nationality: Polish
           <br />
           Species: Horse
           <br />
