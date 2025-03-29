@@ -35,7 +35,6 @@ const HomePage = () => {
           />
         </section>
         <LineBreak />
-
         <section className="home__skills">
           <h1>Skills</h1>
           <div className="home__skills__chart">
