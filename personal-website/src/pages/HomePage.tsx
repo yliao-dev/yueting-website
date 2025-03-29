@@ -17,8 +17,8 @@ const HomePage = () => {
           <div className="home__about__text">
             <h1>About</h1>
             <h2>
-              Developer <span className="home__about__text__divider">|</span>
-              Swordsman <span className="home__about__text__divider">|</span>
+              Developer<span className="divider">|</span>
+              Swordsman<span className="divider">|</span>
               Photographer
             </h2>
             <p>

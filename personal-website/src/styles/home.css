@@ -13,11 +13,9 @@
   flex-direction: column;
   margin: 0 auto;
 }
-
-.home__about__text__divider {
-  margin: 0 0.3rem;
-  font-size: 1rem;
-  opacity: 0.5;
+.divider {
+  margin: 0 0.8ch;
+  opacity: 0.4;
 }
 
 .home__about h2 {
