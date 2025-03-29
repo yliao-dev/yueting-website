@@ -24,7 +24,6 @@
 
   --slide-distance: 200px;
   animation: slide-in 1s ease forwards;
-  opacity: 1;
 }
 .social-media-icons svg,
 .social-media-icons img {
@@ -88,7 +87,6 @@
   .contact__intro__text {
     --slide-distance: -200px;
     animation: slide-in 1s ease forwards;
-    opacity: 1;
   }
 
   .contact__facts {
@@ -98,7 +96,6 @@
   .contact__facts__text {
     --slide-distance: 200px;
     animation: slide-in 1s ease forwards;
-    opacity: 1;
   }
 
   .contact__facts__text li {
