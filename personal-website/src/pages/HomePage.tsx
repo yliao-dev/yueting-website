@@ -49,7 +49,7 @@ const HomePage = () => {
           </div>
           <section
             className={`home__skills__text ${
-              visibleIndex === 0 ? "animate-slide-in" : ""
+              visibleIndex === 0 ? "animate-slide-left" : ""
             }`}
             data-index={0}
             ref={(el) => {
@@ -70,7 +70,7 @@ const HomePage = () => {
           <h1>Journey</h1>
           <div
             className={`home__journey__text ${
-              visibleIndex === 1 ? "animate-slide-in" : ""
+              visibleIndex === 1 ? "animate-slide-right" : ""
             }`}
             data-index={1}
             ref={(el) => {

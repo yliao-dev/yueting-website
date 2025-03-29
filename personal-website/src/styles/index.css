@@ -131,6 +131,18 @@ ul li {
   background-color: var(--white);
 }
 
+.animate-slide-left {
+  --slide-distance: -200px;
+  animation: slide-in 1s ease forwards;
+  opacity: 1;
+}
+
+.animate-slide-right {
+  --slide-distance: 200px;
+  animation: slide-in 1s ease forwards;
+  opacity: 1;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -140,21 +152,10 @@ ul li {
   }
 }
 
-@keyframes slide-from-left {
+@keyframes slide-in {
   from {
     opacity: 0;
-    transform: translateX(-150px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-from-right {
-  from {
-    opacity: 0;
-    transform: translateX(var(--slide-distance, 150px));
+    transform: translateX(var(--slide-distance));
   }
   to {
     opacity: 1;

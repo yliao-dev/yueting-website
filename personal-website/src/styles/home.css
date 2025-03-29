@@ -47,12 +47,6 @@
   overflow-y: auto;
 }
 
-.animate-slide-in {
-  --slide-distance: 200px;
-  animation: slide-from-right 1s ease-in-out forwards;
-  opacity: 1;
-}
-
 .home__skills__text h2 {
   font-weight: var(--font-weight-bold);
 }
