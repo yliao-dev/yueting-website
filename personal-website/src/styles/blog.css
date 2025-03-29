@@ -87,6 +87,10 @@
 
 /* Tablet and above */
 @media (min-width: 768px) {
+  .blog__contentBlock {
+    width: 90%;
+  }
+
   .blog__post__text h2 {
     font-size: 1.4rem;
   }
