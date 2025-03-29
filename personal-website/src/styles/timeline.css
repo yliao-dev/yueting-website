@@ -95,7 +95,9 @@
   .timeline-text {
     width: 6rem;
     margin: 0.8rem 0 0;
-    height: 20vh;
+    min-height: 18rem;
+    height: fit-content;
+    max-height: none;
   }
 
   .timeline-text h2 {
