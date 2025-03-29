@@ -53,18 +53,14 @@ const MapChart = ({ setTooltipContent }: Props) => {
         height={400}
         width={800}
       >
-        <ZoomableGroup
-          center={[-12, 35]}
-          zoom={1}
-          key={resetKey} // resetting via key
-        >
+        <ZoomableGroup center={[-12, 35]} zoom={1} key={resetKey}>
           {data.length > 0 && (
             <Geographies geography={geoUrl}>
               {({ geographies }) =>
                 geographies.map((geo) => {
                   const d = data.find((s) => s.ISO3 === geo.id);
 
-                  let fillColor = "#F5F4F6"; // default gray
+                  let fillColor = "#F5F4F6";
                   if (d) {
                     if (d.Lived === 1) fillColor = "#0072b1"; // dark blue
                     else if (d.Travelled === 1) fillColor = "#89c2d9"; // light blue
@@ -93,7 +89,7 @@ const MapChart = ({ setTooltipContent }: Props) => {
                           outline: "none",
                         },
                         hover: {
-                          fill: "#d2b48c", // green on hover
+                          fill: "#d2b48c",
                           outline: "none",
                         },
                         // pressed: {
