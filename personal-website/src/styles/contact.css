@@ -94,6 +94,14 @@
     animation-name: slide-from-right;
   }
 
+  .contact__facts {
+    flex-direction: row-reverse;
+  }
+
+  .contact__facts__image {
+    width: 50%;
+  }
+
   .contact__facts__text li {
     margin-bottom: 1rem;
   }
@@ -132,20 +140,7 @@
     height: 3rem;
   }
 
-  .contact__facts {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
-
-  .contact__facts__image {
-    width: 40%;
-    height: auto;
-    border-radius: 0.5rem;
-  }
-
   .contact__facts__text {
-    list-style-type: disc;
     line-height: 2;
     margin-left: 5rem;
   }
