@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
 .contact__intro__text {
@@ -58,23 +59,22 @@
 .contact__facts {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
 }
 
 .contact__facts__image {
-  width: 90%;
+  width: 80%;
   height: auto;
   border-radius: 0.5rem;
 }
 
-.contact__facts__text h2 {
-  font-size: 1.4rem;
-}
 .contact__facts__text {
   list-style-type: disc;
-  padding-left: 1.5rem;
   line-height: 1.8;
+  margin-left: 1.5rem;
+}
+.contact__facts__text h2 {
+  font-size: 1.4rem;
 }
 
 /* Tablet and above */
