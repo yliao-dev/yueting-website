@@ -1,7 +1,7 @@
 export const ProjectData = [
   {
     id: 1,
-    name: "Dijkstra Algorithm Visualizer",
+    name: "Dijkstra Algorithm Visualizer Visualizer Visualizer Visualizer Visualizer Visualizer",
     image: "src/assets/images/temp_image.jpg",
     skills: "JavaScript,HTML,CSS",
   },
