@@ -20,11 +20,6 @@ const ContactPage = () => {
         <LineBreak />
 
         <section className="contact__facts">
-          <img
-            src="src/assets/images/image1.jpg"
-            alt="Behind the Scenes"
-            className="contact__facts__image"
-          />
           <div className="contact__facts__text">
             <h1> Behind the Scenes </h1>
             <ul>
@@ -35,6 +30,11 @@ const ContactPage = () => {
               <li>If I could have any pet, it’d be a horse. 🐴</li>
             </ul>
           </div>
+          <img
+            src="src/assets/images/image1.jpg"
+            alt="Behind the Scenes"
+            className="contact__facts__image"
+          />
         </section>
       </div>
     </>

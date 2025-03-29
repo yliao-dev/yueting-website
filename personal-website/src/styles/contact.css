@@ -34,8 +34,11 @@
   height: 2.5rem;
 }
 
-.social-media-icons.vertical svg:hover {
-  transform: scale(1.1);
+.social-media-icons svg:hover {
+  transform: scale(1.2);
+}
+.social-media-icons img:hover {
+  transform: scale(1);
 }
 
 .linkedin-icon {
@@ -56,12 +59,13 @@
 
 .contact__facts {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 
 .contact__facts__image {
-  width: 50%;
+  width: 90%;
   height: auto;
   border-radius: 0.5rem;
 }
