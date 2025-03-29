@@ -21,7 +21,7 @@ const ContactPage = () => {
 
         <section className="contact__facts">
           <div className="contact__facts__text">
-            <h1> Behind the Scenes </h1>
+            <h2> Behind the Scenes </h2>
             <ul>
               <li>This Website = Travel + Code + Weeks + MacBook Air</li>
               <li>No PhotoShop for my gallery photos yet</li>
