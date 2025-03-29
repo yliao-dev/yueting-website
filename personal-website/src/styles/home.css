@@ -45,6 +45,12 @@
   height: fit-content;
   max-height: 15rem;
   overflow-y: auto;
+
+  --slide-distance: 200px;
+  animation-fill-mode: forwards;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-name: slide-from-right;
 }
 
 .home__skills__text h2 {

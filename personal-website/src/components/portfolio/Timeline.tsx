@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+import { useScrollIndex } from "../../hooks/useScrollIndex";
 const timelineItems = [
   {
     label: "University",
@@ -48,26 +49,10 @@ const JourneyTimeline = () => {
     timelineItems.length - 1
   );
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
-  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number(entry.target.getAttribute("data-index"));
-          if (entry.isIntersecting) {
-            setVisibleIndex(index);
-          }
-        });
-      },
-      {
-        threshold: 0.5,
-        rootMargin: "-40% 0px -40% 0px", // focus near vertical center
-      }
-    );
-    stepRefs.current.forEach((ref) => ref && observer.observe(ref));
-    return () => observer.disconnect();
-  }, []);
+  const stepRefs = useScrollIndex(setVisibleIndex, {
+    threshold: 0.5,
+    rootMargin: "-40% 0px -40% 0px",
+  });
 
   return (
     <div className="timeline-container">
