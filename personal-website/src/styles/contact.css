@@ -7,14 +7,13 @@
 .contact__intro {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: baseline;
 }
 
 .contact__intro__text {
-  max-width: 800px;
+  max-width: 30rem;
   text-align: left;
-
   --slide-distance: -200px;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
@@ -27,12 +26,12 @@
   flex-direction: column;
   transition: color 0.3s ease-in-out;
   justify-content: center;
-  gap: 10px;
+  gap: 0.5rem;
 }
 .social-media-icons svg,
 .social-media-icons img {
-  width: 50px;
-  height: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .social-media-icons.vertical svg:hover {
@@ -64,7 +63,7 @@
 .contact__facts__image {
   width: 50%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .contact__facts__text {
@@ -77,4 +76,12 @@
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-name: slide-from-right;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
 }
