@@ -4,21 +4,22 @@
   align-items: center;
 }
 
-.contact__intro {
-  text-align: left;
+.contact__intro__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact__intro h1 {
-  text-align: center;
+.contact__intro__text p {
+  max-width: 90%;
 }
-
 .social-media-icons {
   display: flex;
   flex-direction: row;
   transition: color 0.3s ease-in-out;
   justify-content: center;
   margin-top: 2rem;
-  gap: 2rem;
+  gap: 10vw;
   --slide-distance: 200px;
   animation-fill-mode: forwards;
   animation-duration: 1.2s;
