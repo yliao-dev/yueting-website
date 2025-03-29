@@ -104,7 +104,6 @@
 
   .contact__intro__text p {
     max-width: 70%;
-    font-size: 1.3rem;
   }
 
   .social-media-icons {
@@ -153,11 +152,5 @@
 
   .contact__facts__text li {
     margin-bottom: 2rem;
-  }
-  .contact__facts__text h2 {
-    font-size: 1.8rem;
-  }
-  .contact__facts__text p {
-    font-size: 1.5rem;
   }
 }
