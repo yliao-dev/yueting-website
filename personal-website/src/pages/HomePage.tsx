@@ -13,8 +13,8 @@ const HomePage = () => {
   const [content, setContent] = useState("");
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
   const scrollRefs = useScrollIndex(setVisibleIndex, {
-    threshold: 0.5,
-    rootMargin: "-40% 0px -40% 0px",
+    threshold: 0.1,
+    rootMargin: "-20% 0px -20% 0px",
   });
 
   return (
@@ -68,12 +68,21 @@ const HomePage = () => {
 
         <section className="home__journey">
           <h1>Journey</h1>
-          <p>
-            I’ve lived across the U.S. in cities like New York City (NY), Troy
-            (NY), Los Angeles (CA), and Provo (UT), and have also spent several
-            months to half a year living in other parts of the world.
-          </p>
-
+          <div
+            className={`home__journey__text ${
+              visibleIndex === 1 ? "animate-slide-in" : ""
+            }`}
+            data-index={1}
+            ref={(el) => {
+              if (el) scrollRefs.current[1] = el;
+            }}
+          >
+            <p>
+              I’ve lived across the U.S. in cities like New York City (NY), Troy
+              (NY), Los Angeles (CA), and Provo (UT), and have also spent
+              several months to half a year living in other parts of the world.
+            </p>
+          </div>
           <section className="home__journey__legend">
             <div>
               <span className="legend__box lived" />
@@ -84,7 +93,6 @@ const HomePage = () => {
               <p> Travelled</p>
             </div>
           </section>
-
           <section className="home__journey__map">
             <MapChart setTooltipContent={setContent} />
             <Tooltip id="map-tooltip" content={content} />

@@ -44,15 +44,12 @@
 .home__skills__text {
   height: fit-content;
   max-height: 15rem;
-  /* min-height: 85rem; */
   overflow-y: auto;
-  background: var(--light-blue);
-  opacity: 0;
 }
 
 .animate-slide-in {
   --slide-distance: 200px;
-  animation: slide-from-right 1.2s ease-in-out forwards;
+  animation: slide-from-right 1s ease-in-out forwards;
   opacity: 1;
 }
 
