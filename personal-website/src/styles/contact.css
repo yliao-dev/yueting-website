@@ -24,6 +24,7 @@
   justify-content: center;
   margin-top: 2rem;
   gap: 2rem;
+  animation: fade-in 1s ease-in;
 }
 .social-media-icons svg,
 .social-media-icons img {
