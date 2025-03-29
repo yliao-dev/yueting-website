@@ -6,60 +6,32 @@
 
 .pageNotFound__intro {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.pageNotFound__text {
-  text-align: center;
-  max-width: 600px;
-}
-
-.pageNotFound__warning {
-  width: 40px;
-  height: 40px;
-  color: rgba(255, 221, 51, 1);
-}
-
-.pageNotFound__back-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 0.5rem 1.2rem;
-  background-color: var(--primary);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 500;
-}
-
-.go-back-button:hover {
-  background-color: var(--hover);
-}
-
-.pageNotFound__bison {
-  display: flex;
-  justify-self: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 30rem;
 }
 
-.pageNotFound__bison img {
+.pageNotFound__intro img {
   max-width: 30%;
-
+  margin-top: 2rem;
   --slide-distance: 400px;
   animation-fill-mode: forwards;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-name: slide-from-right;
 }
 
-.pageNotFound__bison p {
+.pageNotFound__back-button {
+  display: inline-block;
   margin-top: 2rem;
-  list-style-type: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
 
-  animation-duration: 1.2s;
-  animation-timing-function: ease-in-out;
-  animation-name: fade-in;
+  background-color: var(--primary);
+  color: white;
+}
+
+.pageNotFound__back-button:hover {
+  background-color: var(--hover);
 }
