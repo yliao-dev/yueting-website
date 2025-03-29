@@ -1,7 +1,9 @@
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import LineBreak from "../components/LineBreak";
+import { useState } from "react";
 
 const ContactPage = () => {
+  const [showInfo, setShowInfo] = useState(false);
   return (
     <>
       <div className="contact">
@@ -30,11 +32,23 @@ const ContactPage = () => {
               <li>If I could have any pet, it’d be a horse. 🐴</li>
             </ul>
           </div>
-          <img
-            src="src/assets/images/bison.jpg"
-            alt="Behind the Scenes"
+          <div
             className="contact__facts__image"
-          />
+            onClick={() => setShowInfo(!showInfo)}
+          >
+            <img src="src/assets/images/bison.jpg" alt="Behind the Scenes" />
+            {showInfo && (
+              <p>
+                Name: Bison
+                <br />
+                Nationality: Polish
+                <br />
+                Species: Horse
+                <br />
+                Favorite Food: Grass
+              </p>
+            )}
+          </div>
         </section>
       </div>
     </>

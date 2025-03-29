@@ -61,7 +61,7 @@
   flex-direction: column;
 }
 
-.contact__facts__image {
+.contact__facts__image img {
   transform: scale(0.5);
   height: auto;
   border-radius: 0.5rem;
