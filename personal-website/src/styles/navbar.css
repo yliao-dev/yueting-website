@@ -23,6 +23,7 @@
 .navbar__links {
   display: none;
   color: var(--white);
+  margin-right: 2rem;
 }
 
 .navbar__link--inactive {
@@ -127,6 +128,7 @@
 
   .navbar__links {
     gap: 2rem;
+    margin-right: 3rem;
   }
 }
 
@@ -146,6 +148,7 @@
 
   .navbar__links {
     gap: 4rem;
+    margin-right: 4rem;
   }
 }
 
