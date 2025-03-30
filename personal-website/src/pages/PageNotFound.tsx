@@ -1,4 +1,3 @@
-import { FaExclamationTriangle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import bison from "../assets/images/bison.jpg";
 
