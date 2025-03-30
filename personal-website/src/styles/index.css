@@ -149,19 +149,18 @@ ul li {
 
 .typing-cursor::after {
   content: "|";
-  animation: blink 1s steps(1, start) 2 forwards;
+  animation: blink 1s ease-in-out 1 forwards;
   color: var(--black);
   margin-left: 0.2rem;
 }
-
 @keyframes blink {
   0%,
-  40% {
+  25%,
+  75% {
     opacity: 1;
   }
-  20% {
-    opacity: 0;
-  }
+  12.5%,
+  62.5%,
   100% {
     opacity: 0;
   }
