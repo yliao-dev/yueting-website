@@ -54,7 +54,7 @@ const BlogPage = () => {
     <>
       <div className="blog">
         <section className="blog__intro">
-          <h1>{titleText}</h1>
+          <h1 className="typing-cursor">{titleText}</h1>
           <p>
             A space for ideas, lessons, and personal reflections—from everyday
             thoughts to deeper insights.

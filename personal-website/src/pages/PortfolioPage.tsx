@@ -10,7 +10,7 @@ const PortfolioPage = () => {
     <>
       <div className="portfolio">
         <section className="portfolio__intro__text">
-          <h1>{titleText}</h1>
+          <h1 className="typing-cursor">{titleText}</h1>
           <p>
             Each project here starts with a practical need—or a spark of
             curiosity. I began coding while studying Computer Science at

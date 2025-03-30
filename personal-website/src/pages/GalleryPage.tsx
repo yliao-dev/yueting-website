@@ -9,7 +9,7 @@ const GalleryPage = () => {
     <>
       <div className="gallery">
         <section className="gallery__intro">
-          <h1>{titleText}</h1>
+          <h1 className="typing-cursor">{titleText}</h1>
           <p>
             A collection of moments, perspectives, and stories—captured through
             my lens. I started photography in November 2023 with my first
