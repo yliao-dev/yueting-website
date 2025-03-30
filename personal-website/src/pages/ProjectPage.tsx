@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { ProjectData } from "../data/ProjectData";
 import PageNotFound from "./PageNotFound";
-import LineBreak from "../components/LineBreak";
+import ProjectSlideshow from "../components/portfolio/ProjectSlideShow";
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -24,10 +24,12 @@ const ProjectPage = () => {
           </div>
         </section>
         <section className="project__images">
-          <img
-            src="/images/gallery/DSCF7886.jpg"
-            className="project__intro__image"
-            alt="project"
+          <ProjectSlideshow
+            images={[
+              "/images/gallery/DSCF7886.jpg",
+              "/images/gallery/DSCF0430.jpg",
+              "/images/gallery/DSCF2406.jpg",
+            ]}
           />
 
           <button>Next Project</button>
