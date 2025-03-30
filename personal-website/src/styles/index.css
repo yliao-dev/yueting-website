@@ -147,6 +147,26 @@ ul li {
   animation: fade-zoom-in 1s ease-out forwards;
 }
 
+.typing-cursor::after {
+  content: "|";
+  animation: blink 1s steps(1, start) 2 forwards;
+  color: var(--black);
+  margin-left: 0.2rem;
+}
+
+@keyframes blink {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
