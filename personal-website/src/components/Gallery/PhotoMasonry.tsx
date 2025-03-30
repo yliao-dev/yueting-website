@@ -16,8 +16,8 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
       setVisibleIndexes((prev) => new Set(prev).add(index));
     },
     {
-      threshold: 0.5,
-      rootMargin: "-10% 0px -10% 0px",
+      threshold: 1,
+      rootMargin: "-40px 0px 0px -40px",
     }
   );
   const openViewer = (imageUrl: string) => {
