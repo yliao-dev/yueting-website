@@ -45,6 +45,7 @@
   height: fit-content;
   max-height: 15rem;
   overflow-y: auto;
+  opacity: 0;
 }
 
 .home__skills__text h2 {
@@ -60,6 +61,10 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+}
+
+.home__journey__text {
+  opacity: 0;
 }
 
 .home__journey h1 {

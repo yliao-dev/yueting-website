@@ -11,11 +11,16 @@ import { useScrollIndex } from "../hooks/useScrollIndex";
 const HomePage = () => {
   const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
   const [content, setContent] = useState("");
-  const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
-  const scrollRefs = useScrollIndex(setVisibleIndex, {
-    threshold: 0.1,
-    rootMargin: "-20% 0px -20% 0px",
-  });
+  const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
+  const scrollRefs = useScrollIndex(
+    (index) => {
+      setVisibleIndexes((prev) => new Set(prev).add(index));
+    },
+    {
+      threshold: 0.1,
+      rootMargin: "-20% 0px -20% 0px",
+    }
+  );
 
   return (
     <>
@@ -49,7 +54,7 @@ const HomePage = () => {
           </div>
           <section
             className={`home__skills__text ${
-              visibleIndex === 0 ? "animate-slide-right" : ""
+              visibleIndexes.has(0) ? "animate-slide-right" : ""
             }`}
             data-index={0}
             ref={(el) => {
@@ -70,7 +75,7 @@ const HomePage = () => {
           <h1>Journey</h1>
           <div
             className={`home__journey__text ${
-              visibleIndex === 1 ? "animate-slide-left" : ""
+              visibleIndexes.has(1) ? "animate-slide-left" : ""
             }`}
             data-index={1}
             ref={(el) => {
