@@ -16,7 +16,6 @@
   letter-spacing: 0.2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  align-self: flex-start;
 }
 
 .project__text svg {
@@ -53,6 +52,9 @@
   .project__text {
     display: flex;
     flex-direction: column;
+  }
+  .project__text h2 {
+    align-self: flex-start;
   }
 }
 
