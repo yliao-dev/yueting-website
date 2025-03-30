@@ -116,14 +116,15 @@ ul li {
   height: 0.2rem;
   opacity: 0.8;
   background-color: var(--line-break);
+  margin: 0 auto;
 }
 
 .page__divider-gradient {
-  width: 90%;
   height: 0.2rem;
   background: linear-gradient(to right, transparent, var(--black), transparent);
   border: none;
   opacity: 0.5;
+  margin: 0 auto;
 }
 
 .page__gradient-white {
