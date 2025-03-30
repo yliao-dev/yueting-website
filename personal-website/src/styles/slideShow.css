@@ -42,7 +42,7 @@
   background: var(--gray-400);
   border-radius: 0.1rem;
   cursor: pointer;
-  transition: background-color 0.1s ease;
+  transition: background-color 0.2s ease;
 }
 
 .slideshow__dot.active {
