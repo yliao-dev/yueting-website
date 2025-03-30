@@ -19,6 +19,8 @@ const GalleryPage = () => {
         <LineBreak />
         <section>
           <PhotoMasonry photoData={PhotoData} />
+          <LineBreak variant="gradient" />
+          <PhotoMasonry photoData={PhotoData} />
         </section>
       </div>
     </>
