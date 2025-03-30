@@ -1,7 +1,7 @@
 export const ProjectData = [
   {
     id: 0,
-    name: "Personal Portfolio Website",
+    name: "Personal Website",
     image: "src/assets/images/temp_image.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
@@ -9,7 +9,7 @@ export const ProjectData = [
   },
   {
     id: 1,
-    name: "Ecommerce Website",
+    name: "Nutri Flow",
     image: "src/assets/images/temp_image.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
