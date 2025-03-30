@@ -134,13 +134,11 @@ ul li {
 .animate-slide-left {
   --slide-distance: -200px;
   animation: slide-in 1s ease forwards;
-  opacity: 1;
 }
 
 .animate-slide-right {
   --slide-distance: 200px;
   animation: slide-in 1s ease forwards;
-  opacity: 1;
 }
 
 .animate-fade-in {
