@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PhotoItemProps } from "./PhotoTypes";
 import PhotoViewer from "./PhotoViewer";
-import { useScrollIndex } from "../../hooks/useScrollIndex";
+import { useScrollEffect } from "../../hooks/useScrollEffect";
 
 interface PhotoMasonryProps {
   photoData: PhotoItemProps[];
@@ -11,7 +11,7 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
-  const scrollRefs = useScrollIndex(
+  const scrollRefs = useScrollEffect(
     (index) => {
       setVisibleIndexes((prev) => new Set(prev).add(index));
     },

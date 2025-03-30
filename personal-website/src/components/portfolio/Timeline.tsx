@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useScrollIndex } from "../../hooks/useScrollIndex";
+import { useScrollEffect } from "../../hooks/useScrollEffect";
 const timelineItems = [
   {
     label: "University",
@@ -49,7 +49,7 @@ const JourneyTimeline = () => {
     timelineItems.length - 1
   );
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
-  const stepRefs = useScrollIndex(setVisibleIndex, {
+  const stepRefs = useScrollEffect(setVisibleIndex, {
     threshold: 0.5,
     rootMargin: "-40% 0px -40% 0px",
     once: false,

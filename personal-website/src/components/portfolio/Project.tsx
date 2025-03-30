@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useScrollIndex } from "../../hooks/useScrollIndex";
+import { useScrollEffect } from "../../hooks/useScrollEffect";
 
 export type ProjectItemProps = {
   name: string;
@@ -12,7 +12,7 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
   const navigate = useNavigate();
 
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
-  const scrollRefs = useScrollIndex(setVisibleIndex, {
+  const scrollRefs = useScrollEffect(setVisibleIndex, {
     threshold: 0.1,
     rootMargin: "-40% 0px -40% 0px",
   });

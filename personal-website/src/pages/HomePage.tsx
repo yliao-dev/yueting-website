@@ -6,13 +6,13 @@ import SkillPieChart, {
 import LineBreak from "../components/LineBreak";
 import { Tooltip } from "react-tooltip";
 import MapChart from "../components/Home/JourneyWorldMap";
-import { useScrollIndex } from "../hooks/useScrollIndex";
+import { useScrollEffect } from "../hooks/useScrollEffect";
 
 const HomePage = () => {
   const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
   const [content, setContent] = useState("");
   const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
-  const scrollRefs = useScrollIndex(
+  const scrollRefs = useScrollEffect(
     (index) => {
       setVisibleIndexes((prev) => new Set(prev).add(index));
     },

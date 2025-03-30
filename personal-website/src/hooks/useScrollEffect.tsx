@@ -6,7 +6,7 @@ type Options = {
   once?: boolean;
 };
 
-export const useScrollIndex = (
+export const useScrollEffect = (
   onVisible: (index: number) => void,
   options: Options = {}
 ) => {
