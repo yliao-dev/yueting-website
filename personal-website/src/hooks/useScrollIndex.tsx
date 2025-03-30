@@ -1,40 +1,48 @@
 import { useEffect, useRef } from "react";
 
+type Options = {
+  threshold?: number;
+  rootMargin?: string;
+  once?: boolean;
+};
+
 export const useScrollIndex = (
-  setIndex: (index: number) => void,
-  options: {
-    threshold?: number;
-    rootMargin?: string;
-    once?: boolean;
-  } = {}
+  onVisible: (index: number) => void,
+  options: Options = {}
 ) => {
-  const stepRefs = useRef<(HTMLElement | null)[]>([]);
+  const refs = useRef<(HTMLElement | null)[]>([]);
+  const seen = useRef(new Set<number>());
+
   const { threshold = 0.5, rootMargin = "0px", once = true } = options;
-  const seen = useRef<Set<number>>(new Set());
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          const index = Number(entry.target.getAttribute("data-index"));
+        for (const entry of entries) {
+          const indexAttr = entry.target.getAttribute("data-index");
+          if (indexAttr === null) continue;
+
+          const index = Number(indexAttr);
+          if (isNaN(index)) continue;
+
           if (entry.isIntersecting) {
             if (once) {
               if (!seen.current.has(index)) {
                 seen.current.add(index);
-                setIndex(index);
+                onVisible(index);
               }
             } else {
-              setIndex(index);
+              onVisible(index);
             }
           }
-        });
+        }
       },
       { threshold, rootMargin }
     );
 
-    stepRefs.current.forEach((el) => el && observer.observe(el));
+    refs.current.forEach((el) => el && observer.observe(el));
     return () => observer.disconnect();
-  }, [threshold, rootMargin, once]);
+  }, [threshold, rootMargin, once, onVisible]);
 
-  return stepRefs;
+  return refs;
 };
