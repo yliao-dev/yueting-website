@@ -10,12 +10,16 @@ interface PhotoMasonryProps {
 const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
-  const scrollRefs = useScrollIndex(setVisibleIndex, {
-    threshold: 0.3,
-    rootMargin: "-30% 0px -30% 0px",
-  });
-
+  const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
+  const scrollRefs = useScrollIndex(
+    (index) => {
+      setVisibleIndexes((prev) => new Set(prev).add(index));
+    },
+    {
+      threshold: 0.3,
+      rootMargin: "-30% 0px -30% 0px",
+    }
+  );
   const openViewer = (imageUrl: string) => {
     setSelectedImage(imageUrl);
   };
@@ -25,15 +29,15 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
   return (
     <>
       <div className="masonry-grid">
-        {photoData.map((photo) => (
+        {photoData.map((photo, index) => (
           <div
             key={photo.id}
             className={`masonry__item ${
-              visibleIndex === 0 ? "animate-fade-slide-up" : ""
+              visibleIndexes.has(index) ? "animate-fade-slide-up" : ""
             }`}
-            data-index={0}
+            data-index={index}
             ref={(el) => {
-              if (el) scrollRefs.current[0] = el;
+              if (el) scrollRefs.current[index] = el;
             }}
             onClick={() => openViewer(photo.image)}
           >
