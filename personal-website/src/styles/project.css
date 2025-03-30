@@ -2,23 +2,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  min-height: 100vh;
 }
 
 /* Intro Section */
 .project__text {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+}
+
+.project__text h2 {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project__tags {
-  margin-top: 1rem;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
 }
 
 .project__tag {
-  display: inline-block;
-  background-color: var(--light-blue);
+  background-color: var(--light-oak);
   color: var(--white);
   padding: 0.3rem 0.7rem;
   margin: 0.3rem;
@@ -26,7 +33,8 @@
 }
 
 .project__images {
-  width: 90%;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 /* Tablet and above */

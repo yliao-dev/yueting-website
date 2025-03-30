@@ -13,9 +13,9 @@ const ProjectPage = () => {
     <>
       <div className="project">
         <section className="project__text">
-          <h1>{project.name}</h1>
+          <h2>{project.name}</h2>
           <p>{project.description}</p>
-          <div>
+          <div className="project__tags">
             {project.tags?.map((tag) => (
               <span key={tag} className="project__tag">
                 {tag}
@@ -29,6 +29,8 @@ const ProjectPage = () => {
             className="project__intro__image"
             alt="project"
           />
+
+          <button>Next Project</button>
         </section>
       </div>
     </>
