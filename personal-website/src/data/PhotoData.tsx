@@ -129,140 +129,140 @@ export const PhotoData = [
     image: "/images/gallery/DSCF0430.jpg",
     tags: ["123"],
   },
-  {
-    id: 21,
-    title: "img_title",
-    image: "/images/gallery/DSCF1677.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 21,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF1677.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 22,
-    title: "img_title",
-    image: "/images/gallery/DSCF2406.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 23,
-    title: "img_title",
-    image: "/images/gallery/DSCF0430.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 22,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF2406.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 23,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF0430.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 24,
-    title: "img_title",
-    image: "/images/gallery/DSCF1677.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 24,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF1677.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 25,
-    title: "img_title",
-    image: "/images/gallery/DSCF2406.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 26,
-    title: "img_title",
-    image: "/images/gallery/DSCF0430.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 25,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF2406.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 26,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF0430.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 27,
-    title: "img_title",
-    image: "/images/gallery/DSCF1677.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 27,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF1677.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 28,
-    title: "img_title",
-    image: "/images/gallery/DSCF2406.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 29,
-    title: "img_title",
-    image: "/images/gallery/DSCF0430.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 28,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF2406.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 29,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF0430.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 30,
-    title: "img_title",
-    image: "/images/gallery/DSCF1677.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 30,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF1677.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 31,
-    title: "img_title",
-    image: "/images/gallery/DSCF2406.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 32,
-    title: "img_title",
-    image: "/images/gallery/DSCF0430.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 33,
-    title: "img_title",
-    image: "/images/gallery/DSCF1677.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 31,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF2406.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 32,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF0430.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 33,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF1677.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 34,
-    title: "img_title",
-    image: "/images/gallery/DSCF2406.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 35,
-    title: "img_title",
-    image: "/images/gallery/DSCF0430.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 36,
-    title: "img_title",
-    image: "/images/gallery/DSCF1677.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 34,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF2406.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 35,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF0430.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 36,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF1677.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 37,
-    title: "img_title",
-    image: "/images/gallery/DSCF2406.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 38,
-    title: "img_title",
-    image: "/images/gallery/DSCF0430.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 39,
-    title: "img_title",
-    image: "/images/gallery/DSCF1677.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 37,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF2406.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 38,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF0430.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 39,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF1677.jpg",
+  //   tags: ["123"],
+  // },
 
-  {
-    id: 40,
-    title: "img_title",
-    image: "/images/gallery/DSCF2406.jpg",
-    tags: ["123"],
-  },
-  {
-    id: 41,
-    title: "img_title",
-    image: "/images/gallery/DSCF0430.jpg",
-    tags: ["123"],
-  },
+  // {
+  //   id: 40,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF2406.jpg",
+  //   tags: ["123"],
+  // },
+  // {
+  //   id: 41,
+  //   title: "img_title",
+  //   image: "/images/gallery/DSCF0430.jpg",
+  //   tags: ["123"],
+  // },
 ];
