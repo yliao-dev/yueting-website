@@ -77,4 +77,56 @@ export const PhotoData = [
     image: "/images/gallery/DSCF0430.jpg",
     tags: ["123"],
   },
+
+  {
+    id: 13,
+    title: "img_title",
+    image: "/images/gallery/DSCF1677.jpg",
+    tags: ["123"],
+  },
+
+  {
+    id: 14,
+    title: "img_title",
+    image: "/images/gallery/DSCF2406.jpg",
+    tags: ["123"],
+  },
+  {
+    id: 15,
+    title: "img_title",
+    image: "/images/gallery/DSCF0430.jpg",
+    tags: ["123"],
+  },
+  {
+    id: 16,
+    title: "img_title",
+    image: "/images/gallery/DSCF0430.jpg",
+    tags: ["123"],
+  },
+
+  {
+    id: 17,
+    title: "img_title",
+    image: "/images/gallery/DSCF1677.jpg",
+    tags: ["123"],
+  },
+
+  {
+    id: 18,
+    title: "img_title",
+    image: "/images/gallery/DSCF2406.jpg",
+    tags: ["123"],
+  },
+  {
+    id: 19,
+    title: "img_title",
+    image: "/images/gallery/DSCF0430.jpg",
+    tags: ["123"],
+  },
+  {
+    id: 20,
+    title: "img_title",
+    image: "/images/gallery/DSCF0430.jpg",
+    tags: ["123"],
+  },
 ];
