@@ -5,7 +5,7 @@ export const ProjectData = [
     image: "src/assets/images/temp_image.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
-    tags: ["React", "TypeScript", "Design", "CSS Animations"],
+    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
   },
   {
     id: 1,
