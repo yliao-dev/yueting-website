@@ -23,6 +23,8 @@ const GalleryPage = () => {
           <PhotoMasonry photoData={PhotoData} />
           <LineBreak width="100%" spacing="3rem" />
           <PhotoMasonry photoData={PhotoData} />
+          <LineBreak width="100%" spacing="3rem" />
+          <PhotoMasonry photoData={PhotoData} />
         </section>
       </div>
     </>
