@@ -19,6 +19,12 @@
   align-self: flex-start;
 }
 
+.project__text svg {
+  width: 3em;
+  height: 3rem;
+  color: var(--github);
+}
+
 .project__tags {
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +49,10 @@
 @media (min-width: 768px) {
   .project {
     flex-direction: row;
+  }
+  .project__text {
+    display: flex;
+    flex-direction: column;
   }
 }
 

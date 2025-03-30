@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { ProjectData } from "../data/ProjectData";
 import PageNotFound from "./PageNotFound";
 import ProjectSlideshow from "../components/portfolio/ProjectSlideShow";
+import { GitHub } from "@mui/icons-material";
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -22,6 +23,13 @@ const ProjectPage = () => {
               </span>
             ))}
           </div>
+          <a
+            href="https://github.com/yliao-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHub className="project-github-icon" />
+          </a>
         </section>
         <section className="project__images">
           <ProjectSlideshow
