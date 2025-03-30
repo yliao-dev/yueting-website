@@ -21,22 +21,25 @@ const ProjectSlideshow = ({ images }: Props) => {
           alt={`Slide ${current + 1}`}
           className="slideshow__image"
         />
-        <button className="slideshow__arrow left" onClick={goPrev}>
-          &#10094;
-        </button>
-        <button className="slideshow__arrow right" onClick={goNext}>
-          &#10095;
-        </button>
       </div>
 
-      <div className="slideshow__dots">
-        {images.map((_, index) => (
-          <span
-            key={index}
-            className={`slideshow__dot ${index === current ? "active" : ""}`}
-            onClick={() => setCurrent(index)}
-          />
-        ))}
+      <div className="slideshow__controls">
+        <button className="slideshow__arrow" onClick={goPrev}>
+          &#10094;
+        </button>
+
+        <div className="slideshow__dots">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={`slideshow__dot ${index === current ? "active" : ""}`}
+              onClick={() => setCurrent(index)}
+            />
+          ))}
+        </div>
+        <button className="slideshow__arrow" onClick={goNext}>
+          &#10095;
+        </button>
       </div>
     </div>
   );
