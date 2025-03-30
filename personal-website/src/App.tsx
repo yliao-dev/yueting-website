@@ -5,17 +5,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import PageNotFound from "./pages/PageNotFound";
 import MainLayout from "./components/layouts/MainLayout";
 
 import HomePage from "./pages/HomePage";
-
-import BlogPage from "./pages/BlogPage";
-
 import PortfolioPage from "./pages/PortfolioPage";
-
-import ContactPage from "./pages/ContactPage";
+import ProjectPage from "./pages/ProjectPage";
+import BlogPage from "./pages/BlogPage";
 import GalleryPage from "./pages/GalleryPage";
+import ContactPage from "./pages/ContactPage";
+import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -29,6 +27,7 @@ const App = () => {
         {/* portfolio */}
         <Route path="/portfolio" element={<MainLayout />}>
           <Route index element={<PortfolioPage />} />
+          <Route path="project/:id" element={<ProjectPage />} />
         </Route>
         {/* gallery */}
         <Route path="/gallery" element={<MainLayout />}>
