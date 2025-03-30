@@ -15,13 +15,11 @@ const ProjectSlideshow = ({ images }: Props) => {
 
   return (
     <div className="slideshow">
-      <div className="slideshow__image-wrapper">
-        <img
-          src={images[current]}
-          alt={`Slide ${current + 1}`}
-          className="slideshow__image"
-        />
-      </div>
+      <img
+        src={images[current]}
+        alt={`Slide ${current + 1}`}
+        className="slideshow__image"
+      />
 
       <div className="slideshow__controls">
         <button className="slideshow__arrow" onClick={goPrev}>
