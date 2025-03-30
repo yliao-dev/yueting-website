@@ -12,8 +12,8 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
 
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
   const scrollRefs = useScrollIndex(setVisibleIndex, {
-    threshold: 0.1,
-    rootMargin: "-20% 0px -20% 0px",
+    threshold: 0.3,
+    rootMargin: "-30% 0px -30% 0px",
   });
 
   const openViewer = (imageUrl: string) => {
