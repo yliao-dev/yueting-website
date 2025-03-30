@@ -4,6 +4,8 @@ import {
   ComposableMap,
   Geographies,
   Geography,
+  Graticule,
+  Sphere,
   ZoomableGroup,
 } from "react-simple-maps";
 
@@ -53,6 +55,8 @@ const MapChart = ({ setTooltipContent }: Props) => {
         height={400}
         width={800}
       >
+        <Sphere stroke="#E4E5E6" strokeWidth={1} id={""} fill={"#FFFFFF"} />
+        <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
         <ZoomableGroup center={[-12, 35]} zoom={1} key={resetKey}>
           {data.length > 0 && (
             <Geographies geography={geoUrl}>
