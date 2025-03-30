@@ -14,7 +14,7 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
   const scrollRefs = useScrollEffect(setVisibleIndex, {
     threshold: 0.1,
-    rootMargin: "-40% 0px -40% 0px",
+    rootMargin: "-20% 0px -20% 0px",
   });
 
   return (
