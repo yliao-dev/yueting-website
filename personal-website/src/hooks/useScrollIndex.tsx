@@ -6,13 +6,15 @@ export const useScrollIndex = (
 ) => {
   const stepRefs = useRef<(HTMLElement | null)[]>([]);
   const { threshold = 0.5, rootMargin = "0px" } = options;
+  const seen = useRef<Set<number>>(new Set());
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const index = Number(entry.target.getAttribute("data-index"));
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !seen.current.has(index)) {
+            seen.current.add(index);
             setIndex(index);
           }
         });
