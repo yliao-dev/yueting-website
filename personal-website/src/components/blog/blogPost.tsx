@@ -14,8 +14,6 @@ function BlogPost({ title, description, image }: BlogPostProp) {
   const date = "Dec 20, 2024";
   return (
     <>
-      <LineBreak />
-
       <div className="blog__post">
         <img src={image} />
         <div className="blog__post__text">
@@ -33,6 +31,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
           </div>
         </div>
       </div>
+      <LineBreak />
     </>
   );
 }

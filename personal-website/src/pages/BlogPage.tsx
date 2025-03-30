@@ -4,6 +4,7 @@ import { PhotographyEntries } from "../data/PhotographyEntries";
 import { KendoEntries } from "../data/KendoEntries";
 import { FitnessEntries } from "../data/FitnessEntries";
 import BlogPost from "../components/Blog/blogPost";
+import LineBreak from "../components/LineBreak";
 
 type BlogPostsMapProps = {
   category: string;
@@ -56,8 +57,10 @@ const BlogPage = () => {
             thoughts to deeper insights.
           </p>
         </section>
+        <BlogCategory onSelect={categoryFilter} />
+        <LineBreak />
+
         <section className="blog__contentBlock">
-          <BlogCategory onSelect={categoryFilter} />
           <BlogPostsMap category={selectedCategory} />
         </section>
       </div>
