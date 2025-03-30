@@ -112,11 +112,9 @@ ul li {
 }
 
 .page__divider {
-  width: 90%;
   height: 0.2rem;
   opacity: 0.8;
   background-color: var(--line-break);
-  margin: 0 auto;
 }
 
 .page__divider-gradient {
@@ -124,12 +122,6 @@ ul li {
   background: linear-gradient(to right, transparent, var(--black), transparent);
   border: none;
   opacity: 0.5;
-  margin: 0 auto;
-}
-
-.page__gradient-white {
-  height: 1rem;
-  background-color: var(--white);
 }
 
 .animate-slide-left {

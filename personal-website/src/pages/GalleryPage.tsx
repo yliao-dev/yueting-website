@@ -19,7 +19,7 @@ const GalleryPage = () => {
         <LineBreak />
         <section>
           <PhotoMasonry photoData={PhotoData} />
-          <LineBreak variant="gradient" />
+          <LineBreak width="100%" spacing="3rem" />
           <PhotoMasonry photoData={PhotoData} />
         </section>
       </div>
