@@ -7,6 +7,7 @@ import LineBreak from "../components/LineBreak";
 import { Tooltip } from "react-tooltip";
 import MapChart from "../components/Home/JourneyWorldMap";
 import { useScrollEffect } from "../hooks/useScrollEffect";
+import { useTypingEffect } from "../hooks/useTypingEffect";
 
 const HomePage = () => {
   const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
@@ -21,18 +22,17 @@ const HomePage = () => {
       rootMargin: "-20% 0px -20% 0px",
     }
   );
-
+  const titleText = useTypingEffect(
+    "Developer  |  Swordsman  |  Photographer",
+    50
+  );
   return (
     <>
       <div className="home">
         <section className="home__about">
           <div className="home__about__text">
             <h1>About</h1>
-            <h2>
-              Developer<span className="divider">|</span>
-              Swordsman<span className="divider">|</span>
-              Photographer
-            </h2>
+            <h2 className="typing-cursor">{titleText}</h2>
             <p>
               I'm on a path toward harmony between mind, body, and observation.
               Here you’ll find coding projects, reflections shaped by Kendo, and

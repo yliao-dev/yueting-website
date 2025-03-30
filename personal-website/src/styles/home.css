@@ -13,10 +13,6 @@
   flex-direction: column;
   margin: 0 auto;
 }
-.divider {
-  margin: 0 0.8ch;
-  opacity: 0.4;
-}
 
 .home__about h2 {
   white-space: nowrap;
