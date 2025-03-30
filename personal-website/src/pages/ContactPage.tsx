@@ -14,6 +14,7 @@ const ContactPage = () => {
               If any part of my journey resonates with you, I’d love to
               connect—whether it’s through a shared interest, a casual chat, or
               a meaningful collaboration.
+              <br />⭐ Also have fun with Mobile version of this site
             </p>
           </div>
           <SocialMediaIcons />
