@@ -1,5 +1,6 @@
 import { PhotoData } from "../data/PhotoData";
 import PhotoMasonry from "../components/Gallery/PhotoMasonry";
+import LineBreak from "../components/LineBreak";
 
 const GalleryPage = () => {
   return (
@@ -15,6 +16,7 @@ const GalleryPage = () => {
             edited in Capture One.
           </p>
         </section>
+        <LineBreak />
         <section>
           <PhotoMasonry photoData={PhotoData} />
         </section>
