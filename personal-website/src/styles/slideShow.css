@@ -30,13 +30,15 @@
 }
 
 .slideshow__dots {
+  flex: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .slideshow__dot {
-  width: 10px;
-  height: 10px;
+  width: 0.7rem;
+  height: 0.7rem;
   background: var(--gray-400);
   border-radius: 50%;
   cursor: pointer;
