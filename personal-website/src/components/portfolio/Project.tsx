@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useScrollIndex } from "../../hooks/useScrollIndex";
 
 export type ProjectItemProps = {
   name: string;
@@ -8,10 +10,23 @@ export type ProjectItemProps = {
 
 function ProjectItem({ image, name, id }: ProjectItemProps) {
   const navigate = useNavigate();
+
+  const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
+  const scrollRefs = useScrollIndex(setVisibleIndex, {
+    threshold: 0.1,
+    rootMargin: "-40% 0px -40% 0px",
+  });
+
   return (
     <>
       <div
-        className="portfolio__project"
+        className={`portfolio__project ${
+          visibleIndex === 0 ? "animate-fade-slide-up" : ""
+        }`}
+        data-index={0}
+        ref={(el) => {
+          if (el) scrollRefs.current[0] = el;
+        }}
         onClick={() => {
           navigate("project/" + id);
         }}
