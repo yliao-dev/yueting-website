@@ -154,7 +154,7 @@ const SkillPieChart = ({ onSelect }: SkillPieChartProps) => {
         onItemClick={(_, d) => onSelect(skillsData[d.dataIndex])} // d: PieItemIdentifier
         slotProps={{
           legend: {
-            direction: "row", // or 'row'
+            direction: "row",
             position: {
               vertical: "top", // 'top' | 'middle' | 'bottom'
               horizontal: "left", // 'left' | 'center' | 'right'
