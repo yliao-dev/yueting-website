@@ -1,38 +1,50 @@
 export const ProjectData = [
   {
-    id: 1,
-    name: "Dijkstra Algorithm Visualizer Visualizer Visualizer Visualizer Visualizer Visualizer",
+    id: 0,
+    name: "Personal Portfolio Website",
     image: "src/assets/images/temp_image.jpg",
-    skills: "JavaScript,HTML,CSS",
+    description:
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+    tags: ["React", "TypeScript", "Design", "CSS Animations"],
+  },
+  {
+    id: 1,
+    name: "Ecommerce Website",
+    image: "src/assets/images/temp_image.jpg",
+    description:
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+    tags: ["React", "TypeScript", "Design", "CSS Animations"],
   },
   {
     id: 2,
-    name: "Ecommerce Website",
+    name: "Spotify Clone",
     image: "src/assets/images/temp_image.jpg",
-    skills: "React,Node.js,MongoDB",
+    description:
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+    tags: ["React", "TypeScript", "Design", "CSS Animations"],
   },
   {
     id: 3,
-    name: "Spotify Clone",
+    name: "Social Media Website",
     image: "src/assets/images/temp_image.jpg",
-    skills: "React,Node.js,MongoDB,SpotifyAPI",
+    description:
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+    tags: ["React", "TypeScript", "Design", "CSS Animations"],
   },
   {
     id: 4,
-    name: "Social Media Website",
+    name: "Dashboard Visualizer",
     image: "src/assets/images/temp_image.jpg",
-    skills: "React,Node.js,MySQL,GraphQL",
+    description:
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+    tags: ["React", "TypeScript", "Design", "CSS Animations"],
   },
   {
     id: 5,
-    name: "Dashboard Visualizer",
-    image: "src/assets/images/temp_image.jpg",
-    skills: "JavaScript,HTML,CSS",
-  },
-  {
-    id: 6,
     name: "Mobile Game",
     image: "src/assets/images/temp_image.jpg",
-    skills: "React Native,JavaScript,HTML,CSS",
+    description:
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+    tags: ["React", "TypeScript", "Design", "CSS Animations"],
   },
 ];

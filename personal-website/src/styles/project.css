@@ -1,0 +1,31 @@
+.project-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.project-tags {
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 0.3rem 0.7rem;
+  margin: 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 0.85rem;
+}
