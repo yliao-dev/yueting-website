@@ -9,7 +9,6 @@ interface PhotoMasonryProps {
 
 const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
   const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
   const scrollRefs = useScrollEffect(
     (index) => {
