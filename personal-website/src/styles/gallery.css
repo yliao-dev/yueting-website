@@ -19,7 +19,7 @@
   margin-bottom: 4%;
   padding: 0.5rem;
   background-color: var(--light-oak);
-  animation: fade-in 0.8s ease-in-out forwards;
+  opacity: 0;
 }
 
 .masonry__item:hover img {
