@@ -17,7 +17,7 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
     },
     {
       threshold: 1,
-      rootMargin: "-40px 0px 0px -40px",
+      rootMargin: "-20% 0px -20% 0px",
     }
   );
   const openViewer = (imageUrl: string) => {
