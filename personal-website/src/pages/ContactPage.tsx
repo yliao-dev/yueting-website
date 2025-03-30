@@ -33,21 +33,28 @@ const ContactPage = () => {
             </ul>
           </div>
           <div
-            className="contact__facts__image"
+            className={`flip-card ${showInfo ? "flipped" : ""}`}
             onClick={() => setShowInfo(!showInfo)}
           >
-            <img src="src/assets/images/bison.jpg" alt="Behind the Scenes" />
-            {showInfo && (
-              <p>
-                Name: Bison
-                <br />
-                Nationality: Polish
-                <br />
-                Species: Horse
-                <br />
-                Favorite Food: Grass
-              </p>
-            )}
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img
+                  src="src/assets/images/bison.jpg"
+                  alt="Behind the Scenes"
+                />
+              </div>
+              <div className="flip-card-back">
+                <p>
+                  Name: Bison
+                  <br />
+                  Nationality: Polish
+                  <br />
+                  Species: Horse
+                  <br />
+                  Favorite Food: Grass
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
