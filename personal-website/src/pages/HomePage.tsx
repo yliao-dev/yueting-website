@@ -2,10 +2,10 @@ import { useState } from "react";
 import SkillPieChart, {
   SkillItem,
   skillsData,
-} from "../components/Home/PieChart";
+} from "../components/home/PieChart";
 import LineBreak from "../components/LineBreak";
 import { Tooltip } from "react-tooltip";
-import MapChart from "../components/Home/JourneyWorldMap";
+import MapChart from "../components/home/JourneyWorldMap";
 import { useScrollEffect } from "../hooks/useScrollEffect";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import portraitImg from "../assets/images/portrait.jpg";
