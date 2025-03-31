@@ -39,6 +39,11 @@
   font-size: 0.85rem;
 }
 
+.project__navigations {
+  display: flex;
+  justify-content: space-between;
+}
+
 .project-github-icon:hover {
   color: var(--hover);
 }

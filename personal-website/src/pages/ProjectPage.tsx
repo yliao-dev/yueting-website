@@ -37,7 +37,8 @@ const ProjectPage = () => {
               </span>
             ))}
           </div>
-          <div className="project__buttons">
+
+          <div className="project__navigations">
             {index > 0 && (
               <button className="slideshow__arrow" onClick={Prev}>
                 &#10094; Previous Project
@@ -55,6 +56,7 @@ const ProjectPage = () => {
             )}
           </div>
         </section>
+
         <ProjectSlideshow images={project.images} />
       </div>
     </>
