@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 export const useTypingEffect = (
   text: string,
-  speed = 70,
+  speed = 50,
   onComplete?: () => void
 ) => {
   const [displayedText, setDisplayedText] = useState("");
