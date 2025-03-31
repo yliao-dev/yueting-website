@@ -16,7 +16,10 @@ const BlogPage = () => {
   const categoryFilter = (category: string) => {
     setCategory(category);
   };
-  const titleText = useTypingEffect("Reflections");
+  const [typingDone, setTypingDone] = useState(false);
+  const titleText = useTypingEffect("Reflections", 50, () =>
+    setTypingDone(true)
+  );
 
   const BlogPostsMap = ({ category }: BlogPostsMapProps) => {
     let selectedData: any[] = [];
@@ -63,9 +66,11 @@ const BlogPage = () => {
         <BlogCategory onSelect={categoryFilter} />
         <LineBreak />
 
-        <section className="blog__contentBlock">
-          <BlogPostsMap category={selectedCategory} />
-        </section>
+        {typingDone && (
+          <section className="blog__contentBlock">
+            <BlogPostsMap category={selectedCategory} />
+          </section>
+        )}
       </div>
     </>
   );
