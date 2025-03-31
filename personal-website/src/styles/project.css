@@ -42,6 +42,18 @@
 .project__navigations {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.project__navigations__arrow {
+  color: var(--gray-600);
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.project__navigations__arrow:hover {
+  color: var(--hover);
 }
 
 .project-github-icon:hover {

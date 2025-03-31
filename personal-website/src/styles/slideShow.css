@@ -22,7 +22,7 @@
   color: var(--gray-600);
   padding: 0.3rem 0.6rem;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .slideshow__arrow:hover {
