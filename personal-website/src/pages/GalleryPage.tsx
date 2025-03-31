@@ -2,9 +2,12 @@ import { PhotoData } from "../data/PhotoData";
 import PhotoMasonry from "../components/Gallery/PhotoMasonry";
 import LineBreak from "../components/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
+import { useState } from "react";
 
 const GalleryPage = () => {
-  const titleText = useTypingEffect("Moments");
+  const [typingDone, setTypingDone] = useState(false);
+  const titleText = useTypingEffect("Moments", 70, () => setTypingDone(true));
+
   return (
     <>
       <div className="gallery">
