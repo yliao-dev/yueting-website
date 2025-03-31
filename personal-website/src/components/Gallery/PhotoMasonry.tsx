@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PhotoItemProps } from "./PhotoTypes";
+import { PhotoItemProps } from "./GalleryTypes";
 import PhotoViewer from "./PhotoViewer";
 import { useScrollEffect } from "../../hooks/useScrollEffect";
 
