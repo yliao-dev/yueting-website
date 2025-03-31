@@ -1,5 +1,5 @@
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
-import DuolingoIcon from "../assets/icons/duolingo.svg";
+import DuolingoIcon from "../../assets/icons/duolingo.svg";
 
 const SocialMediaIcons = () => {
   return (
