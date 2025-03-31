@@ -29,8 +29,6 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
     <>
       <div className="masonry-grid">
         {photoData.map((photo, index) => {
-          console.log("Photo Path:", photo.image); // 👈 log image path
-
           return (
             <div
               key={photo.id || index}
@@ -43,7 +41,11 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
               }}
               onClick={() => openViewer(photo.image)}
             >
-              <img src={photo.image} alt={photo.title ?? "Photo"} />
+              <img
+                loading="lazy"
+                src={photo.image}
+                alt={photo.title ?? "Photo"}
+              />
             </div>
           );
         })}
