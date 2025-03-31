@@ -14,55 +14,6 @@
     "tags": ["snow", "street"]
   },
   {
-    "filename": "001.jpg",
-    "title": "Sword",
-    "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
-  },
-  {
-    "filename": "002.jpg",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "003.jpg",
-    "title": "Sword",
-    "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
-  },
-  {
-    "filename": "002.jpg",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "003.jpg",
-    "title": "Sword",
-    "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
-  },
-  {
-    "filename": "002.jpg",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "004.jpg",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
     "filename": "003.jpg",
     "title": "Sword",
     "location": "",
@@ -75,5 +26,40 @@
     "location": "SLC",
     "date": "2024-12-02",
     "tags": ["snow", "street"]
+  },
+  {
+    "filename": "005.jpg",
+    "title": "Sword",
+    "location": "",
+    "date": "2024-12-01",
+    "tags": ["winter"]
+  },
+  {
+    "filename": "006.jpg",
+    "title": "Snowy Street",
+    "location": "SLC",
+    "date": "2024-12-02",
+    "tags": ["snow", "street"]
+  },
+  {
+    "filename": "007.jpg",
+    "title": "Sword",
+    "location": "",
+    "date": "2024-12-01",
+    "tags": ["winter"]
+  },
+  {
+    "filename": "008.jpg",
+    "title": "Snowy Street",
+    "location": "SLC",
+    "date": "2024-12-02",
+    "tags": ["snow", "street"]
+  },
+  {
+    "filename": "009.jpg",
+    "title": "Sword",
+    "location": "",
+    "date": "2024-12-01",
+    "tags": ["winter"]
   }
 ]
