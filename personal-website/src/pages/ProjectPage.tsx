@@ -24,10 +24,13 @@ const ProjectPage = () => {
             ))}
           </div>
           <div>
+            <button className="slideshow__arrow">
+              &#10094; Previous Project
+            </button>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <GitHub className="project-github-icon" />
             </a>
-            <button>Next Project</button>
+            <button className="slideshow__arrow"> Next Project &#10095;</button>
           </div>
         </section>
         <ProjectSlideshow images={project.images} />
