@@ -17,6 +17,10 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+.project__text h2:hover {
+  color: var(--hover);
+  cursor: pointer;
+}
 
 .project__text svg {
   width: 3em;
@@ -76,15 +80,22 @@
 @media (min-width: 1024px) {
   .project {
     flex-direction: row;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
   }
   .project__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
   }
+
   .project__text h2 {
-    /* align-self: flex-start; */
+    font-size: 1.6rem;
+  }
+
+  .project__slideshow {
+    width: 100%;
   }
 }

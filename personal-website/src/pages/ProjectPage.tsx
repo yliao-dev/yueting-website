@@ -29,7 +29,9 @@ const ProjectPage = () => {
     <>
       <div className="project">
         <section className="project__text">
-          <h2>{project.name}</h2>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <h2>{project.name}</h2>
+          </a>
           <p>{project.description}</p>
           <div className="project__tags">
             {project.tags?.map((tag) => (

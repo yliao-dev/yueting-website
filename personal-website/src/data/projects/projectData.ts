@@ -19,7 +19,7 @@ export const ProjectData = [
     name: "Nutri Flow",
     focus: "Frontend focused product",
     description:
-      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
     coverImage: "/images/portfolio/project1/projectCover1.jpg",
     images: [
