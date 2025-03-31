@@ -7,10 +7,10 @@ type Props = {
 const ProjectSlideshow = ({ images }: Props) => {
   const [current, setCurrent] = useState(0);
 
-  const goPrev = () =>
+  const prev = () =>
     setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
-  const goNext = () =>
+  const next = () =>
     setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
@@ -22,7 +22,7 @@ const ProjectSlideshow = ({ images }: Props) => {
       />
 
       <div className="slideshow__controls">
-        <button className="slideshow__arrow" onClick={goPrev}>
+        <button className="slideshow__arrow" onClick={prev}>
           &#10094;
         </button>
 
@@ -35,7 +35,7 @@ const ProjectSlideshow = ({ images }: Props) => {
             />
           ))}
         </div>
-        <button className="slideshow__arrow" onClick={goNext}>
+        <button className="slideshow__arrow" onClick={next}>
           &#10095;
         </button>
       </div>
