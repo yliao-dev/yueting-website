@@ -1,8 +1,9 @@
-import { PhotoData } from "../data/PhotoData";
+import { GalleryData } from "../data/GalleryData";
 import PhotoMasonry from "../components/Gallery/PhotoMasonry";
 import LineBreak from "../components/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import { useState } from "react";
+import { GalleryCollectionProps } from "../components/Gallery/GalleryTypes";
 
 const GalleryPage = () => {
   const [typingDone, setTypingDone] = useState(false);
@@ -23,11 +24,15 @@ const GalleryPage = () => {
         </section>
         <LineBreak />
         <section>
-          <PhotoMasonry photoData={PhotoData} />
-          <LineBreak width="100%" spacing="3rem" />
-          <PhotoMasonry photoData={PhotoData} />
-          <LineBreak width="100%" spacing="3rem" />
-          <PhotoMasonry photoData={PhotoData} />
+          {GalleryData.map((collection: GalleryCollectionProps, index) => (
+            <section key={collection.slug}>
+              <h2>{collection.title}</h2>
+              <PhotoMasonry photoData={collection.photos} />
+              {index < GalleryData.length - 1 && (
+                <LineBreak width="100%" spacing="3rem" />
+              )}
+            </section>
+          ))}
         </section>
       </div>
     </>
