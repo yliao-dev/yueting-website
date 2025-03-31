@@ -2,11 +2,11 @@ export const ProjectData = [
   {
     id: 0,
     name: "Personal Website",
-    coverImage: "src/assets/images/projectCover1.jpg",
+    coverImage: "/images/projects/project1/projectCover1.jpg",
     images: [
-      "src/assets/images/projects/project1/001.jpg",
-      "src/assets/images/projects/project1/002.jpg",
-      "src/assets/images/project1/003.jpg",
+      "/images/projects/project1/001.jpg",
+      "/images/projects/project1/002.jpg",
+      "/images/projects/project1/003.jpg",
     ],
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
