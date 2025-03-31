@@ -32,14 +32,7 @@ const ProjectPage = () => {
           </a>
         </section>
         <section className="project__images">
-          <ProjectSlideshow
-            images={[
-              "/images/gallery/DSCF00008.jpg",
-              "/images/gallery/DSCF0430.jpg",
-              "/images/gallery/DSCF2406.jpg",
-            ]}
-          />
-
+          <ProjectSlideshow images={project.images} />
           <button>Next Project</button>
         </section>
       </div>
