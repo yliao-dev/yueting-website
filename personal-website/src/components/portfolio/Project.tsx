@@ -1,11 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useScrollEffect } from "../../hooks/useScrollEffect";
-export type ProjectItemProps = {
-  name: string;
-  image: string;
-  id: string | number;
-};
+import { ProjectItemProps } from "./portfolioTypes";
 
 function ProjectItem({ image, name, id }: ProjectItemProps) {
   const navigate = useNavigate();

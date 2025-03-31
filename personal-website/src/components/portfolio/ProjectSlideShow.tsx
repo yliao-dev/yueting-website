@@ -1,10 +1,6 @@
 import { useState } from "react";
 
-type Props = {
-  images: string[];
-};
-
-const ProjectSlideshow = ({ images }: Props) => {
+const ProjectSlideshow = ({ images }: { images: string[] }) => {
   const [current, setCurrent] = useState(0);
 
   const prev = () =>

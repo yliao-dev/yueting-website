@@ -1,4 +1,5 @@
-import Project, { ProjectItemProps } from "./Project";
+import { ProjectItemProps } from "./portfolioTypes";
+import Project from "./Project";
 
 type ProjectMapProps = {
   projectData: ProjectItemProps[];
