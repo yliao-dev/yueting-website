@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "001.jpg",
+    "title": "Sword",
+    "location": "",
+    "date": "2024-12-01",
+    "tags": ["winter"]
+  },
+  {
+    "filename": "002.jpg",
+    "title": "Snowy Street",
+    "location": "SLC",
+    "date": "2024-12-02",
+    "tags": ["snow", "street"]
+  }
+]
