@@ -9,10 +9,12 @@ const ProjectMap = ({ projectData }: ProjectListProps) => {
           key={project.id}
           id={project.id}
           name={project.name}
-          coverImage={project.coverImage}
-          images={project.images}
+          focus={project.focus}
           description={project.description}
           tags={project.tags}
+          coverImage={project.coverImage}
+          images={project.images}
+          link={project.link}
         />
       ))}
     </>

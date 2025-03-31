@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useScrollEffect } from "../../hooks/useScrollEffect";
 import { ProjectItemProps } from "./portfolioTypes";
 
-function ProjectItem({ id, name, coverImage }: ProjectItemProps) {
+function ProjectItem({ id, name, focus, coverImage }: ProjectItemProps) {
   const navigate = useNavigate();
 
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
@@ -27,10 +27,7 @@ function ProjectItem({ id, name, coverImage }: ProjectItemProps) {
         <img src={coverImage} alt={name} />
         <div className="portfolio__project__text">
           <h2>{name}</h2>
-          <p>
-            Project Type Project Type Project Type Project Type Project Type
-            Project Type Project Type Project Type
-          </p>
+          <p>{focus}</p>
         </div>
       </div>
     </>

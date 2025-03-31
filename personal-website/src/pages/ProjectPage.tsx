@@ -23,18 +23,14 @@ const ProjectPage = () => {
               </span>
             ))}
           </div>
-          <a
-            href="https://github.com/yliao-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GitHub className="project-github-icon" />
-          </a>
+          <div>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <GitHub className="project-github-icon" />
+            </a>
+            <button>Next Project</button>
+          </div>
         </section>
-        <section className="project__images">
-          <ProjectSlideshow images={project.images} />
-          <button>Next Project</button>
-        </section>
+        <ProjectSlideshow images={project.images} />
       </div>
     </>
   );

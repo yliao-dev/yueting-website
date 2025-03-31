@@ -2,79 +2,91 @@ export const ProjectData = [
   {
     id: 0,
     name: "Personal Website",
+    focus: "Frontend focused product",
+    description:
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
     coverImage: "/images/portfolio/project1/projectCover1.jpg",
     images: [
       "/images/portfolio/project1/001.jpg",
       "/images/portfolio/project1/002.jpg",
       "/images/portfolio/project1/003.jpg",
     ],
-    description:
-      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
-    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
+    link: "https://github.com/yliao-dev",
   },
   {
     id: 1,
     name: "Nutri Flow",
+    focus: "Frontend focused product",
+    description:
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
     coverImage: "/images/portfolio/project1/projectCover1.jpg",
     images: [
       "/images/portfolio/project1/001.jpg",
       "/images/portfolio/project1/002.jpg",
       "/images/portfolio/project1/003.jpg",
     ],
-    description:
-      "A nutrition tracking app with personalized flow and dashboard. Built using React, Redux, and Chart.js.",
-    tags: ["React", "Redux", "Nutrition", "Health", "UX"],
+    link: "https://github.com/yliao-dev",
   },
   {
     id: 2,
     name: "Spotify Clone",
-    coverImage: "src/assets/images/projectCover2.jpg",
-    images: [
-      "src/assets/images/project2/01.jpg",
-      "src/assets/images/project2/02.jpg",
-      "src/assets/images/project2/03.jpg",
-    ],
+    focus: "Frontend focused product",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
-    tags: ["React", "TypeScript", "Design", "CSS Animations"],
+    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
+    coverImage: "/images/portfolio/project1/projectCover1.jpg",
+    images: [
+      "/images/portfolio/project1/001.jpg",
+      "/images/portfolio/project1/002.jpg",
+      "/images/portfolio/project1/003.jpg",
+    ],
+    link: "https://github.com/yliao-dev",
   },
   {
     id: 3,
     name: "Social Media Website",
-    coverImage: "src/assets/images/projectCover2.jpg",
-    images: [
-      "src/assets/images/project2/01.jpg",
-      "src/assets/images/project2/02.jpg",
-      "src/assets/images/project2/03.jpg",
-    ],
+    focus: "Frontend focused product",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
-    tags: ["React", "TypeScript", "Design", "CSS Animations"],
+    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
+    coverImage: "/images/portfolio/project1/projectCover1.jpg",
+    images: [
+      "/images/portfolio/project1/001.jpg",
+      "/images/portfolio/project1/002.jpg",
+      "/images/portfolio/project1/003.jpg",
+    ],
+    link: "https://github.com/yliao-dev",
   },
   {
     id: 4,
     name: "Dashboard Visualizer",
-    coverImage: "src/assets/images/projectCover2.jpg",
-    images: [
-      "src/assets/images/project2/01.jpg",
-      "src/assets/images/project2/02.jpg",
-      "src/assets/images/project2/03.jpg",
-    ],
+    focus: "Frontend focused product",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
-    tags: ["React", "TypeScript", "Design", "CSS Animations"],
+    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
+    coverImage: "/images/portfolio/project1/projectCover1.jpg",
+    images: [
+      "/images/portfolio/project1/001.jpg",
+      "/images/portfolio/project1/002.jpg",
+      "/images/portfolio/project1/003.jpg",
+    ],
+    link: "https://github.com/yliao-dev",
   },
   {
     id: 5,
     name: "Mobile Game",
-    coverImage: "src/assets/images/projectCover2.jpg",
-    images: [
-      "src/assets/images/project2/01.jpg",
-      "src/assets/images/project2/02.jpg",
-      "src/assets/images/project2/03.jpg",
-    ],
+    focus: "Frontend focused product",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
-    tags: ["React", "TypeScript", "Design", "CSS Animations"],
+    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
+    coverImage: "/images/portfolio/project1/projectCover1.jpg",
+    images: [
+      "/images/portfolio/project1/001.jpg",
+      "/images/portfolio/project1/002.jpg",
+      "/images/portfolio/project1/003.jpg",
+    ],
+    link: "https://github.com/yliao-dev",
   },
 ];
