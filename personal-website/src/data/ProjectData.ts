@@ -2,7 +2,12 @@ export const ProjectData = [
   {
     id: 0,
     name: "Personal Website",
-    image: "src/assets/images/projectCover1.jpg",
+    coverImage: "src/assets/images/projectCover1.jpg",
+    images: [
+      "src/assets/images/project1/01.jpg",
+      "src/assets/images/project1/02.jpg",
+      "src/assets/images/project1/03.jpg",
+    ],
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
@@ -10,15 +15,25 @@ export const ProjectData = [
   {
     id: 1,
     name: "Nutri Flow",
-    image: "src/assets/images/projectCover1.jpg",
+    coverImage: "src/assets/images/projectCover2.jpg",
+    images: [
+      "src/assets/images/project2/01.jpg",
+      "src/assets/images/project2/02.jpg",
+      "src/assets/images/project2/03.jpg",
+    ],
     description:
-      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
-    tags: ["React", "TypeScript", "Design", "CSS Animations"],
+      "A nutrition tracking app with personalized flow and dashboard. Built using React, Redux, and Chart.js.",
+    tags: ["React", "Redux", "Nutrition", "Health", "UX"],
   },
   {
     id: 2,
     name: "Spotify Clone",
-    image: "src/assets/images/projectCover1.jpg",
+    coverImage: "src/assets/images/projectCover2.jpg",
+    images: [
+      "src/assets/images/project2/01.jpg",
+      "src/assets/images/project2/02.jpg",
+      "src/assets/images/project2/03.jpg",
+    ],
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
@@ -26,7 +41,12 @@ export const ProjectData = [
   {
     id: 3,
     name: "Social Media Website",
-    image: "src/assets/images/projectCover1.jpg",
+    coverImage: "src/assets/images/projectCover2.jpg",
+    images: [
+      "src/assets/images/project2/01.jpg",
+      "src/assets/images/project2/02.jpg",
+      "src/assets/images/project2/03.jpg",
+    ],
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
@@ -34,7 +54,12 @@ export const ProjectData = [
   {
     id: 4,
     name: "Dashboard Visualizer",
-    image: "src/assets/images/projectCover1.jpg",
+    coverImage: "src/assets/images/projectCover2.jpg",
+    images: [
+      "src/assets/images/project2/01.jpg",
+      "src/assets/images/project2/02.jpg",
+      "src/assets/images/project2/03.jpg",
+    ],
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
@@ -42,7 +67,12 @@ export const ProjectData = [
   {
     id: 5,
     name: "Mobile Game",
-    image: "src/assets/images/projectCover1.jpg",
+    coverImage: "src/assets/images/projectCover2.jpg",
+    images: [
+      "src/assets/images/project2/01.jpg",
+      "src/assets/images/project2/02.jpg",
+      "src/assets/images/project2/03.jpg",
+    ],
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
