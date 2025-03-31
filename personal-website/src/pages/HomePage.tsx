@@ -24,7 +24,7 @@ const HomePage = () => {
   );
   const titleText = useTypingEffect(
     "Developer  |  Swordsman  |  Photographer",
-    50
+    30
   );
   return (
     <>
