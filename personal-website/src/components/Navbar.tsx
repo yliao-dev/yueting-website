@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import favicon from "../assets/icons/favicon.png";
+import logo from "../assets/icons/logo.png";
 import ReorderIcon from "@mui/icons-material/Reorder";
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <NavLink className="logo" to="/">
-          <img className="navbar__logo" src={favicon} alt="logo" />
+          <img className="navbar__logo" src={logo} alt="logo" />
         </NavLink>
 
         <div className="navbar__links">

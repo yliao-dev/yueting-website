@@ -28,9 +28,7 @@ const GalleryPage = () => {
             <section className="gallery__collection" key={collection.slug}>
               <h2>{collection.title}</h2>
               <PhotoMasonry photoData={collection.photos} />
-              {index < GalleryData.length - 1 && (
-                <LineBreak width="100%" spacing="3rem" />
-              )}
+              {index < GalleryData.length - 1 && <LineBreak width="100%" />}
             </section>
           ))}
       </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useScrollEffect } from "../../hooks/useScrollEffect";
-
+import projectCover1 from "../../assets/images/projectCover1.jpg";
 export type ProjectItemProps = {
   name: string;
   image: string;
@@ -31,7 +31,7 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
           navigate("project/" + id);
         }}
       >
-        <img src={image} />
+        <img src={projectCover1} />
         <div className="portfolio__project__text">
           <h2>{name}</h2>
           <p>
