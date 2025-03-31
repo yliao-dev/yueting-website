@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { PhotoItemProps } from "./galleryTypes";
 import PhotoViewer from "./PhotoViewer";
 import { useScrollEffect } from "../../hooks/useScrollEffect";
+import { PhotoItemProps } from "./galleryTypes";
 
 interface PhotoMasonryProps {
   photoData: PhotoItemProps[];
