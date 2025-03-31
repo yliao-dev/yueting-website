@@ -32,7 +32,7 @@ export function createGalleryCollections(
     slug,
     cover: `/images/gallery/${slug}/${meta[0]?.filename}`, // first image as cover
     photos: meta.map((entry) => ({
-      id: entry.filename,
+      id: `${slug}-${entry.filename}`,
       title: entry.title,
       image: `/images/gallery/${slug}/${entry.filename}`,
       location: entry.location,

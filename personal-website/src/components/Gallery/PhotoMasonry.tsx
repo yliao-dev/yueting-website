@@ -28,22 +28,27 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
   return (
     <>
       <div className="masonry-grid">
-        {photoData.map((photo, index) => (
-          <div
-            key={photo.id}
-            className={`masonry__item ${
-              visibleIndexes.has(index) ? "animate-fade-slide-up" : ""
-            }`}
-            data-index={index}
-            ref={(el) => {
-              if (el) scrollRefs.current[index] = el;
-            }}
-            onClick={() => openViewer(photo.image)}
-          >
-            <img src={photo.image} alt={photo.title} />
-          </div>
-        ))}
+        {photoData.map((photo, index) => {
+          console.log("Photo Path:", photo.image); // 👈 log image path
+
+          return (
+            <div
+              key={photo.id || index}
+              className={`masonry__item ${
+                visibleIndexes.has(index) ? "animate-fade-slide-up" : ""
+              }`}
+              data-index={index}
+              ref={(el) => {
+                if (el) scrollRefs.current[index] = el;
+              }}
+              onClick={() => openViewer(photo.image)}
+            >
+              <img src={photo.image} alt={photo.title ?? "Photo"} />
+            </div>
+          );
+        })}
       </div>
+
       {selectedImage && (
         <PhotoViewer imageUrl={selectedImage} onClose={closeViewer} />
       )}

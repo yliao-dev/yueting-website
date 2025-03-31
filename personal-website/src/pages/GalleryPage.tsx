@@ -2,7 +2,7 @@ import { GalleryData } from "../data/GalleryData";
 import PhotoMasonry from "../components/Gallery/PhotoMasonry";
 import LineBreak from "../components/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GalleryCollectionProps } from "../components/Gallery/GalleryTypes";
 
 const GalleryPage = () => {

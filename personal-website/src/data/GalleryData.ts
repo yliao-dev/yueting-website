@@ -1,17 +1,18 @@
-import meta1 from "../../public/images/gallery/set1/meta.json";
-import meta2 from "../../public/images/gallery/set2/meta.json";
-import { createGalleryCollections } from "../components/Gallery/createGalleryCollections";
+// src/data/GalleryData.ts
+import meta1 from "../data/galleryMeta1.json";
+import meta2 from "../data/galleryMeta2.json";
 import { GalleryCollectionProps } from "../components/Gallery/GalleryTypes";
+import { createGalleryCollections } from "../components/Gallery/createGalleryCollections";
 
 export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
   {
     title: "Set 1",
-    slug: "Set 1 slug",
+    slug: "set1",
     meta: meta1,
   },
   {
     title: "Set 2",
-    slug: "Set 2 slug",
+    slug: "set2",
     meta: meta2,
   },
 ]);
