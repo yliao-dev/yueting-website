@@ -1,4 +1,3 @@
-// src/data/GalleryData.ts
 import meta1 from "../data/galleryMeta1.json";
 import meta2 from "../data/galleryMeta2.json";
 import { GalleryCollectionProps } from "../components/Gallery/GalleryTypes";
@@ -7,7 +6,7 @@ import { createGalleryCollections } from "../components/Gallery/createGalleryCol
 export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
   {
     title: "Set 1",
-    slug: "set1",
+    slug: "set1", // must match folder name
     meta: meta1,
   },
   {
