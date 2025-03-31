@@ -2,7 +2,7 @@ export const ProjectData = [
   {
     id: 0,
     name: "Personal Website",
-    image: "src/assets/images/temp_image.jpg",
+    image: "src/assets/images/projectCover1.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
@@ -10,7 +10,7 @@ export const ProjectData = [
   {
     id: 1,
     name: "Nutri Flow",
-    image: "src/assets/images/temp_image.jpg",
+    image: "src/assets/images/projectCover1.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
@@ -18,7 +18,7 @@ export const ProjectData = [
   {
     id: 2,
     name: "Spotify Clone",
-    image: "src/assets/images/temp_image.jpg",
+    image: "src/assets/images/projectCover1.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
@@ -26,7 +26,7 @@ export const ProjectData = [
   {
     id: 3,
     name: "Social Media Website",
-    image: "src/assets/images/temp_image.jpg",
+    image: "src/assets/images/projectCover1.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
@@ -34,7 +34,7 @@ export const ProjectData = [
   {
     id: 4,
     name: "Dashboard Visualizer",
-    image: "src/assets/images/temp_image.jpg",
+    image: "src/assets/images/projectCover1.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
@@ -42,7 +42,7 @@ export const ProjectData = [
   {
     id: 5,
     name: "Mobile Game",
-    image: "src/assets/images/temp_image.jpg",
+    image: "src/assets/images/projectCover1.jpg",
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations"],
