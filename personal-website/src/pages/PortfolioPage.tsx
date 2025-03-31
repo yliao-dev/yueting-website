@@ -1,5 +1,5 @@
 import LineBreak from "../components/shared/LineBreak";
-import ProjectMap from "../components/portfolio/ProjectMap";
+import ProjectMap from "../components/portfolio/ProjectList";
 import { ProjectData } from "../data/projects/projectData";
 import JourneyTimeline from "../components/portfolio/Timeline";
 import { useTypingEffect } from "../hooks/useTypingEffect";

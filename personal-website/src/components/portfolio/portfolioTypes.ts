@@ -1,9 +1,12 @@
 export type ProjectItemProps = {
-  name: string;
-  image: string;
   id: string | number;
+  name: string;
+  coverImage: string;
+  images: string[]; // For slideshow in ProjectPage
+  description: string;
+  tags: string[];
 };
 
-export type ProjectMapProps = {
+export type ProjectListProps = {
   projectData: ProjectItemProps[];
 };

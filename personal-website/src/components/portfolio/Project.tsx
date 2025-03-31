@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useScrollEffect } from "../../hooks/useScrollEffect";
 import { ProjectItemProps } from "./portfolioTypes";
 
-function ProjectItem({ image, name, id }: ProjectItemProps) {
+function ProjectItem({ id, name, coverImage }: ProjectItemProps) {
   const navigate = useNavigate();
 
   const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
@@ -23,10 +23,10 @@ function ProjectItem({ image, name, id }: ProjectItemProps) {
           if (el) scrollRefs.current[0] = el;
         }}
         onClick={() => {
-          navigate("project/" + id);
+          navigate(`/project/${id}`);
         }}
       >
-        <img src={image} />
+        <img src={coverImage} alt={name} />
         <div className="portfolio__project__text">
           <h2>{name}</h2>
           <p>
