@@ -8,7 +8,7 @@ import { Tooltip } from "react-tooltip";
 import MapChart from "../components/Home/JourneyWorldMap";
 import { useScrollEffect } from "../hooks/useScrollEffect";
 import { useTypingEffect } from "../hooks/useTypingEffect";
-import portrait__image from "../assets/images/portrait.jpg";
+import portraitImg from "../assets/images/portrait.jpg";
 const HomePage = () => {
   const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
   const [content, setContent] = useState("");
@@ -41,7 +41,7 @@ const HomePage = () => {
             </p>
           </div>
           <img
-            src={portrait__image}
+            src={portraitImg}
             className="home__about__image"
             alt="portrait"
           />
