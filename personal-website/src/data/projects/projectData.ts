@@ -9,8 +9,8 @@ export const ProjectData = [
     coverImage: "/images/portfolio/project1/projectCover1.jpg",
     images: [
       "/images/portfolio/project1/001.jpg",
-      "/images/portfolio/project1/002.jpg",
-      "/images/portfolio/project1/003.jpg",
+      "/images/portfolio/project1/001.jpg",
+      "/images/portfolio/project1/001.jpg",
     ],
     link: "https://github.com/yliao-dev",
   },
@@ -24,8 +24,8 @@ export const ProjectData = [
     coverImage: "/images/portfolio/project1/projectCover1.jpg",
     images: [
       "/images/portfolio/project1/001.jpg",
-      "/images/portfolio/project1/002.jpg",
-      "/images/portfolio/project1/003.jpg",
+      "/images/portfolio/project1/001.jpg",
+      "/images/portfolio/project1/001.jpg",
     ],
     link: "https://github.com/yliao-dev",
   },
