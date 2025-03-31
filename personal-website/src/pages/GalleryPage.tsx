@@ -1,9 +1,9 @@
-import { GalleryData } from "../data/GalleryData";
+import { GalleryData } from "../data/galleryData";
 import PhotoMasonry from "../components/Gallery/PhotoMasonry";
 import LineBreak from "../components/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import { useState } from "react";
-import { GalleryCollectionProps } from "../components/Gallery/GalleryTypes";
+import { GalleryCollectionProps } from "../components/Gallery/galleryTypes";
 
 const GalleryPage = () => {
   const [typingDone, setTypingDone] = useState(false);

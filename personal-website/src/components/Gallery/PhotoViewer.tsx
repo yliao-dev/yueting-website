@@ -1,4 +1,4 @@
-import { PhotoViewerProps } from "./GalleryTypes";
+import { PhotoViewerProps } from "./galleryTypes";
 
 const PhotoViewer = ({ imageUrl, onClose }: PhotoViewerProps) => {
   return (

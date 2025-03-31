@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { ProjectData } from "../data/ProjectData";
+import { ProjectData } from "../data/projectData";
 import PageNotFound from "./PageNotFound";
 import ProjectSlideshow from "../components/portfolio/ProjectSlideShow";
 import { GitHub } from "@mui/icons-material";
