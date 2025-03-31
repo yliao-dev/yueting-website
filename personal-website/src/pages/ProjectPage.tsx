@@ -38,23 +38,21 @@ const ProjectPage = () => {
             ))}
           </div>
           <div className="project__buttons">
-            <button
-              className="slideshow__arrow"
-              onClick={Prev}
-              disabled={index === 0}
-            >
-              &#10094; Previous Project
-            </button>
+            {index > 0 && (
+              <button className="slideshow__arrow" onClick={Prev}>
+                &#10094; Previous Project
+              </button>
+            )}
+
             <a href={project.link} target="_blank" rel="noopener noreferrer">
               <GitHub className="project-github-icon" />
             </a>
-            <button
-              className="slideshow__arrow"
-              onClick={Next}
-              disabled={index === ProjectData.length - 1}
-            >
-              Next Project &#10095;
-            </button>
+
+            {index < ProjectData.length - 1 && (
+              <button className="slideshow__arrow" onClick={Next}>
+                Next Project &#10095;
+              </button>
+            )}
           </div>
         </section>
         <ProjectSlideshow images={project.images} />
