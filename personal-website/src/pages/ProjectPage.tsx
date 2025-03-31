@@ -3,6 +3,7 @@ import { ProjectData } from "../data/projects/projectData";
 import PageNotFound from "./PageNotFound";
 import ProjectSlideshow from "../components/portfolio/ProjectSlideShow";
 import { GitHub } from "@mui/icons-material";
+import LineBreak from "../components/shared/LineBreak";
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -56,8 +57,9 @@ const ProjectPage = () => {
             )}
           </div>
         </section>
-
-        <ProjectSlideshow images={project.images} />
+        <section className="project__slideshow">
+          <ProjectSlideshow images={project.images} />
+        </section>
       </div>
     </>
   );

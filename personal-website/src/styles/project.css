@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  gap: 3rem;
 }
 
 /* Intro Section */
 .project__text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .project__text h2 {
@@ -62,20 +62,29 @@
   color: var(--hover);
 }
 
+.project__slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Tablet and above */
 @media (min-width: 768px) {
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
   .project {
     flex-direction: row;
   }
   .project__text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
   }
   .project__text h2 {
-    align-self: flex-start;
+    /* align-self: flex-start; */
   }
-}
-
-/* Desktop and above */
-@media (min-width: 1024px) {
 }
