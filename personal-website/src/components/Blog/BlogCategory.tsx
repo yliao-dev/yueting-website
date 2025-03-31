@@ -7,8 +7,8 @@ type BlogCategoryProps = {
 
 const BlogCategory: React.FC<BlogCategoryProps> = ({ onSelect }) => {
   const categories = [
-    { id: "photography", icon: <Camera />, value: "photography" },
     { id: "kendo", icon: <SportsMartialArts />, value: "kendo" },
+    { id: "photography", icon: <Camera />, value: "photography" },
     { id: "fitness", icon: <FitnessCenter />, value: "fitness" },
   ];
 
