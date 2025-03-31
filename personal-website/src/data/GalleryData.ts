@@ -5,12 +5,12 @@ import { createGalleryCollections } from "../components/Gallery/createGalleryCol
 
 export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
   {
-    title: "Set 1",
+    title: "Random Collections",
     slug: "set1", // must match folder name
     meta: meta1,
   },
   {
-    title: "Set 2",
+    title: "Landscapes",
     slug: "set2",
     meta: meta2,
   },

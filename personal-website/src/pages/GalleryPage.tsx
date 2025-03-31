@@ -25,7 +25,7 @@ const GalleryPage = () => {
         <LineBreak />
         {typingDone &&
           GalleryData.map((collection: GalleryCollectionProps, index) => (
-            <section key={collection.slug}>
+            <section className="gallery__collection" key={collection.slug}>
               <h2>{collection.title}</h2>
               <PhotoMasonry photoData={collection.photos} />
               {index < GalleryData.length - 1 && (

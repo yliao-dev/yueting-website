@@ -27,6 +27,11 @@
   opacity: 0.8;
 }
 
+.gallery__collection h2 {
+  display: flex;
+  justify-content: center;
+}
+
 /* Modal Background */
 .modal-overlay {
   position: fixed;
