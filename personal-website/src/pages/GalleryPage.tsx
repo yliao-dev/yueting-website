@@ -23,17 +23,15 @@ const GalleryPage = () => {
           </p>
         </section>
         <LineBreak />
-        <section>
-          {GalleryData.map((collection: GalleryCollectionProps, index) => (
-            <section key={collection.slug}>
-              <h2>{collection.title}</h2>
-              <PhotoMasonry photoData={collection.photos} />
-              {index < GalleryData.length - 1 && (
-                <LineBreak width="100%" spacing="3rem" />
-              )}
-            </section>
-          ))}
-        </section>
+        {GalleryData.map((collection: GalleryCollectionProps, index) => (
+          <section key={collection.slug}>
+            <h2>{collection.title}</h2>
+            <PhotoMasonry photoData={collection.photos} />
+            {index < GalleryData.length - 1 && (
+              <LineBreak width="100%" spacing="3rem" />
+            )}
+          </section>
+        ))}
       </div>
     </>
   );
