@@ -22,9 +22,7 @@ function ProjectItem({ id, name, coverImage }: ProjectItemProps) {
         ref={(el) => {
           if (el) scrollRefs.current[0] = el;
         }}
-        onClick={() => {
-          navigate(`/project/${id}`);
-        }}
+        onClick={() => navigate(`/portfolio/project/${id}`)}
       >
         <img src={coverImage} alt={name} />
         <div className="portfolio__project__text">
