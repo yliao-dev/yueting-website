@@ -3,7 +3,7 @@ import SkillPieChart, {
   SkillItem,
   skillsData,
 } from "../components/home/PieChart";
-import LineBreak from "../components/LineBreak";
+import LineBreak from "../components/shared/LineBreak";
 import { Tooltip } from "react-tooltip";
 import MapChart from "../components/home/JourneyWorldMap";
 import { useScrollEffect } from "../hooks/useScrollEffect";

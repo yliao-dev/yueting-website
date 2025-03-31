@@ -1,9 +1,9 @@
 import { useState } from "react";
 import BlogCategory from "../components/blog/BlogCategory";
-import { BlogData } from "../data/BlogData"; // unified list with `category`
-import LineBreak from "../components/LineBreak";
+import { BlogData } from "../data/blog/blogData"; // unified list with `category`
+import LineBreak from "../components/shared/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
-import BlogPost from "../components/blog/blogPost";
+import BlogPost from "../components/blog/BlogPost";
 
 const BlogPage = () => {
   const [selectedCategory, setCategory] = useState<string>("");

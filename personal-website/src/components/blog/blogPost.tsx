@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/icons/logo.png";
-import LineBreak from "../LineBreak";
+import LineBreak from "../shared/LineBreak";
 
 type BlogPostProp = {
   id: string | number;

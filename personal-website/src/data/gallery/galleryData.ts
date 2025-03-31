@@ -1,7 +1,7 @@
-import meta1 from "./galleryMeta1.json";
-import meta2 from "./galleryMeta2.json";
+import meta1 from "../galleryMeta1.json";
+import meta2 from "../galleryMeta2.json";
 import { createGalleryCollections } from "./createGalleryCollections";
-import { GalleryCollectionProps } from "../components/gallery/galleryTypes";
+import { GalleryCollectionProps } from "../../components/gallery/galleryTypes";
 
 export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
   {

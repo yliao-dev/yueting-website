@@ -1,6 +1,6 @@
-import { GalleryData } from "../data/galleryData";
+import { GalleryData } from "../data/gallery/galleryData";
 import PhotoMasonry from "../components/gallery/PhotoMasonry";
-import LineBreak from "../components/LineBreak";
+import LineBreak from "../components/shared/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import { useState } from "react";
 import { GalleryCollectionProps } from "../components/gallery/galleryTypes";

@@ -1,5 +1,5 @@
-import SocialMediaIcons from "../components/SocialMediaIcons";
-import LineBreak from "../components/LineBreak";
+import SocialMediaIcons from "../components/shared/SocialMediaIcons";
+import LineBreak from "../components/shared/LineBreak";
 import { useState } from "react";
 
 const ContactPage = () => {
