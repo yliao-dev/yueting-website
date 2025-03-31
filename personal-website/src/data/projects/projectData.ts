@@ -2,11 +2,11 @@ export const ProjectData = [
   {
     id: 0,
     name: "Personal Website",
-    coverImage: "/images/projects/project1/projectCover1.jpg",
+    coverImage: "/images/portfolio/project1/projectCover1.jpg",
     images: [
-      "/images/projects/project1/001.jpg",
-      "/images/projects/project1/002.jpg",
-      "/images/projects/project1/003.jpg",
+      "/images/portfolio/project1/001.jpg",
+      "/images/portfolio/project1/002.jpg",
+      "/images/portfolio/project1/003.jpg",
     ],
     description:
       "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
@@ -15,11 +15,11 @@ export const ProjectData = [
   {
     id: 1,
     name: "Nutri Flow",
-    coverImage: "src/assets/images/projectCover2.jpg",
+    coverImage: "/images/portfolio/project1/projectCover1.jpg",
     images: [
-      "src/assets/images/project2/01.jpg",
-      "src/assets/images/project2/02.jpg",
-      "src/assets/images/project2/03.jpg",
+      "/images/portfolio/project1/001.jpg",
+      "/images/portfolio/project1/002.jpg",
+      "/images/portfolio/project1/003.jpg",
     ],
     description:
       "A nutrition tracking app with personalized flow and dashboard. Built using React, Redux, and Chart.js.",
