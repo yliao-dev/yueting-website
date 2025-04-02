@@ -42,10 +42,7 @@ const App = () => {
           <Route index element={<ContactPage />} />
         </Route>
       </>
-    ),
-    {
-      basename: "/yueting-website",
-    }
+    )
   );
 
   return (
