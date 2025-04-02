@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bison from "../assets/images/bison.jpg";
+import bisonImg from "../assets/images/bison.png";
 
 const PageNotFound = () => {
   return (
@@ -10,7 +10,7 @@ const PageNotFound = () => {
           Hmm, looks like you’ve wandered into uncharted territory. Don’t worry
           though, my trusty horse will guide you back to safety!
         </p>
-        <img src={bison} alt="Bison in 404" />
+        <img src={bisonImg} alt="Bison in 404" />
 
         <Link to="/" className="pageNotFound__back-button">
           Back with Bison

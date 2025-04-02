@@ -1,6 +1,7 @@
 import SocialMediaIcons from "../components/shared/SocialMediaIcons";
 import LineBreak from "../components/shared/LineBreak";
 import { useState } from "react";
+import bisonImg from "../assets/images/bison.png";
 
 const ContactPage = () => {
   const [showInfo, setShowInfo] = useState(false);
@@ -38,10 +39,7 @@ const ContactPage = () => {
           >
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <img
-                  src="src/assets/images/bison.jpg"
-                  alt="Behind the Scenes"
-                />
+                <img src={bisonImg} alt="Behind the Scenes" />
               </div>
               <div className="flip-card-back">
                 <p>
