@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  animation: drop-down-fade-in 1.2s ease-out 0.2s;
+  animation: navbar-slide-fade 0.8s ease-out;
 }
 
 .navbar h2 {
@@ -141,10 +141,10 @@
 }
 
 /* ------------ Animations ------------ */
-@keyframes drop-down-fade-in {
+@keyframes navbar-slide-fade {
   from {
     opacity: 0.2;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
