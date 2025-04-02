@@ -9,8 +9,8 @@ import {
   ZoomableGroup,
 } from "react-simple-maps";
 
-const geoUrl = "/features.json";
 const csvPath = "/highlightedRegions.csv";
+const geoJsonPath = "/features.json";
 
 type CountryData = {
   ISO3: string;
@@ -24,18 +24,23 @@ type Props = {
 };
 
 const MapChart = ({ setTooltipContent }: Props) => {
-  const [data, setData] = useState<CountryData[]>([]);
+  const [countryData, setCountryData] = useState<CountryData[]>([]);
+  const [geoFeatures, setGeoFeatures] = useState<any | null>(null);
   const [resetKey, setResetKey] = useState(0);
 
   useEffect(() => {
+    // Fetch CSV
     csv(csvPath, (row) => ({
       ISO3: row.ISO3,
       Name: row.Name,
       Lived: +row.Lived,
       Travelled: +row.Travelled,
-    })).then((parsed) => {
-      setData(parsed);
-    });
+    })).then(setCountryData);
+
+    // Fetch GeoJSON
+    fetch(geoJsonPath)
+      .then((res) => res.json())
+      .then(setGeoFeatures);
   }, []);
 
   return (
@@ -46,6 +51,7 @@ const MapChart = ({ setTooltipContent }: Props) => {
       >
         Reset View
       </button>
+
       <ComposableMap
         projection="geoNaturalEarth1"
         projectionConfig={{
@@ -55,19 +61,19 @@ const MapChart = ({ setTooltipContent }: Props) => {
         height={400}
         width={800}
       >
-        <Sphere stroke="#E4E5E6" strokeWidth={1} id={""} fill={"#FFFFFF"} />
+        <Sphere stroke="#E4E5E6" strokeWidth={1} fill="#fff" id={""} />
         <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
         <ZoomableGroup center={[-12, 35]} zoom={1} key={resetKey}>
-          {data.length > 0 && (
-            <Geographies geography={geoUrl}>
+          {geoFeatures && (
+            <Geographies geography={geoFeatures}>
               {({ geographies }) =>
                 geographies.map((geo) => {
-                  const d = data.find((s) => s.ISO3 === geo.id);
+                  const d = countryData.find((s) => s.ISO3 === geo.id);
 
                   let fillColor = "#F5F4F6";
                   if (d) {
-                    if (d.Lived === 1) fillColor = "#0072b1"; // dark blue
-                    else if (d.Travelled === 1) fillColor = "#89c2d9"; // light blue
+                    if (d.Lived === 1) fillColor = "#0072b1";
+                    else if (d.Travelled === 1) fillColor = "#89c2d9";
                   }
 
                   return (
@@ -75,31 +81,16 @@ const MapChart = ({ setTooltipContent }: Props) => {
                       key={geo.rsmKey}
                       geography={geo}
                       tabIndex={-1}
-                      className="focus:outline-none"
                       data-tooltip-id="map-tooltip"
                       onMouseEnter={() => {
-                        if (d) {
-                          setTooltipContent(d.Name);
-                        } else {
-                          setTooltipContent(geo.properties.name);
-                        }
+                        setTooltipContent(d ? d.Name : geo.properties.name);
                       }}
                       onMouseLeave={() => {
                         setTooltipContent("");
                       }}
                       style={{
-                        default: {
-                          fill: fillColor,
-                          outline: "none",
-                        },
-                        hover: {
-                          fill: "#d2b48c",
-                          outline: "none",
-                        },
-                        // pressed: {
-                        //   fill: "#38b000",
-                        //   outline: "none",
-                        // },
+                        default: { fill: fillColor, outline: "none" },
+                        hover: { fill: "#d2b48c", outline: "none" },
                       }}
                     />
                   );
