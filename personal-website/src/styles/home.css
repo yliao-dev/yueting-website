@@ -24,7 +24,7 @@
   margin-top: 2rem;
   width: 100%;
   max-width: 100%;
-  animation: fade-in 1.2s ease-in;
+  animation: fade-slide-up 1.2s ease-out;
 }
 
 /* ------------ Skills ------------ */
