@@ -36,6 +36,10 @@
   align-self: flex-start;
 }
 
+.home__skills__chart {
+  width: 100%;
+}
+
 .home__skills__text {
   height: fit-content;
   max-height: 15rem;

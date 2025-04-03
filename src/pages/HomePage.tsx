@@ -49,10 +49,12 @@ const HomePage = () => {
       <section className="home__skills">
         <h1>Skills</h1>
 
-        <StackChart
-          onSelect={(data) => setSelectedSkill(data)}
-          items={skillsData}
-        />
+        <div className="home__skills__chart">
+          <StackChart
+            onSelect={(data) => setSelectedSkill(data)}
+            items={skillsData}
+          />
+        </div>
 
         <section
           className={`home__skills__text ${

@@ -15,6 +15,8 @@ const StackChart = ({ items, onSelect }: StackChartProps) => {
     }
   }, [selectedIndex, items, onSelect]);
 
+  const maxValue = Math.max(...items.map((item) => item.value));
+
   return (
     <div className="stack-chart">
       <div className="stack-bars">
@@ -24,7 +26,7 @@ const StackChart = ({ items, onSelect }: StackChartProps) => {
             className={`stack-bar ${selectedIndex === i ? "active" : ""}`}
             style={{
               backgroundColor: item.color,
-              width: `${item.value * 2}rem`,
+              width: `${(item.value / maxValue) * 100}%`,
             }}
             onClick={() => setSelectedIndex(i)}
           >
