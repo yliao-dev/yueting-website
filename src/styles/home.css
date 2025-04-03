@@ -140,10 +140,6 @@
     align-items: flex-start;
   }
 
-  .home__skills__chart {
-    gap: 2rem;
-  }
-
   .home__skills__text {
     max-width: 40%;
     max-height: 30rem;
