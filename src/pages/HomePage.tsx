@@ -97,9 +97,12 @@ const HomePage = () => {
           }}
         >
           <p>
-            I’ve lived across the U.S. in cities like New York City (NY), Troy
-            (NY), Los Angeles (CA), and Provo (UT), and have also spent several
-            months to half a year living in other parts of the world.
+            I’ve spent meaningful time in both the U.S. and China, each offering
+            its own rhythm and way of life. From cities like New York, Los
+            Angeles, Troy, and Provo to places abroad, every move shaped how I
+            see and live. Each place left something with me — a lifestyle, a
+            perspective, a different way to pursue harmony. But meeting people
+            along the way has always been the best part.
           </p>
         </div>
 
