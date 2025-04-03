@@ -24,9 +24,11 @@ const StackChart = ({ items, onSelect, animate }: StackChartProps) => {
         {items.map((item, i) => (
           <div
             key={i}
-            className={`stack-bar ${selectedIndex === i ? "active" : ""} ${
-              animate ? "animate-bar" : ""
-            }`}
+            className={`stack-bar 
+              ${selectedIndex === i ? "active" : ""}
+              ${selectedIndex !== null && selectedIndex !== i ? "dimmed" : ""}
+              ${animate ? "animate-bar" : ""}
+              `}
             style={{
               backgroundColor: item.color,
               width: `${(item.value / maxValue) * 100}%`,

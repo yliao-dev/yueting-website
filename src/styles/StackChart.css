@@ -14,7 +14,7 @@
   align-items: center;
   height: 2.5rem;
   border-radius: 0.5rem;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   cursor: pointer;
   transition: width 0.5s ease-out, background-color 0.3s ease,
     transform 0.3s ease;
@@ -28,7 +28,7 @@
 
 .stack-bar:hover {
   transform: scale(1.015);
-  filter: brightness(1.1);
+  filter: brightness(1.2);
 }
 
 .stack-bar.active {
@@ -42,7 +42,6 @@
   font-weight: var(--font-weight-bold);
 }
 
-/* Animations */
 @keyframes grow-bar {
   from {
     width: 0;
