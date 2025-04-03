@@ -9,7 +9,9 @@ import StackChart from "../components/home/StackChart";
 import { skillsData, SkillData } from "../data/home/skillData";
 
 const HomePage = () => {
-  const [selectedSkill, setSelectedSkill] = useState<SkillData | null>(null);
+  const [selectedSkill, setSelectedSkill] = useState<SkillData | null>(
+    skillsData[0]
+  );
   const [content, setContent] = useState("");
   const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
 
