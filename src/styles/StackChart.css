@@ -28,7 +28,6 @@
 
 .stack-bar:hover {
   transform: scale(1.015);
-  filter: brightness(1.2);
 }
 
 .stack-bar.active {
@@ -40,6 +39,11 @@
   letter-spacing: 0.1rem;
   font-size: 0.9rem;
   font-weight: var(--font-weight-bold);
+}
+
+.stack-bar.dimmed {
+  filter: contrast(15%);
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 @keyframes grow-bar {
