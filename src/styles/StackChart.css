@@ -19,8 +19,16 @@
   transition: width 0.5s ease-out, background-color 0.3s ease,
     transform 0.3s ease;
   transform-origin: left center;
-  opacity: 0;
-  animation: grow-bar 0.6s ease forwards;
+  opacity: 0; /* hidden by default */
+}
+
+.stack-bar.animate-bar {
+  animation: grow-bar 0.6s ease-out forwards;
+}
+
+.stack-bar.animate-bar .stack-label {
+  animation: fade-label 0.5s ease forwards;
+  animation-delay: 0.3s;
 }
 
 .stack-bar:hover {
@@ -39,11 +47,9 @@
   letter-spacing: 0.1rem;
   font-size: 0.9rem;
   font-weight: var(--font-weight-bold);
-  opacity: 0;
-  animation: fade-label 0.5s ease forwards;
-  animation-delay: 0.3s;
 }
 
+/* Animations */
 @keyframes grow-bar {
   from {
     width: 0;

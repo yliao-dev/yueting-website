@@ -4,9 +4,10 @@ import { SkillData } from "../../data/home/skillData";
 type StackChartProps = {
   items: SkillData[];
   onSelect: (data: SkillData) => void;
+  animate?: boolean;
 };
 
-const StackChart = ({ items, onSelect }: StackChartProps) => {
+const StackChart = ({ items, onSelect, animate }: StackChartProps) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   useEffect(() => {
@@ -23,7 +24,9 @@ const StackChart = ({ items, onSelect }: StackChartProps) => {
         {items.map((item, i) => (
           <div
             key={i}
-            className={`stack-bar ${selectedIndex === i ? "active" : ""}`}
+            className={`stack-bar ${selectedIndex === i ? "active" : ""} ${
+              animate ? "animate-bar" : ""
+            }`}
             style={{
               backgroundColor: item.color,
               width: `${(item.value / maxValue) * 100}%`,

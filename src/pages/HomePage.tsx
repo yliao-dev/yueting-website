@@ -49,23 +49,22 @@ const HomePage = () => {
       <LineBreak />
 
       <section className="home__skills">
-        <div className="home__skills__chart">
-          <h1>Skills</h1>
-          <StackChart
-            onSelect={(data) => setSelectedSkill(data)}
-            items={skillsData}
-          />
-        </div>
-
-        <section
-          className={`home__skills__text ${
-            visibleIndexes.has(0) ? "animate-slide-right" : ""
-          }`}
+        <div
+          className="home__skills__chart"
           data-index={0}
           ref={(el) => {
             if (el) scrollRefs.current[0] = el;
           }}
         >
+          <h1>Skills</h1>
+          <StackChart
+            onSelect={(data) => setSelectedSkill(data)}
+            items={skillsData}
+            animate={visibleIndexes.has(0)}
+          />
+        </div>
+
+        <section className="home__skills__text">
           {selectedSkill && (
             <>
               <h2>{selectedSkill.label}</h2>
