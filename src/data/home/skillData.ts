@@ -53,7 +53,7 @@ export const skillsData: SkillData[] = [
   },
   {
     label: "Photography",
-    value: 10,
+    value: 15,
     color: "rgba(110, 90, 140, 1)",
     paragraphs: [
       "Photography lets me chase light, frame feeling, and preserve moments that might quietly disappear.",
