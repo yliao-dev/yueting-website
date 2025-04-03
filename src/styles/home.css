@@ -143,12 +143,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 35rem;
   }
 
   .home__skills__chart {
     gap: 2rem;
-    width: 50%;
   }
 
   .home__skills__text {
