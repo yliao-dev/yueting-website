@@ -47,9 +47,8 @@ const HomePage = () => {
       <LineBreak />
 
       <section className="home__skills">
-        <h1>Skills</h1>
-
         <div className="home__skills__chart">
+          <h1>Skills</h1>
           <StackChart
             onSelect={(data) => setSelectedSkill(data)}
             items={skillsData}

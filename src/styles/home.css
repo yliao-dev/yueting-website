@@ -38,6 +38,9 @@
 
 .home__skills__chart {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
 }
 
 .home__skills__text {
@@ -145,9 +148,8 @@
   }
 
   .home__skills__chart {
-    padding: 0 5rem;
-    display: flex;
-    align-self: flex-end;
+    padding-right: 2rem;
+    gap: 2rem;
   }
 
   .home__skills__text {
