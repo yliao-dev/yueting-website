@@ -1,16 +1,9 @@
 import { useState, useEffect } from "react";
-
-export type StackItem = {
-  label: string;
-  value: number;
-  color: string;
-  paragraphs: string[];
-  list?: string[];
-};
+import { SkillData } from "../../data/home/skillData";
 
 type StackChartProps = {
-  items: StackItem[];
-  onSelect: (data: StackItem) => void;
+  items: SkillData[];
+  onSelect: (data: SkillData) => void;
 };
 
 const StackChart = ({ items, onSelect }: StackChartProps) => {
