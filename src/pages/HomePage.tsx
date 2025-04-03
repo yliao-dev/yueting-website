@@ -1,16 +1,13 @@
 import { useState } from "react";
-import SkillPieChart, {
-  SkillItem,
-  skillsData,
-} from "../components/home/PieChart";
 import LineBreak from "../components/shared/LineBreak";
 import { Tooltip } from "react-tooltip";
 import MapChart from "../components/home/JourneyWorldMap";
 import { useScrollEffect } from "../hooks/useScrollEffect";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import portraitImg from "../assets/images/portrait.png";
+import StackChart, { StackItem } from "../components/home/StackChart";
 const HomePage = () => {
-  const [selectedSkill, setSelectedSkill] = useState<SkillItem>(skillsData[0]);
+  const [selectedSkill, setSelectedSkill] = useState<StackItem | null>(null);
   const [content, setContent] = useState("");
   const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
   const scrollRefs = useScrollEffect(
@@ -49,9 +46,11 @@ const HomePage = () => {
         <LineBreak />
         <section className="home__skills">
           <h1>Skills</h1>
-          <div className="home__skills__chart">
+          {/* <div className="home__skills__chart">
             <SkillPieChart onSelect={(data) => setSelectedSkill(data)} />
-          </div>
+          </div> */}
+
+          <StackChart onSelect={(data) => setSelectedSkill(data)} items={[]} />
           <section
             className={`home__skills__text ${
               visibleIndexes.has(0) ? "animate-slide-right" : ""
@@ -64,7 +63,16 @@ const HomePage = () => {
             {selectedSkill && (
               <>
                 <h2>{selectedSkill.label}</h2>
-                {selectedSkill.context}
+                {selectedSkill.paragraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+                {selectedSkill.list && (
+                  <ul>
+                    {selectedSkill.list.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                )}
               </>
             )}
           </section>

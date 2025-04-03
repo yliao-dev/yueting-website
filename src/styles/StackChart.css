@@ -1,0 +1,71 @@
+.stack-chart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.stack-chart .stack-bars {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stack-chart .stack-bar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.85;
+}
+
+.stack-chart .stack-bar:hover {
+  opacity: 1;
+  filter: brightness(1.05);
+}
+
+.stack-chart .stack-bar.active {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+
+.stack-chart .stack-label {
+  pointer-events: none;
+}
+
+.stack-chart .stack-content {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 120px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .stack-chart {
+    padding: 0.75rem;
+  }
+
+  .stack-chart .stack-bars {
+    height: 240px;
+  }
+
+  .stack-chart .stack-content {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
