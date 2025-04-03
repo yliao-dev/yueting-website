@@ -1,5 +1,7 @@
 .stack-chart {
-  width: 100%;
+  width: 70vw;
+  max-width: 90%;
+
   margin: 0 auto;
 }
 
@@ -35,11 +37,14 @@
 @media (min-width: 768px) {
   .stack-chart {
     margin-left: 2rem;
+    /* width: 80%; */
   }
 }
 
 @media (min-width: 1024px) {
   .stack-chart {
+    width: 40vw;
+
     margin-left: 2rem;
   }
 }
