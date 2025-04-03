@@ -31,3 +31,15 @@
 .stack-label {
   pointer-events: none;
 }
+
+@media (min-width: 768px) {
+  .stack-chart {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stack-chart {
+    margin-left: 2rem;
+  }
+}
