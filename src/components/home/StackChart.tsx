@@ -22,7 +22,10 @@ const StackChart = ({ items, onSelect }: StackChartProps) => {
           <div
             key={i}
             className={`stack-bar ${selectedIndex === i ? "active" : ""}`}
-            style={{ backgroundColor: item.color, flexGrow: item.value }}
+            style={{
+              backgroundColor: item.color,
+              width: `${item.value * 2}rem`,
+            }}
             onClick={() => setSelectedIndex(i)}
           >
             <span className="stack-label">{item.label}</span>
