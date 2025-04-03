@@ -12,24 +12,20 @@
 .stack-bar {
   display: flex;
   align-items: center;
-  height: 2rem;
-  border-radius: 6px;
-  color: #fff;
-  font-weight: 500;
-  padding-left: 1rem; /* Label inside bar, pushed right */
-  transition: all 0.3s ease;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem; /* Label inside bar, pushed right */
   cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .stack-bar.active {
-  outline: 2px solid white;
 }
 
 .stack-label {
-  pointer-events: none;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-bold);
 }
 
 @media (min-width: 768px) {
