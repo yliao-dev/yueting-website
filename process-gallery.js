@@ -8,6 +8,11 @@ const inputDir = path.resolve("public/images/gallery/set1");
 const outputPreviewDir = path.resolve("public/images/gallery/preview");
 const outputThumbDir = path.resolve("public/images/gallery/thumbs");
 
+const MAX_INPUT_MB = 10;
+const QUALITY = 80;
+const PREVIEW_RESIZED_WIDTH = 1600;
+const THUMBNAIL_RESIZED_WIDTH = 600;
+
 const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 };
@@ -19,17 +24,18 @@ const processImage = async (file) => {
 
   const { size: inputSize } = fs.statSync(inputPath);
   const inputSizeMB = inputSize / 1024 / 1024;
-  if (inputSizeMB > 10) {
-    console.warn(`⚠️  Skipped (too large > 10MB): ${file}`);
+  if (inputSizeMB > MAX_INPUT_MB) {
+    console.warn(`⚠️  Skipped (too large > ${MAX_INPUT_MB}MB): ${file}`);
     return;
   }
 
-  // === Preview (same size, just convert to WebP) ===
+  // === Preview (1600px wide) ===
   ensureDir(outputPreviewDir);
   const previewPath = path.join(outputPreviewDir, `${baseName}.webp`);
   if (!fs.existsSync(previewPath)) {
     await sharp(inputPath)
-      .webp({ quality: 80 })
+      .resize({ width: PREVIEW_RESIZED_WIDTH })
+      .webp({ quality: QUALITY })
       .withMetadata({ exif: false })
       .toFile(previewPath);
     console.log(`✅ Created preview: ${previewPath}`);
@@ -37,13 +43,13 @@ const processImage = async (file) => {
     console.log(`⚠️  Skipped (already exists): ${previewPath}`);
   }
 
-  // === Thumbnail (resized) ===
+  // === Thumbnail (600px wide) ===
   ensureDir(outputThumbDir);
   const thumbPath = path.join(outputThumbDir, `${baseName}.webp`);
   if (!fs.existsSync(thumbPath)) {
     await sharp(inputPath)
-      .resize({ width: 600 })
-      .webp({ quality: 80 })
+      .resize({ width: THUMBNAIL_RESIZED_WIDTH })
+      .webp({ quality: QUALITY })
       .withMetadata({ exif: false })
       .toFile(thumbPath);
     console.log(`✅ Created thumbnail: ${thumbPath}`);
