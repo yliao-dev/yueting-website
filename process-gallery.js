@@ -8,11 +8,6 @@ const inputDir = path.resolve("public/images/gallery/set1");
 const outputPreviewDir = path.resolve("public/images/gallery/preview");
 const outputThumbDir = path.resolve("public/images/gallery/thumbs");
 
-const sizes = [
-  { width: 1600, outputDir: outputPreviewDir }, // preview
-  { width: 600, outputDir: outputThumbDir }, // thumbnail
-];
-
 const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 };
@@ -22,30 +17,38 @@ const processImage = async (file) => {
   const ext = path.extname(file);
   const baseName = path.basename(file, ext);
 
-  for (const { width, outputDir } of sizes) {
-    ensureDir(outputDir);
-    const outputPath = path.join(outputDir, `${baseName}.webp`);
+  const { size: inputSize } = fs.statSync(inputPath);
+  const inputSizeMB = inputSize / 1024 / 1024;
+  if (inputSizeMB > 10) {
+    console.warn(`⚠️  Skipped (too large > 10MB): ${file}`);
+    return;
+  }
 
-    // Skip if file already exists (duplicate detection)
-    if (fs.existsSync(outputPath)) {
-      console.log(`⚠️  Skipped (already exists): ${outputPath}`);
-      continue;
-    }
-
-    const { size: inputSize } = fs.statSync(inputPath);
-    const inputSizeMB = inputSize / 1024 / 1024;
-    if (inputSizeMB > 5) {
-      console.warn(`⚠️  Skipped (too large > 5MB): ${file}`);
-      continue;
-    }
-
+  // === Preview (same size, just convert to WebP) ===
+  ensureDir(outputPreviewDir);
+  const previewPath = path.join(outputPreviewDir, `${baseName}.webp`);
+  if (!fs.existsSync(previewPath)) {
     await sharp(inputPath)
-      .resize({ width })
       .webp({ quality: 80 })
-      .withMetadata({ exif: false }) // EXIF stripping
-      .toFile(outputPath);
+      .withMetadata({ exif: false })
+      .toFile(previewPath);
+    console.log(`✅ Created preview: ${previewPath}`);
+  } else {
+    console.log(`⚠️  Skipped (already exists): ${previewPath}`);
+  }
 
-    console.log(`✅ Created: ${outputPath}`);
+  // === Thumbnail (resized) ===
+  ensureDir(outputThumbDir);
+  const thumbPath = path.join(outputThumbDir, `${baseName}.webp`);
+  if (!fs.existsSync(thumbPath)) {
+    await sharp(inputPath)
+      .resize({ width: 600 })
+      .webp({ quality: 80 })
+      .withMetadata({ exif: false })
+      .toFile(thumbPath);
+    console.log(`✅ Created thumbnail: ${thumbPath}`);
+  } else {
+    console.log(`⚠️  Skipped (already exists): ${thumbPath}`);
   }
 };
 
