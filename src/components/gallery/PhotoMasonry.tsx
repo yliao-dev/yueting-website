@@ -43,7 +43,7 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
             >
               <img
                 loading="lazy"
-                src={photo.image}
+                src={photo.thumb}
                 alt={photo.title ?? "Photo"}
               />
             </div>

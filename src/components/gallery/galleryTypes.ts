@@ -7,6 +7,7 @@ export type GalleryCollectionProps = {
 export type PhotoItemProps = {
   id: string | number;
   title?: string;
+  thumb: string;
   image: string;
   date?: string;
   location?: string;

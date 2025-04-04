@@ -13,6 +13,7 @@ type GalleryCollection = {
   photos: {
     id: string;
     title: string;
+    thumb: string;
     image: string;
     location: string;
     date: string;
@@ -34,7 +35,14 @@ export function createGalleryCollections(
     photos: meta.map((entry) => ({
       id: `${slug}-${entry.filename}`,
       title: entry.title,
-      image: `/images/gallery/${slug}/${entry.filename}`,
+      image: `/images/gallery/${slug}/preview/${entry.filename.replace(
+        /\.(jpg|jpeg|png)$/,
+        ".webp"
+      )}`,
+      thumb: `/images/gallery/${slug}/thumbs/${entry.filename.replace(
+        /\.(jpg|jpeg|png)$/,
+        ".webp"
+      )}`,
       location: entry.location,
       date: entry.date,
       tags: entry.tags,
