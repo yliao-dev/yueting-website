@@ -4,9 +4,10 @@ import fs from "fs";
 import path from "path";
 
 // === CONFIG ===
-const inputDir = path.resolve("public/images/gallery/set1");
-const outputPreviewDir = path.resolve("public/images/gallery/preview");
-const outputThumbDir = path.resolve("public/images/gallery/thumbs");
+const SOURCE_FOLDER_PATH = "public/images/gallery/set1";
+const inputDir = path.resolve(SOURCE_FOLDER_PATH);
+const outputPreviewDir = path.resolve(SOURCE_FOLDER_PATH + "/preview");
+const outputThumbDir = path.resolve(SOURCE_FOLDER_PATH + "/thumbs");
 
 const MAX_INPUT_MB = 10;
 const QUALITY = 80;
@@ -36,7 +37,6 @@ const processImage = async (file) => {
     await sharp(inputPath)
       .resize({ width: PREVIEW_RESIZED_WIDTH })
       .webp({ quality: QUALITY })
-      .withMetadata({ exif: false })
       .toFile(previewPath);
     console.log(`✅ Created preview: ${previewPath}`);
   } else {
@@ -50,7 +50,6 @@ const processImage = async (file) => {
     await sharp(inputPath)
       .resize({ width: THUMBNAIL_RESIZED_WIDTH })
       .webp({ quality: QUALITY })
-      .withMetadata({ exif: false })
       .toFile(thumbPath);
     console.log(`✅ Created thumbnail: ${thumbPath}`);
   } else {
