@@ -31,7 +31,10 @@ export function createGalleryCollections(
   return collections.map(({ title, slug, meta }) => ({
     title,
     slug,
-    cover: `/images/gallery/${slug}/${meta[0]?.filename}`, // first image as cover
+    cover: `/images/gallery/${slug}/preview/${meta[0]?.filename.replace(
+      /\.(jpg|jpeg|png)$/i,
+      ".webp"
+    )}`,
     photos: meta.map((entry) => ({
       id: `${slug}-${entry.filename}`,
       title: entry.title,

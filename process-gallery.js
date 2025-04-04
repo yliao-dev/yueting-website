@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 
 // === CONFIG ===
-const SOURCE_FOLDER_PATH = "public/images/gallery/set1";
+const SOURCE_FOLDER_PATH = "public/images/gallery/set2";
 const inputDir = path.resolve(SOURCE_FOLDER_PATH);
 const outputPreviewDir = path.resolve(SOURCE_FOLDER_PATH + "/preview");
 const outputThumbDir = path.resolve(SOURCE_FOLDER_PATH + "/thumbs");
