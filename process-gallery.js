@@ -1,4 +1,3 @@
-// process-gallery.js
 import sharp from "sharp";
 import fs from "fs";
 import path from "path";
@@ -19,9 +18,19 @@ const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 };
 
-const metaData = [];
+// Load existing metadata if available
+let metaData = [];
+if (fs.existsSync(outputMetaFile)) {
+  metaData = JSON.parse(fs.readFileSync(outputMetaFile, "utf-8"));
+}
+const existingFiles = new Set(metaData.map((entry) => entry.filename));
 
 const processImage = async (file) => {
+  if (existingFiles.has(file)) {
+    console.warn(`⚠️  Skipped metadata (already exists): ${file}`);
+    return;
+  }
+
   const inputPath = path.join(inputDir, file);
   const ext = path.extname(file);
   const baseName = path.basename(file, ext);
@@ -55,7 +64,7 @@ const processImage = async (file) => {
       .toFile(previewPath);
     console.log(`✅ Created preview: ${previewPath}`);
   } else {
-    console.log(`⚠️  Skipped (already exists): ${previewPath}`);
+    console.log(`⚠️  Skipped preview (already exists): ${previewPath}`);
   }
 
   // === Thumbnail ===
@@ -68,7 +77,7 @@ const processImage = async (file) => {
       .toFile(thumbPath);
     console.log(`✅ Created thumbnail: ${thumbPath}`);
   } else {
-    console.log(`⚠️  Skipped (already exists): ${thumbPath}`);
+    console.log(`⚠️  Skipped thumbnail (already exists): ${thumbPath}`);
   }
 };
 
@@ -76,6 +85,7 @@ const run = async () => {
   const files = fs
     .readdirSync(inputDir)
     .filter((f) => /\.(jpe?g|png)$/i.test(f));
+
   for (const file of files) {
     try {
       await processImage(file);
@@ -83,6 +93,7 @@ const run = async () => {
       console.error(`❌ Failed to process ${file}:`, err);
     }
   }
+
   fs.writeFileSync(outputMetaFile, JSON.stringify(metaData, null, 2));
   console.log(`\n✅ Metadata saved to ${outputMetaFile}`);
 };
