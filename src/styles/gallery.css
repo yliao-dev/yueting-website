@@ -20,6 +20,14 @@
   padding: 0.5rem;
   background-color: var(--light-oak);
   opacity: 0;
+  break-inside: avoid;
+}
+
+.masonry__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .masonry__item:hover img {
