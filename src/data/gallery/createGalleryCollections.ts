@@ -1,4 +1,6 @@
 type MetaEntry = {
+  width: any;
+  height: any;
   filename: string;
   title: string;
   location: string;
@@ -18,6 +20,8 @@ type GalleryCollection = {
     location: string;
     date: string;
     tags?: string[];
+    width: number;
+    height: number;
   }[];
 };
 
@@ -49,6 +53,8 @@ export function createGalleryCollections(
       location: entry.location,
       date: entry.date,
       tags: entry.tags,
+      width: entry.width,
+      height: entry.height,
     })),
   }));
 }

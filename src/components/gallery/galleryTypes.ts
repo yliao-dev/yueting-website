@@ -12,6 +12,8 @@ export type PhotoItemProps = {
   date?: string;
   location?: string;
   tags?: string[];
+  width: number;
+  height: number;
 };
 
 export type PhotoViewerProps = {

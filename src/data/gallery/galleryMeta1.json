@@ -1,107 +1,137 @@
 [
   {
-    "filename": "001.webp",
-    "title": "Sword",
+    "filename": "001.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
   },
   {
-    "filename": "002.webp",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "003.webp",
-    "title": "Sword",
+    "filename": "002.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
   },
   {
-    "filename": "004.webp",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "005.webp",
-    "title": "Sword",
+    "filename": "003.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
   },
   {
-    "filename": "006.webp",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "007.webp",
-    "title": "Sword",
+    "filename": "004.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 1365,
+    "height": 2048
   },
   {
-    "filename": "008.webp",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "009.webp",
-    "title": "Sword",
+    "filename": "005.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 1365,
+    "height": 2048
   },
   {
-    "filename": "010.webp",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "011.webp",
-    "title": "Sword",
+    "filename": "006.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
   },
   {
-    "filename": "012.webp",
-    "title": "Snowy Street",
-    "location": "SLC",
-    "date": "2024-12-02",
-    "tags": ["snow", "street"]
-  },
-  {
-    "filename": "013.webp",
-    "title": "Sword",
+    "filename": "007.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
   },
   {
-    "filename": "014.webp",
-    "title": "Sword",
+    "filename": "008.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
   },
   {
-    "filename": "015.webp",
-    "title": "Sword",
+    "filename": "009.jpg",
+    "title": "",
     "location": "",
-    "date": "2024-12-01",
-    "tags": ["winter"]
+    "date": "",
+    "tags": [],
+    "width": 1365,
+    "height": 2048
+  },
+  {
+    "filename": "010.jpg",
+    "title": "",
+    "location": "",
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "filename": "011.jpg",
+    "title": "",
+    "location": "",
+    "date": "",
+    "tags": [],
+    "width": 1365,
+    "height": 2048
+  },
+  {
+    "filename": "012.jpg",
+    "title": "",
+    "location": "",
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "filename": "013.jpg",
+    "title": "",
+    "location": "",
+    "date": "",
+    "tags": [],
+    "width": 1365,
+    "height": 2048
+  },
+  {
+    "filename": "014.jpg",
+    "title": "",
+    "location": "",
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
+  },
+  {
+    "filename": "015.jpg",
+    "title": "",
+    "location": "",
+    "date": "",
+    "tags": [],
+    "width": 2048,
+    "height": 1365
   }
 ]

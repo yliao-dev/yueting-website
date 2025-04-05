@@ -8,15 +8,18 @@ const SOURCE_FOLDER_PATH = "public/images/gallery/set1";
 const inputDir = path.resolve(SOURCE_FOLDER_PATH + "/source");
 const outputPreviewDir = path.resolve(SOURCE_FOLDER_PATH + "/preview");
 const outputThumbDir = path.resolve(SOURCE_FOLDER_PATH + "/thumbs");
+const outputMetaFile = path.resolve("src/data/galleryMeta1.json");
 
 const MAX_INPUT_MB = 10;
 const QUALITY = 80;
 const PREVIEW_RESIZED_WIDTH = 1600;
-const THUMBNAIL_RESIZED_WIDTH = 600;
+const THUMBNAIL_RESIZED_WIDTH = 800;
 
 const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 };
+
+const metaData = [];
 
 const processImage = async (file) => {
   const inputPath = path.join(inputDir, file);
@@ -30,6 +33,18 @@ const processImage = async (file) => {
     return;
   }
 
+  const metadata = await sharp(inputPath).metadata();
+
+  metaData.push({
+    filename: file,
+    title: "",
+    location: "",
+    date: "",
+    tags: [],
+    width: metadata.width,
+    height: metadata.height,
+  });
+
   // === Preview ===
   ensureDir(outputPreviewDir);
   const previewPath = path.join(outputPreviewDir, `${baseName}.webp`);
@@ -38,9 +53,7 @@ const processImage = async (file) => {
       .resize({ width: PREVIEW_RESIZED_WIDTH })
       .webp({ quality: QUALITY })
       .toFile(previewPath);
-    console.log(
-      `✅ Created preview: ${previewPath}. Width: ${PREVIEW_RESIZED_WIDTH}`
-    );
+    console.log(`✅ Created preview: ${previewPath}`);
   } else {
     console.log(`⚠️  Skipped (already exists): ${previewPath}`);
   }
@@ -53,9 +66,7 @@ const processImage = async (file) => {
       .resize({ width: THUMBNAIL_RESIZED_WIDTH })
       .webp({ quality: QUALITY })
       .toFile(thumbPath);
-    console.log(
-      `✅ Created thumbnail: ${thumbPath}. Width: ${THUMBNAIL_RESIZED_WIDTH}`
-    );
+    console.log(`✅ Created thumbnail: ${thumbPath}`);
   } else {
     console.log(`⚠️  Skipped (already exists): ${thumbPath}`);
   }
@@ -72,6 +83,8 @@ const run = async () => {
       console.error(`❌ Failed to process ${file}:`, err);
     }
   }
+  fs.writeFileSync(outputMetaFile, JSON.stringify(metaData, null, 2));
+  console.log(`\n✅ Metadata saved to ${outputMetaFile}`);
 };
 
 run();
