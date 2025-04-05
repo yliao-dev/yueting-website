@@ -31,7 +31,7 @@ const processImage = async (file) => {
     return;
   }
 
-  // === Preview (1600px wide) ===
+  // === Preview ===
   ensureDir(outputPreviewDir);
   const previewPath = path.join(outputPreviewDir, `${baseName}.webp`);
   if (!fs.existsSync(previewPath)) {
@@ -44,7 +44,7 @@ const processImage = async (file) => {
     console.log(`⚠️  Skipped (already exists): ${previewPath}`);
   }
 
-  // === Thumbnail (600px wide) ===
+  // === Thumbnail ===
   ensureDir(outputThumbDir);
   const thumbPath = path.join(outputThumbDir, `${baseName}.webp`);
   if (!fs.existsSync(thumbPath)) {
