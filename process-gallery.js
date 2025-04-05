@@ -13,7 +13,7 @@ const outputThumbDir = path.resolve(SOURCE_FOLDER_PATH + "/thumbs");
 const MAX_INPUT_MB = 10;
 const QUALITY = 80;
 const PREVIEW_RESIZED_WIDTH = 1600;
-const THUMBNAIL_RESIZED_HEIGHT = 500;
+const THUMBNAIL_RESIZED_WIDTH = 800;
 
 const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
@@ -49,9 +49,7 @@ const processImage = async (file) => {
   const thumbPath = path.join(outputThumbDir, `${baseName}.webp`);
   if (!fs.existsSync(thumbPath)) {
     await sharp(inputPath)
-      .resize(600, 400, {
-        fit: "cover", // crop to fill box
-      })
+      .resize({ width: THUMBNAIL_RESIZED_WIDTH })
       .webp({ quality: QUALITY })
       .toFile(thumbPath);
     console.log(`✅ Created thumbnail: ${thumbPath}`);
