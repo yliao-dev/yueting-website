@@ -1,101 +1,94 @@
+// process-gallery.js
 import sharp from "sharp";
 import fs from "fs";
 import path from "path";
 
-// === CONFIG ===
-const SOURCE_FOLDER_PATH = "public/images/gallery/set2";
-const inputDir = path.resolve(SOURCE_FOLDER_PATH + "/source");
-const outputPreviewDir = path.resolve(SOURCE_FOLDER_PATH + "/preview");
-const outputThumbDir = path.resolve(SOURCE_FOLDER_PATH + "/thumbs");
-const outputMetaFile = path.resolve("src/data/galleryMeta2.json");
-
-const MAX_INPUT_MB = 10;
-const QUALITY = 80;
-const PREVIEW_RESIZED_WIDTH = 1600;
-const THUMBNAIL_RESIZED_WIDTH = 800;
+// === LOAD CONFIG ===
+const config = JSON.parse(fs.readFileSync("gallery-config.json", "utf-8"));
 
 const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 };
 
-// Load existing metadata if available
-let metaData = [];
-if (fs.existsSync(outputMetaFile)) {
-  metaData = JSON.parse(fs.readFileSync(outputMetaFile, "utf-8"));
-}
-const existingFiles = new Set(metaData.map((entry) => entry.filename));
+const processSet = async ({
+  input_source,
+  output_preview,
+  output_thumbs,
+  output_meta,
+  preview_width = 1600,
+  thumb_width = 800,
+  quality = 80,
+  max_input_mb = 10,
+}) => {
+  const inputDir = path.resolve(input_source);
+  const outputPreviewDir = path.resolve(output_preview);
+  const outputThumbDir = path.resolve(output_thumbs);
+  const outputMetaFile = path.resolve(output_meta);
 
-const processImage = async (file) => {
-  if (existingFiles.has(file)) {
-    console.warn(`⚠️  Skipped metadata (already exists): ${file}`);
-    return;
-  }
+  const metaData = [];
 
-  const inputPath = path.join(inputDir, file);
-  const ext = path.extname(file);
-  const baseName = path.basename(file, ext);
-
-  const { size: inputSize } = fs.statSync(inputPath);
-  const inputSizeMB = inputSize / 1024 / 1024;
-  if (inputSizeMB > MAX_INPUT_MB) {
-    console.warn(`⚠️  Skipped (too large > ${MAX_INPUT_MB}MB): ${file}`);
-    return;
-  }
-
-  const metadata = await sharp(inputPath).metadata();
-
-  metaData.push({
-    filename: file,
-    title: "",
-    location: "",
-    date: "",
-    tags: [],
-    width: metadata.width,
-    height: metadata.height,
-  });
-
-  // === Preview ===
-  ensureDir(outputPreviewDir);
-  const previewPath = path.join(outputPreviewDir, `${baseName}.webp`);
-  if (!fs.existsSync(previewPath)) {
-    await sharp(inputPath)
-      .resize({ width: PREVIEW_RESIZED_WIDTH })
-      .webp({ quality: QUALITY })
-      .toFile(previewPath);
-    console.log(`✅ Created preview: ${previewPath}`);
-  } else {
-    console.log(`⚠️  Skipped preview (already exists): ${previewPath}`);
-  }
-
-  // === Thumbnail ===
-  ensureDir(outputThumbDir);
-  const thumbPath = path.join(outputThumbDir, `${baseName}.webp`);
-  if (!fs.existsSync(thumbPath)) {
-    await sharp(inputPath)
-      .resize({ width: THUMBNAIL_RESIZED_WIDTH })
-      .webp({ quality: QUALITY })
-      .toFile(thumbPath);
-    console.log(`✅ Created thumbnail: ${thumbPath}`);
-  } else {
-    console.log(`⚠️  Skipped thumbnail (already exists): ${thumbPath}`);
-  }
-};
-
-const run = async () => {
   const files = fs
     .readdirSync(inputDir)
     .filter((f) => /\.(jpe?g|png)$/i.test(f));
 
   for (const file of files) {
-    try {
-      await processImage(file);
-    } catch (err) {
-      console.error(`❌ Failed to process ${file}:`, err);
+    const inputPath = path.join(inputDir, file);
+    const ext = path.extname(file);
+    const baseName = path.basename(file, ext);
+
+    const { size: inputSize } = fs.statSync(inputPath);
+    const inputSizeMB = inputSize / 1024 / 1024;
+    if (inputSizeMB > max_input_mb) {
+      console.warn(`⚠️  Skipped (too large > ${max_input_mb}MB): ${file}`);
+      continue;
+    }
+
+    const metadata = await sharp(inputPath).metadata();
+    metaData.push({
+      filename: file,
+      title: "",
+      location: "",
+      date: "",
+      tags: [],
+      width: metadata.width,
+      height: metadata.height,
+    });
+
+    // Preview
+    ensureDir(outputPreviewDir);
+    const previewPath = path.join(outputPreviewDir, `${baseName}.webp`);
+    if (!fs.existsSync(previewPath)) {
+      await sharp(inputPath)
+        .resize({ width: preview_width })
+        .webp({ quality })
+        .toFile(previewPath);
+      console.log(`✅ Created preview: ${previewPath}`);
+    } else {
+      console.log(`⚠️  Skipped (exists): ${previewPath}`);
+    }
+
+    // Thumbnail
+    ensureDir(outputThumbDir);
+    const thumbPath = path.join(outputThumbDir, `${baseName}.webp`);
+    if (!fs.existsSync(thumbPath)) {
+      await sharp(inputPath)
+        .resize({ width: thumb_width })
+        .webp({ quality })
+        .toFile(thumbPath);
+      console.log(`✅ Created thumbnail: ${thumbPath}`);
+    } else {
+      console.log(`⚠️  Skipped (exists): ${thumbPath}`);
     }
   }
 
   fs.writeFileSync(outputMetaFile, JSON.stringify(metaData, null, 2));
   console.log(`\n✅ Metadata saved to ${outputMetaFile}`);
+};
+
+const run = async () => {
+  for (const collection of config.collections) {
+    await processSet(collection);
+  }
 };
 
 run();
