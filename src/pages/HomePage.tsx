@@ -4,7 +4,7 @@ import { Tooltip } from "react-tooltip";
 import MapChart from "../components/home/JourneyWorldMap";
 import { useScrollEffect } from "../hooks/useScrollEffect";
 import { useTypingEffect } from "../hooks/useTypingEffect";
-import portraitImg from "../assets/images/portrait.png";
+import portraitImg from "../assets/images/portrait.webp";
 import StackChart from "../components/home/StackChart";
 import { skillsData, SkillData } from "../data/home/skillData";
 
