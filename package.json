@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "prod": "vite preview",
     "deploy": "gh-pages -d dist",
-    "live": "npm run build && npm run deploy"
+    "live": "npm run build && npm run deploy",
+    "gallery-rename": "node process-image-names.js",
+    "gallery-reformat": "node process-gallery.js",
+    "gallery-update": "npm run gallery-rename && npm run gallery-reformat"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
