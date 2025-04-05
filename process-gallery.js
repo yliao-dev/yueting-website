@@ -12,6 +12,7 @@ const outputThumbDir = path.resolve(SOURCE_FOLDER_PATH + "/thumbs");
 const MAX_INPUT_MB = 10;
 const QUALITY = 80;
 const PREVIEW_RESIZED_WIDTH = 1600;
+const THUMBNAIL_RESIZED_WIDTH = 600;
 
 const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
@@ -29,16 +30,14 @@ const processImage = async (file) => {
     return;
   }
 
-  // === Get orientation for thumbnail sizing ===
-  const { width, height } = await sharp(inputPath).metadata();
-  const isLandscape = width && height && width > height;
-  const thumbWidth = isLandscape ? 900 : 600;
-
   // === Preview ===
   ensureDir(outputPreviewDir);
   const previewPath = path.join(outputPreviewDir, `${baseName}.webp`);
   if (!fs.existsSync(previewPath)) {
-    await sharp(inputPath).webp({ quality: QUALITY }).toFile(previewPath);
+    await sharp(inputPath)
+      .resize({ width: PREVIEW_RESIZED_WIDTH })
+      .webp({ quality: QUALITY })
+      .toFile(previewPath);
     console.log(`✅ Created preview: ${previewPath}`);
   } else {
     console.log(`⚠️  Skipped (already exists): ${previewPath}`);
@@ -49,7 +48,7 @@ const processImage = async (file) => {
   const thumbPath = path.join(outputThumbDir, `${baseName}.webp`);
   if (!fs.existsSync(thumbPath)) {
     await sharp(inputPath)
-      .resize({ width: thumbWidth })
+      .resize({ width: THUMBNAIL_RESIZED_WIDTH })
       .webp({ quality: QUALITY })
       .toFile(thumbPath);
     console.log(`✅ Created thumbnail: ${thumbPath}. Width: ${thumbWidth}`);
