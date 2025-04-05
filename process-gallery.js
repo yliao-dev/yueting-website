@@ -38,7 +38,9 @@ const processImage = async (file) => {
       .resize({ width: PREVIEW_RESIZED_WIDTH })
       .webp({ quality: QUALITY })
       .toFile(previewPath);
-    console.log(`✅ Created preview: ${previewPath}`);
+    console.log(
+      `✅ Created preview: ${previewPath}. Width: ${PREVIEW_RESIZED_WIDTH}`
+    );
   } else {
     console.log(`⚠️  Skipped (already exists): ${previewPath}`);
   }
@@ -51,7 +53,9 @@ const processImage = async (file) => {
       .resize({ width: THUMBNAIL_RESIZED_WIDTH })
       .webp({ quality: QUALITY })
       .toFile(thumbPath);
-    console.log(`✅ Created thumbnail: ${thumbPath}. Width: ${thumbWidth}`);
+    console.log(
+      `✅ Created thumbnail: ${thumbPath}. Width: ${THUMBNAIL_RESIZED_WIDTH}`
+    );
   } else {
     console.log(`⚠️  Skipped (already exists): ${thumbPath}`);
   }
