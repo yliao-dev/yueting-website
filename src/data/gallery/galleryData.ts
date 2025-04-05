@@ -9,9 +9,9 @@ export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
     slug: "set1", // must match folder name
     meta: meta1,
   },
-  // {
-  //   title: "Landscapes",
-  //   slug: "set2",
-  //   meta: meta2,
-  // },
+  {
+    title: "Landscapes",
+    slug: "set2",
+    meta: meta2,
+  },
 ]);
