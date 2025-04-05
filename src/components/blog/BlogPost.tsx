@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/icons/logo.png";
 import LineBreak from "../shared/LineBreak";
 
 type BlogPostProp = {
@@ -24,7 +23,7 @@ function BlogPost({ title, description, image }: BlogPostProp) {
         </div>
 
         <div className="blog__author">
-          <img className="blog__author__icon" src={logo} alt="author" />
+          <img className="blog__author__icon" src="/logo.svg" alt="author" />
           <div className="blog__author__info">
             <span>{author}</span>
             <span>{date}</span>

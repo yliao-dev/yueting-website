@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../assets/icons/logo.png";
 import ReorderIcon from "@mui/icons-material/Reorder";
 
 const Navbar = () => {
@@ -20,7 +19,7 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <NavLink className="logo" to="/">
-          <img className="navbar__logo" src={logo} alt="logo" />
+          <img className="navbar__logo" src="/logo.svg" alt="Logo" />
         </NavLink>
 
         <div className="navbar__links">
