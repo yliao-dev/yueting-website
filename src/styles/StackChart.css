@@ -23,7 +23,7 @@
 }
 
 .stack-bar.animate-bar {
-  animation: grow-bar 1.2s ease-out forwards;
+  animation: grow-bar 1s ease-out forwards;
 }
 
 .stack-bar:hover {
