@@ -4,11 +4,11 @@ import fs from "fs";
 import path from "path";
 
 // === CONFIG ===
-const SOURCE_FOLDER_PATH = "public/images/gallery/set1";
+const SOURCE_FOLDER_PATH = "public/images/gallery/set2";
 const inputDir = path.resolve(SOURCE_FOLDER_PATH + "/source");
 const outputPreviewDir = path.resolve(SOURCE_FOLDER_PATH + "/preview");
 const outputThumbDir = path.resolve(SOURCE_FOLDER_PATH + "/thumbs");
-const outputMetaFile = path.resolve("src/data/galleryMeta1.json");
+const outputMetaFile = path.resolve("src/data/galleryMeta2.json");
 
 const MAX_INPUT_MB = 10;
 const QUALITY = 80;

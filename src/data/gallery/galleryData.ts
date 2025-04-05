@@ -10,7 +10,7 @@ export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
     meta: meta1,
   },
   {
-    title: "Landscapes",
+    title: "",
     slug: "set2",
     meta: meta2,
   },

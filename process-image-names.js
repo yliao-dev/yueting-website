@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const rootFolder = path.resolve("public/images/gallery"); // 👈 change as needed
+const rootFolder = path.resolve("public/images/gallery");
 const validExtensions = [".jpg", ".jpeg", ".png", ".webp"];
 
 const renameImagesInFolder = (folderPath) => {

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "prod": "vite preview",
     "deploy": "gh-pages -d dist",
     "live": "npm run build && npm run deploy"
   },
