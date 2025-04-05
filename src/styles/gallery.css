@@ -18,12 +18,14 @@
 }
 
 .masonry__item {
+  display: inline-block;
   width: 100%;
-  margin-bottom: 0.7rem;
   padding: 0.5rem;
+  margin-bottom: 1rem;
   background-color: var(--light-oak);
-  opacity: 0;
   break-inside: avoid;
+  box-sizing: border-box;
+  opacity: 0;
 }
 
 .masonry__item img {
