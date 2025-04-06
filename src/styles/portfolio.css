@@ -32,8 +32,7 @@
 .portfolio__project {
   border-radius: 0.2rem;
   padding: 1em;
-  background-color: var(--white);
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  background-color: var(--light-oak);
   flex-direction: column;
   opacity: 0;
 }
@@ -56,6 +55,8 @@
 
 .portfolio__project__text h2 {
   margin: 0;
+  font-size: 1rem;
+  color: var(--white);
 }
 
 /* Tablet and above */
