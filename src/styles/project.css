@@ -12,7 +12,7 @@
 }
 
 .project__text h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -49,14 +49,14 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .project__navigations__arrow {
   color: var(--gray-600);
   padding: 0.3rem 0.6rem;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .project__navigations__arrow:hover {
   color: var(--hover);
@@ -69,6 +69,7 @@
 .project__slideshow {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 

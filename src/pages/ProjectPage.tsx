@@ -39,7 +39,9 @@ const ProjectPage = () => {
               </span>
             ))}
           </div>
+        </section>
 
+        <section className="project__slideshow">
           <div className="project__navigations">
             {index > 0 && (
               <button className="project__navigations__arrow" onClick={Prev}>
@@ -48,7 +50,10 @@ const ProjectPage = () => {
             )}
 
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <GitHub className="project-github-icon" />
+              <GitHub
+                className="project-github-icon"
+                sx={{ fontSize: "3rem" }}
+              />
             </a>
 
             {index < ProjectData.length - 1 && (
@@ -57,8 +62,6 @@ const ProjectPage = () => {
               </button>
             )}
           </div>
-        </section>
-        <section className="project__slideshow">
           <ProjectSlideshow images={project.images} />
         </section>
       </div>
