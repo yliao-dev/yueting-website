@@ -32,7 +32,8 @@
 .portfolio__project {
   border-radius: 0.2rem;
   padding: 1em;
-  background-color: var(--light-oak);
+  /* background-color: var(--white); */
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
   flex-direction: column;
   opacity: 0;
 }
@@ -47,6 +48,7 @@
   height: auto;
   object-fit: contain;
   aspect-ratio: 4 / 3;
+  border: rgba(0, 0, 0, 0.1);
 }
 
 /* Project Item Description */
