@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import LineBreak from "../shared/LineBreak";
-import { BlogPostProp } from "./blogTypes";
+import { PostItemProp } from "./blogTypes";
 
-function BlogPost({ title, description, date, coverImage }: BlogPostProp) {
+function BlogPost({ id, title, description, date, coverImage }: PostItemProp) {
   const author = "Yueting Liao";
+  const navigate = useNavigate();
   return (
     <>
       <div className="blog__post">
@@ -11,9 +12,12 @@ function BlogPost({ title, description, date, coverImage }: BlogPostProp) {
         <div className="blog__post__text">
           <h2>{title}</h2>
           <p> {description} </p>
-          <Link to={`${title}`} className="blog__read-more">
+          <p
+            className="blog__read-more"
+            onClick={() => navigate(`/blog/post/${id}`)}
+          >
             Read More →
-          </Link>
+          </p>
         </div>
         <div className="blog__author">
           <img src="/logo.svg" alt="author" />

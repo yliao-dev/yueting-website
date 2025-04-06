@@ -1,4 +1,4 @@
-export type BlogPostProp = {
+export type PostItemProp = {
   id: string | number;
   title: string;
   description: string;

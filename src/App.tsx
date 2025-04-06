@@ -14,6 +14,7 @@ import BlogPage from "./pages/BlogPage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
 import PageNotFound from "./pages/PageNotFound";
+import PostPage from "./pages/PostPage";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -36,6 +37,7 @@ const App = () => {
         {/* blog */}
         <Route path="/blog" element={<MainLayout />}>
           <Route index element={<BlogPage />} />
+          <Route path="post/:id" element={<PostPage />} />
         </Route>
         {/* contact */}
         <Route path="/contact" element={<MainLayout />}>

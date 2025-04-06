@@ -68,9 +68,6 @@
 
 .blog__read-more {
   margin-top: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  text-decoration: none;
   transition: color 0.2s ease;
 }
 .blog__read-more:hover {
