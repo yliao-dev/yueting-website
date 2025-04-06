@@ -16,14 +16,14 @@ function BlogPost({ title, description, date, coverImage }: BlogPostProp) {
         </div>
 
         <div className="blog__author">
-          <img className="blog__author__icon" src="/logo.svg" alt="author" />
+          <img src="/logo.svg" alt="author" />
           <div className="blog__author__info">
             <span>{author}</span>
             <span>{date}</span>
           </div>
         </div>
       </div>
-      <LineBreak />
+      <LineBreak variant="gradient" />
     </>
   );
 }

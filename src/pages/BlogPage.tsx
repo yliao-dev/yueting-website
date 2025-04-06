@@ -33,6 +33,7 @@ const BlogPage = () => {
         <section className="blog__contentBlock">
           {filteredEntries.map((blog) => (
             <BlogPost
+              key={blog.id}
               id={blog.id}
               title={blog.title}
               description={blog.description}
