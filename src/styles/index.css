@@ -1,17 +1,19 @@
 @import "./variables.css";
-@import "./navbar.css";
-@import "./footer.css";
-@import "./home.css";
-@import "./stackChart.css";
-@import "./portfolio.css";
-@import "./timeline.css";
-@import "./project.css";
-@import "./slideShow.css";
-@import "./gallery.css";
-@import "./blog.css";
-@import "./post.css";
-@import "./contact.css";
-@import "./pageNotFound.css";
+@import "./shared/navbar.css";
+@import "./shared/footer.css";
+@import "./shared/contact.css";
+@import "./shared/pageNotFound.css";
+
+@import "./home/home.css";
+@import "./home/stackChart.css";
+@import "./portfolio/portfolio.css";
+@import "./portfolio/timeline.css";
+@import "./portfolio/project.css";
+@import "./portfolio/slideShow.css";
+@import "./gallery/gallery.css";
+@import "./blog/blog.css";
+@import "./blog/post.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
