@@ -3,24 +3,23 @@ import fs from "fs";
 import path from "path";
 
 // === CONFIG ===
-const inputDir = path.resolve("src/assets/images"); // <- your target folder
+const inputDir = path.resolve("public/images/portfolio"); // Root folder to process
 const thumbWidth = 800;
 const quality = 80;
 const maxInputMB = 10;
 
 const validExtensions = [".jpg", ".jpeg", ".png"];
 
-const ensureWebP = async (file) => {
-  const ext = path.extname(file);
+const ensureWebP = async (inputPath) => {
+  const ext = path.extname(inputPath);
   if (!validExtensions.includes(ext.toLowerCase())) return;
 
-  const inputPath = path.join(inputDir, file);
-  const baseName = path.basename(file, ext);
-  const outputPath = path.join(inputDir, `${baseName}.webp`);
+  const baseName = path.basename(inputPath, ext);
+  const outputPath = path.join(path.dirname(inputPath), `${baseName}.webp`);
 
   const { size } = fs.statSync(inputPath);
   if (size / 1024 / 1024 > maxInputMB) {
-    console.warn(`⚠️  Skipped (too large): ${file}`);
+    console.warn(`⚠️  Skipped (too large): ${inputPath}`);
     return;
   }
 
@@ -34,18 +33,25 @@ const ensureWebP = async (file) => {
     .webp({ quality })
     .toFile(outputPath);
 
-  console.log(`✅ Converted: ${file} → ${baseName}.webp`);
+  console.log(`✅ Converted: ${inputPath} → ${outputPath}`);
+};
+
+const processFolder = async (folderPath) => {
+  const entries = fs.readdirSync(folderPath, { withFileTypes: true });
+
+  for (const entry of entries) {
+    const fullPath = path.join(folderPath, entry.name);
+
+    if (entry.isDirectory()) {
+      await processFolder(fullPath); // 🔁 Recurse
+    } else if (entry.isFile()) {
+      await ensureWebP(fullPath);
+    }
+  }
 };
 
 const run = async () => {
-  const files = fs.readdirSync(inputDir);
-  for (const file of files) {
-    try {
-      await ensureWebP(file);
-    } catch (err) {
-      console.error(`❌ Failed: ${file}`, err);
-    }
-  }
+  await processFolder(inputDir);
 };
 
 run();
