@@ -1,7 +1,7 @@
 {
-  "mode": "projects",
+  "mode": "portfolio",
 
-  "collections": [
+  "gallery": [
     {
       "input_source": "public/images/gallery",
       "output_meta": "src/data/galleryMeta1.json",
@@ -11,7 +11,7 @@
       "max_input_mb": 10
     }
   ],
-  "projects": [
+  "portfolio": [
     {
       "input_source": "public/images/portfolio",
       "output_meta": "",
@@ -21,7 +21,7 @@
       "max_input_mb": 5
     }
   ],
-  "posts": [
+  "blog": [
     {
       "input_source": "public/images/blog",
       "output_meta": "",
