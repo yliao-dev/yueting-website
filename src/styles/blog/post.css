@@ -10,3 +10,10 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.post__page__media {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
