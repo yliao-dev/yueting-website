@@ -2,6 +2,7 @@ export const BlogData = [
   {
     id: "1",
     title: "Title1",
+    author: "Yueting Liao",
     description:
       "In the heart of the forest, tall trees stand like guardians of nature. In the heart of the forest, tall trees stand like guardians of nature",
     category: "kendo",
@@ -12,6 +13,7 @@ export const BlogData = [
   {
     id: "2",
     title: "Title2",
+    author: "Yueting Liao",
     description:
       "In the heart of the forest, tall trees stand like guardians of nature.",
     category: "photography",

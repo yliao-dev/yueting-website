@@ -36,12 +36,22 @@ const PostPage = () => {
 
   return (
     <div className="post__page">
-      <h1>{meta.title}</h1>
-      <p>{meta.date}</p>
-      {meta.cover && (
-        <img src={meta.cover} alt={meta.title} className="post__cover" />
-      )}
-      <ReactMarkdown>{markdown}</ReactMarkdown>
+      <section className="post__page__intro">
+        <h1>{meta.title}</h1>
+        <div className="blog__author">
+          <img className="blog__author__icon" src="/logo.svg" alt="author" />
+          <div className="blog__author__info">
+            <span>{meta.author}</span>
+            <span>{meta.date}</span>
+          </div>
+        </div>
+        {meta.cover && (
+          <img src={meta.cover} alt={meta.title} className="post__cover" />
+        )}
+      </section>
+      <section>
+        <ReactMarkdown>{markdown}</ReactMarkdown>
+      </section>
     </div>
   );
 };

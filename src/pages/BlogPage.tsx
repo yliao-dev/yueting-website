@@ -36,6 +36,7 @@ const BlogPage = () => {
               key={blog.id}
               id={blog.id}
               title={blog.title}
+              author={blog.author}
               description={blog.description}
               category={blog.category}
               date={blog.date}

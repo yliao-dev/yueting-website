@@ -1,9 +1,13 @@
-.pos__page {
+.post__page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  align-items: center;
 }
 
-.post__page img {
-  width: 50%;
+.post__page__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
