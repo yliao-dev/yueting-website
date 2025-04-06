@@ -1,10 +1,10 @@
 {
-  "mode": "portfolio",
+  "mode": "gallery",
 
   "gallery": [
     {
       "input_source": "public/images/gallery",
-      "output_meta": "src/data/galleryMeta1.json",
+      "output_meta": "src/data/gallery",
       "preview_width": 1600,
       "thumb_width": 800,
       "quality": 80,
