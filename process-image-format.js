@@ -10,7 +10,7 @@ const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 };
 
-const processSet = async ({
+const processCollection = async ({
   input_source,
   output_preview,
   output_thumbs,
@@ -87,7 +87,7 @@ const processSet = async ({
 
 const run = async () => {
   for (const collection of config.collections) {
-    await processSet(collection);
+    await processCollection(collection);
   }
 };
 

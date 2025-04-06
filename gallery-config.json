@@ -1,9 +1,9 @@
 {
   "collections": [
     {
-      "input_source": "public/images/gallery/set1/source",
-      "output_preview": "public/images/gallery/set1/preview",
-      "output_thumbs": "public/images/gallery/set1/thumbs",
+      "input_source": "public/images/gallery/collection1/source",
+      "output_preview": "public/images/gallery/collection1/preview",
+      "output_thumbs": "public/images/gallery/collection1/thumbs",
       "output_meta": "src/data/galleryMeta1.json",
       "preview_width": 1600,
       "thumb_width": 800,
