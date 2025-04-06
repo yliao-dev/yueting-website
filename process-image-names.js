@@ -1,4 +1,3 @@
-// process-image-names.js
 import fs from "fs";
 import path from "path";
 
@@ -31,13 +30,40 @@ const renameImagesInFolder = (folderPath) => {
   });
 };
 
-// Go through each collection input_source folder
-for (const collection of config.collections) {
-  const folderPath = path.resolve(collection.input_source);
-  if (fs.existsSync(folderPath)) {
-    console.log(`\n📂 Processing folder: ${folderPath}`);
-    renameImagesInFolder(folderPath);
-  } else {
-    console.warn(`❌ Folder does not exist: ${folderPath}`);
+const findSourceFolders = (baseDir) => {
+  const folders = [];
+  const walk = (dir) => {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        if (entry.name === "source") {
+          folders.push(fullPath);
+        } else {
+          walk(fullPath);
+        }
+      }
+    }
+  };
+  walk(baseDir);
+  return folders;
+};
+
+const run = () => {
+  const mode = config.mode;
+  const targets = config[mode] || [];
+
+  for (const item of targets) {
+    const sourceFolders = findSourceFolders(item.input_source);
+    for (const folder of sourceFolders) {
+      if (fs.existsSync(folder)) {
+        console.log(`\n📂 Renaming images in: ${folder}`);
+        renameImagesInFolder(folder);
+      } else {
+        console.warn(`❌ Folder does not exist: ${folder}`);
+      }
+    }
   }
-}
+};
+
+run();

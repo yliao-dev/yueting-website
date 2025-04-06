@@ -1,14 +1,24 @@
 {
+  "mode": "projects",
+
   "collections": [
     {
-      "input_source": "public/images/gallery/collection1/source",
-      "output_preview": "public/images/gallery/collection1/preview",
-      "output_thumbs": "public/images/gallery/collection1/thumbs",
+      "input_source": "public/images/gallery",
       "output_meta": "src/data/galleryMeta1.json",
       "preview_width": 1600,
       "thumb_width": 800,
       "quality": 80,
       "max_input_mb": 10
+    }
+  ],
+  "projects": [
+    {
+      "input_source": "public/images/portfolio",
+      "output_meta": "",
+      "preview_width": 1200,
+      "thumb_width": 600,
+      "quality": 70,
+      "max_input_mb": 5
     }
   ]
 }

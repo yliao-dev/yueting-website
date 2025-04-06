@@ -1,60 +1,67 @@
-// process-gallery.js
 import sharp from "sharp";
 import fs from "fs";
 import path from "path";
 
-// === LOAD CONFIG ===
-const config = JSON.parse(fs.readFileSync("gallery-config.json", "utf-8"));
+const config = JSON.parse(fs.readFileSync("images-config.json", "utf-8"));
 
 const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 };
 
-const processCollection = async ({
-  input_source,
-  output_preview,
-  output_thumbs,
-  output_meta,
-  preview_width = 1600,
-  thumb_width = 800,
-  quality = 80,
-  max_input_mb = 10,
-}) => {
-  const inputDir = path.resolve(input_source);
-  const outputPreviewDir = path.resolve(output_preview);
-  const outputThumbDir = path.resolve(output_thumbs);
-  const outputMetaFile = path.resolve(output_meta);
+const findSourceFolders = (baseDir) => {
+  const folders = [];
+  const walk = (dir) => {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        if (entry.name === "source") {
+          folders.push(fullPath);
+        } else {
+          walk(fullPath);
+        }
+      }
+    }
+  };
+  walk(baseDir);
+  return folders;
+};
 
+const processCollection = async (
+  sourcePath,
+  { preview_width, thumb_width, quality, max_input_mb, output_meta }
+) => {
+  const projectDir = path.dirname(sourcePath);
+  const outputPreviewDir = path.join(projectDir, "preview");
+  const outputThumbDir = path.join(projectDir, "thumbs");
   const metaData = [];
 
   const files = fs
-    .readdirSync(inputDir)
+    .readdirSync(sourcePath)
     .filter((f) => /\.(jpe?g|png)$/i.test(f));
 
   for (const file of files) {
-    const inputPath = path.join(inputDir, file);
+    const inputPath = path.join(sourcePath, file);
     const ext = path.extname(file);
     const baseName = path.basename(file, ext);
 
-    const { size: inputSize } = fs.statSync(inputPath);
-    const inputSizeMB = inputSize / 1024 / 1024;
-    if (inputSizeMB > max_input_mb) {
-      console.warn(`⚠️  Skipped (too large > ${max_input_mb}MB): ${file}`);
+    const { size } = fs.statSync(inputPath);
+    if (size / 1024 / 1024 > max_input_mb) {
+      console.warn(`⚠️  Skipped (too large): ${file}`);
       continue;
     }
 
-    const metadata = await sharp(inputPath).metadata();
+    const imageMeta = await sharp(inputPath).metadata();
     metaData.push({
       filename: file,
       title: "",
       location: "",
       date: "",
       tags: [],
-      width: metadata.width,
-      height: metadata.height,
+      width: imageMeta.width,
+      height: imageMeta.height,
     });
 
-    // Preview
     ensureDir(outputPreviewDir);
     const previewPath = path.join(outputPreviewDir, `${baseName}.webp`);
     if (!fs.existsSync(previewPath)) {
@@ -62,12 +69,11 @@ const processCollection = async ({
         .resize({ width: preview_width })
         .webp({ quality })
         .toFile(previewPath);
-      console.log(`✅ Created preview: ${previewPath}`);
+      console.log(`✅ Preview: ${previewPath}`);
     } else {
       console.log(`⚠️  Skipped (exists): ${previewPath}`);
     }
 
-    // Thumbnail
     ensureDir(outputThumbDir);
     const thumbPath = path.join(outputThumbDir, `${baseName}.webp`);
     if (!fs.existsSync(thumbPath)) {
@@ -75,19 +81,30 @@ const processCollection = async ({
         .resize({ width: thumb_width })
         .webp({ quality })
         .toFile(thumbPath);
-      console.log(`✅ Created thumbnail: ${thumbPath}`);
+      console.log(`✅ Thumbnail: ${thumbPath}`);
     } else {
       console.log(`⚠️  Skipped (exists): ${thumbPath}`);
     }
   }
 
-  fs.writeFileSync(outputMetaFile, JSON.stringify(metaData, null, 2));
-  console.log(`\n✅ Metadata saved to ${outputMetaFile}`);
+  if (output_meta && output_meta.trim()) {
+    ensureDir(path.dirname(output_meta));
+    fs.writeFileSync(output_meta, JSON.stringify(metaData, null, 2));
+    console.log(`✅ Meta written to: ${output_meta}`);
+  }
 };
 
 const run = async () => {
-  for (const collection of config.collections) {
-    await processCollection(collection);
+  const mode = config.mode;
+  const entries = config[mode] || [];
+
+  for (const collection of entries) {
+    const { input_source } = collection;
+    const folders = findSourceFolders(input_source);
+    for (const folder of folders) {
+      console.log(`\n📂 Processing: ${folder}`);
+      await processCollection(folder, collection);
+    }
   }
 };
 
