@@ -15,7 +15,7 @@
       "output_meta": "",
       "preview_width": 1200,
       "thumb_width": 800,
-      "quality": 80,
+      "quality": 90,
       "max_input_mb": 5
     }
   ],
@@ -23,10 +23,10 @@
     {
       "input_source": "public/images/blog",
       "output_meta": "",
-      "preview_width": 1200,
-      "thumb_width": 600,
-      "quality": 70,
-      "max_input_mb": 5
+      "preview_width": 1600,
+      "thumb_width": 800,
+      "quality": 80,
+      "max_input_mb": 10
     }
   ]
 }
