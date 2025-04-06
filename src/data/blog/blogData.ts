@@ -4,7 +4,7 @@ export const BlogData = [
     title: "Title1",
     author: "Yueting Liao",
     description:
-      "abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ",
+      "In the heart of the forest, tall trees stand like guardians of nature. In the heart of the forest, tall trees stand like guardians of nature In the heart of the forest, tall trees stand like guardians of nature. In the heart of the forest, tall trees stand like guardians of nature In the heart of the forest, tall trees stand like guardians of nature. In the heart of the forest, tall trees stand like guardians of nature",
     category: "kendo",
     date: "2024-12-01",
     coverImage: "/images/blog/post1/preview/001.webp",
