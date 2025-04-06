@@ -1,9 +1,9 @@
 export const BlogData = [
   {
     id: "1",
-    title: "title1",
+    title: "Title1",
     description:
-      "In the heart of the forest, tall trees stand like guardians of nature.",
+      "In the heart of the forest, tall trees stand like guardians of nature. In the heart of the forest, tall trees stand like guardians of nature",
     category: "kendo",
     date: "2024-12-01",
     coverImage: "/images/blog/post1/preview/001.webp",
@@ -11,7 +11,7 @@ export const BlogData = [
   },
   {
     id: "2",
-    title: "title2",
+    title: "Title2",
     description:
       "In the heart of the forest, tall trees stand like guardians of nature.",
     category: "photography",
