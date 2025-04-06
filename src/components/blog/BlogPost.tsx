@@ -1,20 +1,13 @@
 import { Link } from "react-router-dom";
 import LineBreak from "../shared/LineBreak";
+import { BlogPostProp } from "./blogTypes";
 
-type BlogPostProp = {
-  id: string | number;
-  title: string;
-  description: string;
-  image: string;
-};
-
-function BlogPost({ title, description, image }: BlogPostProp) {
+function BlogPost({ title, description, date, coverImage }: BlogPostProp) {
   const author = "Yueting Liao";
-  const date = "Dec 20, 2024";
   return (
     <>
       <div className="blog__post">
-        <img src={image} />
+        <img src={coverImage} />
         <div className="blog__post__text">
           <Link to={`${title}`}>
             <h2>{title}</h2>

@@ -1,11 +1,7 @@
-import React from "react";
 import { Camera, SportsMartialArts, FitnessCenter } from "@mui/icons-material";
+import { BlogCategoryProps } from "./blogTypes";
 
-type BlogCategoryProps = {
-  onSelect: (category: string) => void;
-};
-
-const BlogCategory: React.FC<BlogCategoryProps> = ({ onSelect }) => {
+const BlogCategory = ({ onSelect }: BlogCategoryProps) => {
   const categories = [
     { id: "kendo", icon: <SportsMartialArts />, value: "kendo" },
     { id: "photography", icon: <Camera />, value: "photography" },
