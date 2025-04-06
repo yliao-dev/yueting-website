@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PhotoViewer from "../gallery/PhotoViewer";
 
 const ProjectSlideshow = ({ images }: { images: string[] }) => {
   const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    setCurrent(0); // Reset to first image
+  }, [images]);
+
   const prev = () =>
     setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   const next = () =>
