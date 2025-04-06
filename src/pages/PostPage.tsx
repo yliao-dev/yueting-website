@@ -38,6 +38,7 @@ const PostPage = () => {
     <div className="post__page">
       <section className="post__page__intro">
         <h1>{meta.title}</h1>
+        <p>{meta.description}</p>
         <div className="blog__author">
           <img className="blog__author__icon" src="/logo.svg" alt="author" />
           <div className="blog__author__info">
