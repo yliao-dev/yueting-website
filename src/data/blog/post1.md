@@ -1,5 +1,5 @@
 ---
-title: "Kendo New York"
+title: "Kendo A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with"
 description: "abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ"
 author: "Yueting Liao"
 date: "2024-12-01"

@@ -12,3 +12,8 @@ export type PostItemProp = {
 export type BlogCategoryProps = {
   onSelect: (category: string) => void;
 };
+
+export interface BlogAuthorProps {
+  author: string;
+  date: string;
+}
