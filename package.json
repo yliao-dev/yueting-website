@@ -12,7 +12,7 @@
     "live": "npm run build && npm run deploy",
     "images-rename": "node process-images-rename.js",
     "images-reformat": "node process-images-reformat.js",
-    "images-update": "npm run images-rename && npm run images-reformat"
+    "images-update": "node process-images-update.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

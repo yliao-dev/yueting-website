@@ -95,7 +95,7 @@ const processCollection = async (
 };
 
 const run = async () => {
-  const mode = config.mode;
+  const mode = process.argv[2]; // "blog", "gallery", etc.
   const entries = config[mode] || [];
 
   for (const collection of entries) {
