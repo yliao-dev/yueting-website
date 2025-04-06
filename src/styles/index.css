@@ -9,6 +9,7 @@
 @import "./slideShow.css";
 @import "./gallery.css";
 @import "./blog.css";
+@import "./post.css";
 @import "./contact.css";
 @import "./pageNotFound.css";
 @tailwind base;

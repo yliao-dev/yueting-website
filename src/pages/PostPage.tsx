@@ -36,11 +36,11 @@ const PostPage = () => {
 
   return (
     <div className="post__page">
+      <h1>{meta.title}</h1>
+      <p>{meta.date}</p>
       {meta.cover && (
         <img src={meta.cover} alt={meta.title} className="post__cover" />
       )}
-      <h1>{meta.title}</h1>
-      <p>{meta.date}</p>
       <ReactMarkdown>{markdown}</ReactMarkdown>
     </div>
   );

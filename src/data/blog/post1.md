@@ -7,8 +7,10 @@ cover: "/images/blog/post1/preview/001.webp"
 ## Welcome to My Kendo Journal in New York
 
 This was an unforgettable journey in the woods of upstate NY.
+This was an unforgettable journey in the woods of upstate NY.
+This was an unforgettable journey in the woods of upstate NY.
 
-### Highlights
+## Highlights
 
 - Day 1: Kata training
 - Day 2: Sparring practice
