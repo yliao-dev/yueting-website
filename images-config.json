@@ -20,5 +20,15 @@
       "quality": 70,
       "max_input_mb": 5
     }
+  ],
+  "posts": [
+    {
+      "input_source": "public/images/blog",
+      "output_meta": "",
+      "preview_width": 1200,
+      "thumb_width": 600,
+      "quality": 70,
+      "max_input_mb": 5
+    }
   ]
 }
