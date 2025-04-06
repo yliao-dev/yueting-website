@@ -66,7 +66,7 @@
 }
 
 .blog__post__text p {
-  max-height: 3rem;
+  max-height: 4rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -81,28 +81,6 @@
   cursor: pointer;
 }
 
-.blog__author {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.5rem;
-}
-
-.blog__author__icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-}
-
-.blog__author__info {
-  display: flex;
-  flex-direction: column;
-  color: var(--text-secondary);
-  font-size: 0.6rem;
-  letter-spacing: 1px;
-  margin-right: 1rem;
-}
-
 /* Tablet and above */
 @media (min-width: 768px) {
   .blog__contentBlock {
@@ -115,15 +93,6 @@
 
   .blog__post__text h2 {
     font-size: 1.4rem;
-  }
-
-  .blog__author__icon {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .blog__author__info {
-    font-size: 0.8rem;
   }
 }
 

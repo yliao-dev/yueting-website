@@ -1,4 +1,5 @@
 @import "./variables.css";
+
 @import "./shared/navbar.css";
 @import "./shared/footer.css";
 @import "./shared/contact.css";
@@ -6,12 +7,16 @@
 
 @import "./home/home.css";
 @import "./home/stackChart.css";
+
 @import "./portfolio/portfolio.css";
 @import "./portfolio/timeline.css";
 @import "./portfolio/project.css";
 @import "./portfolio/slideShow.css";
+
 @import "./gallery/gallery.css";
+
 @import "./blog/blog.css";
+@import "./blog/blogAuthor.css";
 @import "./blog/post.css";
 
 @tailwind base;

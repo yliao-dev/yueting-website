@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import LineBreak from "../shared/LineBreak";
 import { PostItemProp } from "./blogTypes";
+import BlogAuthor from "./BlogAuthor";
 
 function BlogPost({
   id,
@@ -25,13 +26,7 @@ function BlogPost({
             Read More →
           </p>
         </div>
-        <div className="blog__author">
-          <img className="blog__author__icon" src="/logo.svg" alt="author" />
-          <div className="blog__author__info">
-            <span>{author}</span>
-            <span>{date}</span>
-          </div>
-        </div>
+        <BlogAuthor author={author} date={date} />
       </div>
       <LineBreak variant="gradient" />
     </>
