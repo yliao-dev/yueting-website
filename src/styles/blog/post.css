@@ -37,7 +37,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .post__navigation {
