@@ -4,12 +4,18 @@
   align-items: center;
 }
 
+.post__page__intro,
+.post__page__content {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .post__page__intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  max-width: 70rem;
 }
 
 .post__page__intro h1 {
@@ -50,8 +56,6 @@
 
 /* content */
 .post__page__content {
-  width: 100%;
-  max-width: 80rem;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -90,4 +94,22 @@
   border-radius: 0.25rem;
   margin: 1.5rem 0;
   object-fit: cover;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .post__page__intro,
+  .post__page__content {
+    max-width: 40rem;
+    padding: 0 2rem;
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+  .post__page__intro,
+  .post__page__content {
+    max-width: 50rem;
+    padding: 0 2.5rem;
+  }
 }
