@@ -8,4 +8,4 @@ A wonderful serenity has taken possession of my entire soul, like these sweet mo
 - Day 2: Sparring practice
 - Day 3: Tea & reflection
 
-![Kendo Practice](/images/blog/post3/preview/002.webp)
+![Kendo Practice](/images/blog/post3/preview/001.webp)
