@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 80rem;
+  max-width: 70rem;
 }
 
 .post__page__intro h1 {
@@ -21,7 +21,6 @@
 }
 
 .post__page__intro p {
-  margin-bottom: 1.25rem;
   font-size: 1rem;
   line-height: 1.8;
   letter-spacing: 0.05rem;
@@ -52,11 +51,7 @@
 .post__page__content {
   width: 100%;
   max-width: 80rem;
-  padding: 2rem 1rem;
-  line-height: 1.75;
-  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
-  color: var(--text-primary);
 }
 .post__page__content h2 {
   font-size: 1.2rem;
