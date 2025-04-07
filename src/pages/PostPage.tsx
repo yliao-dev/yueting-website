@@ -6,6 +6,7 @@ import BlogAuthor from "../components/blog/BlogAuthor";
 import { Instagram } from "@mui/icons-material";
 import { BlogData } from "../data/blog/blogData";
 import PageNotFound from "./PageNotFound";
+import LineBreak from "../components/shared/LineBreak";
 
 const PostPage = () => {
   const navigate = useNavigate();
@@ -73,10 +74,10 @@ const PostPage = () => {
           <img src={post.coverImage} alt={post.title} className="post__cover" />
         )}
       </section>
-      <section>
+      <section className="post__page__content">
         <ReactMarkdown>{markdown}</ReactMarkdown>
       </section>
-
+      <LineBreak variant="gradient" />
       <section className="post__navigation">
         {index > 0 && (
           <button className="navigations__arrow" onClick={Prev}>
