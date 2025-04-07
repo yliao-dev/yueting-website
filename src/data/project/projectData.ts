@@ -18,7 +18,7 @@ export const ProjectData = [
       "/images/portfolio/project1/thumbs/009.webp",
       "/images/portfolio/project1/thumbs/010.webp",
     ],
-    link: "https://github.com/yliao-dev",
+    link: "https://github.com/yliao-dev/yueting-website",
   },
   {
     id: 1,
@@ -35,7 +35,7 @@ export const ProjectData = [
       "/images/portfolio/project2/thumbs/005.webp",
       "/images/portfolio/project2/thumbs/006.webp",
     ],
-    link: "https://github.com/yliao-dev",
+    link: "https://github.com/yliao-dev/nutri-flow",
   },
   {
     id: 2,
