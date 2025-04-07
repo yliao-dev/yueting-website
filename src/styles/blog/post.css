@@ -52,22 +52,23 @@
   width: 100%;
   max-width: 80rem;
   font-family: "Open Sans", sans-serif;
-  font-weight: var(--font-weight-regular);
 }
 
-/* Headings */
 .post__page__content h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: var(--text-heading);
+  font-weight: var(--font-weight-regular);
 }
 
-.post__page__content p {
+.post__page__content p,
+.post__page__content li {
   font-size: 1rem;
   line-height: 1.8;
   letter-spacing: 0.02rem;
   margin-bottom: 1.25rem;
   color: var(--text-body);
+  font-weight: var(--font-weight-regular);
 }
 
 .post__page__content li {
