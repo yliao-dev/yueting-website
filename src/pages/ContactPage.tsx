@@ -1,7 +1,7 @@
 import SocialMediaIcons from "../components/shared/SocialMediaIcons";
 import LineBreak from "../components/shared/LineBreak";
 import { useState } from "react";
-import bisonImg from "../assets/images/bison.webp";
+import bisonImg from "../assets/images/bison.svg";
 
 const ContactPage = () => {
   const [showInfo, setShowInfo] = useState(false);

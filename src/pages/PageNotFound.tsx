@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bisonImg from "../assets/images/bison.webp";
+import bisonImg from "../assets/images/bison.svg";
 
 const PageNotFound = () => {
   return (
