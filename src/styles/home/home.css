@@ -46,7 +46,7 @@
 }
 
 .home__skills__text h2 {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-regular);
   font-size: 1rem;
 }
 
@@ -98,7 +98,7 @@
   padding: 0.3rem 0.5rem;
   border-radius: 0.2rem;
   font-size: 0.7rem;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
 }
 
 .reset__view:hover {

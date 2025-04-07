@@ -39,7 +39,7 @@ section {
 
 h1 {
   font-size: 2rem;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
   letter-spacing: 0.2rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -47,14 +47,14 @@ h1 {
 
 h2 {
   font-size: 0.9rem;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
 }
 
 p {
   font-size: 0.8rem;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
   color: var(--text-secondary);
   letter-spacing: 0.07rem;
   line-height: 2;
@@ -62,7 +62,7 @@ p {
 
 ul {
   font-size: 0.8rem;
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-light);
   color: var(--text-secondary);
   line-height: 1.5;
   letter-spacing: 0.07rem;

@@ -38,7 +38,7 @@
   color: var(--white);
   letter-spacing: 0.1rem;
   font-size: 0.9rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-regular);
 }
 
 .stack-bar.dimmed {

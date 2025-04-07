@@ -18,8 +18,8 @@
   --text-heading: rgba(26, 26, 26, 1);
   --text-body: rgba(51, 51, 51, 1);
 
-  --font-weight-regular: 300;
-  --font-weight-bold: 400;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
 
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
