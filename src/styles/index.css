@@ -75,6 +75,16 @@ ul li {
   margin-bottom: 0.2rem;
 }
 
+.page-loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  animation: fade-in 0.3s ease-in-out;
+}
+
 /* Tablet and above */
 @media (min-width: 768px) {
   section {
