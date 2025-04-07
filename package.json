@@ -6,13 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "prod": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "live": "npm run build && npm run deploy",
-    "images-rename": "node process-images-rename.js",
-    "images-reformat": "node process-images-reformat.js",
-    "images-update": "node process-images-update.js"
+    "images:rename": "node process-images-rename.js",
+    "images:reformat": "node process-images-reformat.js",
+    "images:update": "node process-images-update.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
