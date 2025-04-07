@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import fm from "front-matter";
 import BlogAuthor from "../components/blog/BlogAuthor";
@@ -9,7 +9,6 @@ import PageNotFound from "./PageNotFound";
 import LineBreak from "../components/shared/LineBreak";
 
 const PostPage = () => {
-  const navigate = useNavigate();
   const { id } = useParams();
   const index = BlogData.findIndex((p) => String(p.id) === id);
   const post = BlogData[index];
@@ -18,18 +17,6 @@ const PostPage = () => {
   const [markdown, setMarkdown] = useState("");
 
   if (!post) return <PageNotFound />;
-
-  const Prev = () => {
-    if (index > 0) {
-      navigate(`/blog/post/${BlogData[index - 1].id}`);
-    }
-  };
-
-  const Next = () => {
-    if (index < BlogData.length - 1) {
-      navigate(`/blog/post/${BlogData[index + 1].id}`);
-    }
-  };
 
   useEffect(() => {
     const loadMarkdown = async () => {
@@ -80,14 +67,20 @@ const PostPage = () => {
       <LineBreak variant="gradient" />
       <section className="post__navigation">
         {index > 0 && (
-          <button className="navigations__arrow" onClick={Prev}>
+          <Link
+            className="navigations__arrow"
+            to={`/blog/post/${BlogData[index - 1].id}`}
+          >
             &#10094; Prev Blog
-          </button>
+          </Link>
         )}
         {index < BlogData.length - 1 && (
-          <button className="navigations__arrow" onClick={Next}>
+          <Link
+            className="navigations__arrow"
+            to={`/blog/post/${BlogData[index + 1].id}`}
+          >
             Next Blog &#10095;
-          </button>
+          </Link>
         )}
       </section>
     </div>
