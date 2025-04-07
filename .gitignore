@@ -38,6 +38,3 @@ lerna-debug.log*
 
 # OS specific files (Windows, macOS)
 Thumbs.db
-
-
-/public/images
