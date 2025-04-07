@@ -1,34 +1,30 @@
 .pageNotFound {
   display: flex;
-  justify-content: center;
-  height: 80vh;
-}
-
-.pageNotFound__intro {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
   max-width: 30rem;
+  margin: 0 auto;
 }
-
-.pageNotFound__intro img {
+.pageNotFound img {
   max-width: 30%;
   margin-top: 2rem;
   --slide-distance: 400px;
   animation: slide-in 1s ease forwards;
 }
 
-.pageNotFound__back-button {
+.pageNotFound__back {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.5rem 1.2rem;
   border-radius: 0.5rem;
-
   background-color: var(--primary);
   color: white;
 }
 
-.pageNotFound__back-button:hover {
+.pageNotFound__back:hover {
   background-color: var(--hover);
 }
