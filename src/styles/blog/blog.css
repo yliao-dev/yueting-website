@@ -62,11 +62,12 @@
 
 .blog__post__text h2 {
   font-size: 1.2rem;
-  margin-bottom: 0.2rem;
 }
 
 .blog__post__text p {
   max-height: 4rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
