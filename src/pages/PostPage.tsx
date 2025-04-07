@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import fm from "front-matter";
 import BlogAuthor from "../components/blog/BlogAuthor";
@@ -8,12 +8,27 @@ import { BlogData } from "../data/blog/blogData";
 import PageNotFound from "./PageNotFound";
 
 const PostPage = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
-  const post = BlogData.find((p) => String(p.id) === id);
+  const index = BlogData.findIndex((p) => String(p.id) === id);
+  const post = BlogData[index];
 
   const [_, setMeta] = useState<any>({});
   const [markdown, setMarkdown] = useState("");
+
   if (!post) return <PageNotFound />;
+
+  const Prev = () => {
+    if (index > 0) {
+      navigate(`/blog/post/${BlogData[index - 1].id}`);
+    }
+  };
+
+  const Next = () => {
+    if (index < BlogData.length - 1) {
+      navigate(`/blog/post/${BlogData[index + 1].id}`);
+    }
+  };
 
   useEffect(() => {
     const loadMarkdown = async () => {
@@ -60,6 +75,19 @@ const PostPage = () => {
       </section>
       <section>
         <ReactMarkdown>{markdown}</ReactMarkdown>
+      </section>
+
+      <section>
+        {index > 0 && (
+          <button className="project__navigations__arrow" onClick={Prev}>
+            &#10094; Prev Blog
+          </button>
+        )}
+        {index < BlogData.length - 1 && (
+          <button className="project__navigations__arrow" onClick={Next}>
+            Next Blog &#10095;
+          </button>
+        )}
       </section>
     </div>
   );
