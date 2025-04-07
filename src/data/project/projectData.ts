@@ -4,7 +4,7 @@ export const ProjectData = [
     name: "Personal Website",
     focus: "Frontend focused product",
     description:
-      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
+      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind. A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
     tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
     coverImage: "/images/portfolio/project1/thumbs/001.webp",
     images: [
