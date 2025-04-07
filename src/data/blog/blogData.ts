@@ -8,7 +8,7 @@ export const BlogData = [
     category: "kendo",
     date: "2024-12-01",
     coverImage: "/images/blog/post1/preview/001.webp",
-    mdPath: "src/data/blog/post1.md",
+    mdPath: "/src/data/blog/post1.md",
   },
   {
     id: "2",
@@ -19,6 +19,6 @@ export const BlogData = [
     category: "photography",
     date: "2024-12-01",
     coverImage: "/images/blog/post2/preview/001.webp",
-    mdPath: "src/data/blog/post2.md",
+    mdPath: "/src/data/blog/post2.md",
   },
 ];

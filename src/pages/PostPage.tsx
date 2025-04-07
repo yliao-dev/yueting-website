@@ -1,15 +1,19 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import fm from "front-matter";
 import BlogAuthor from "../components/blog/BlogAuthor";
 import { Instagram } from "@mui/icons-material";
+import { BlogData } from "../data/blog/blogData";
+import PageNotFound from "./PageNotFound";
 
 const PostPage = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
-  const [meta, setMeta] = useState<any>({});
+  const post = BlogData.find((p) => String(p.id) === id);
+
+  const [_, setMeta] = useState<any>({});
   const [markdown, setMarkdown] = useState("");
+  if (!post) return <PageNotFound />;
 
   useEffect(() => {
     const loadMarkdown = async () => {
@@ -19,9 +23,8 @@ const PostPage = () => {
           import: "default",
         });
 
-        const fileKey = `/src/data/blog/post${id}.md`;
-        const loader = posts[fileKey];
-        if (!loader) throw new Error(`Post not found: ${fileKey}`);
+        const loader = posts[post.mdPath];
+        if (!loader) throw new Error(`Post not found: ${post.mdPath}`);
 
         const raw = await loader();
         const parsed = fm(raw as string);
@@ -29,7 +32,7 @@ const PostPage = () => {
         setMarkdown(parsed.body);
       } catch (err) {
         console.error("❌ Failed to load post:", err);
-        navigate("/not-found");
+        return <PageNotFound />;
       }
     };
 
@@ -39,20 +42,20 @@ const PostPage = () => {
   return (
     <div className="post__page">
       <section className="post__page__intro">
-        <h1>{meta.title}</h1>
-        <p>{meta.description}</p>
+        <h1>{post.title}</h1>
+        <p>{post.description}</p>
         <div className="post__page__media">
-          <BlogAuthor author={meta.author} date={meta.date} />
+          <BlogAuthor author={post.author} date={post.date} />
           <a
             href="https://www.instagram.com/_yuetingl/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Instagram className="instagram-icon" />
-          </a>{" "}
+          </a>
         </div>
-        {meta.cover && (
-          <img src={meta.cover} alt={meta.title} className="post__cover" />
+        {post.coverImage && (
+          <img src={post.coverImage} alt={post.title} className="post__cover" />
         )}
       </section>
       <section>
