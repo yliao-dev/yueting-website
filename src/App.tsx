@@ -4,53 +4,44 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
 import MainLayout from "./components/layouts/MainLayout";
 
-import HomePage from "./pages/HomePage";
-import PortfolioPage from "./pages/PortfolioPage";
-import ProjectPage from "./pages/ProjectPage";
-import BlogPage from "./pages/BlogPage";
-import GalleryPage from "./pages/GalleryPage";
-import ContactPage from "./pages/ContactPage";
-import PageNotFound from "./pages/PageNotFound";
-import PostPage from "./pages/PostPage";
+// Lazy-loaded pages
+const HomePage = lazy(() => import("./pages/HomePage"));
+const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
+const ProjectPage = lazy(() => import("./pages/ProjectPage"));
+const BlogPage = lazy(() => import("./pages/BlogPage"));
+const GalleryPage = lazy(() => import("./pages/GalleryPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+const PostPage = lazy(() => import("./pages/PostPage"));
 
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <>
-        {/* Home */}
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Route>
-        {/* portfolio */}
-        <Route path="/portfolio" element={<MainLayout />}>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="portfolio">
           <Route index element={<PortfolioPage />} />
           <Route path="project/:id" element={<ProjectPage />} />
         </Route>
-        {/* gallery */}
-        <Route path="/gallery" element={<MainLayout />}>
-          <Route index element={<GalleryPage />} />
-        </Route>
-        {/* blog */}
-        <Route path="/blog" element={<MainLayout />}>
+        <Route path="gallery" element={<GalleryPage />} />
+        <Route path="blog">
           <Route index element={<BlogPage />} />
           <Route path="post/:id" element={<PostPage />} />
         </Route>
-        {/* contact */}
-        <Route path="/contact" element={<MainLayout />}>
-          <Route index element={<ContactPage />} />
-        </Route>
-      </>
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Route>
     )
   );
 
   return (
-    <>
+    <Suspense fallback={<div className="page-loading">Loading...</div>}>
       <RouterProvider router={router} />
-    </>
+    </Suspense>
   );
 };
 
