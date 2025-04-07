@@ -18,8 +18,6 @@ const ProjectSlideshow = ({ images }: { images: string[] }) => {
     setSelectedImage(imageUrl);
   };
   const closeViewer = () => {
-    console.log("Closing viewer");
-
     setSelectedImage(null);
   };
   return (
