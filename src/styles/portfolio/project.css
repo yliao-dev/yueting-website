@@ -52,13 +52,13 @@
   margin-bottom: 2rem;
 }
 
-.project__navigations__arrow {
+.navigations__arrow {
   color: var(--gray-600);
   padding: 0.3rem 0.6rem;
   cursor: pointer;
   font-size: 1.2rem;
 }
-.project__navigations__arrow:hover {
+.navigations__arrow:hover {
   color: var(--hover);
 }
 

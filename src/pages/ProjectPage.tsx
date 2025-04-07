@@ -44,7 +44,7 @@ const ProjectPage = () => {
         <section className="project__slideshow">
           <div className="project__navigations">
             {index > 0 && (
-              <button className="project__navigations__arrow" onClick={Prev}>
+              <button className="navigations__arrow" onClick={Prev}>
                 &#10094; Prev Project
               </button>
             )}
@@ -57,7 +57,7 @@ const ProjectPage = () => {
             </a>
 
             {index < ProjectData.length - 1 && (
-              <button className="project__navigations__arrow" onClick={Next}>
+              <button className="navigations__arrow" onClick={Next}>
                 Next Project &#10095;
               </button>
             )}

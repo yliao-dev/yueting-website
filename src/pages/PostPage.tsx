@@ -77,14 +77,14 @@ const PostPage = () => {
         <ReactMarkdown>{markdown}</ReactMarkdown>
       </section>
 
-      <section>
+      <section className="post__navigation">
         {index > 0 && (
-          <button className="project__navigations__arrow" onClick={Prev}>
+          <button className="navigations__arrow" onClick={Prev}>
             &#10094; Prev Blog
           </button>
         )}
         {index < BlogData.length - 1 && (
-          <button className="project__navigations__arrow" onClick={Next}>
+          <button className="navigations__arrow" onClick={Next}>
             Next Blog &#10095;
           </button>
         )}
