@@ -17,7 +17,7 @@ const PageNotFound = () => {
           Looks like you’ve wandered off the trail. No worries—my trusty bison
           will guide you home.
         </p>
-        <img src={bisonImg} alt="Friendly bison illustration" />
+        <img src={bisonImg} alt="Friendly Bison" />
 
         <div className="pageNotFound__buttons">
           <button className="pageNotFound__back-button" onClick={handleBack}>
