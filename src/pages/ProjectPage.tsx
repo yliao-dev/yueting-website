@@ -5,8 +5,8 @@ import ProjectSlideshow from "../components/portfolio/ProjectSlideShow";
 import { GitHub } from "@mui/icons-material";
 
 const ProjectPage = () => {
-  const { id } = useParams();
   const navigate = useNavigate();
+  const { id } = useParams();
   const index = ProjectData.findIndex((p) => String(p.id) === id);
   const project = ProjectData[index];
 
