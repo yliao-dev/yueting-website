@@ -27,15 +27,14 @@
 }
 
 /* New bottom nav container */
-.modal-bottom-arrows {
+.modal-nav {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.arrow-left,
-.arrow-right {
+.modal-nav-arrow {
   font-size: 2rem;
   background: none;
   border: none;

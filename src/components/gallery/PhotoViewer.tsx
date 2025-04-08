@@ -53,10 +53,10 @@ const PhotoViewer = ({
         />
 
         {imageLoaded && (
-          <div className="modal-bottom-arrows">
+          <div className="modal-nav">
             {hasPrev && (
               <button
-                className="arrow-left"
+                className="modal-nav-arrow"
                 onClick={(e) => {
                   e.stopPropagation();
                   onPrev?.();
@@ -67,7 +67,7 @@ const PhotoViewer = ({
             )}
             {hasNext && (
               <button
-                className="arrow-right"
+                className="modal-nav-arrow"
                 onClick={(e) => {
                   e.stopPropagation();
                   onNext?.();
