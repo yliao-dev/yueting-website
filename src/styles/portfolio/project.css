@@ -44,12 +44,18 @@
 }
 
 .project__navigations {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
   text-align: center;
   width: 100%;
-  margin-bottom: 2rem;
+}
+
+.project__navigations a,
+.project__navigations .navigations__arrow {
+  justify-self: center;
 }
 
 .navigations__arrow {

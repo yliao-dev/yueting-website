@@ -29,27 +29,34 @@ const ProjectPage = () => {
 
       <section className="project__slideshow">
         <div className="project__navigations">
-          {index > 0 && (
-            <Link
-              className="navigations__arrow"
-              to={`/portfolio/project/${ProjectData[index - 1].id}`}
-            >
-              &#10094; Prev Project
-            </Link>
-          )}
-
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            <GitHub className="project-github-icon" sx={{ fontSize: "3rem" }} />
-          </a>
-
-          {index < ProjectData.length - 1 && (
-            <Link
-              className="navigations__arrow"
-              to={`/portfolio/project/${ProjectData[index + 1].id}`}
-            >
-              Next Project &#10095;
-            </Link>
-          )}
+          <div>
+            {index > 0 && (
+              <Link
+                className="navigations__arrow"
+                to={`/portfolio/project/${ProjectData[index - 1].id}`}
+              >
+                &#10094; Prev Project
+              </Link>
+            )}
+          </div>
+          <div>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <GitHub
+                className="project-github-icon"
+                sx={{ fontSize: "3rem" }}
+              />
+            </a>
+          </div>
+          <div>
+            {index < ProjectData.length - 1 && (
+              <Link
+                className="navigations__arrow"
+                to={`/portfolio/project/${ProjectData[index + 1].id}`}
+              >
+                Next Project &#10095;
+              </Link>
+            )}
+          </div>
         </div>
         <ProjectSlideshow images={project.images} />
       </section>
