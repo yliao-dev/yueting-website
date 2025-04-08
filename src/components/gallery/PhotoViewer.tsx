@@ -20,8 +20,8 @@ const PhotoViewer = ({
     const endX = e.changedTouches[0].clientX;
     const diffX = startX.current - endX;
 
-    if (diffX > 50 && hasNext) onNext?.(); // Swipe left → Next
-    if (diffX < -50 && hasPrev) onPrev?.(); // Swipe right → Prev
+    if (diffX > 50 && hasNext) onNext?.(); // Swipe left
+    if (diffX < -50 && hasPrev) onPrev?.(); // Swipe right
 
     startX.current = null;
   };
@@ -30,7 +30,7 @@ const PhotoViewer = ({
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight" && hasNext) onNext?.();
       if (e.key === "ArrowLeft" && hasPrev) onPrev?.();
-      if (e.key === "Escape") onClose(); // Optional: ESC to close
+      if (e.key === "Escape") onClose();
     };
 
     window.addEventListener("keydown", handleKeyDown);
@@ -48,10 +48,10 @@ const PhotoViewer = ({
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           <img src={imageUrl} alt="Full view" className="modal-image" />
 
-          <div className="modal-bottom-nav">
+          <div className="modal-bottom-arrows">
             {hasPrev && (
               <button
-                className="nav-left"
+                className="arrow-left"
                 onClick={(e) => {
                   e.stopPropagation();
                   onPrev?.();
@@ -62,7 +62,7 @@ const PhotoViewer = ({
             )}
             {hasNext && (
               <button
-                className="nav-right"
+                className="arrow-right"
                 onClick={(e) => {
                   e.stopPropagation();
                   onNext?.();
