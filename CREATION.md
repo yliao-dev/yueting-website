@@ -28,3 +28,9 @@ image:
    • Expect file size ≈ 200–500 KB
 2. Move to public/image/folder
 3. Run Sharp script command to convert them to WebP
+
+https://vercel.com/yliao-devs-projects/yueting-website
+
+https://account.squarespace.com/domains/managed/yuetingliao.com/dns/dns-settings
+
+https://www.whatsmydns.net/#CNAME/www.yuetingliao.com
