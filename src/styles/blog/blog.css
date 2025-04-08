@@ -31,7 +31,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--text-secondary);
 }
 
@@ -116,6 +116,10 @@
 
 /* Desktop and above */
 @media (min-width: 1024px) {
+  .blog__category-button svg {
+    font-size: 3.5rem;
+  }
+
   .blog__contentBlock {
     width: 70%;
   }
