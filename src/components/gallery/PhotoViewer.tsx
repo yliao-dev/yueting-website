@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { PhotoViewerProps } from "./galleryTypes";
+import NavigationArrows from "../shared/NavigationArrows";
 
 const PhotoViewer = ({
   imageUrl,
@@ -53,34 +54,29 @@ const PhotoViewer = ({
         />
 
         {imageLoaded && (
-          <div className="modal-nav">
-            <div>
-              {hasPrev && (
-                <button
-                  className="modal-nav-arrow"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onPrev?.();
-                  }}
-                >
-                  &#10094;
-                </button>
-              )}
-            </div>
-            <div>
-              {hasNext && (
-                <button
-                  className="modal-nav-arrow"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onNext?.();
-                  }}
-                >
-                  &#10095;
-                </button>
-              )}
-            </div>
-          </div>
+          <NavigationArrows
+            prev={
+              hasPrev
+                ? {
+                    onClick: (e) => {
+                      e.stopPropagation();
+                      onPrev?.();
+                    },
+                  }
+                : undefined
+            }
+            next={
+              hasNext
+                ? {
+                    onClick: (e) => {
+                      e.stopPropagation();
+                      onNext?.();
+                    },
+                  }
+                : undefined
+            }
+            className="modal-navigation"
+          />
         )}
       </div>
     </div>

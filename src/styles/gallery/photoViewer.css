@@ -26,18 +26,7 @@
   border-radius: 0.25rem;
 }
 
-/* New bottom nav container */
-.modal-nav {
+.modal-navigation .navigation-arrow {
+  color: var(--white);
   margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.modal-nav-arrow {
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
 }

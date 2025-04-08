@@ -4,12 +4,12 @@ interface NavigationArrowsProps {
   prev?: {
     label?: string;
     to?: string;
-    onClick?: () => void;
+    onClick?: (e: React.MouseEvent) => void;
   };
   next?: {
     label?: string;
     to?: string;
-    onClick?: () => void;
+    onClick?: (e: React.MouseEvent) => void;
   };
   center?: React.ReactNode;
   className?: string;
