@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "images-rename": "node process-images-rename.js",
     "images-reformat": "node process-images-reformat.js",
-    "image-:update": "node process-images-update.js"
+    "image-update": "node process-images-update.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
