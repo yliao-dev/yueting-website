@@ -27,38 +27,43 @@ const PhotoViewer = ({
   };
 
   return (
-    <div
-      className="modal-overlay"
-      onClick={onClose}
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-    >
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        {hasPrev && (
-          <button
-            className="nav-left"
-            onClick={(e) => {
-              e.stopPropagation();
-              onPrev?.();
-            }}
-          >
-            ←
-          </button>
-        )}
-        <img src={imageUrl} alt="Full view" className="modal-image" />
-        {hasNext && (
-          <button
-            className="nav-right"
-            onClick={(e) => {
-              e.stopPropagation();
-              onNext?.();
-            }}
-          >
-            →
-          </button>
-        )}
+    <>
+      <div
+        className="modal-overlay"
+        onClick={onClose}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
+        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+          <img src={imageUrl} alt="Full view" className="modal-image" />
+
+          <div className="modal-bottom-nav">
+            {hasPrev && (
+              <button
+                className="nav-left"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onPrev?.();
+                }}
+              >
+                ←
+              </button>
+            )}
+            {hasNext && (
+              <button
+                className="nav-right"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onNext?.();
+                }}
+              >
+                →
+              </button>
+            )}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
