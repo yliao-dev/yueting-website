@@ -24,3 +24,8 @@ export type PhotoViewerProps = {
   hasPrev?: boolean;
   hasNext?: boolean;
 };
+
+export interface PhotoMasonryProps {
+  photoData: PhotoItemProps[];
+  collections: GalleryCollectionProps[];
+}
