@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import bisonImg from "../assets/images/bison.svg";
+import bisonImg from "../assets/icons/bison.svg";
 
 const PageNotFound = () => {
   const navigate = useNavigate();
