@@ -23,9 +23,6 @@ const PhotoViewer = ({
               →
             </button>
           )}
-          <button className="modal-close" onClick={onClose}>
-            ✕
-          </button>
         </div>
       </div>
     </>
