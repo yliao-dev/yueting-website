@@ -35,10 +35,11 @@ const ProjectSlideshow = ({ images }: { images: string[] }) => {
       />
 
       <NavigationArrows
+        className="slideshow__navigations"
         prev={{ onClick: prev }}
         next={{ onClick: next }}
         center={
-          <div className="slideshow__dots">
+          <div className="navigation-center slideshow__dots">
             {images.map((_, i) => (
               <span
                 key={i}

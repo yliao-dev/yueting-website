@@ -14,27 +14,25 @@
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
-.slideshow__controls {
+.slideshow__navigations {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 0;
+  width: 100%;
 }
 
-.slideshow__arrow {
-  color: var(--gray-600);
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
-  font-size: 1rem;
+.slideshow__navigations .navigation-arrow {
+  color: var(--gray-400);
 }
 
-.slideshow__arrow:hover {
-  color: var(--hover);
+.navigation-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .slideshow__dots {
-  flex: 1;
   display: flex;
   justify-content: center;
   gap: 0.1rem;
