@@ -50,8 +50,10 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  border-radius: 0.25rem;
+  padding: 0.5em;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.01rem solid var(--light-oak);
+  border-radius: 0.2rem;
 }
 
 .blog__post__text {
