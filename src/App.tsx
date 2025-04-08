@@ -4,7 +4,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 
 import MainLayout from "./components/layouts/MainLayout";
 
@@ -45,9 +45,9 @@ const App = () => {
   );
 
   return (
-    <Suspense fallback={<h2 className="page-loading">Loading...</h2>}>
-      <RouterProvider router={router} />
-    </Suspense>
+    // <Suspense fallback={<h2 className="page-loading">Loading...</h2>}>
+    <RouterProvider router={router} />
+    // </Suspense>
   );
 };
 

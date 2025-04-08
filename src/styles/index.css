@@ -14,6 +14,7 @@
 @import "./portfolio/slideShow.css";
 
 @import "./gallery/gallery.css";
+@import "./gallery/photoViewer.css";
 
 @import "./blog/blog.css";
 @import "./blog/blogAuthor.css";

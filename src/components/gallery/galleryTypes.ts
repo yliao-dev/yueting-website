@@ -19,4 +19,8 @@ export type PhotoItemProps = {
 export type PhotoViewerProps = {
   imageUrl: string;
   onClose: () => void;
+  onPrev?: () => void;
+  onNext?: () => void;
+  hasPrev?: boolean;
+  hasNext?: boolean;
 };
