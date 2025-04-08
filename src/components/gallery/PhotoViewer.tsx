@@ -10,11 +10,9 @@ const PhotoViewer = ({
   hasNext,
 }: PhotoViewerProps) => {
   const startX = useRef<number | null>(null);
-
   const handleTouchStart = (e: React.TouchEvent) => {
     startX.current = e.touches[0].clientX;
   };
-
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (startX.current === null) return;
     const endX = e.changedTouches[0].clientX;
@@ -25,7 +23,6 @@ const PhotoViewer = ({
 
     startX.current = null;
   };
-
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight" && hasNext) onNext?.();
