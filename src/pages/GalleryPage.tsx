@@ -61,17 +61,18 @@ const GalleryPage = () => {
           )}
         </div>
       </section> */}
-
-      <NavigationArrows
-        prev={
-          currentPage > 1 ? { to: `/gallery/${currentPage - 1}` } : undefined
-        }
-        next={
-          startIndex + collectionsPerPage < GalleryData.length
-            ? { to: `/gallery/${currentPage + 1}` }
-            : undefined
-        }
-      />
+      <section>
+        <NavigationArrows
+          prev={
+            currentPage > 1 ? { to: `/gallery/${currentPage - 1}` } : undefined
+          }
+          next={
+            startIndex + collectionsPerPage < GalleryData.length
+              ? { to: `/gallery/${currentPage + 1}` }
+              : undefined
+          }
+        />
+      </section>
     </div>
   );
 };

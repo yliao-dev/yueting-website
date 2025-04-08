@@ -8,7 +8,7 @@
 }
 
 .navigation-arrow {
-  font-size: 1.75rem;
+  font-size: 2rem;
   background: none;
   border: none;
   color: var(--primary);
@@ -18,7 +18,8 @@
 }
 
 .navigation-arrow:hover {
-  opacity: 0.75;
+  opacity: 0.7;
+  color: var(--hover);
 }
 
 .navigation-arrow:disabled {
