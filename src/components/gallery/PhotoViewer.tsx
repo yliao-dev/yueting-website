@@ -54,28 +54,32 @@ const PhotoViewer = ({
 
         {imageLoaded && (
           <div className="modal-nav">
-            {hasPrev && (
-              <button
-                className="modal-nav-arrow"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onPrev?.();
-                }}
-              >
-                &#10094;
-              </button>
-            )}
-            {hasNext && (
-              <button
-                className="modal-nav-arrow"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onNext?.();
-                }}
-              >
-                &#10095;
-              </button>
-            )}
+            <div>
+              {hasPrev && (
+                <button
+                  className="modal-nav-arrow"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onPrev?.();
+                  }}
+                >
+                  &#10094;
+                </button>
+              )}
+            </div>
+            <div>
+              {hasNext && (
+                <button
+                  className="modal-nav-arrow"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onNext?.();
+                  }}
+                >
+                  &#10095;
+                </button>
+              )}
+            </div>
           </div>
         )}
       </div>
