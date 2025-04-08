@@ -15,6 +15,8 @@
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-arrow:hover {
@@ -25,4 +27,13 @@
 .navigation-arrow:disabled {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.arrow-symbol {
+  font-size: 2rem;
+}
+
+.arrow-label {
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
