@@ -66,18 +66,26 @@ const PostPage = () => {
         <ReactMarkdown>{markdown}</ReactMarkdown>
       </section>
       <LineBreak variant="gradient" />
-      <NavigationArrows
-        prev={
-          index > 0
-            ? { label: "Prev Blog", to: `/blog/post/${BlogData[index - 1].id}` }
-            : undefined
-        }
-        next={
-          index < BlogData.length - 1
-            ? { label: "Next Blog", to: `/blog/post/${BlogData[index + 1].id}` }
-            : undefined
-        }
-      />
+      <section className="post__navigation">
+        <NavigationArrows
+          prev={
+            index > 0
+              ? {
+                  label: "Prev Blog",
+                  to: `/blog/post/${BlogData[index - 1].id}`,
+                }
+              : undefined
+          }
+          next={
+            index < BlogData.length - 1
+              ? {
+                  label: "Next Blog",
+                  to: `/blog/post/${BlogData[index + 1].id}`,
+                }
+              : undefined
+          }
+        />
+      </section>
     </div>
   );
 };
