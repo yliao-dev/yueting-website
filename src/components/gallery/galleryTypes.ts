@@ -27,5 +27,4 @@ export type PhotoViewerProps = {
 
 export interface PhotoMasonryProps {
   photoData: PhotoItemProps[];
-  collections: GalleryCollectionProps[];
 }
