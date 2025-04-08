@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { PhotoViewerProps } from "./galleryTypes";
 
 const PhotoViewer = ({
@@ -25,6 +25,17 @@ const PhotoViewer = ({
 
     startX.current = null;
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight" && hasNext) onNext?.();
+      if (e.key === "ArrowLeft" && hasPrev) onPrev?.();
+      if (e.key === "Escape") onClose(); // Optional: ESC to close
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [hasNext, hasPrev, onNext, onPrev, onClose]);
 
   return (
     <>
