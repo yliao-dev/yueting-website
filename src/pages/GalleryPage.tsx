@@ -61,7 +61,7 @@ const GalleryPage = () => {
           )}
         </div>
       </section> */}
-      <section>
+      <section className="gallery__pagination">
         <NavigationArrows
           prev={
             currentPage > 1 ? { to: `/gallery/${currentPage - 1}` } : undefined

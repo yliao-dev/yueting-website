@@ -22,7 +22,6 @@ const NavigationArrows = ({
   className = "",
 }: NavigationArrowsProps) => {
   return (
-    // NavigationArrows.tsx (better named as NavigationArrows)
     <div className={`navigation-arrows ${className}`}>
       <div>
         {prev?.to ? (

@@ -45,6 +45,10 @@
   justify-content: center;
 }
 
+.gallery__pagination {
+  width: 100%;
+}
+
 /* Tablet and above */
 @media (min-width: 768px) {
   .masonry-grid {
