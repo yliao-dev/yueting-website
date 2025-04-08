@@ -45,16 +45,20 @@ const GalleryPage = () => {
         ))}
 
       <section className="gallery__pagination">
-        {currentPage > 1 && (
-          <Link to={`/gallery/${currentPage - 1}`} className="gallery-arrow">
-            &#10094;
-          </Link>
-        )}
-        {startIndex + collectionsPerPage < GalleryData.length && (
-          <Link to={`/gallery/${currentPage + 1}`} className="gallery-arrow">
-            &#10095;
-          </Link>
-        )}
+        <div>
+          {currentPage > 1 && (
+            <Link to={`/gallery/${currentPage - 1}`} className="gallery-arrow">
+              &#10094;
+            </Link>
+          )}
+        </div>
+        <div>
+          {startIndex + collectionsPerPage < GalleryData.length && (
+            <Link to={`/gallery/${currentPage + 1}`} className="gallery-arrow">
+              &#10095;
+            </Link>
+          )}
+        </div>
       </section>
     </div>
   );
