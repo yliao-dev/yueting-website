@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import fm from "front-matter";
 import BlogAuthor from "../components/blog/BlogAuthor";
-import { Instagram } from "@mui/icons-material";
 import { BlogData } from "../data/blog/blogData";
 import PageNotFound from "./PageNotFound";
 import LineBreak from "../components/shared/LineBreak";
@@ -50,13 +49,6 @@ const PostPage = () => {
         <p>{post.description}</p>
         <div className="post__page__media">
           <BlogAuthor author={post.author} date={post.date} />
-          <a
-            href="https://www.instagram.com/_yuetingl/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Instagram className="instagram-icon" />
-          </a>
         </div>
         {post.coverImage && (
           <img src={post.coverImage} alt={post.title} className="post__cover" />

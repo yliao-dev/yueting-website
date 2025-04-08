@@ -17,16 +17,19 @@ function BlogPost({
       <div className="blog__post">
         <img className="blog__post__cover" src={coverImage} />
         <div className="blog__post__text">
-          <h2>{title}</h2>
+          <h2 onClick={() => navigate(`/blog/post/${id}`)}>{title}</h2>
           <p> {description} </p>
+        </div>
+
+        <div className="blog__detail">
           <p
-            className="blog__read-more"
+            className="blog__readMore"
             onClick={() => navigate(`/blog/post/${id}`)}
           >
-            Read More →
+            Read More &#10095;
           </p>
+          <BlogAuthor author={author} date={date} />
         </div>
-        <BlogAuthor author={author} date={date} />
       </div>
       <LineBreak variant="gradient" />
     </>
