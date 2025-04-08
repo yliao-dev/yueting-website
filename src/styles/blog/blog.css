@@ -27,17 +27,6 @@
   gap: 15vw;
 }
 
-.kendo-icon {
-  color: var(--primary);
-  font-size: 2rem;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.kendo-icon:hover {
-  transform: scale(1.1);
-  color: var(--hover);
-}
-
 .blog__category-button svg {
   background: none;
   border: none;
