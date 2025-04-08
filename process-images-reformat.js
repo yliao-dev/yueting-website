@@ -32,6 +32,7 @@ const processCollection = async (
   { preview_width, thumb_width, quality, max_input_mb, output_meta }
 ) => {
   const projectDir = path.dirname(sourcePath);
+  const collectionName = path.basename(path.dirname(sourcePath));
   const outputPreviewDir = path.join(projectDir, "preview");
   const outputThumbDir = path.join(projectDir, "thumbs");
   const metaData = [];
@@ -88,14 +89,15 @@ const processCollection = async (
   }
 
   if (output_meta && output_meta.trim()) {
-    ensureDir(path.dirname(output_meta));
-    fs.writeFileSync(output_meta, JSON.stringify(metaData, null, 2));
-    console.log(`✅ Meta written to: ${output_meta}`);
+    const outputPath = path.join(output_meta, `${collectionName}Meta.json`);
+    ensureDir(output_meta);
+    fs.writeFileSync(outputPath, JSON.stringify(metaData, null, 2));
+    console.log(`✅ Meta written to: ${outputPath}`);
   }
 };
 
 const run = async () => {
-  const mode = process.argv[2]; // "blog", "gallery", etc.
+  const mode = process.argv[2]; // e.g., "gallery"
   const entries = config[mode] || [];
 
   for (const collection of entries) {
