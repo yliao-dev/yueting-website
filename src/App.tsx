@@ -4,7 +4,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy } from "react";
 
 import MainLayout from "./components/layouts/MainLayout";
 
