@@ -1,4 +1,3 @@
-import { ChevronUp } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -16,9 +15,9 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="footer__arrow" onClick={scrollToTop}>
-        <ChevronUp />
-      </div>
+      <button className="navigation-arrow footer-arrow" onClick={scrollToTop}>
+        &#10094;
+      </button>
 
       <div className="footer__info">
         <h2>

@@ -8,17 +8,9 @@
   color: var(--white);
 }
 
-.footer__arrow {
-  cursor: pointer;
-}
-
-.footer__arrow svg {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.footer__arrow:hover {
-  transform: translateY(-0.5rem) scale(1.1);
+.navigation-arrow.footer-arrow {
+  transform: rotate(90deg);
+  color: var(--white);
 }
 
 .footer__info {
