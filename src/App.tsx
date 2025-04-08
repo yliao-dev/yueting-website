@@ -45,9 +45,9 @@ const App = () => {
   );
 
   return (
-    <Suspense fallback={<h2 className="page-loading">Loading...</h2>}>
-      <RouterProvider router={router} />
-    </Suspense>
+    // <Suspense fallback={<h2 className="page-loading">Loading...</h2>}>
+    <RouterProvider router={router} />
+    // </Suspense>
   );
 };
 
