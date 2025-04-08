@@ -4,6 +4,7 @@
 @import "./shared/footer.css";
 @import "./shared/contact.css";
 @import "./shared/pageNotFound.css";
+@import "./shared/navigationArrows.css";
 
 @import "./home/home.css";
 @import "./home/stackChart.css";

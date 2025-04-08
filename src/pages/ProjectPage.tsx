@@ -3,6 +3,7 @@ import { ProjectData } from "../data/project/projectData";
 import PageNotFound from "./PageNotFound";
 import ProjectSlideshow from "../components/portfolio/ProjectSlideShow";
 import { GitHub } from "@mui/icons-material";
+import NavigationArrows from "../components/shared/NavigationArrows";
 
 const ProjectPage = () => {
   const { id } = useParams();
@@ -28,36 +29,29 @@ const ProjectPage = () => {
       </section>
 
       <section className="project__slideshow">
-        <div className="project__navigations">
-          <div>
-            {index > 0 && (
-              <Link
-                className="navigations__arrow"
-                to={`/portfolio/project/${ProjectData[index - 1].id}`}
-              >
-                &#10094; Prev Project
-              </Link>
-            )}
-          </div>
-          <div>
+        <NavigationArrows
+          prev={
+            index > 0
+              ? {
+                  label: "Prev Project",
+                  to: `/portfolio/project/${ProjectData[index - 1].id}`,
+                }
+              : undefined
+          }
+          next={
+            index < ProjectData.length - 1
+              ? {
+                  label: "Next Project",
+                  to: `/portfolio/project/${ProjectData[index + 1].id}`,
+                }
+              : undefined
+          }
+          center={
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <GitHub
-                className="project-github-icon"
-                sx={{ fontSize: "3rem" }}
-              />
+              <GitHub className="project-github-icon" />
             </a>
-          </div>
-          <div>
-            {index < ProjectData.length - 1 && (
-              <Link
-                className="navigations__arrow"
-                to={`/portfolio/project/${ProjectData[index + 1].id}`}
-              >
-                Next Project &#10095;
-              </Link>
-            )}
-          </div>
-        </div>
+          }
+        />
         <ProjectSlideshow images={project.images} />
       </section>
     </div>

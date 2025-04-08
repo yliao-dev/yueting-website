@@ -1,0 +1,27 @@
+.navigation-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.navigation-arrow {
+  font-size: 1.75rem;
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.navigation-arrow:hover {
+  opacity: 0.75;
+}
+
+.navigation-arrow:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

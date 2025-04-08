@@ -7,6 +7,7 @@ import { Instagram } from "@mui/icons-material";
 import { BlogData } from "../data/blog/blogData";
 import PageNotFound from "./PageNotFound";
 import LineBreak from "../components/shared/LineBreak";
+import NavigationArrows from "../components/shared/NavigationArrows";
 
 const PostPage = () => {
   const { id } = useParams();
@@ -65,24 +66,18 @@ const PostPage = () => {
         <ReactMarkdown>{markdown}</ReactMarkdown>
       </section>
       <LineBreak variant="gradient" />
-      <section className="post__navigation">
-        {index > 0 && (
-          <Link
-            className="navigations__arrow"
-            to={`/blog/post/${BlogData[index - 1].id}`}
-          >
-            &#10094; Prev Blog
-          </Link>
-        )}
-        {index < BlogData.length - 1 && (
-          <Link
-            className="navigations__arrow"
-            to={`/blog/post/${BlogData[index + 1].id}`}
-          >
-            Next Blog &#10095;
-          </Link>
-        )}
-      </section>
+      <NavigationArrows
+        prev={
+          index > 0
+            ? { label: "Prev Blog", to: `/blog/post/${BlogData[index - 1].id}` }
+            : undefined
+        }
+        next={
+          index < BlogData.length - 1
+            ? { label: "Next Blog", to: `/blog/post/${BlogData[index + 1].id}` }
+            : undefined
+        }
+      />
     </div>
   );
 };

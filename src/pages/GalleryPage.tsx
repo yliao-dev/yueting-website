@@ -5,6 +5,7 @@ import LineBreak from "../components/shared/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import { useState } from "react";
 import { GalleryCollectionProps } from "../components/gallery/galleryTypes";
+import NavigationArrows from "../components/shared/NavigationArrows";
 
 const GalleryPage = () => {
   const [typingDone, setTypingDone] = useState(false);
@@ -44,7 +45,7 @@ const GalleryPage = () => {
           </section>
         ))}
 
-      <section className="gallery__pagination">
+      {/* <section className="gallery__pagination">
         <div>
           {currentPage > 1 && (
             <Link to={`/gallery/${currentPage - 1}`} className="gallery-arrow">
@@ -59,7 +60,18 @@ const GalleryPage = () => {
             </Link>
           )}
         </div>
-      </section>
+      </section> */}
+
+      <NavigationArrows
+        prev={
+          currentPage > 1 ? { to: `/gallery/${currentPage - 1}` } : undefined
+        }
+        next={
+          startIndex + collectionsPerPage < GalleryData.length
+            ? { to: `/gallery/${currentPage + 1}` }
+            : undefined
+        }
+      />
     </div>
   );
 };
