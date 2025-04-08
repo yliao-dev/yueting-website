@@ -72,10 +72,6 @@
   justify-content: flex-end;
 }
 
-/* .project__navigations .navigation-arrow {
-  justify-content: center;
-} */
-
 .project-github-icon:hover {
   color: var(--hover);
 }
