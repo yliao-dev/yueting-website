@@ -26,12 +26,12 @@ const NavigationArrows = ({
       <div>
         {prev?.to ? (
           <Link className="navigation-arrow" to={prev.to}>
-            <span className="arrow-symbol">&#10094;</span>
+            <span className="arrow-symbol">&#10094;&nbsp;</span>
             <span className="arrow-label">{prev.label}</span>
           </Link>
         ) : prev?.onClick ? (
           <button className="navigation-arrow" onClick={prev.onClick}>
-            <span className="arrow-symbol">&#10094;</span>
+            <span className="arrow-symbol">&#10094;&nbsp;</span>
             <span className="arrow-label">{prev.label}</span>
           </button>
         ) : null}
@@ -43,12 +43,12 @@ const NavigationArrows = ({
         {next?.to ? (
           <Link className="navigation-arrow" to={next.to}>
             <span className="arrow-label">{next.label}</span>
-            <span className="arrow-symbol">&#10095;</span>
+            <span className="arrow-symbol">&nbsp;&#10095;</span>
           </Link>
         ) : next?.onClick ? (
           <button className="navigation-arrow" onClick={next.onClick}>
             <span className="arrow-label">{next.label}</span>
-            <span className="arrow-symbol">&#10095;</span>
+            <span className="arrow-symbol">&nbsp;&#10095;</span>
           </button>
         ) : null}
       </div>

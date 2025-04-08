@@ -30,6 +30,7 @@ const ProjectPage = () => {
 
       <section className="project__slideshow">
         <NavigationArrows
+          className="project__navigations"
           prev={
             index > 0
               ? {
@@ -48,7 +49,10 @@ const ProjectPage = () => {
           }
           center={
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <GitHub className="project-github-icon" />
+              <GitHub
+                className="project-github-icon"
+                sx={{ fontSize: "3rem" }}
+              />
             </a>
           }
         />
