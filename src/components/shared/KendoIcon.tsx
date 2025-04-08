@@ -1,7 +1,7 @@
 import { SvgIcon, SvgIconProps } from "@mui/material";
 
-const SwordIcon = (props: SvgIconProps) => (
-  <SvgIcon viewBox="0 0 72 72" className="kendo-icon" {...props}>
+const KendoIcon = (props: SvgIconProps) => (
+  <SvgIcon viewBox="0 0 72 64" className="kendo-icon" {...props}>
     <path
       d="M0 0 C2.21894132 0.49309807 4.08289367 1.04144683 6.125 2.0625 C11.67035664 3.87076847 17.09432101 3.83156901 22.4375 1.5 C23.283125 1.005 24.12875 0.51 25 0 C25.99 0 26.98 0 28 0 C28.29003091 5.60726423 28.13444318 9.1241995 25 14 C21.31296857 16.45802095 18.39825909 16.40285195 14.125 16.4375 C13.06345703 16.48680664 13.06345703 16.48680664 11.98046875 16.53710938 C7.98495927 16.57803173 6.2143821 16.17031151 3.0546875 13.66015625 C-0.47390275 9.0917723 -0.09052013 5.52172819 0 0 Z "
       fill="currentColor"
@@ -60,4 +60,4 @@ const SwordIcon = (props: SvgIconProps) => (
   </SvgIcon>
 );
 
-export default SwordIcon;
+export default KendoIcon;

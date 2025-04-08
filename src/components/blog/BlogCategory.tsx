@@ -1,12 +1,12 @@
 import { Camera, FitnessCenter } from "@mui/icons-material";
 import { BlogCategoryProps } from "./blogTypes";
-import SwordIcon from "../shared/SwordIcon";
+import KendoIcon from "../shared/KendoIcon";
 
 const BlogCategory = ({ onSelect }: BlogCategoryProps) => {
   const categories = [
     {
       id: "kendo",
-      icon: <SwordIcon />,
+      icon: <KendoIcon />,
       value: "kendo",
     },
     { id: "photography", icon: <Camera />, value: "photography" },
