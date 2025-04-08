@@ -45,6 +45,22 @@
   justify-content: center;
 }
 
+/* New bottom nav container */
+.gallery__pagination {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gallery-arrow {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+}
+
 /* Tablet and above */
 @media (min-width: 768px) {
   .masonry-grid {
