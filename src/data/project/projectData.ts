@@ -4,7 +4,7 @@ export const ProjectData = [
     name: "Personal Website",
     focus: "Modern portfolio built with React and Vite",
     description:
-      "A minimalist, performance-optimized portfolio showcasing development, photography, and writing. Built with React, TypeScript, and Vite, it features responsive layouts, smooth image galleries, blog support, and custom navigation. Images are optimized with WebP and processed with metadata. Deployed via Vercel with custom domain integration and continuous deployment.",
+      "My Personal Website is a fully responsive portfolio built using React, TypeScript, and Vite, and deployed through Vercel with a custom domain. The site combines elegant design with practical structure, showcasing my projects, photography collections, and blog posts. It includes dynamic navigation, animated elements, and a performance-optimized image gallery using WebP with custom metadata-driven layout logic. Content is managed with modular JSON and Markdown setups, and Lighthouse scores are consistently optimized. The design emphasizes clarity, simplicity, and smooth interaction across devices.",
     tags: [
       "React",
       "TypeScript",
@@ -34,7 +34,7 @@ export const ProjectData = [
     name: "Nutri Flow",
     focus: "Nutrition tracking with Python GUI",
     description:
-      "Nutri Flow is a simple, flexible desktop app built with Python and Tkinter for tracking meals, calculating nutrition, and managing dietary data. Designed for general users and fitness enthusiasts, it supports form-based input, CSV data handling, JSON-based ingredient configuration, and easy data export—making it ideal for weekly or monthly reporting without the clutter of over-engineered features.",
+      "Nutri Flow is a lightweight and intuitive desktop nutrition tracker built with Python and Tkinter. Designed for general users and fitness enthusiasts, it allows users to log meals, calculate nutritional intake, and export weekly or monthly reports with ease. The app uses CSV files for data storage and JSON for ingredient management and user configurations—ensuring full flexibility without relying on external databases. The form-based UI keeps the workflow simple and clean, avoiding feature bloat. It’s an ideal companion for users who want a clear, distraction-free way to monitor their diet and habits over time.",
     tags: ["Python", "Tkinter", "CSV", "JSON", "Nutrition", "Fitness"],
     coverImage: "/images/portfolio/project2/thumbs/001.webp",
     images: [
@@ -48,16 +48,29 @@ export const ProjectData = [
   },
   {
     id: 2,
-    name: "Spotify Clone",
-    focus: "Frontend focused product",
-    description:
-      "A personal portfolio site with interactive animations and deep scroll logic. Built using React, TypeScript, and Tailwind.",
-    tags: ["React", "TypeScript", "Design", "CSS Animations", "Git", "Postman"],
-    coverImage: "/images/portfolio/project2/thumbs/001.webp",
+    name: "TBA",
+    focus: "TBA Foucs",
+    description: "TBA",
+    tags: ["React", "Go", "Postman", "Full Stack", "Query", "DynamoDB"],
+    coverImage: "/images/portfolio/project2/thumbs/006.webp",
     images: [
-      "/images/portfolio/project2/thumbs/002.webp",
-      "/images/portfolio/project2/thumbs/003.webp",
-      "/images/portfolio/project2/thumbs/004.webp",
+      "/images/portfolio/project2/thumbs/006.webp",
+      "/images/portfolio/project2/thumbs/006.webp",
+      "/images/portfolio/project2/thumbs/006.webp",
+    ],
+    link: "https://github.com/yliao-dev",
+  },
+  {
+    id: 3,
+    name: "TBA",
+    focus: "TBA Foucs",
+    description: "TBA",
+    tags: ["React", "Go", "Postman", "Full Stack", "Query", "DynamoDB"],
+    coverImage: "/images/portfolio/project2/thumbs/006.webp",
+    images: [
+      "/images/portfolio/project2/thumbs/006.webp",
+      "/images/portfolio/project2/thumbs/006.webp",
+      "/images/portfolio/project2/thumbs/006.webp",
     ],
     link: "https://github.com/yliao-dev",
   },
