@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { ProjectData } from "../data/project/projectData";
 import PageNotFound from "./PageNotFound";
 import ProjectSlideshow from "../components/portfolio/ProjectSlideShow";
