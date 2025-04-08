@@ -46,7 +46,7 @@ const PhotoViewer = ({
                   onPrev?.();
                 }}
               >
-                ←
+                &#10094;
               </button>
             )}
             {hasNext && (
@@ -57,7 +57,7 @@ const PhotoViewer = ({
                   onNext?.();
                 }}
               >
-                →
+                &#10095;
               </button>
             )}
           </div>
