@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { GalleryData } from "../data/gallery/galleryData";
 import PhotoMasonry from "../components/gallery/PhotoMasonry";
 import LineBreak from "../components/shared/LineBreak";
@@ -45,16 +45,20 @@ const GalleryPage = () => {
           </section>
         ))}
       <section className="gallery__pagination">
-        <NavigationArrows
-          prev={
-            currentPage > 1 ? { to: `/gallery/${currentPage - 1}` } : undefined
-          }
-          next={
-            startIndex + collectionsPerPage < GalleryData.length
-              ? { to: `/gallery/${currentPage + 1}` }
-              : undefined
-          }
-        />
+        {typingDone && (
+          <NavigationArrows
+            prev={
+              currentPage > 1
+                ? { to: `/gallery/${currentPage - 1}` }
+                : undefined
+            }
+            next={
+              startIndex + collectionsPerPage < GalleryData.length
+                ? { to: `/gallery/${currentPage + 1}` }
+                : undefined
+            }
+          />
+        )}
       </section>
     </div>
   );
