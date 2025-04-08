@@ -8,7 +8,7 @@ interface PhotoMasonryProps {
 }
 
 const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
   const scrollRefs = useScrollEffect(
     (index) => {
@@ -19,12 +19,26 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
       rootMargin: "-20% 0px -20% 0px",
     }
   );
-  const openViewer = (imageUrl: string) => {
-    setSelectedImage(imageUrl);
+  const openViewer = (index: number) => {
+    setSelectedIndex(index);
   };
+
   const closeViewer = () => {
-    setSelectedImage(null);
+    setSelectedIndex(null);
   };
+
+  const showPrev = () => {
+    if (selectedIndex !== null && selectedIndex > 0) {
+      setSelectedIndex(selectedIndex - 1);
+    }
+  };
+
+  const showNext = () => {
+    if (selectedIndex !== null && selectedIndex < photoData.length - 1) {
+      setSelectedIndex(selectedIndex + 1);
+    }
+  };
+
   return (
     <>
       <div className="masonry-grid">
@@ -39,7 +53,7 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
               ref={(el) => {
                 if (el) scrollRefs.current[index] = el;
               }}
-              onClick={() => openViewer(photo.image)}
+              onClick={() => openViewer(index)}
             >
               <img
                 loading="lazy"
@@ -51,8 +65,15 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
         })}
       </div>
 
-      {selectedImage && (
-        <PhotoViewer imageUrl={selectedImage} onClose={closeViewer} />
+      {selectedIndex !== null && (
+        <PhotoViewer
+          imageUrl={photoData[selectedIndex].image}
+          onClose={closeViewer}
+          onPrev={showPrev}
+          onNext={showNext}
+          hasPrev={selectedIndex > 0}
+          hasNext={selectedIndex < photoData.length - 1}
+        />
       )}
     </>
   );
