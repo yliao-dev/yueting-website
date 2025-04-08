@@ -22,11 +22,6 @@ export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
   {
     title: "",
     slug: "collection3",
-    meta: meta2,
-  },
-  {
-    title: "",
-    slug: "collection4",
     meta: meta3,
   },
   {
