@@ -6,7 +6,6 @@ const Footer = () => {
   };
 
   const today = new Date();
-
   const formattedDate = today.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -21,11 +20,13 @@ const Footer = () => {
 
       <div className="footer__info">
         <h2>
-          <span className="footer__copyright">
+          <span
+            className="footer__copyright"
+            title={`Last updated: ${formattedDate}`}
+          >
             &copy; {today.getFullYear()} Yueting Liao |{" "}
             <Link to="/contact">Contact</Link>
           </span>
-          <span className="footer__updated">Last updated: {formattedDate}</span>
         </h2>
       </div>
     </footer>

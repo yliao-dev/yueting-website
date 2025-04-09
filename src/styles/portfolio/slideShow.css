@@ -10,10 +10,12 @@
   object-fit: contain;
   aspect-ratio: 4 / 3;
   background-color: white;
-
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
+.slideshow img:hover {
+  cursor: pointer;
+}
 .slideshow__navigations {
   display: flex;
   justify-content: space-between;
