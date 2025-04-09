@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import LineBreak from "../shared/LineBreak";
 import { PostItemProp } from "./blogTypes";
 import BlogAuthor from "./BlogAuthor";
+import { useState } from "react";
+import { useScrollEffect } from "../../hooks/useScrollEffect";
 
 function BlogPost({
   id,
@@ -12,9 +14,24 @@ function BlogPost({
   coverImage,
 }: PostItemProp) {
   const navigate = useNavigate();
+
+  const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
+  const scrollRefs = useScrollEffect(setVisibleIndex, {
+    threshold: 0.1,
+    rootMargin: "-20% 0px -20% 0px",
+  });
+
   return (
     <>
-      <div className="blog__post">
+      <div
+        className={`blog__post ${
+          visibleIndex === 0 ? "animate-fade-slide-up" : ""
+        }`}
+        data-index={0}
+        ref={(el) => {
+          if (el) scrollRefs.current[0] = el;
+        }}
+      >
         <img className="blog__post__cover" src={coverImage} />
         <div className="blog__post__text">
           <h2 onClick={() => navigate(`/blog/post/${id}`)}>{title}</h2>
