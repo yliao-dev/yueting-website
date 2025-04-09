@@ -1,6 +1,6 @@
 export const ProjectData = [
   {
-    id: 0,
+    id: 1,
     name: "Personal Website",
     focus: "Modern site powered by React and Vite",
     description: `This project is a fully responsive personal website that built with React, TypeScript, Vite, and deployed through Vercel with my custom domain. It combines clean design with thoughtful structure, showcasing my projects, photography collections, and blog posts.
@@ -42,7 +42,7 @@ export const ProjectData = [
     link: "https://github.com/yliao-dev/yueting-website",
   },
   {
-    id: 1,
+    id: 2,
     name: "Nutri Flow",
     focus: "Nutrition tracking with Python GUI",
     description: `Nutri Flow is a lightweight and intuitive desktop nutrition tracker built with Python and Tkinter. Designed for both general users and fitness enthusiasts, it provides a clean, form-based UI to log meals, calculate intake, and monitor eating habits over time.
@@ -67,31 +67,23 @@ export const ProjectData = [
     link: "https://github.com/yliao-dev/nutri-flow",
   },
   {
-    id: 2,
+    id: 3,
     name: "TBA",
-    focus: "TBA Foucs",
-    description: "TBA",
-    tags: ["React", "Go", "Postman", "Full Stack", "Query", "DynamoDB"],
+    focus: "TBA",
+    description: "In Progress",
+    tags: [],
     coverImage: "/images/portfolio/project2/thumbs/006.webp",
-    images: [
-      "/images/portfolio/project2/thumbs/006.webp",
-      "/images/portfolio/project2/thumbs/006.webp",
-      "/images/portfolio/project2/thumbs/006.webp",
-    ],
+    images: [],
     link: "https://github.com/yliao-dev",
   },
   {
-    id: 3,
+    id: 4,
     name: "TBA",
-    focus: "TBA Foucs",
-    description: "TBA",
-    tags: ["React", "Go", "Postman", "Full Stack", "Query", "DynamoDB"],
+    focus: "TBA",
+    description: "In Progress",
+    tags: [],
     coverImage: "/images/portfolio/project2/thumbs/006.webp",
-    images: [
-      "/images/portfolio/project2/thumbs/006.webp",
-      "/images/portfolio/project2/thumbs/006.webp",
-      "/images/portfolio/project2/thumbs/006.webp",
-    ],
+    images: [],
     link: "https://github.com/yliao-dev",
   },
 ];
