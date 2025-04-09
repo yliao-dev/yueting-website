@@ -3,7 +3,6 @@ import LineBreak from "../shared/LineBreak";
 import { PostItemProp } from "./blogTypes";
 import BlogAuthor from "./BlogAuthor";
 import { useState } from "react";
-import { useScrollEffect } from "../../hooks/useScrollEffect";
 
 function BlogPost({
   id,
