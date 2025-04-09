@@ -15,22 +15,12 @@ function BlogPost({
 }: PostItemProp) {
   const navigate = useNavigate();
 
-  const [visibleIndex, setVisibleIndex] = useState<number | null>(null);
-  const scrollRefs = useScrollEffect(setVisibleIndex, {
-    threshold: 0.1,
-    rootMargin: "-20% 0px -20% 0px",
-  });
-
+  const [blogLoaded, setBlogLoaded] = useState(false);
   return (
     <>
       <div
-        className={`blog__post ${
-          visibleIndex === 0 ? "animate-fade-slide-up" : ""
-        }`}
-        data-index={0}
-        ref={(el) => {
-          if (el) scrollRefs.current[0] = el;
-        }}
+        className={`blog__post ${blogLoaded ? "loaded" : ""}`}
+        onLoad={() => setBlogLoaded(true)}
       >
         <img className="blog__post__cover" src={coverImage} />
         <div className="blog__post__text">
