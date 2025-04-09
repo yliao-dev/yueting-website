@@ -2,18 +2,26 @@ export const ProjectData = [
   {
     id: 0,
     name: "Personal Website",
-    focus: "Modern portfolio built with React and Vite",
-    description:
-      "My Personal Website is a fully responsive portfolio built using React, TypeScript, and Vite, and deployed through Vercel with a custom domain. The site combines elegant design with practical structure, showcasing my projects, photography collections, and blog posts. It includes dynamic navigation, animated elements, and a performance-optimized image gallery using WebP with custom metadata-driven layout logic. Content is managed with modular JSON and Markdown setups, and Lighthouse scores are consistently optimized. The design emphasizes clarity, simplicity, and smooth interaction across devices.",
+    focus: "Modern site powered by React and Vite",
+    description: `This project is a fully responsive personal website that built with React, TypeScript, Vite, and deployed through Vercel with my custom domain. It combines clean design with thoughtful structure, showcasing my projects, photography collections, and blog posts.
+                  
+    Key features:
+    • Smooth animations and intuitive navigation
+    • Performance-optimized gallery with WebP images and metadata-driven layout logic
+    • Modular content management using JSON and Markdown
+    • Consistently optimized Lighthouse scores
+
+    The site was developed over 3 full weeks and represents my first personal website project—a milestone that reflects both my coding skills and UI/UX. What started on scratch paper became a personal canvas — a clean, responsive space that reflects how I think and build.`,
     tags: [
       "React",
       "TypeScript",
       "Vite",
+      "UI/UX",
+      "Frontend",
       "CSS",
       "Vercel",
       "Responsive Design",
-      "Gallery",
-      "Blog",
+      "CI/CD",
     ],
     coverImage: "/images/portfolio/project1/thumbs/001.webp",
     images: [
