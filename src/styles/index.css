@@ -171,6 +171,7 @@ ul li {
   color: var(--black);
   margin-left: 0.2rem;
 }
+
 @keyframes blink {
   0%,
   25%,
@@ -212,16 +213,5 @@ ul li {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes fade-scale {
-  from {
-    opacity: 0;
-    transform: scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
   }
 }
