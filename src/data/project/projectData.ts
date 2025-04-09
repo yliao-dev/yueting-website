@@ -45,9 +45,17 @@ export const ProjectData = [
     id: 1,
     name: "Nutri Flow",
     focus: "Nutrition tracking with Python GUI",
-    description:
-      "Nutri Flow is a lightweight and intuitive desktop nutrition tracker built with Python and Tkinter. Designed for general users and fitness enthusiasts, it allows users to log meals, calculate nutritional intake, and export weekly or monthly reports with ease. The app uses CSV files for data storage and JSON for ingredient management and user configurations—ensuring full flexibility without relying on external databases. The form-based UI keeps the workflow simple and clean, avoiding feature bloat. It’s an ideal companion for users who want a clear, distraction-free way to monitor their diet and habits over time.",
-    tags: ["Python", "Tkinter", "CSV", "JSON", "Nutrition", "Fitness"],
+    description: `Nutri Flow is a lightweight and intuitive desktop nutrition tracker built with Python and Tkinter. Designed for both general users and fitness enthusiasts, it provides a clean, form-based UI to log meals, calculate intake, and monitor eating habits over time.
+
+    Key features:
+    • Clean and minimal form-based interface with zero learning curve
+    • CSV-based data storage for full control and transparency
+    • JSON-driven ingredient library and user configuration
+    • Weekly and monthly report export without external databases
+    • Fully offline and distraction-free experience
+
+    This project was developed from the ground up as a personal tool to better understand nutrition through simplicity. It reflects my approach to designing tools that are practical, maintainable, and user-first—free from unnecessary complexity but flexible enough for real-world tracking.`,
+    tags: ["Python", "Tkinter", "Configurable", "JSON", "UI/UX", "Desktop App"],
     coverImage: "/images/portfolio/project2/thumbs/001.webp",
     images: [
       "/images/portfolio/project2/thumbs/002.webp",
