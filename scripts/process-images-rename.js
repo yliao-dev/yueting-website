@@ -1,13 +1,10 @@
 import fs from "fs";
 import path from "path";
 
-// === Load Config ===
 const config = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "../images-config.json"), "utf-8")
+  fs.readFileSync("scripts/images-config.json", "utf-8")
 );
-
 const validExtensions = [".jpg", ".jpeg", ".png", ".webp"];
-
 const renameImagesInFolder = (folderPath) => {
   const files = fs
     .readdirSync(folderPath)
