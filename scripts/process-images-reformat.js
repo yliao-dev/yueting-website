@@ -2,8 +2,9 @@ import sharp from "sharp";
 import fs from "fs";
 import path from "path";
 
-const config = JSON.parse(fs.readFileSync("images-config.json", "utf-8"));
-
+const config = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../images-config.json"), "utf-8")
+);
 const ensureDir = (dir) => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 };
