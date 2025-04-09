@@ -22,6 +22,10 @@
   cursor: pointer;
 }
 
+.project__text p {
+  white-space: pre-line;
+}
+
 .project__text svg {
   width: 3em;
   height: 3rem;
