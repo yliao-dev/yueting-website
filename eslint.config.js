@@ -1,28 +1,32 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import tseslint from 'typescript-eslint'
+import js from "@eslint/js";
+import parserTs from "@typescript-eslint/parser";
+import pluginTs from "@typescript-eslint/eslint-plugin";
+import pluginReactHooks from "eslint-plugin-react-hooks";
+import pluginReactRefresh from "eslint-plugin-react-refresh";
 
-export default tseslint.config(
-  { ignores: ['dist'] },
+export default [
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
-    files: ['**/*.{ts,tsx}'],
+    ignores: ["dist", ".vite", "node_modules"],
+  },
+  {
+    files: ["**/*.{ts,tsx}"],
     languageOptions: {
+      parser: parserTs,
       ecmaVersion: 2020,
-      globals: globals.browser,
+      sourceType: "module",
     },
     plugins: {
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
+      "@typescript-eslint": pluginTs,
+      "react-hooks": pluginReactHooks,
+      "react-refresh": pluginReactRefresh,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
+      ...pluginTs.configs.recommended.rules,
+      ...pluginReactHooks.configs.recommended.rules,
+      "react-refresh/only-export-components": [
+        "warn",
         { allowConstantExport: true },
       ],
     },
   },
-)
+];
