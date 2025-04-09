@@ -8,9 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "images-rename": "node process-images-rename.js",
-    "images-reformat": "node process-images-reformat.js",
-    "images-update": "node process-images-update.js"
+    "images-rename": "node scripts/process-images-rename.js",
+    "images-reformat": "node scripts/process-images-reformat.js",
+    "images-update": "node scripts/process-images-update.js"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
