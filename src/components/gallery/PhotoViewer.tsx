@@ -38,6 +38,11 @@ const PhotoViewer = ({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [hasNext, hasPrev, onNext, onPrev, onClose]);
 
+  useEffect(() => {
+    document.body.classList.add("no-scroll");
+    return () => document.body.classList.remove("no-scroll");
+  }, []);
+
   return (
     <div
       className="modal-overlay"
