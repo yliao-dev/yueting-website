@@ -34,3 +34,10 @@ https://vercel.com/yliao-devs-projects/yueting-website
 https://account.squarespace.com/domains/managed/yuetingliao.com/dns/dns-settings
 
 https://www.whatsmydns.net/#CNAME/www.yuetingliao.com
+
+version control, git tag
+git tag v1.0.0 -m "First stable version"
+
+    •	v1.0.0 – first public release
+    •	v2.0.0 – major redesign
+    •	2025-04-live – April update goes live

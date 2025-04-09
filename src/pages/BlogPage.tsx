@@ -30,7 +30,7 @@ const BlogPage = () => {
       <LineBreak />
 
       {typingDone && (
-        <section className="blog__contentBlock">
+        <section className="blog__content">
           {filteredEntries.map((blog) => (
             <BlogPost
               key={blog.id}
