@@ -51,6 +51,7 @@ const PhotoViewer = ({
           alt="Full view"
           className="modal-image"
           onLoad={() => setImageLoaded(true)}
+          loading="eager"
         />
 
         {imageLoaded && (
