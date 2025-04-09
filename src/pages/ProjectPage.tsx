@@ -48,11 +48,17 @@ const ProjectPage = () => {
               : undefined
           }
           center={
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="github-icon-wrapper"
+            >
               <GitHub
                 className="project-github-icon"
                 sx={{ fontSize: "3rem" }}
               />
+              <span className="github-icon-label">Project Repo</span>
             </a>
           }
         />
