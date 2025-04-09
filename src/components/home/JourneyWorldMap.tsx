@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { csv } from "d3-fetch";
+import { FeatureCollection, Geometry } from "geojson";
 import {
   ComposableMap,
   Geographies,
@@ -25,7 +26,8 @@ type Props = {
 
 const MapChart = ({ setTooltipContent }: Props) => {
   const [countryData, setCountryData] = useState<CountryData[]>([]);
-  const [geoFeatures, setGeoFeatures] = useState<any | null>(null);
+  const [geoFeatures, setGeoFeatures] =
+    useState<FeatureCollection<Geometry> | null>(null);
   const [resetKey, setResetKey] = useState(0);
 
   useEffect(() => {

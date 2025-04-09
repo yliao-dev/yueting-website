@@ -1,6 +1,6 @@
 type MetaEntry = {
-  width: any;
-  height: any;
+  width: number;
+  height: number;
   filename: string;
   title: string;
   location: string;

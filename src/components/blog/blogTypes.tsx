@@ -17,3 +17,10 @@ export interface BlogAuthorProps {
   author: string;
   date: string;
 }
+
+export interface PostMeta {
+  title: string;
+  author: string;
+  date: string;
+  tags?: string[];
+}
