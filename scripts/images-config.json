@@ -1,8 +1,8 @@
 {
   "gallery": [
     {
-      "input_source": "public/images/gallery",
-      "output_meta": "src/data/gallery",
+      "input_source": "../public/images/gallery",
+      "output_meta": "../src/data/gallery",
       "preview_width": 1600,
       "thumb_width": 800,
       "quality": 80,
@@ -11,7 +11,7 @@
   ],
   "portfolio": [
     {
-      "input_source": "public/images/portfolio",
+      "input_source": "../public/images/portfolio",
       "output_meta": "",
       "preview_width": 1200,
       "thumb_width": 800,
@@ -21,7 +21,7 @@
   ],
   "blog": [
     {
-      "input_source": "public/images/blog",
+      "input_source": "../public/images/blog",
       "output_meta": "",
       "preview_width": 1600,
       "thumb_width": 800,
