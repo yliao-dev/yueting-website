@@ -8,8 +8,12 @@ if (!mode) {
 }
 
 try {
-  execSync(`node ./process-images-rename.js ${mode}`, { stdio: "inherit" });
-  execSync(`node ./process-images-reformat.js ${mode}`, { stdio: "inherit" });
+  execSync(`node ./scripts/process-images-rename.js ${mode}`, {
+    stdio: "inherit",
+  });
+  execSync(`node ./scripts/process-images-reformat.js ${mode}`, {
+    stdio: "inherit",
+  });
   console.log(`✅ All done for: ${mode}`);
 } catch (err) {
   console.error("❌ Failed to run image update scripts:", err);
