@@ -9,6 +9,8 @@ const PhotoViewer = ({
   onNext,
   hasPrev,
   hasNext,
+  prevImage,
+  nextImage,
 }: PhotoViewerProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const startX = useRef<number | null>(null);
@@ -37,6 +39,17 @@ const PhotoViewer = ({
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [hasNext, hasPrev, onNext, onPrev, onClose]);
+
+  useEffect(() => {
+    if (prevImage) {
+      const img = new Image();
+      img.src = prevImage;
+    }
+    if (nextImage) {
+      const img = new Image();
+      img.src = nextImage;
+    }
+  }, [prevImage, nextImage]);
 
   useEffect(() => {
     document.body.classList.add("no-scroll");

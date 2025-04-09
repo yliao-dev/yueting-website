@@ -69,6 +69,14 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
           onNext={showNext}
           hasPrev={selectedIndex > 0}
           hasNext={selectedIndex < photoData.length - 1}
+          prevImage={
+            selectedIndex > 0 ? photoData[selectedIndex - 1].image : undefined
+          }
+          nextImage={
+            selectedIndex < photoData.length - 1
+              ? photoData[selectedIndex + 1].image
+              : undefined
+          }
         />
       )}
     </>

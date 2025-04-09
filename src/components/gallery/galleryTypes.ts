@@ -23,6 +23,8 @@ export type PhotoViewerProps = {
   onNext?: () => void;
   hasPrev?: boolean;
   hasNext?: boolean;
+  prevImage?: string;
+  nextImage?: string;
 };
 
 export interface PhotoMasonryProps {
