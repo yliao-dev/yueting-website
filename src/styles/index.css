@@ -165,10 +165,6 @@ ul li {
   animation: fade-slide-up 1s ease-out forwards;
 }
 
-.animate-fade-zoom-in {
-  animation: fade-zoom-in 1s ease-out forwards;
-}
-
 .typing-cursor::after {
   content: "|";
   animation: blink 1s ease-in-out 1 forwards;
@@ -219,10 +215,10 @@ ul li {
   }
 }
 
-@keyframes fade-zoom-in {
+@keyframes fade-scale {
   from {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.98);
   }
   to {
     opacity: 1;
