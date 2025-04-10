@@ -24,13 +24,13 @@ A modern, responsive, and animated portfolio built with **React**, **TypeScript*
 
 <p align="center">
   <img src="./public/images/portfolio/project1/thumbs/001.webp" width="240" alt="Landing" />
-  <img src="./public/images/portfolio/project1/thumbs/007.webp" width="240" alt="Portfolio" />
-  <img src="./public/images/portfolio/project1/thumbs/014.webp" width="240" alt="Projects" />
+  <img src="./public/images/portfolio/project1/thumbs/002.webp" width="240" alt="Portfolio" />
+  <img src="./public/images/portfolio/project1/thumbs/007.webp" width="240" alt="Projects" />
   <img src="./public/images/portfolio/project1/thumbs/004.webp" width="240" alt="Gallery" />
-  <img src="./public/images/portfolio/project1/thumbs/012.webp" width="240" alt="Blog" />
+  <img src="./public/images/portfolio/project1/thumbs/005.webp" width="240" alt="Gallery" />
   <img src="./public/images/portfolio/project1/thumbs/008.webp" width="240" alt="404 Page" />
-</p>
----
+
+## </p>
 
 ## 🚀 Tech Stack
 
