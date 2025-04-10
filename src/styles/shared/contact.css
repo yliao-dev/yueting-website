@@ -14,6 +14,39 @@
 .contact__intro__text p {
   max-width: 90%;
 }
+
+.email-copy-row {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.clipboard-icon {
+  font-size: 1.2rem;
+  transition: opacity 0.2s ease;
+}
+
+.clipboard-icon:hover,
+.email-text:hover {
+  opacity: 0.5;
+}
+
+.copied-msg {
+  font-size: 0.9rem;
+  color: var(--light-oak);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.email-text {
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-light);
+  letter-spacing: 0.1rem;
+}
+
 .social-media-icons {
   display: flex;
   flex-direction: row;

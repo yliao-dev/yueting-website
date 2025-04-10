@@ -5,6 +5,15 @@ import bisonImg from "../assets/icons/bison.svg";
 
 const ContactPage = () => {
   const [showInfo, setShowInfo] = useState(false);
+
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("ytliaodev@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+  };
+
   return (
     <>
       <div className="contact">
@@ -16,6 +25,16 @@ const ContactPage = () => {
               connect—whether it’s through a shared interest, a casual chat, or
               a meaningful collaboration.
             </p>
+
+            <div
+              className="email-copy-row"
+              onClick={handleCopy}
+              title="Click to copy email"
+            >
+              <span className="clipboard-icon">📋</span>
+              <code className="email-text">ytliaodev@gmail.com</code>
+              {copied && <span className="copied-msg">Copied!</span>}
+            </div>
           </div>
           <SocialMediaIcons />
         </section>
