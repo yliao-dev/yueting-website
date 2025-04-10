@@ -36,8 +36,6 @@ export const ProjectData = [
       "/images/portfolio/project1/thumbs/010.webp",
       "/images/portfolio/project1/thumbs/011.webp",
       "/images/portfolio/project1/thumbs/012.webp",
-      "/images/portfolio/project1/thumbs/013.webp",
-      "/images/portfolio/project1/thumbs/014.webp",
     ],
     link: "https://github.com/yliao-dev/yueting-website",
   },
