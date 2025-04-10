@@ -11,7 +11,11 @@ const renameImagesInFolder = (folderPath) => {
     .filter((file) =>
       validExtensions.includes(path.extname(file).toLowerCase())
     )
-    .sort();
+    .sort((a, b) => {
+      const aNum = parseInt(a.match(/\d+/)?.[0] || "0", 10);
+      const bNum = parseInt(b.match(/\d+/)?.[0] || "0", 10);
+      return aNum - bNum;
+    });
 
   files.forEach((file, index) => {
     const ext = path.extname(file);
