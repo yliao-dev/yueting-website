@@ -20,12 +20,6 @@ const ContactPage = lazy(() => import("./pages/ContactPage"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 const PostPage = lazy(() => import("./pages/PostPage"));
 
-// Test loading
-// const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
-// const ProjectPage = lazy(() =>
-//   delay(2000).then(() => import("./pages/ProjectPage"))
-// );
-
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -52,9 +46,6 @@ const App = () => {
       <Analytics />
       <SpeedInsights />
     </>
-    // <Suspense fallback={<h2 className="page-loading">Loading...</h2>}>
-
-    // </Suspense>
   );
 };
 
