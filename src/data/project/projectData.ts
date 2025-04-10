@@ -70,8 +70,8 @@ export const ProjectData = [
     focus: "TBA",
     description: "In Progress",
     tags: [],
-    coverImage: "/images/portfolio/project2/thumbs/006.webp",
-    images: [],
+    coverImage: "/images/placeholder.webp",
+    images: ["/images/placeholder.webp"],
     link: "https://github.com/yliao-dev",
   },
   {
@@ -80,8 +80,8 @@ export const ProjectData = [
     focus: "TBA",
     description: "In Progress",
     tags: [],
-    coverImage: "/images/portfolio/project2/thumbs/006.webp",
-    images: [],
+    coverImage: "/images/placeholder.webp",
+    images: ["/images/placeholder.webp"],
     link: "https://github.com/yliao-dev",
   },
 ];
