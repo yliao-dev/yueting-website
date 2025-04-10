@@ -5,9 +5,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { lazy } from "react";
-
 import MainLayout from "./components/layouts/MainLayout";
-
+import { Analytics } from "@vercel/analytics/react";
 // Lazy-loaded pages
 const HomePage = lazy(() => import("./pages/HomePage"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
@@ -45,8 +44,12 @@ const App = () => {
   );
 
   return (
+    <>
+      <RouterProvider router={router} />
+      <Analytics />
+    </>
     // <Suspense fallback={<h2 className="page-loading">Loading...</h2>}>
-    <RouterProvider router={router} />
+
     // </Suspense>
   );
 };
