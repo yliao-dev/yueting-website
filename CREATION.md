@@ -11,9 +11,8 @@
     •	Expect file size ≈ 200–500 KB
 
 mage Type Target Load Time File Size Target
-Thumbnail / Grid < 100ms â‰¤ 100â€“150 KB
-Gallery Preview < 300ms â‰¤ 300â€“500 KB
-Full View (on click) < 1s (lazy) â‰¤ 800 KBâ€“1 MB (max
+Thumbnail / Grid < 100ms 100-150 KB
+Gallery Preview < 300ms 300-500 KB
 
 ---
 
@@ -27,17 +26,10 @@ image:
    • JPEG or WebP if supported
    • Expect file size ≈ 200–500 KB
 2. Move to public/image/folder
-3. Run Sharp script command to convert them to WebP
+3. Run .js script command to convert them to WebP
 
 https://vercel.com/yliao-devs-projects/yueting-website
 
 https://account.squarespace.com/domains/managed/yuetingliao.com/dns/dns-settings
 
 https://www.whatsmydns.net/#CNAME/www.yuetingliao.com
-
-version control, git tag
-git tag v1.0.0 -m "First stable version"
-
-    •	v1.0.0 – first public release
-    •	v2.0.0 – major redesign
-    •	2025-04-live – April update goes live
