@@ -7,7 +7,7 @@ import { BlogData } from "../data/blog/blogData";
 import PageNotFound from "./PageNotFound";
 import LineBreak from "../components/shared/LineBreak";
 import NavigationArrows from "../components/shared/NavigationArrows";
-import { PostMeta } from "../components/blog/blogTypes";
+import { PostMeta } from "../../types/blogTypes";
 
 const PostPage = () => {
   const { id } = useParams();

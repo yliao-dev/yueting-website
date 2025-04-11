@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PhotoViewer from "./PhotoViewer";
 import { useScrollEffect } from "../../hooks/useScrollEffect";
-import { PhotoMasonryProps } from "./galleryTypes";
+import { PhotoMasonryProps } from "../../../types/galleryTypes";
 
 const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);

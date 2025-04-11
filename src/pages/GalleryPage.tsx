@@ -4,7 +4,7 @@ import PhotoMasonry from "../components/gallery/PhotoMasonry";
 import LineBreak from "../components/shared/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import { useState } from "react";
-import { GalleryCollectionProps } from "../components/gallery/galleryTypes";
+import { GalleryCollectionProps } from "../../types/galleryTypes";
 import NavigationArrows from "../components/shared/NavigationArrows";
 
 const GalleryPage = () => {

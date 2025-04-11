@@ -1,5 +1,5 @@
 import { Camera, FitnessCenter } from "@mui/icons-material";
-import { BlogCategoryProps } from "./blogTypes";
+import { BlogCategoryProps } from "../../../types/blogTypes";
 import KendoIcon from "../shared/KendoIcon";
 
 const BlogCategory = ({ onSelect }: BlogCategoryProps) => {

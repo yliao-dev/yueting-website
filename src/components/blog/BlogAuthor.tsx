@@ -1,4 +1,4 @@
-import { BlogAuthorProps } from "./blogTypes";
+import { BlogAuthorProps } from "../../../types/blogTypes";
 
 const BlogAuthor = ({ author, date }: BlogAuthorProps) => {
   return (

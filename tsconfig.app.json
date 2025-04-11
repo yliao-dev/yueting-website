@@ -24,5 +24,11 @@
     "noUncheckedSideEffectImports": true,
     "types": ["vite/client"]
   },
-  "include": ["src", "src/custom.d.ts"]
+  "include": [
+    "src",
+    "src/custom.d.ts",
+    "types/blogTypes.tsx",
+    "types/galleryTypes.ts",
+    "types/portfolioTypes.ts"
+  ]
 }
