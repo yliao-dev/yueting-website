@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import fm from "front-matter";
 import BlogAuthor from "../components/blog/BlogAuthor";
 import { BlogData } from "../data/blog/blogData";
-import PageNotFound from "./PageNotFound";
+import PageNotFound from "./NotFoundPage";
 import LineBreak from "../components/shared/LineBreak";
 import NavigationArrows from "../components/shared/NavigationArrows";
 import { PostMeta } from "../../types/blogTypes";

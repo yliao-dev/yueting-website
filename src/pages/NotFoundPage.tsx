@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import bisonImg from "../assets/icons/bison.svg";
 
-const PageNotFound = () => {
+const NotFoundPage = () => {
   const navigate = useNavigate();
 
   const handleBack = () => {
@@ -25,4 +25,4 @@ const PageNotFound = () => {
   );
 };
 
-export default PageNotFound;
+export default NotFoundPage;

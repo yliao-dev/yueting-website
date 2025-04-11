@@ -17,7 +17,7 @@ const ProjectPage = lazy(() => import("./pages/ProjectPage"));
 const BlogPage = lazy(() => import("./pages/BlogPage"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
-const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 const PostPage = lazy(() => import("./pages/PostPage"));
 
 const App = () => {
@@ -35,7 +35,7 @@ const App = () => {
           <Route path="post/:id" element={<PostPage />} />
         </Route>
         <Route path="contact" element={<ContactPage />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     )
   );

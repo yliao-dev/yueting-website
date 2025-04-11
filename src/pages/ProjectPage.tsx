@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { ProjectData } from "../data/project/projectData";
-import PageNotFound from "./PageNotFound";
+import PageNotFound from "./NotFoundPage";
 import ProjectSlideshow from "../components/portfolio/ProjectSlideShow";
 import { GitHub } from "@mui/icons-material";
 import NavigationArrows from "../components/shared/NavigationArrows";
