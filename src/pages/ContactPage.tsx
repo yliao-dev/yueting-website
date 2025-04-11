@@ -33,7 +33,7 @@ const ContactPage = () => {
             >
               <span className="clipboard-icon">📋</span>
               <code className="email-text">ytliaodev@gmail.com</code>
-              {copied && <span className="copied-msg">Copied!</span>}
+              {copied && <span className="copied-msg">Copied 👍🏼</span>}
             </div>
           </div>
           <SocialMediaIcons />
