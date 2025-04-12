@@ -66,13 +66,13 @@ export const ProjectData = [
   },
   {
     id: 3,
-    name: "TBA",
-    focus: "TBA",
+    name: "Fujifilm Recipe Archive",
+    focus: "Full-stack web app",
     description: "In Progress",
     tags: [],
     coverImage: "/images/placeholder.webp",
     images: ["/images/placeholder.webp"],
-    link: "https://github.com/yliao-dev",
+    link: "https://github.com/yliao-dev/fujifilm-recipe-archive",
   },
   {
     id: 4,
