@@ -27,8 +27,8 @@
   "include": [
     "src",
     "src/custom.d.ts",
-    "types/blogTypes.tsx",
-    "types/galleryTypes.ts",
-    "types/portfolioTypes.ts"
+    "src/types/blogTypes.tsx",
+    "src/types/galleryTypes.ts",
+    "src/types/portfolioTypes.ts"
   ]
 }

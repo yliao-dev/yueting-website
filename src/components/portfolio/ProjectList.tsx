@@ -1,4 +1,4 @@
-import { ProjectListProps } from "../../../types/portfolioTypes";
+import { ProjectListProps } from "../../types/portfolioTypes";
 import ProjectItem from "./Project";
 
 const ProjectMap = ({ projectData }: ProjectListProps) => {

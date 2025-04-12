@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import LineBreak from "../shared/LineBreak";
-import { PostItemProp } from "../../../types/blogTypes";
+import { PostItemProp } from "../../types/blogTypes";
 import BlogAuthor from "./BlogAuthor";
 import { useState } from "react";
 

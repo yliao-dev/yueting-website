@@ -6,7 +6,7 @@ import meta5 from "./collection5Meta.json";
 import meta6 from "./collection6Meta.json";
 
 import { createGalleryCollections } from "./createGalleryCollections";
-import { GalleryCollectionProps } from "../../../types/galleryTypes";
+import { GalleryCollectionProps } from "../../types/galleryTypes";
 
 export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
   {

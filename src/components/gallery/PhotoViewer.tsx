@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { PhotoViewerProps } from "../../../types/galleryTypes";
+import { PhotoViewerProps } from "../../types/galleryTypes";
 import NavigationArrows from "../shared/NavigationArrows";
 
 const PhotoViewer = ({
