@@ -67,7 +67,7 @@ export const ProjectData = [
   {
     id: 3,
     name: "Fujifilm Recipe Archive",
-    focus: "Full-stack web app",
+    focus: "Full-stack archive for Fujifilm film recipes",
     description: "In Progress",
     tags: [],
     coverImage: "/images/placeholder.webp",
