@@ -1,11 +1,9 @@
 export const BlogData = [
   {
     id: "1",
-    title:
-      "Kendo A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with",
+    title: "TBA",
     author: "Yueting Liao",
-    description:
-      "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence",
+    description: "TBA description",
     category: "kendo",
     date: "2025-01-01",
     coverImage: "/images/blog/post1/thumbs/001.webp",
@@ -28,7 +26,7 @@ export const BlogData = [
     description: "TBA description",
     category: "photography",
     date: "2025-01-01",
-    coverImage: "/images/blog/post3/thumbs/001.webp",
+    coverImage: "/images/placeholder.webp",
     mdPath: "/src/data/blog/post3.md",
   },
 ];
