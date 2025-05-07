@@ -43,8 +43,27 @@ export const ProjectData = [
     id: 2,
     name: "Fujifilm Recipe Archive",
     focus: "Full-stack archive for Fujifilm film recipes",
-    description: "In Progress",
-    tags: [],
+    description: `This project is a modern, searchable archive of Fujifilm JPEG film simulation recipes—built with React, TypeScript, and Vite, and deployed via Vercel on a custom domain. Designed for both enthusiasts and photographers, it offers a clean, fast, and mobile-friendly interface to browse, filter, and submit recipes.
+
+    Key features:
+    • Dynamic filtering by camera model, tags, and film look
+    • Form-driven recipe submission with validation and preview
+    
+    This project was built over several focused weeks, refining both technical and design decisions to create a space that’s practical, beautiful, and fast. It’s not just a tool—it’s a curated, user-friendly archive shaped by a passion for photography and precision in code.
+
+    `,
+    tags: [
+      "Go",
+      "React",
+      "TypeScript",
+      "Vite",
+      "CRUD",
+      "Postman",
+      "MongoDB",
+      "Film Simulation",
+      "Image storage",
+      "Client-Side Filtering",
+    ],
     coverImage: "/images/portfolio/project2/thumbs/001.webp",
     images: [
       "/images/portfolio/project2/thumbs/002.webp",
