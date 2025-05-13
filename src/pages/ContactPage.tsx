@@ -48,7 +48,7 @@ const ContactPage = () => {
               <li>This Website = Travel + Code + Weeks + MacBook Air</li>
               <li>No PhotoShop for my gallery photos yet</li>
               <li>I genuinely enjoy bitter coffee.</li>
-              <li>I don’t train chest much.</li>
+              <li>This site does not support IE. Neither do I.</li>
               <li>If I could have any pet, it’d be a horse. 🐴</li>
             </ul>
           </div>
