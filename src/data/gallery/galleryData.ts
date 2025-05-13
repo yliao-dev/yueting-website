@@ -26,7 +26,7 @@ export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
     meta: meta1,
   },
   {
-    title: "some title",
+    title: "",
     slug: "collection2",
     meta: meta2,
   },
@@ -51,7 +51,7 @@ export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
     meta: meta6,
   },
   {
-    title: "collection7",
+    title: "",
     slug: "collection7",
     meta: meta7,
   },
