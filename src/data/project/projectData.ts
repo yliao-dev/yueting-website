@@ -54,13 +54,14 @@ export const ProjectData = [
 
     This project was developed from the ground up as a personal tool to better understand nutrition through simplicity. It reflects my approach to designing tools that are practical, maintainable, and user-first—free from unnecessary complexity but flexible enough for real-world tracking.`,
     tags: ["Python", "Tkinter", "Configurable", "JSON", "UI/UX", "Desktop App"],
-    coverImage: "/images/portfolio/project3/thumbs/001.webp",
+    coverImage: "/images/portfolio/project2/thumbs/001.webp",
     images: [
       "/images/portfolio/project2/thumbs/002.webp",
       "/images/portfolio/project2/thumbs/003.webp",
       "/images/portfolio/project2/thumbs/004.webp",
       "/images/portfolio/project2/thumbs/005.webp",
       "/images/portfolio/project2/thumbs/006.webp",
+      "/images/portfolio/project2/thumbs/007.webp",
     ],
     link: "https://github.com/yliao-dev/nutri-flow",
   },
@@ -96,29 +97,41 @@ export const ProjectData = [
       "/images/portfolio/project3/thumbs/004.webp",
       "/images/portfolio/project3/thumbs/005.webp",
       "/images/portfolio/project3/thumbs/006.webp",
+      "/images/portfolio/project3/thumbs/007.webp",
+      "/images/portfolio/project3/thumbs/008.webp",
     ],
     link: "https://github.com/yliao-dev/fujifilm-recipe-archive",
   },
   {
     id: 4,
-    name: "AWS Cloud Shop",
-    focus: "Microservices-based 3-tier architecture cloud shop deployed on AWS",
-    description: "In Progress",
+    name: "Cloud-Native E-commerce Platform",
+    focus: "A fully orchestrated e-commerce platform deployed on AWS",
+    description: `
+      This project implements a classic 3-tier architecture using a modern, cloud-native approach, resulting in a complete e-commerce platform built on a distributed microservices architecture and deployed to Amazon Web Services.
+      It showcases end-to-end infrastructure automation, container orchestration, and modern DevOps practices. The entire environment—from the underlying network to the application deployments—is defined as code and managed through a CI/CD pipeline.
+      
+      Key features:
+      • Infrastructure as Code (IaC): Terraform scripts provision a custom VPC, an EKS cluster, and IAM roles for a secure and repeatable environment.
+      • Container Orchestration: Microservices are containerized with Docker and deployed to EKS using declarative Helm charts for versioned, manageable releases.
+      • CI/CD Automation: A GitHub Actions pipeline automates building Docker images, pushing them to ECR, and rolling out new deployments to the Kubernetes cluster.
+      • Advanced Networking: An Application Load Balancer (ALB), managed by the Kubernetes Ingress controller, performs path-based routing to direct traffic to the correct backend service.
+      
+      This project represents a deep, practical application of modern cloud engineering principles, building a complex, scalable, and fully automated system from the ground up.,
+    `,
     tags: [
-      "Microservices",
-      "AWS EKS",
-      "AWS ECR",
       "Kubernetes",
-      "CI/CD",
-      "Helm",
       "Terraform",
+      "Microservices",
       "Docker",
+      "Helm",
+      "CI/CD",
+      "GitHub Actions",
+      "AWS EKS | ECR | VPC | ALB | Ingress | IAM",
       "Redis",
       "RabbitMQ",
       "Go",
       "React",
       "MongoDB",
-      "Github Actions",
     ],
     coverImage: "/images/placeholder.webp",
     images: ["/images/placeholder.webp"],
