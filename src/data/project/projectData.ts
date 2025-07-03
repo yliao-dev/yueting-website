@@ -126,7 +126,7 @@ export const ProjectData = [
       "Helm",
       "CI/CD",
       "GitHub Actions",
-      "AWS EKS | ECR | VPC | ALB | Ingress | IAM",
+      "AWS EKS | ECR | EC2 | VPC | ALB | Ingress | IAM",
       "Redis",
       "RabbitMQ",
       "Go",
