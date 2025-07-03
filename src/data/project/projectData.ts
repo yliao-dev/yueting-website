@@ -114,7 +114,7 @@ export const ProjectData = [
       • CI/CD Automation: A GitHub Actions pipeline automates building Docker images, pushing them to ECR, and rolling out new deployments to the Kubernetes cluster.
       • Advanced Networking: An Application Load Balancer (ALB), managed by the Kubernetes Ingress controller.
       
-      This project represents a deep, practical application of modern cloud engineering principles, building a complex, scalable, and fully automated system from the ground up.,
+      This project represents a deep, practical application of modern cloud engineering principles, building a complex, scalable, and fully automated system from the ground up.
     `,
     tags: [
       "Kubernetes",
@@ -144,6 +144,6 @@ export const ProjectData = [
       "/images/portfolio/project4/thumbs/010.webp",
       "/images/portfolio/project4/thumbs/011.webp",
     ],
-    link: "https://github.com/yliao-dev/Three-tier-cloud-shop",
+    link: "https://github.com/yliao-dev/three-tier-cloud-shop",
   },
 ];
