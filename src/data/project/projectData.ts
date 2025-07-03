@@ -41,6 +41,31 @@ export const ProjectData = [
   },
   {
     id: 2,
+    name: "Nutri Flow",
+    focus: "Nutrition tracking with Python GUI",
+    description: `Nutri Flow is a lightweight and intuitive desktop nutrition tracker built with Python and Tkinter. Designed for both general users and fitness enthusiasts, it provides a clean, form-based UI to log meals, calculate intake, and monitor eating habits over time.
+
+    Key features:
+    • Clean and minimal form-based interface with zero learning curve
+    • CSV-based data storage for full control and transparency
+    • JSON-driven ingredient library and user configuration
+    • Weekly and monthly report export without external databases
+    • Fully offline and distraction-free experience
+
+    This project was developed from the ground up as a personal tool to better understand nutrition through simplicity. It reflects my approach to designing tools that are practical, maintainable, and user-first—free from unnecessary complexity but flexible enough for real-world tracking.`,
+    tags: ["Python", "Tkinter", "Configurable", "JSON", "UI/UX", "Desktop App"],
+    coverImage: "/images/portfolio/project3/thumbs/001.webp",
+    images: [
+      "/images/portfolio/project2/thumbs/002.webp",
+      "/images/portfolio/project2/thumbs/003.webp",
+      "/images/portfolio/project2/thumbs/004.webp",
+      "/images/portfolio/project2/thumbs/005.webp",
+      "/images/portfolio/project2/thumbs/006.webp",
+    ],
+    link: "https://github.com/yliao-dev/nutri-flow",
+  },
+  {
+    id: 3,
     name: "Fujifilm Recipe Archive",
     focus: "Full-stack archive for Fujifilm film recipes",
     description: `This project is a modern, searchable archive of Fujifilm JPEG film simulation recipes—built with React, TypeScript, and Vite, and deployed via Vercel on a custom domain. Designed for both enthusiasts and photographers, it offers a clean, fast, and mobile-friendly interface to browse, filter, and submit recipes.
@@ -64,31 +89,6 @@ export const ProjectData = [
       "Image storage",
       "Client-Side Filtering",
     ],
-    coverImage: "/images/portfolio/project2/thumbs/001.webp",
-    images: [
-      "/images/portfolio/project2/thumbs/002.webp",
-      "/images/portfolio/project2/thumbs/003.webp",
-      "/images/portfolio/project2/thumbs/004.webp",
-      "/images/portfolio/project2/thumbs/005.webp",
-      "/images/portfolio/project2/thumbs/006.webp",
-    ],
-    link: "https://github.com/yliao-dev/fujifilm-recipe-archive",
-  },
-  {
-    id: 3,
-    name: "Nutri Flow",
-    focus: "Nutrition tracking with Python GUI",
-    description: `Nutri Flow is a lightweight and intuitive desktop nutrition tracker built with Python and Tkinter. Designed for both general users and fitness enthusiasts, it provides a clean, form-based UI to log meals, calculate intake, and monitor eating habits over time.
-
-    Key features:
-    • Clean and minimal form-based interface with zero learning curve
-    • CSV-based data storage for full control and transparency
-    • JSON-driven ingredient library and user configuration
-    • Weekly and monthly report export without external databases
-    • Fully offline and distraction-free experience
-
-    This project was developed from the ground up as a personal tool to better understand nutrition through simplicity. It reflects my approach to designing tools that are practical, maintainable, and user-first—free from unnecessary complexity but flexible enough for real-world tracking.`,
-    tags: ["Python", "Tkinter", "Configurable", "JSON", "UI/UX", "Desktop App"],
     coverImage: "/images/portfolio/project3/thumbs/001.webp",
     images: [
       "/images/portfolio/project3/thumbs/002.webp",
@@ -97,7 +97,7 @@ export const ProjectData = [
       "/images/portfolio/project3/thumbs/005.webp",
       "/images/portfolio/project3/thumbs/006.webp",
     ],
-    link: "https://github.com/yliao-dev/nutri-flow",
+    link: "https://github.com/yliao-dev/fujifilm-recipe-archive",
   },
   {
     id: 4,
