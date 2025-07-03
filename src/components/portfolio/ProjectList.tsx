@@ -2,9 +2,13 @@ import { ProjectListProps } from "../../types/portfolioTypes";
 import ProjectItem from "./Project";
 
 const ProjectMap = ({ projectData }: ProjectListProps) => {
+  const sortedProjects = [...projectData].sort(
+    (a, b) => Number(b.id) - Number(a.id)
+  );
+
   return (
     <>
-      {projectData.map((project) => (
+      {sortedProjects.map((project) => (
         <ProjectItem
           key={project.id}
           id={project.id}

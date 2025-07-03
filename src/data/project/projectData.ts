@@ -41,6 +41,32 @@ export const ProjectData = [
   },
   {
     id: 2,
+    name: "Nutri Flow",
+    focus: "Nutrition tracking with Python GUI",
+    description: `Nutri Flow is a lightweight and intuitive desktop nutrition tracker built with Python and Tkinter. Designed for both general users and fitness enthusiasts, it provides a clean, form-based UI to log meals, calculate intake, and monitor eating habits over time.
+
+    Key features:
+    • Clean and minimal form-based interface with zero learning curve
+    • CSV-based data storage for full control and transparency
+    • JSON-driven ingredient library and user configuration
+    • Weekly and monthly report export without external databases
+    • Fully offline and distraction-free experience
+
+    This project was developed from the ground up as a personal tool to better understand nutrition through simplicity. It reflects my approach to designing tools that are practical, maintainable, and user-first—free from unnecessary complexity but flexible enough for real-world tracking.`,
+    tags: ["Python", "Tkinter", "Configurable", "JSON", "UI/UX", "Desktop App"],
+    coverImage: "/images/portfolio/project2/thumbs/001.webp",
+    images: [
+      "/images/portfolio/project2/thumbs/002.webp",
+      "/images/portfolio/project2/thumbs/003.webp",
+      "/images/portfolio/project2/thumbs/004.webp",
+      "/images/portfolio/project2/thumbs/005.webp",
+      "/images/portfolio/project2/thumbs/006.webp",
+      "/images/portfolio/project2/thumbs/007.webp",
+    ],
+    link: "https://github.com/yliao-dev/nutri-flow",
+  },
+  {
+    id: 3,
     name: "Fujifilm Recipe Archive",
     focus: "Full-stack archive for Fujifilm film recipes",
     description: `This project is a modern, searchable archive of Fujifilm JPEG film simulation recipes—built with React, TypeScript, and Vite, and deployed via Vercel on a custom domain. Designed for both enthusiasts and photographers, it offers a clean, fast, and mobile-friendly interface to browse, filter, and submit recipes.
@@ -64,31 +90,6 @@ export const ProjectData = [
       "Image storage",
       "Client-Side Filtering",
     ],
-    coverImage: "/images/portfolio/project2/thumbs/001.webp",
-    images: [
-      "/images/portfolio/project2/thumbs/002.webp",
-      "/images/portfolio/project2/thumbs/003.webp",
-      "/images/portfolio/project2/thumbs/004.webp",
-      "/images/portfolio/project2/thumbs/005.webp",
-      "/images/portfolio/project2/thumbs/006.webp",
-    ],
-    link: "https://github.com/yliao-dev/fujifilm-recipe-archive",
-  },
-  {
-    id: 3,
-    name: "Nutri Flow",
-    focus: "Nutrition tracking with Python GUI",
-    description: `Nutri Flow is a lightweight and intuitive desktop nutrition tracker built with Python and Tkinter. Designed for both general users and fitness enthusiasts, it provides a clean, form-based UI to log meals, calculate intake, and monitor eating habits over time.
-
-    Key features:
-    • Clean and minimal form-based interface with zero learning curve
-    • CSV-based data storage for full control and transparency
-    • JSON-driven ingredient library and user configuration
-    • Weekly and monthly report export without external databases
-    • Fully offline and distraction-free experience
-
-    This project was developed from the ground up as a personal tool to better understand nutrition through simplicity. It reflects my approach to designing tools that are practical, maintainable, and user-first—free from unnecessary complexity but flexible enough for real-world tracking.`,
-    tags: ["Python", "Tkinter", "Configurable", "JSON", "UI/UX", "Desktop App"],
     coverImage: "/images/portfolio/project3/thumbs/001.webp",
     images: [
       "/images/portfolio/project3/thumbs/002.webp",
@@ -96,32 +97,53 @@ export const ProjectData = [
       "/images/portfolio/project3/thumbs/004.webp",
       "/images/portfolio/project3/thumbs/005.webp",
       "/images/portfolio/project3/thumbs/006.webp",
+      "/images/portfolio/project3/thumbs/007.webp",
+      "/images/portfolio/project3/thumbs/008.webp",
     ],
-    link: "https://github.com/yliao-dev/nutri-flow",
+    link: "https://github.com/yliao-dev/fujifilm-recipe-archive",
   },
   {
     id: 4,
-    name: "AWS Cloud Shop",
-    focus: "Microservices-based 3-tier architecture cloud shop deployed on AWS",
-    description: "In Progress",
+    name: "Cloud-Native E-commerce Platform",
+    focus: "A fully orchestrated e-commerce platform deployed on AWS",
+    description: `This project implements a classic 3-tier architecture using a modern, cloud-native approach, resulting in a complete e-commerce platform built on a distributed microservices architecture and deployed to Amazon Web Services.
+      
+      Key features:
+      • Infrastructure as Code (IaC): Terraform scripts provision a custom VPC, an EKS cluster, and IAM roles for a secure and repeatable environment.
+      • Container Orchestration: Microservices are containerized with Docker and deployed to EKS using declarative Helm charts for versioned, manageable releases.
+      • CI/CD Automation: A GitHub Actions pipeline automates building Docker images, pushing them to ECR, and rolling out new deployments to the Kubernetes cluster.
+      • Advanced Networking: An Application Load Balancer (ALB), managed by the Kubernetes Ingress controller.
+      
+      This project represents a deep, practical application of modern cloud engineering principles, building a complex, scalable, and fully automated system from the ground up.,
+    `,
     tags: [
-      "Microservices",
-      "AWS EKS",
-      "AWS ECR",
       "Kubernetes",
-      "CI/CD",
-      "Helm",
       "Terraform",
+      "Microservices",
       "Docker",
+      "Helm",
+      "CI/CD",
+      "GitHub Actions",
+      "AWS EKS | ECR | EC2 | VPC | ALB | Ingress | IAM",
       "Redis",
       "RabbitMQ",
       "Go",
       "React",
       "MongoDB",
-      "Github Actions",
     ],
-    coverImage: "/images/placeholder.webp",
-    images: ["/images/placeholder.webp"],
+    coverImage: "/images/portfolio/project4/thumbs/001.webp",
+    images: [
+      "/images/portfolio/project4/thumbs/002.webp",
+      "/images/portfolio/project4/thumbs/003.webp",
+      "/images/portfolio/project4/thumbs/004.webp",
+      "/images/portfolio/project4/thumbs/005.webp",
+      "/images/portfolio/project4/thumbs/006.webp",
+      "/images/portfolio/project4/thumbs/007.webp",
+      "/images/portfolio/project4/thumbs/008.webp",
+      "/images/portfolio/project4/thumbs/009.webp",
+      "/images/portfolio/project4/thumbs/010.webp",
+      "/images/portfolio/project4/thumbs/011.webp",
+    ],
     link: "https://github.com/yliao-dev/Three-tier-cloud-shop",
   },
 ];
