@@ -59,7 +59,7 @@
 }
 
 .navbar__dropdown-links .navbar__link--active {
-  border-bottom: solid var(--nav-hover);
+  border-bottom: 0.05rem solid var(--nav-hover);
   padding-bottom: 0.2rem;
 }
 
