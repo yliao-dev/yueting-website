@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import ReorderIcon from "@mui/icons-material/Reorder";
+import { CiMenuFries } from "react-icons/ci";
 
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
 
         <div className="navbar__toggle-button">
           <button onClick={toggleNavbar}>
-            <ReorderIcon />
+            <CiMenuFries />
           </button>
         </div>
       </nav>
