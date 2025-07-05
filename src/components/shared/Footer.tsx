@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { RiArrowUpDoubleFill } from "react-icons/ri";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -14,9 +15,11 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <button className="navigation-arrow footer-arrow" onClick={scrollToTop}>
-        &#10094;
-      </button>
+      <div className="navigation-arrow">
+        <button onClick={scrollToTop}>
+          <RiArrowUpDoubleFill />
+        </button>
+      </div>
 
       <div className="footer__info">
         <h2>
