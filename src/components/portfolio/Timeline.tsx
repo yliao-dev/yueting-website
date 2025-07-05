@@ -32,9 +32,10 @@ const timelineItems = [
       "Took a break to reflect, travel, and grow beyond the code — visited 14 countries across Europe and Asia.",
   },
   {
-    label: "This Site",
+    label: "Projects",
     year: "2025",
-    detail: "Designed and coded this portfolio to share my journey and work.",
+    detail:
+      "Built and launched four major projects across web, desktop, full-stack, and cloud — from UI to infrastructure.",
   },
   {
     label: "Next Move",
