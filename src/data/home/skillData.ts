@@ -13,9 +13,9 @@ export const skillsData: SkillData[] = [
     color: "rgba(76, 110, 145, 1)",
     paragraphs: [
       "I like writing code to simplify life by building applications that solve real problems. This site you’re exploring is built with React and Go — keeping things fast, clean, and purposeful.",
-      "What I usually build with:",
+      "Tools I like:",
     ],
-    list: ["React", "Go", "Python", "Postman", "Jenkins", "Splunk", "Git"],
+    list: ["React", "Go", "Docker", "Terraform", "Github Actions", "Postman"],
   },
   {
     label: "Kendo",
