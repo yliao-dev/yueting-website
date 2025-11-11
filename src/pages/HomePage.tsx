@@ -99,10 +99,10 @@ const HomePage = () => {
           <p>
             I’ve spent meaningful time in both the U.S. and China, each offering
             its own rhythm and way of life. From cities like New York, Los
-            Angeles, Troy, and Provo to places abroad, every move shaped how I
-            see and live. Each place left something with me — a lifestyle, a
-            perspective, a different way to pursue harmony. But meeting people
-            along the way has always been the best part.
+            Angeles, Troy, Provo, Houston, and to places abroad, every move
+            shaped how I see and live. Each place left something with me — a
+            lifestyle, a perspective, a different way to pursue harmony. But
+            meeting people along the way has always been the best part.
           </p>
         </div>
 

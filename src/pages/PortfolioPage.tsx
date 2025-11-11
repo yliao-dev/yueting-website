@@ -14,9 +14,9 @@ const PortfolioPage = () => {
           <p>
             Each project here starts with a practical need—or a spark of
             curiosity. I began coding while studying Computer Science at
-            Rensselaer Polytechnic Institute, followed by two years of
-            full-stack development work. I’m always open to collaborating on
-            meaningful or fun projects.
+            Rensselaer Polytechnic Institute, followed by years of full-stack
+            development work. I’m always open to collaborating on meaningful or
+            fun projects.
           </p>
         </section>
 
