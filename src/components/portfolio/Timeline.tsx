@@ -38,10 +38,10 @@ const timelineItems = [
       "Built and launched four major projects across web, desktop, full-stack, and cloud — from UI to infrastructure.",
   },
   {
-    label: "Next Move",
+    label: "NASA/CACI",
     year: "Today",
     detail:
-      "Seeking software roles with technical challenge, meaningful work, and growth. Open to relocation for the next step in my journey.",
+      "Joined CACI at NASA Johnson Space Center to build the Crew Electronic Health Portal — supporting the Artemis mission.",
   },
 ];
 
