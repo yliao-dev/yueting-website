@@ -19,9 +19,9 @@
       "max_input_mb": 5
     }
   ],
-  "blog": [
+  "thoughts": [
     {
-      "input_source": "public/images/blog",
+      "input_source": "public/images/thoughts",
       "output_meta": "",
       "preview_width": 1600,
       "thumb_width": 800,

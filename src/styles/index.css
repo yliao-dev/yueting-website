@@ -17,9 +17,9 @@
 @import "./gallery/gallery.css";
 @import "./gallery/photoViewer.css";
 
-@import "./blog/blog.css";
-@import "./blog/blogAuthor.css";
-@import "./blog/post.css";
+@import "./thoughts/thoughts.css";
+@import "./thoughts/thoughtsAuthor.css";
+@import "./thoughts/post.css";
 
 @tailwind base;
 @tailwind components;

@@ -1,3 +1,0 @@
-## Blog Title
-
-Blog text

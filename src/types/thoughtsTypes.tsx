@@ -9,11 +9,11 @@ export type PostItemProp = {
   mdPath: string;
 };
 
-export type BlogCategoryProps = {
+export type ThoughtsCategoryProps = {
   onSelect: (category: string) => void;
 };
 
-export interface BlogAuthorProps {
+export interface ThoughtsAuthorProps {
   author: string;
   date: string;
 }

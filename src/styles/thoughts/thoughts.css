@@ -1,24 +1,24 @@
-.blog {
+.thoughts {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
 }
 
-.blog__intro {
+.thoughts__intro {
   display: flex;
   text-align: left;
   flex-direction: column;
 }
 
-.blog__category {
+.thoughts__category {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15vw;
 }
 
-.blog__category-button svg {
+.thoughts__category-button svg {
   background: none;
   border: none;
   cursor: pointer;
@@ -26,13 +26,13 @@
   color: var(--text-secondary);
 }
 
-.blog__category-button svg:hover {
+.thoughts__category-button svg:hover {
   transform: scale(1.1);
   color: var(--hover);
 }
 
-/* Blog posts section */
-.blog__content {
+/* Thoughts posts section */
+.thoughts__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +40,7 @@
   gap: 1rem;
 }
 
-.blog__post {
+.thoughts__post {
   max-width: 90%;
   display: flex;
   flex-direction: column;
@@ -48,11 +48,11 @@
   transition: opacity 0.5s ease;
 }
 
-.blog__post.loaded {
+.thoughts__post.loaded {
   opacity: 1;
 }
 
-.blog__post__cover {
+.thoughts__post__cover {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
@@ -62,22 +62,22 @@
   border-radius: 0.2rem;
 }
 
-.blog__post__text {
+.thoughts__post__text {
   text-align: left;
   margin-left: 0.5rem;
   margin-top: 1rem;
 }
 
-.blog__post__text h2 {
+.thoughts__post__text h2 {
   font-size: 1.2rem;
   cursor: pointer;
 }
 
-.blog__post__text h2:hover {
+.thoughts__post__text h2:hover {
   color: var(--hover);
 }
 
-.blog__post__text p {
+.thoughts__post__text p {
   max-height: 4rem;
   font-size: 1rem;
   line-height: 1.4rem;
@@ -85,7 +85,7 @@
   text-overflow: ellipsis;
 }
 
-.blog__detail {
+.thoughts__detail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -94,45 +94,45 @@
   margin-left: 0.5rem;
 }
 
-.blog__readMore {
+.thoughts__readMore {
   transition: color 0.2s ease;
   color: var(--hover);
   font-size: 1rem;
 }
 
-.blog__readMore:hover {
+.thoughts__readMore:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
 /* Tablet and above */
 @media (min-width: 768px) {
-  .blog__contentBlock {
+  .thoughts__contentBlock {
     width: 90%;
   }
 
-  .blog__post {
+  .thoughts__post {
     max-width: 80%;
   }
 
-  .blog__post__text h2 {
+  .thoughts__post__text h2 {
     font-size: 1.4rem;
   }
 }
 
 /* Desktop and above */
 @media (min-width: 1024px) {
-  .blog__category-button svg {
+  .thoughts__category-button svg {
     font-size: 3.5rem;
   }
 
-  .blog__contentBlock {
+  .thoughts__contentBlock {
     width: 70%;
   }
-  .blog__post {
+  .thoughts__post {
     max-width: 70%;
   }
-  .blog__post__text h2 {
+  .thoughts__post__text h2 {
     font-size: 1.6rem;
   }
 }

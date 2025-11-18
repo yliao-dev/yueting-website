@@ -52,7 +52,7 @@ const findSourceFolders = (baseDir) => {
 };
 
 const run = () => {
-  const mode = process.argv[2]; // "blog", "gallery", etc.
+  const mode = process.argv[2]; // "thoughts", "gallery", etc.
   const targets = config[mode] || [];
 
   for (const item of targets) {

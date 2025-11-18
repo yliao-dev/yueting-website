@@ -2,17 +2,17 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import fm from "front-matter";
-import BlogAuthor from "../components/blog/BlogAuthor";
-import { BlogData } from "../data/blog/blogData";
+import ThoughtsAuthor from "../components/thoughts/ThoughtsAuthor";
+import { ThoughtsData } from "../data/thoughts/thoughtsData";
 import PageNotFound from "./NotFoundPage";
 import LineBreak from "../components/shared/LineBreak";
 import NavigationArrows from "../components/shared/NavigationArrows";
-import { PostMeta } from "../types/blogTypes";
+import { PostMeta } from "../types/thoughtsTypes";
 
 const PostPage = () => {
   const { id } = useParams();
-  const index = BlogData.findIndex((p) => String(p.id) === id);
-  const post = BlogData[index];
+  const index = ThoughtsData.findIndex((p) => String(p.id) === id);
+  const post = ThoughtsData[index];
 
   const [markdown, setMarkdown] = useState("");
   const [, setMeta] = useState<PostMeta | null>(null); // Optional: if you use it
@@ -22,7 +22,7 @@ const PostPage = () => {
 
     const loadMarkdown = async () => {
       try {
-        const posts = import.meta.glob("/src/data/blog/*.md", {
+        const posts = import.meta.glob("/src/data/thoughts/*.md", {
           query: "?raw",
           import: "default",
         });
@@ -50,7 +50,7 @@ const PostPage = () => {
         <h1>{post.title}</h1>
         <p>{post.description}</p>
         <div className="post__page__media">
-          <BlogAuthor author={post.author} date={post.date} />
+          <ThoughtsAuthor author={post.author} date={post.date} />
         </div>
         {post.coverImage && (
           <img src={post.coverImage} alt={post.title} className="post__cover" />
@@ -68,16 +68,16 @@ const PostPage = () => {
           prev={
             index > 0
               ? {
-                  label: "Prev Blog",
-                  to: `/blog/post/${BlogData[index - 1].id}`,
+                  label: "Prev Thoughts",
+                  to: `/thoughts/post/${ThoughtsData[index - 1].id}`,
                 }
               : undefined
           }
           next={
-            index < BlogData.length - 1
+            index < ThoughtsData.length - 1
               ? {
-                  label: "Next Blog",
-                  to: `/blog/post/${BlogData[index + 1].id}`,
+                  label: "Next Thoughts",
+                  to: `/thoughts/post/${ThoughtsData[index + 1].id}`,
                 }
               : undefined
           }

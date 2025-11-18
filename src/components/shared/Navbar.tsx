@@ -13,7 +13,7 @@ const Navbar = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? "navbar__link--active" : "navbar__link--inactive";
 
-  const navItems = ["portfolio", "gallery", "blog", "contact"];
+  const navItems = ["portfolio", "gallery", "thoughts", "contact"];
 
   return (
     <>

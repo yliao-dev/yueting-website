@@ -3,7 +3,7 @@ export const ProjectData = [
     id: 1,
     name: "Personal Website",
     focus: "Modern site powered by React and Vite",
-    description: `This project is a fully responsive personal website that built with React, TypeScript, Vite, and deployed through Vercel with my custom domain. It combines clean design with thoughtful structure, showcasing my projects, photography collections, and blog posts.
+    description: `This project is a fully responsive personal website that built with React, TypeScript, Vite, and deployed through Vercel with my custom domain. It combines clean design with thoughtful structure, showcasing my projects, photography collections, and thoughts posts.
                   
     Key features:
     • Smooth animations and intuitive navigation

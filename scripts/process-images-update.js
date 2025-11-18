@@ -3,7 +3,7 @@ import { execSync } from "child_process";
 const mode = process.argv[2];
 
 if (!mode) {
-  console.error("❌ Please specify a mode (e.g. blog, gallery, portfolio)");
+  console.error("❌ Please specify a mode (e.g. thoughts, gallery, portfolio)");
   process.exit(1);
 }
 

@@ -1,13 +1,13 @@
 # Portfolio Website
 
-A modern, responsive, and animated portfolio built with **React**, **TypeScript**, and **Vite**, deployed via **Vercel**. Designed to showcase personal coding projects, photography collections, and blog posts clearly, intuitively, and efficiently.
+A modern, responsive, and animated portfolio built with **React**, **TypeScript**, and **Vite**, deployed via **Vercel**. Designed to showcase personal coding projects, photography collections, and thoughts posts clearly, intuitively, and efficiently.
 
 ## 🌟 Overview
 
 - [**Landing Page**](#🏠-landing-page) – Minimalistic and engaging intro.
 - [**Coding Projects**](#💻-portfolio-page) – Dynamic showcases built from structured data.
 - [**Photography Collections**](#📸-gallery-page) – Optimized, precomputed gallery layouts.
-- [**Blog Posts**](#✍️-blog-page) – Markdown-based with enhanced readability and navigation.
+- [**Thoughts Posts**](#✍️-thoughts-page) – Markdown-based with enhanced readability and navigation.
 
 ---
 
@@ -184,7 +184,7 @@ The homepage serves as a minimal and engaging entry point, setting the tone for 
 
 - Welcome introduction and quick overview
 - Smooth scroll navigation to key sections
-- Call-to-action links to explore projects, gallery, and blog
+- Call-to-action links to explore projects, gallery, and thoughts
 
 ---
 
@@ -208,9 +208,9 @@ Photo collections organized with custom pagination and masonry layouts, utilizin
 
 ---
 
-### ✍️ Blog Page
+### ✍️ Thoughts Page
 
-Markdown-based blogging system:
+Markdown-based thoughtsging system:
 
 - Markdown front-matter for metadata
 - Syntax-highlighted code blocks
@@ -231,7 +231,7 @@ Defined core features, drafted UI design, and selected libraries/tools.
 Set up project structure, page routing, and global configuration.
 
 ➜ **Content Architecture**  
-Built data-driven systems for elements like projects, images, and blog posts.
+Built data-driven systems for elements like projects, images, and thoughts posts.
 
 ➜ **Mobile-first Styling**  
 Implemented responsive layouts and components optimized for mobile devices.

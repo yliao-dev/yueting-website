@@ -1,4 +1,4 @@
-export const BlogData = [
+export const ThoughtsData = [
   {
     id: "1",
     title: "TBA",
@@ -6,8 +6,8 @@ export const BlogData = [
     description: "TBA description",
     category: "kendo",
     date: "2025-01-01",
-    coverImage: "/images/blog/post1/thumbs/001.webp",
-    mdPath: "/src/data/blog/post1.md",
+    coverImage: "/images/thoughts/post1/thumbs/001.webp",
+    mdPath: "/src/data/thoughts/post1.md",
   },
   {
     id: "2",
@@ -16,8 +16,8 @@ export const BlogData = [
     description: "TBA description",
     category: "photography",
     date: "2025-01-01",
-    coverImage: "/images/blog/post2/thumbs/001.webp",
-    mdPath: "/src/data/blog/post2.md",
+    coverImage: "/images/thoughts/post2/thumbs/001.webp",
+    mdPath: "/src/data/thoughts/post2.md",
   },
   {
     id: "3",
@@ -27,6 +27,6 @@ export const BlogData = [
     category: "photography",
     date: "2025-01-01",
     coverImage: "/images/placeholder.webp",
-    mdPath: "/src/data/blog/post3.md",
+    mdPath: "/src/data/thoughts/post3.md",
   },
 ];

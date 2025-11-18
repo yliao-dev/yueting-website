@@ -1,8 +1,8 @@
 import { Camera, FitnessCenter } from "@mui/icons-material";
-import { BlogCategoryProps } from "../../types/blogTypes";
+import { ThoughtsCategoryProps } from "../../types/thoughtsTypes";
 import KendoIcon from "../shared/KendoIcon";
 
-const BlogCategory = ({ onSelect }: BlogCategoryProps) => {
+const ThoughtsCategory = ({ onSelect }: ThoughtsCategoryProps) => {
   const categories = [
     {
       id: "kendo",
@@ -15,11 +15,11 @@ const BlogCategory = ({ onSelect }: BlogCategoryProps) => {
 
   return (
     <>
-      <div className="blog__category">
+      <div className="thoughts__category">
         {categories.map((category) => (
           <button
             key={category.id}
-            className="blog__category-button"
+            className="thoughts__category-button"
             onClick={() => onSelect(category.value)}
           >
             {category.icon}
@@ -30,4 +30,4 @@ const BlogCategory = ({ onSelect }: BlogCategoryProps) => {
   );
 };
 
-export default BlogCategory;
+export default ThoughtsCategory;

@@ -1,3 +1,0 @@
-## Blog Title
-
-In progress
