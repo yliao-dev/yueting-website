@@ -57,7 +57,7 @@ const PostPage = () => {
         )}
       </section>
 
-      <section className="post__page__content">
+      <section className="thoughts__post__text">
         <ReactMarkdown>{markdown}</ReactMarkdown>
       </section>
 

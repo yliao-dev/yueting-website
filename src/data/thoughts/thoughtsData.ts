@@ -1,11 +1,11 @@
 export const ThoughtsData = [
   {
     id: "1",
-    title: "TBA",
+    title: "Meaning",
     author: "Yueting Liao",
-    description: "TBA description",
+    description: "Meaning is an inner light that turns void into direction",
     category: "kendo",
-    date: "2025-01-01",
+    date: "2025-11-26",
     coverImage: "/images/thoughts/post1/thumbs/001.webp",
     mdPath: "/src/data/thoughts/post1.md",
   },
