@@ -3,9 +3,10 @@ export const ThoughtsData = [
     id: "1",
     title: "Meaning",
     author: "Yueting Liao",
-    description: "Meaning is an inner light that turns void into direction",
+    description:
+      "Love life as it is, and love the meaning that arises through living it.",
     category: "kendo",
-    date: "2025-11-26",
+    date: "2025-11-29",
     coverImage: "/images/thoughts/post1/thumbs/001.webp",
     mdPath: "/src/data/thoughts/post1.md",
   },

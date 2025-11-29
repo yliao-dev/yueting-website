@@ -49,9 +49,11 @@ const PostPage = () => {
       <section className="post__page__intro">
         <h1>{post.title}</h1>
         <p>{post.description}</p>
+
         <div className="post__page__media">
           <ThoughtsAuthor author={post.author} date={post.date} />
         </div>
+
         {post.coverImage && (
           <img src={post.coverImage} alt={post.title} className="post__cover" />
         )}

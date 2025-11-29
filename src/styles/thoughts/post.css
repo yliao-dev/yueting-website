@@ -37,12 +37,13 @@
   border-radius: 0.25rem;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  margin-bottom: 0.5rem;
 }
 
 .post__page__media {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
