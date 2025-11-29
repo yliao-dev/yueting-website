@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ThoughtsCategory from "../components/thoughts/ThoughtsCategory";
-import { ThoughtsData } from "../data/thoughts/thoughtsData"; // unified list with `category`
+import { ThoughtsData } from "../data/thoughts/thoughtsData";
 import LineBreak from "../components/shared/LineBreak";
 import { useTypingEffect } from "../hooks/useTypingEffect";
 import ThoughtsPost from "../components/thoughts/ThoughtsPost";
@@ -41,6 +41,7 @@ const ThoughtsPage = () => {
               category={thoughts.category}
               date={thoughts.date}
               mdPath={thoughts.mdPath}
+              mdPath2={thoughts.mdPath2}
               coverImage={thoughts.coverImage}
             />
           ))}

@@ -4,12 +4,13 @@
   align-items: center;
 }
 
+/* INTRO WRAPPER */
 .post__page__intro,
 .post__page__content {
   width: 100%;
-  padding: 0 1rem;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .post__page__intro {
@@ -17,99 +18,92 @@
   flex-direction: column;
 }
 
+/* TITLE */
 .post__page__intro h1 {
   font-family: "Merriweather", serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   letter-spacing: 0.03rem;
   line-height: 1.3;
+  margin: 3rem 0 0.5rem;
 }
 
+/* SUBTITLE / DESCRIPTION */
 .post__page__intro p {
-  align-self: left;
+  margin: 0;
   font-size: 1rem;
-  line-height: 1.25;
-  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  letter-spacing: 0.03rem;
   font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
+  max-width: 40rem;
 }
 
+/* AUTHOR + LANGUAGE ROW */
+.post__page__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* AUTHOR BLOCK */
+.post__page__media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0; /* we now control spacing via post__page__info */
+}
+
+/* COVER IMAGE */
 .post__page__intro img {
   max-width: 100%;
   border-radius: 0.25rem;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  margin-bottom: 0.5rem;
+  margin: 1.5rem 0 0.5rem;
 }
 
-.post__page__media {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+/* LANGUAGE TOGGLE BUTTON */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  white-space: nowrap; /* keep “中文 / EN” on one line */
+  padding: 0.1rem 0.2rem;
 }
 
-.post__navigation {
-  width: 100%;
-}
-
-/* content wrapper */
-.post__page__content {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* generic content typography (non-markdown pieces) */
-.post__page__content h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: var(--font-weight-regular);
-}
-
-.post__page__content p,
-.post__page__content li {
-  font-size: 1rem;
-  line-height: 1.8;
-  letter-spacing: 0.02rem;
-  margin-bottom: 1.25rem;
-  color: var(--text-primary);
-  font-weight: var(--font-weight-regular);
-}
-
-.post__page__content li {
-  margin-bottom: 0.5rem;
-  list-style: disc;
-}
-
-.post__page__content a {
+.lang-toggle:hover {
   color: var(--hover);
-  text-decoration: underline;
 }
 
-.post__page__content a:hover {
-  opacity: 0.8;
+.lang-toggle svg {
+  font-size: 1rem; /* MUI icon size inside button */
 }
 
-.post__page__content img {
-  max-width: 100%;
-  border-radius: 0.25rem;
-  margin: 1.5rem 0;
-  object-fit: cover;
-}
-
+/* MARKDOWN CONTENT */
 .post__text {
   max-width: 40rem;
   margin: 0 auto 3rem;
   padding: 0 1rem;
   font-size: 1rem;
-  line-height: 1.25;
+  line-height: 1.6;
 }
 
+/* headings inside markdown */
 .post__text h1,
 .post__text h2,
 .post__text h3,
 .post__text h4 {
-  margin-top: 2.5rem;
+  margin-top: 2.2rem;
   margin-bottom: 0.75rem;
-  line-height: 0.9;
+  line-height: 1.2;
   text-align: left;
 }
 
@@ -128,7 +122,7 @@
   font-weight: 600;
 }
 
-/* paragraph + list items */
+/* paragraphs + lists */
 .post__text p {
   margin: 0 0 1rem;
 }
@@ -143,7 +137,7 @@
   margin: 0.25rem 0;
 }
 
-/* emphasis rules (keep italics/bold special) */
+/* emphasis */
 .post__text em {
   font-style: italic;
 }
@@ -158,14 +152,14 @@
   font-style: italic;
 }
 
-/* horizontal rule from markdown */
+/* hr */
 .post__text hr {
   border: none;
   border-top: 0.0625rem solid var(--light-oak);
   margin: 2.5rem 0;
 }
 
-/* links inside markdown */
+/* links */
 .post__text a {
   color: var(--hover);
   text-decoration: underline;
@@ -190,19 +184,28 @@
     padding: 0 2rem;
   }
 
+  .post__page__intro h1 {
+    font-size: 2.4rem;
+  }
+
+  .post__page__intro p {
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
   .post__text {
     max-width: 42rem;
-    padding: 0 0;
+    padding: 0;
     font-size: 1.02rem;
     line-height: 1.75;
   }
 
-  .post__text h1 {
-    font-size: 2rem;
+  .lang-toggle svg {
+    font-size: 1.1rem;
   }
 
-  .post__text h2 {
-    font-size: 1.6rem;
+  .lang-toggle {
+    font-size: 1rem;
   }
 }
 
@@ -216,5 +219,13 @@
 
   .post__text {
     max-width: 46rem;
+  }
+
+  .lang-toggle svg {
+    font-size: 1.2rem;
+  }
+
+  .lang-toggle {
+    font-size: 1.05rem;
   }
 }

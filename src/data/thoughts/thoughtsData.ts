@@ -9,6 +9,7 @@ export const ThoughtsData = [
     date: "2025-11-29",
     coverImage: "/images/thoughts/post1/thumbs/001.webp",
     mdPath: "/src/data/thoughts/post1.md",
+    mdPath2: "/src/data/thoughts/post1_cn.md",
   },
   {
     id: "2",

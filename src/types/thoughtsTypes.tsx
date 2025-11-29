@@ -7,6 +7,7 @@ export type PostItemProp = {
   date: string;
   coverImage: string;
   mdPath: string;
+  mdPath2?: string;
 };
 
 export type ThoughtsCategoryProps = {

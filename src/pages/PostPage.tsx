@@ -8,14 +8,17 @@ import PageNotFound from "./NotFoundPage";
 import LineBreak from "../components/shared/LineBreak";
 import NavigationArrows from "../components/shared/NavigationArrows";
 import { PostMeta } from "../types/thoughtsTypes";
+import TranslateIcon from "@mui/icons-material/Translate";
 
 const PostPage = () => {
   const { id } = useParams();
   const index = ThoughtsData.findIndex((p) => String(p.id) === id);
   const post = ThoughtsData[index];
 
+  const [lang, setLang] = useState<"en" | "cn">("en");
+
   const [markdown, setMarkdown] = useState("");
-  const [, setMeta] = useState<PostMeta | null>(null); // Optional: if you use it
+  const [, setMeta] = useState<PostMeta | null>(null);
 
   useEffect(() => {
     if (!post) return;
@@ -27,8 +30,9 @@ const PostPage = () => {
           import: "default",
         });
 
-        const loader = posts[post.mdPath];
-        if (!loader) throw new Error(`Post not found: ${post.mdPath}`);
+        const path = lang === "en" ? post.mdPath : post.mdPath2 ?? post.mdPath;
+        const loader = posts[path];
+        if (!loader) throw new Error(`Post not found: ${path}`);
 
         const raw = await loader();
         const parsed = fm(raw as string);
@@ -40,7 +44,7 @@ const PostPage = () => {
     };
 
     loadMarkdown();
-  }, [post]); // ✅ directly depend on post object
+  }, [post, lang]);
 
   if (!post) return <PageNotFound />;
 
@@ -50,9 +54,19 @@ const PostPage = () => {
         <h1>{post.title}</h1>
         <p>{post.description}</p>
 
-        <div className="post__page__media">
-          <ThoughtsAuthor author={post.author} date={post.date} />
-        </div>
+        <section className="post__page__info">
+          <div className="post__page__media">
+            <ThoughtsAuthor author={post.author} date={post.date} />
+          </div>
+
+          <button
+            className="lang-toggle"
+            onClick={() => setLang(lang === "en" ? "cn" : "en")}
+          >
+            <TranslateIcon fontSize="small" />
+            {lang === "en" ? "中文" : "EN"}
+          </button>
+        </section>
 
         {post.coverImage && (
           <img src={post.coverImage} alt={post.title} className="post__cover" />
