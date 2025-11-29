@@ -64,153 +64,45 @@
 
 .thoughts__post__text {
   text-align: left;
-  margin: 1.25rem 0.75rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
 }
 
 .thoughts__post__text h2 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1.3;
+  font-size: 1.2rem;
   cursor: pointer;
-  margin: 0;
 }
 
 .thoughts__post__text h2:hover {
   color: var(--hover);
 }
 
-.thoughts__post__text h3 {
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  margin: 0.75rem 0 0.25rem;
-}
-
 .thoughts__post__text p {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
-
-@media (min-width: 768px) {
-  .thoughts__post__text {
-    margin: 1.5rem 1rem 0;
-    gap: 0.5rem;
-  }
-
-  .thoughts__post__text h2 {
-    font-size: 1.35rem;
-  }
-
-  .thoughts__post__text p {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .thoughts__post__text {
-    margin: 1.75rem 1.25rem 0;
-  }
-
-  .thoughts__post__text h2 {
-    font-size: 1.5rem;
-  }
-
-  .thoughts__post__text p {
-    font-size: 1.05rem;
-  }
-}
-
-/* Full post markdown typography */
-.thoughts__markdown {
-  max-width: 70ch;
-  margin: 0 auto 4rem;
-  padding: 0 2rem;
+  max-height: 4rem;
   font-size: 1rem;
-  line-height: 1.7;
-  text-align: left;
+  line-height: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.thoughts__markdown h1,
-.thoughts__markdown h2,
-.thoughts__markdown h3,
-.thoughts__markdown h4 {
-  margin-top: 2.5rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.25;
-  text-align: left;
+.thoughts__detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
 }
 
-.thoughts__markdown h1 {
-  font-size: 1.9rem;
-  font-weight: 700;
+.thoughts__readMore {
+  transition: color 0.2s ease;
+  color: var(--hover);
+  font-size: 1rem;
 }
 
-.thoughts__markdown h2 {
-  font-size: 1.5rem;
-  font-weight: 650;
-}
-
-.thoughts__markdown h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-align: left;
-}
-
-.thoughts__markdown p {
-  margin: 0 0 1.1rem;
-}
-
-.thoughts__markdown em {
-  font-style: italic;
-}
-
-.thoughts__markdown strong {
-  font-weight: 600;
-}
-
-.thoughts__markdown strong em,
-.thoughts__markdown em strong {
-  font-weight: 600;
-  font-style: italic;
-}
-
-.thoughts__markdown ul,
-.thoughts__markdown ol {
-  margin: 0 0 1.1rem 1.25rem;
-  padding: 0;
-}
-
-.thoughts__markdown li {
-  margin: 0.25rem 0;
-}
-
-.thoughts__markdown hr {
-  border: none;
-  border-top: 1px solid var(--light-oak);
-  margin: 2.5rem 0;
-}
-
-@media (min-width: 768px) {
-  .thoughts__markdown {
-    max-width: 75ch;
-    font-size: 1.02rem;
-    line-height: 1.75;
-  }
-
-  .thoughts__markdown h1 {
-    font-size: 2rem;
-  }
-
-  .thoughts__markdown h2 {
-    font-size: 1.6rem;
-  }
+.thoughts__readMore:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Tablet and above */
