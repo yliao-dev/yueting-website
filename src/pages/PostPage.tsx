@@ -68,7 +68,7 @@ const PostPage = () => {
           prev={
             index > 0
               ? {
-                  label: "Prev Thoughts",
+                  label: "Prev Post",
                   to: `/thoughts/post/${ThoughtsData[index - 1].id}`,
                 }
               : undefined
@@ -76,7 +76,7 @@ const PostPage = () => {
           next={
             index < ThoughtsData.length - 1
               ? {
-                  label: "Next Thoughts",
+                  label: "Next Post",
                   to: `/thoughts/post/${ThoughtsData[index + 1].id}`,
                 }
               : undefined

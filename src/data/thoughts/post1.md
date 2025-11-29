@@ -1,5 +1,3 @@
-_Meaning is an inner light that turns void into direction._
-
 ---
 
 ### The Existence of Meaning
@@ -12,7 +10,7 @@ Meaning takes shape through a simple, repeating process: we sense that something
 
 Meaning also has directionality. It brings a goal close enough to focus on, and it connects past experience, present action, and future expectation into a single continuous line rather than scattered fragments. Adler’s teleological psychology echoes this: human experience organizes itself around the goals we hold, and those goals shape how we move through the world.
 
-Camus reminded us in _The Myth of Sisyphus_ that freedom lies not in predetermined purpose but in the act of living. Yet Meaning is not an enemy of life; it grows from its very texture. _To love life and to love the Meaning one shapes within it are not contradictions._ Meaning is a direction in which life can flow.
+Camus reminded us in _The Myth of Sisyphus_ that freedom lies not in predetermined purpose but in the act of living. Meaning is not an enemy of life; it grows from its very texture. _To love life and to love the Meaning one shapes within it are not contradictions. \_Meaning is an inner light that turns void into direction._
 
 ### The Pursuit of Meaning
 
@@ -42,7 +40,7 @@ High-level Meaning arises when life extends outward. Deep bonds, responsibility,
 
 The higher the level, the deeper its influence. Basic Meaning determines whether one can stand. Middle Meaning determines whether one can move. High Meaning determines whether one can transcend.
 
-These levels interact continuously with the weight of Meaning. High-level meanings may carry a natural pull, yet their weight shifts with circumstance. Illness lifts the weight of health. Instability draws attention back to survival. When conditions settle, higher meanings such as connection, value, and contribution return to the center of one’s direction.
+These levels interact continuously with the weight of Meaning. High-level meanings may carry a natural pull, their weight shifts with circumstance. Illness lifts the weight of health. Instability draws attention back to survival. When conditions settle, higher meanings such as connection, value, and contribution return to the center of one’s direction.
 
 Levels reveal where Meaning belongs. Weight reveals what matters now. Together, they shape how one understands oneself, allocates strength, and chooses the path forward.
 
