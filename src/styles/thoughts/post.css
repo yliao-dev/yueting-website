@@ -30,7 +30,7 @@
 /* SUBTITLE */
 .post__page__intro p {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.55;
   letter-spacing: 0.05rem;
   color: var(--text-secondary);
@@ -88,13 +88,10 @@
 
 /* MARKDOWN CONTENT */
 .post__text {
+  max-width: 40rem;
   margin: 0 auto 3rem;
-  padding: 0 1rem;
-
-  /* Base readable width (mobile → medium screens) */
-  max-width: 43rem;
-
-  font-size: 1rem;
+  padding: 0 2rem;
+  font-size: 1.15rem;
   line-height: 1.75;
 }
 
