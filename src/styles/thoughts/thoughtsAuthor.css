@@ -17,18 +17,4 @@
   color: var(--text-secondary);
   letter-spacing: 0.05rem;
   font-size: 0.9rem;
-
-  margin-right: 1rem;
-}
-
-/* Tablet and above */
-@media (min-width: 768px) {
-  /* .thoughts__author__icon {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .thoughts__author__info {
-    font-size: 0.8rem;
-  } */
 }
