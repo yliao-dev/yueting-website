@@ -58,9 +58,7 @@
   background: none;
   cursor: pointer;
   color: var(--light-oak);
-
   font-size: clamp(1rem, 1.4vw + 0.3rem, 1.55rem);
-
   white-space: nowrap;
   padding: 0.15rem 0.25rem;
 }
@@ -93,8 +91,8 @@
 
 /* MARKDOWN CONTENT WRAPPER */
 .post__text {
-  font-size: 1.16rem;
-  line-height: 1.78;
+  font-size: 1.14rem;
+  line-height: 1.5;
 }
 
 /* paragraphs + list items inherit */
