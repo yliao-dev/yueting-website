@@ -8,9 +8,9 @@
 .post__page__intro,
 .post__page__content {
   width: 100%;
-  max-width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+  max-width: 100%;
 }
 
 .post__page__intro {
@@ -21,19 +21,18 @@
 /* TITLE */
 .post__page__intro h1 {
   font-family: "Merriweather", serif;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   letter-spacing: 0.05rem;
-  line-height: 1.2;
+  line-height: 1.25;
   margin: 3rem 0 0.5rem;
 }
 
-/* SUBTITLE / DESCRIPTION */
+/* SUBTITLE */
 .post__page__intro p {
   margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  letter-spacing: 0.1rem;
-  font-weight: var(--font-weight-regular);
+  font-size: 1.1rem;
+  line-height: 1.55;
+  letter-spacing: 0.05rem;
   color: var(--text-secondary);
   max-width: 40rem;
 }
@@ -65,7 +64,7 @@
   margin: 1.5rem 0 0.5rem;
 }
 
-/* LANGUAGE TOGGLE BUTTON */
+/* LANGUAGE TOGGLE */
 .lang-toggle {
   display: inline-flex;
   align-items: center;
@@ -74,8 +73,8 @@
   background: none;
   cursor: pointer;
   color: var(--light-oak);
-  font-size: 0.95rem;
-  white-space: nowrap; /* keep “中文 / EN” on one line */
+  font-size: 1.05rem;
+  white-space: nowrap;
   padding: 0.1rem 0.2rem;
 }
 
@@ -84,20 +83,29 @@
 }
 
 .lang-toggle svg {
-  font-size: 1rem; /* MUI icon size inside button */
-  color: var(--light-oak);
+  font-size: 1.1rem;
 }
 
 /* MARKDOWN CONTENT */
 .post__text {
-  max-width: 40rem;
   margin: 0 auto 3rem;
   padding: 0 1rem;
-  font-size: 1rem;
-  line-height: 1.6;
+
+  /* Base readable width (mobile → medium screens) */
+  max-width: 43rem;
+
+  font-size: 1.15rem;
+  line-height: 1.75;
 }
 
-/* headings inside markdown */
+/* paragraphs + list items inherit */
+.post__text p,
+.post__text li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* HEADINGS INSIDE MARKDOWN */
 .post__text h1,
 .post__text h2,
 .post__text h3,
@@ -110,35 +118,23 @@
 
 .post__text h1 {
   font-size: 1.9rem;
-  font-weight: 700;
 }
 
 .post__text h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .post__text h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.28rem;
 }
 
-/* paragraphs + lists */
-.post__text p {
-  margin: 0 0 1rem;
-}
-
+/* LIST spacing */
 .post__text ul,
 .post__text ol {
   margin: 0 0 1.1rem 1.25rem;
-  padding: 0;
 }
 
-.post__text li {
-  margin: 0.25rem 0;
-}
-
-/* emphasis */
+/* EMPHASIS */
 .post__text em {
   font-style: italic;
 }
@@ -147,20 +143,20 @@
   font-weight: 600;
 }
 
-.post__text strong em,
-.post__text em strong {
+.post__text em strong,
+.post__text strong em {
   font-weight: 600;
   font-style: italic;
 }
 
-/* hr */
+/* HR */
 .post__text hr {
   border: none;
-  border-top: 0.0625rem solid var(--light-oak);
+  border-top: 1px solid var(--light-oak);
   margin: 2.5rem 0;
 }
 
-/* links */
+/* LINKS */
 .post__text a {
   color: var(--hover);
   text-decoration: underline;
@@ -170,64 +166,67 @@
   opacity: 0.8;
 }
 
-/* images inside markdown */
+/* INLINE IMAGES */
 .post__text img {
   display: block;
   max-width: 100%;
   margin: 2rem auto;
   border-radius: 0.25rem;
-  object-fit: cover;
 }
-/* Tablet and above */
+
+/* TABLET */
 @media (min-width: 768px) {
   .post__page__intro,
   .post__page__content {
-    max-width: 40rem;
+    max-width: 45rem;
     padding: 0 2rem;
   }
 
-  .post__page__intro h1 {
-    font-size: 2.4rem;
-  }
-
-  .post__page__intro p {
-    font-size: 1.02rem;
-    line-height: 1.65;
-  }
-
   .post__text {
-    max-width: 42rem;
+    max-width: 48rem; /* wider on tablets */
     padding: 0;
-    font-size: 1.02rem;
-    line-height: 1.75;
-  }
-
-  .lang-toggle svg {
-    font-size: 1.1rem;
-  }
-
-  .lang-toggle {
-    font-size: 1rem;
+    font-size: 1.17rem;
+    line-height: 1.78;
   }
 }
 
-/* Desktop and above */
+/* SMALL DESKTOP */
 @media (min-width: 1024px) {
   .post__page__intro,
   .post__page__content {
-    max-width: 50rem;
+    max-width: 55rem;
     padding: 0 2.5rem;
   }
 
   .post__text {
-    max-width: 46rem;
+    max-width: 55rem; /* from 43 → 48 → now 55rem */
+    font-size: 1.19rem;
+    line-height: 1.78;
+  }
+}
+
+/* LARGE DESKTOP / ULTRAWIDE */
+@media (min-width: 1440px) {
+  .post__page__intro,
+  .post__page__content {
+    max-width: 65rem;
   }
 
-  .lang-toggle svg {
-    font-size: 1.2rem;
+  .post__text {
+    max-width: 60rem; /* Wide, but still readable */
+    font-size: 1.22rem;
+    line-height: 1.82;
+  }
+}
+
+/* 4K MONITORS — final safe limit */
+@media (min-width: 2000px) {
+  .post__page__intro,
+  .post__page__content {
+    max-width: 75rem;
   }
 
-  .lang-toggle {
-    font-size: 1.05rem;
+  .post__text {
+    max-width: 70rem; /* Absolute max width */
   }
 }
