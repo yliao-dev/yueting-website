@@ -54,7 +54,7 @@ const PostPage = () => {
         <h1>{post.title}</h1>
         <p>{post.description}</p>
 
-        <section className="post__page__info">
+        <div className="post__page__info">
           <div className="post__page__media">
             <ThoughtsAuthor author={post.author} date={post.date} />
           </div>
@@ -66,7 +66,7 @@ const PostPage = () => {
             <TranslateIcon fontSize="small" />
             {lang === "en" ? "中文" : "EN"}
           </button>
-        </section>
+        </div>
 
         {post.coverImage && (
           <img src={post.coverImage} alt={post.title} className="post__cover" />

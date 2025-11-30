@@ -1,4 +1,4 @@
-**_Meaning is an inner light that turns void into direction_**
+_Meaning is an inner light that turns void into direction_
 
 ---
 
@@ -56,6 +56,8 @@ Levels show where Meaning belongs. Weight shows what matters now. Together they 
 
 ---
 
+![Meaning in connections](/images/thoughts/post1/preview/002.webp)
+
 ### The Paths of Meaning
 
 Meaning becomes real only through action. However one understands or questions it, Meaning must eventually enter lived reality, where it is confirmed, shaped, or revised. Frankl described three essential paths through which Meaning appears in experience: creation, experience, and attitude. These are not abstract categories but the basic ways human life encounters Meaning.
@@ -70,3 +72,5 @@ Creation, experience, and attitude form a single architecture through which Mean
 Meaning culminates in action. It appears in our choices, and those choices reshape the Meaning that led to them.
 
 **Meaning is a directional force that gathers the scattered fragments of experience into a path one can walk.**
+
+![Meaning in memory](/images/thoughts/post1/preview/003.webp)
