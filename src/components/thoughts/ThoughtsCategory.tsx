@@ -1,16 +1,17 @@
-import { Camera, FitnessCenter } from "@mui/icons-material";
+import { Camera, Insights } from "@mui/icons-material";
 import { ThoughtsCategoryProps } from "../../types/thoughtsTypes";
 import KendoIcon from "../shared/KendoIcon";
 
 const ThoughtsCategory = ({ onSelect }: ThoughtsCategoryProps) => {
   const categories = [
+    { id: "insights", icon: <Insights />, value: "insights" },
+
+    { id: "photography", icon: <Camera />, value: "photography" },
     {
       id: "kendo",
       icon: <KendoIcon />,
       value: "kendo",
     },
-    { id: "photography", icon: <Camera />, value: "photography" },
-    { id: "fitness", icon: <FitnessCenter />, value: "fitness" },
   ];
 
   return (

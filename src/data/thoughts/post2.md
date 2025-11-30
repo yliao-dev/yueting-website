@@ -1,3 +1,3 @@
-## Thoughts Title
+## TBA Title
 
-Thoughts text
+TBA text
