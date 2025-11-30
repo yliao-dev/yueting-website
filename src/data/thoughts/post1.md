@@ -38,6 +38,8 @@ For the person whose envisioned self is expressed through creation, creative wor
 Meaning fatigue arises when sustained effort yields no return. The result is numbness, voidness, doubt. Negative feedback pushes a reassessment of a goal’s realism and the validity of its path.  
 **Meaning’s weight is fluid; whatever brings one closer to the envisioned self settles deepest.**
 
+![Meaning in connections](/images/thoughts/post1/preview/002.webp)
+
 ---
 
 ### The Levels of Meaning
@@ -56,8 +58,6 @@ Levels show where Meaning belongs. Weight shows what matters now. Together they 
 
 ---
 
-![Meaning in connections](/images/thoughts/post1/preview/002.webp)
-
 ### The Paths of Meaning
 
 Meaning becomes real only through action. However one understands or questions it, Meaning must eventually enter lived reality, where it is confirmed, shaped, or revised. Frankl described three essential paths through which Meaning appears in experience: creation, experience, and attitude. These are not abstract categories but the basic ways human life encounters Meaning.
@@ -74,3 +74,9 @@ Meaning culminates in action. It appears in our choices, and those choices resha
 **Meaning is a directional force that gathers the scattered fragments of experience into a path one can walk.**
 
 ![Meaning in memory](/images/thoughts/post1/preview/003.webp)
+
+Meaning sharpens your sense of time.
+It makes you cherish the moments you once overlooked,
+because they become part of the path you are shaping—
+not just something you pass through,
+but something that belongs to your becoming.
