@@ -55,10 +55,6 @@ const PostPage = () => {
         <p>{post.description}</p>
 
         <div className="post__page__info">
-          <div className="post__page__media">
-            <ThoughtsAuthor author={post.author} date={post.date} />
-          </div>
-
           <button
             className="lang-toggle"
             onClick={() => setLang(lang === "en" ? "cn" : "en")}
@@ -66,8 +62,11 @@ const PostPage = () => {
             <TranslateIcon fontSize="small" />
             {lang === "en" ? "中文" : "EN"}
           </button>
-        </div>
 
+          <div className="post__page__media">
+            <ThoughtsAuthor author={post.author} date={post.date} />
+          </div>
+        </div>
         {post.coverImage && (
           <img src={post.coverImage} alt={post.title} className="post__cover" />
         )}

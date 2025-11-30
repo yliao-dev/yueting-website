@@ -4,15 +4,17 @@
   align-items: center;
 }
 
-/* INTRO WRAPPER */
+/* shared width/spacing for intro + content + markdown text */
 .post__page__intro,
-.post__page__content {
+.post__page__content,
+.post__text {
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
-  max-width: 100%;
+  max-width: 40rem;
+  padding: 0 1.5rem;
 }
 
+/* INTRO */
 .post__page__intro {
   display: flex;
   flex-direction: column;
@@ -24,34 +26,59 @@
   font-size: 2.3rem;
   letter-spacing: 0.05rem;
   line-height: 1.25;
-  margin: 3rem 0 0.5rem;
+  margin: 3rem 0 0.75rem;
 }
 
 /* SUBTITLE */
 .post__page__intro p {
   margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.55;
+  font-size: 1.15rem;
+  line-height: 1.6;
   letter-spacing: 0.05rem;
   color: var(--text-secondary);
-  max-width: 40rem;
 }
 
-/* AUTHOR + LANGUAGE ROW */
+/* AUTHOR + LANGUAGE WRAPPER (vertical, right-aligned) */
 .post__page__info {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.4rem;
   width: 100%;
   margin-top: 1rem;
-  gap: 1rem;
 }
 
-/* AUTHOR BLOCK */
+/* LANGUAGE TOGGLE — Larger Responsive Scale */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--light-oak);
+
+  font-size: clamp(1rem, 1.4vw + 0.3rem, 1.55rem);
+
+  white-space: nowrap;
+  padding: 0.15rem 0.25rem;
+}
+
+.lang-toggle:hover {
+  color: var(--hover);
+}
+
+.lang-toggle svg {
+  font-size: 1em;
+}
+
+/* AUTHOR BLOCK (right edge aligned with button) */
 .post__page__media {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-self: flex-end;
   margin: 0;
 }
 
@@ -61,41 +88,13 @@
   border-radius: 0.25rem;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.75rem 0 0.75rem;
 }
 
-/* LANGUAGE TOGGLE */
-.lang-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: var(--light-oak);
-  font-size: 1.05rem;
-  white-space: nowrap;
-  padding: 0.1rem 0.2rem;
-}
-
-.lang-toggle:hover {
-  color: var(--hover);
-}
-
-.lang-toggle svg {
-  font-size: 1.1rem;
-}
-
-/* MARKDOWN CONTENT */
+/* MARKDOWN CONTENT WRAPPER */
 .post__text {
-  margin: 0 auto 3rem;
-  padding: 0 1rem;
-
-  /* Base readable width (mobile → medium screens) */
-  max-width: 43rem;
-
-  font-size: 1rem;
-  line-height: 1.75;
+  font-size: 1.16rem;
+  line-height: 1.78;
 }
 
 /* paragraphs + list items inherit */
@@ -117,15 +116,18 @@
 }
 
 .post__text h1 {
-  font-size: 1.9rem;
+  font-size: 1.95rem;
+  font-weight: 700;
 }
 
 .post__text h2 {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
+  font-weight: 600;
 }
 
 .post__text h3 {
-  font-size: 1.28rem;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 /* LIST spacing */
@@ -177,56 +179,67 @@
 /* TABLET */
 @media (min-width: 768px) {
   .post__page__intro,
-  .post__page__content {
-    max-width: 45rem;
+  .post__page__content,
+  .post__text {
+    max-width: 48rem;
     padding: 0 2rem;
   }
 
-  .post__text {
-    max-width: 48rem; /* wider on tablets */
-    padding: 0;
-    font-size: 1.15rem;
-    line-height: 1.78;
+  .post__page__intro h1 {
+    font-size: 2.5rem;
   }
+
+  .post__page__intro p {
+    font-size: 1.18rem;
+    line-height: 1.7;
+  }
+
+  .post__text {
+    font-size: 1.18rem;
+    line-height: 1.82;
+  }
+
+  /* no lang-toggle font-size override */
 }
 
 /* SMALL DESKTOP */
 @media (min-width: 1024px) {
   .post__page__intro,
-  .post__page__content {
-    max-width: 55rem;
-    padding: 0 2.5rem;
+  .post__page__content,
+  .post__text {
+    max-width: 60rem;
+    padding: 0 3rem;
   }
 
   .post__text {
-    max-width: 55rem; /* from 43 → 48 → now 55rem */
-    font-size: 1.17rem;
-    line-height: 1.78;
+    font-size: 1.2rem;
+    line-height: 1.85;
   }
 }
 
-/* LARGE DESKTOP / ULTRAWIDE */
+/* LARGE DESKTOP */
 @media (min-width: 1440px) {
   .post__page__intro,
-  .post__page__content {
-    max-width: 65rem;
+  .post__page__content,
+  .post__text {
+    max-width: 70rem;
   }
 
   .post__text {
-    max-width: 60rem; /* Wide, but still readable */
-    font-size: 1.2rem;
-    line-height: 1.82;
+    font-size: 1.22rem;
+    line-height: 1.88;
   }
 }
 
-/* 4K MONITORS — final safe limit */
+/* 4K */
 @media (min-width: 2000px) {
   .post__page__intro,
-  .post__page__content {
+  .post__page__content,
+  .post__text {
     max-width: 75rem;
   }
 
   .post__text {
-    max-width: 70rem; /* Absolute max width */
+    font-size: 1.24rem;
   }
 }
