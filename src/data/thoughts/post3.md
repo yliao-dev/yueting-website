@@ -1,3 +1,1 @@
-## Thoughts Title
 
-Thoughts text
