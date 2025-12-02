@@ -60,7 +60,7 @@ const PostPage = () => {
             onClick={() => setLang(lang === "en" ? "cn" : "en")}
           >
             <TranslateIcon fontSize="small" />
-            {lang === "en" ? "中文" : "EN"}
+            {lang === "en" ? "| 中文" : "| EN"}
           </button>
 
           <div className="post__page__media">
