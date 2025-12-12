@@ -1,12 +1,21 @@
 [
   {
+    "filename": "001.jpg",
+    "title": "",
+    "location": "",
+    "date": "",
+    "tags": [],
+    "width": 2088,
+    "height": 1392
+  },
+  {
     "filename": "002.jpg",
     "title": "",
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2212,
-    "height": 1475
+    "width": 2318,
+    "height": 1546
   },
   {
     "filename": "003.jpg",
@@ -14,8 +23,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2318,
-    "height": 1546
+    "width": 2270,
+    "height": 1513
   },
   {
     "filename": "004.jpg",
@@ -32,8 +41,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2318,
-    "height": 1546
+    "width": 2250,
+    "height": 1500
   },
   {
     "filename": "006.jpg",
@@ -41,8 +50,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2048,
-    "height": 1365
+    "width": 2318,
+    "height": 1546
   },
   {
     "filename": "007.jpg",
@@ -50,8 +59,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2228,
-    "height": 1485
+    "width": 2122,
+    "height": 1415
   },
   {
     "filename": "008.jpg",
@@ -59,8 +68,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2048,
-    "height": 1365
+    "width": 2318,
+    "height": 1546
   },
   {
     "filename": "009.jpg",
@@ -68,8 +77,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2048,
-    "height": 1365
+    "width": 2318,
+    "height": 1546
   },
   {
     "filename": "010.jpg",
@@ -77,8 +86,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2048,
-    "height": 1365
+    "width": 2318,
+    "height": 1546
   },
   {
     "filename": "011.jpg",
@@ -86,8 +95,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 1365,
-    "height": 2048
+    "width": 2318,
+    "height": 1546
   },
   {
     "filename": "012.jpg",
@@ -95,8 +104,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2048,
-    "height": 1365
+    "width": 2318,
+    "height": 1546
   },
   {
     "filename": "013.jpg",
@@ -104,8 +113,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2048,
-    "height": 1365
+    "width": 2318,
+    "height": 1546
   },
   {
     "filename": "014.jpg",
@@ -113,8 +122,8 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2048,
-    "height": 1365
+    "width": 1844,
+    "height": 1230
   },
   {
     "filename": "015.jpg",
@@ -122,7 +131,7 @@
     "location": "",
     "date": "",
     "tags": [],
-    "width": 2048,
-    "height": 1365
+    "width": 2238,
+    "height": 1492
   }
 ]
