@@ -15,6 +15,7 @@ import meta13 from "./collection13Meta.json";
 import meta14 from "./collection14Meta.json";
 import meta15 from "./collection15Meta.json";
 import meta16 from "./collection16Meta.json";
+import meta17 from "./collection17Meta.json";
 
 import { createGalleryCollections } from "./createGalleryCollections";
 import { GalleryCollectionProps } from "../../types/galleryTypes";
@@ -99,5 +100,10 @@ export const GalleryData: GalleryCollectionProps[] = createGalleryCollections([
     title: "",
     slug: "collection16",
     meta: meta16,
+  },
+  {
+    title: "",
+    slug: "collection17",
+    meta: meta17,
   },
 ]);
