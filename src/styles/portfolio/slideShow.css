@@ -1,12 +1,12 @@
 .slideshow {
   width: 100%;
   height: auto;
-  max-width: 80rem;
-  padding: 1rem;
-  border: 1px solid rgba(23, 22, 20, 0.08);
-  border-radius: var(--radius-lg);
-  background: var(--surface);
-  box-shadow: var(--shadow-soft);
+  max-width: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .slideshow img {
@@ -28,6 +28,7 @@
   align-items: center;
   gap: 0;
   width: 100%;
+  padding-top: 0.9rem;
 }
 
 .slideshow__navigations .navigation-arrow {
