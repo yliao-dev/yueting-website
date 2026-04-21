@@ -34,6 +34,7 @@ const HomePage = () => {
     <div className="home">
       <section className="home__about">
         <div className="home__about__text">
+          <p className="page__eyebrow">Way Of Practice</p>
           <h1>About</h1>
           <h2 className="typing-cursor">{titleText}</h2>
           <p>
@@ -42,8 +43,19 @@ const HomePage = () => {
             photography that captures how I see the world. I'm based in the
             United States, often between lines of code and a dojo floor.
           </p>
+          <div className="home__about__marks">
+            <span>Code</span>
+            <span>Kendo</span>
+            <span>Photography</span>
+          </div>
         </div>
-        <img src={portraitImg} className="home__about__image" alt="portrait" />
+        <div className="home__about__frame">
+          <img
+            src={portraitImg}
+            className="home__about__image"
+            alt="portrait"
+          />
+        </div>
       </section>
 
       <LineBreak />
@@ -56,6 +68,7 @@ const HomePage = () => {
             if (el) scrollRefs.current[0] = el;
           }}
         >
+          <p className="page__eyebrow">Disciplines</p>
           <h1>Skills</h1>
           <StackChart
             onSelect={(data) => setSelectedSkill(data)}
@@ -67,6 +80,7 @@ const HomePage = () => {
         <section className="home__skills__text">
           {selectedSkill && (
             <>
+              <p className="page__eyebrow">Current Focus</p>
               <h2>{selectedSkill.label}</h2>
               {selectedSkill.paragraphs.map((p: string, i: number) => (
                 <p key={i}>{p}</p>
@@ -86,6 +100,7 @@ const HomePage = () => {
       <LineBreak />
 
       <section className="home__journey">
+        <p className="page__eyebrow">Movement</p>
         <h1>Journey</h1>
         <div
           className={`home__journey__text ${

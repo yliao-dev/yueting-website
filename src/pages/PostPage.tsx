@@ -51,6 +51,7 @@ const PostPage = () => {
   return (
     <div className="post__page">
       <section className="post__page__intro">
+        <p className="page__eyebrow">Reflection</p>
         <h1>{post.title}</h1>
         <p>{post.description}</p>
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 @import "./variables.css";
 
 @import "./shared/navbar.css";
@@ -29,46 +31,100 @@ body,
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background:
+    radial-gradient(circle at top right, rgba(162, 122, 80, 0.1), transparent 24%),
+    linear-gradient(180deg, #faf7f2 0%, var(--bg) 36%, var(--bg-soft) 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-standard);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 section {
+  width: min(100%, var(--content-width));
+  margin: 0 auto;
   padding: 1.2rem;
   align-items: center;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: var(--font-weight-light);
-  letter-spacing: 0.2rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.8vw, 4.6rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 0.9rem;
-  font-weight: var(--font-weight-light);
-  letter-spacing: 0.1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
   margin-bottom: 1.5rem;
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: var(--font-weight-light);
   color: var(--text-secondary);
-  letter-spacing: 0.07rem;
-  line-height: 2;
+  letter-spacing: 0.01rem;
+  line-height: 1.8;
 }
 
 ul {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: var(--font-weight-light);
   color: var(--text-secondary);
-  line-height: 1.5;
-  letter-spacing: 0.07rem;
-  padding-left: 1rem;
+  line-height: 1.7;
+  letter-spacing: 0.01rem;
+  padding-left: 1.15rem;
   list-style-type: disc;
   text-align: left;
 }
@@ -85,66 +141,42 @@ ul li {
   align-items: center;
   font-size: 2rem;
   animation: fade-in 0.3s ease-in-out;
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(8px);
 }
 
-/* Tablet and above */
-@media (min-width: 768px) {
-  section {
-    padding: 2rem;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  ul {
-    font-size: 0.9rem;
-  }
-}
-
-/* Desktop and above */
-@media (min-width: 1024px) {
-  section {
-    width: 90%;
-    max-width: 75rem;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.1rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  ul {
-    font-size: 1rem;
-  }
+.page__eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--nav-hover);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
 }
 
 .page__divider {
-  height: 0.2rem;
-  opacity: 0.8;
-  background-color: var(--line-break);
+  height: 1px;
+  opacity: 1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(162, 122, 80, 0.7),
+    rgba(23, 22, 20, 0.12),
+    transparent
+  );
 }
 
 .page__divider-gradient {
-  height: 0.2rem;
-  background: linear-gradient(to right, transparent, var(--black), transparent);
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(138, 36, 50, 0.75),
+    rgba(162, 122, 80, 0.55),
+    transparent
+  );
   border: none;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .animate-slide-left {
@@ -168,7 +200,7 @@ ul li {
 .typing-cursor::after {
   content: "|";
   animation: blink 1s ease-in-out 1 forwards;
-  color: var(--black);
+  color: var(--hover);
   margin-left: 0.2rem;
 }
 
@@ -213,5 +245,22 @@ ul li {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 2rem;
+  }
+
+  p,
+  ul {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    width: min(90%, var(--content-width));
   }
 }

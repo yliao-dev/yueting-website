@@ -1,36 +1,49 @@
 :root {
-  /* === Theme Colors === */
-  --primary: rgba(59, 68, 75, 1);
-  --white: rgba(255, 255, 255, 1);
-  --black: rgba(0, 0, 0, 1);
-  --light-blue: rgba(137, 194, 217, 1);
+  --primary: #171614;
+  --white: #fffaf4;
+  --black: #11100f;
+  --bg: #f4efe8;
+  --bg-soft: #ebe3d7;
+  --surface: #fffaf4;
+  --surface-muted: #f1e9dd;
+  --surface-dark: #181512;
+  --light-blue: #46556c;
 
-  /* === Grayscale Palette === */
-  --line-break: rgba(204, 204, 204, 1);
-  --gray-400: rgba(176, 176, 176, 1);
-  --gray-600: rgba(107, 107, 107, 1);
-  --gray-700: rgba(53, 53, 53, 1);
+  --line-break: #d1c1ab;
+  --gray-400: #b7a792;
+  --gray-600: #6f655d;
+  --gray-700: #302b28;
 
-  /* Typography */
-  --text-primary: var(--gray-700);
-  --text-secondary: var(--gray-600);
+  --text-primary: #302b28;
+  --text-secondary: #6f655d;
 
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-weight-light: 400;
+  --font-weight-regular: 500;
+  --font-weight-semibold: 600;
 
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
 
-  /* === Interactive Elements === */
-  --hover: rgba(0, 114, 177, 1);
-  --nav-hover: var(--gray-400);
-  --timeline: var(--light-oak);
+  --hover: #8a2432;
+  --nav-hover: #a27a50;
+  --timeline: #46556c;
 
-  /* === Social Media Brand Colors === */
-  --linkedln: rgba(0, 119, 181, 1);
-  --github: rgba(26, 11, 11, 1);
-  --instagram: rgba(238, 42, 123, 1);
-  --light-oak: rgba(210, 180, 140, 1);
+  --linkedln: #0a66c2;
+  --github: #171614;
+  --instagram: #c13584;
+  --light-oak: #a27a50;
+
+  --radius-sm: 0.35rem;
+  --radius-md: 0.65rem;
+  --radius-lg: 1rem;
+  --shadow-soft: 0 12px 30px rgba(23, 22, 20, 0.08);
+  --shadow-strong: 0 18px 42px rgba(23, 22, 20, 0.14);
+  --content-width: 76rem;
+  --reading-width: 58rem;
+  --transition-standard: 0.24s ease;
 }

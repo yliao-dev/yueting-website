@@ -10,6 +10,7 @@ const PortfolioPage = () => {
     <>
       <div className="portfolio">
         <section className="portfolio__intro__text">
+          <p className="page__eyebrow">Forged Work</p>
           <h1 className="typing-cursor">{titleText}</h1>
           <p>
             Each project here starts with a practical need—or a spark of

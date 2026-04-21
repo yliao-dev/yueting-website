@@ -15,6 +15,7 @@ const ProjectPage = () => {
   return (
     <div className="project">
       <section className="project__text">
+        <p className="page__eyebrow">Project Detail</p>
         <a href={project.link} target="_blank" rel="noopener noreferrer">
           <h2>{project.name}</h2>
         </a>

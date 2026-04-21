@@ -19,6 +19,7 @@ const ContactPage = () => {
       <div className="contact">
         <section className="contact__intro">
           <div className="contact__intro__text">
+            <p className="page__eyebrow">Reach Out</p>
             <h1>Connect</h1>
             <p>
               If any part of my journey resonates with you, I’d love to

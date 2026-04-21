@@ -1,6 +1,6 @@
 .stack-chart {
-  width: 80vw;
-  max-width: 90%;
+  width: 100%;
+  max-width: 100%;
 }
 
 .stack-bars {
@@ -12,14 +12,17 @@
 .stack-bar {
   display: flex;
   align-items: center;
-  height: 2.5rem;
-  border-radius: 0.5rem;
+  min-height: 2.9rem;
+  clip-path: polygon(0 0, calc(100% - 0.9rem) 0, 100% 50%, calc(100% - 0.9rem) 100%, 0 100%);
   padding-left: 1rem;
   cursor: pointer;
-  transition: width 0.5s ease-out, background-color 0.3s ease,
-    transform 0.3s ease;
+  transition:
+    width 0.5s ease-out,
+    transform var(--transition-standard),
+    filter var(--transition-standard);
   transform-origin: left center;
   opacity: 0;
+  box-shadow: var(--shadow-soft);
 }
 
 .stack-bar.animate-bar {
@@ -27,22 +30,23 @@
 }
 
 .stack-bar:hover {
-  transform: scale(1.015);
+  transform: translateX(0.25rem);
 }
 
 .stack-bar.active {
-  transform: scale(1.025);
+  transform: translateX(0.45rem);
 }
 
 .stack-label {
   color: var(--white);
-  letter-spacing: 0.1rem;
-  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.85rem;
   font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
 }
 
 .stack-bar.dimmed {
-  filter: contrast(15%);
+  filter: saturate(0.45) brightness(0.85);
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
@@ -61,9 +65,9 @@
 
 @media (min-width: 1024px) {
   .stack-chart {
-    width: 40vw;
+    width: 100%;
   }
   .stack-bars {
-    gap: 2rem;
+    gap: 1.2rem;
   }
 }

@@ -5,12 +5,14 @@ import ScrollToTop from "../shared/ScrollToTop";
 
 const MainLayout = () => {
   return (
-    <>
+    <div className="site-shell">
       <ScrollToTop />
       <Navbar />
-      <Outlet />
+      <main className="site-main">
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 export default MainLayout;

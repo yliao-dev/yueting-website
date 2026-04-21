@@ -63,8 +63,8 @@ const MapChart = ({ setTooltipContent }: Props) => {
         height={400}
         width={800}
       >
-        <Sphere stroke="#E4E5E6" strokeWidth={1} fill="#fff" id={""} />
-        <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
+        <Sphere stroke="#c9baa7" strokeWidth={1} fill="#f8f3eb" id={""} />
+        <Graticule stroke="#ded2c2" strokeWidth={0.5} />
         <ZoomableGroup center={[-12, 35]} zoom={1} key={resetKey}>
           {geoFeatures && (
             <Geographies geography={geoFeatures}>
@@ -72,10 +72,10 @@ const MapChart = ({ setTooltipContent }: Props) => {
                 geographies.map((geo) => {
                   const d = countryData.find((s) => s.ISO3 === geo.id);
 
-                  let fillColor = "#F5F4F6";
+                  let fillColor = "#efe7dc";
                   if (d) {
-                    if (d.Lived === 1) fillColor = "#0072b1";
-                    else if (d.Travelled === 1) fillColor = "#89c2d9";
+                    if (d.Lived === 1) fillColor = "#8a2432";
+                    else if (d.Travelled === 1) fillColor = "#46556c";
                   }
 
                   return (
@@ -92,7 +92,7 @@ const MapChart = ({ setTooltipContent }: Props) => {
                       }}
                       style={{
                         default: { fill: fillColor, outline: "none" },
-                        hover: { fill: "#d2b48c", outline: "none" },
+                        hover: { fill: "#9a7752", outline: "none" },
                       }}
                     />
                   );

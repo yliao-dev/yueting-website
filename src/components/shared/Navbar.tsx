@@ -18,20 +18,28 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <NavLink className="logo" to="/">
+        <NavLink className="logo" to="/" aria-label="Yueting Liao home">
           <img className="navbar__logo" src="/logo.svg" alt="Logo" />
+          <div className="navbar__brand">
+            <span className="navbar__brand-name">Yueting Liao</span>
+            <span className="navbar__brand-tag">Code / Kendo / Lens</span>
+          </div>
         </NavLink>
 
         <div className="navbar__links">
           {navItems.map((item) => (
             <NavLink key={item} to={`/${item}`} className={linkClass}>
-              <h2>{item.toUpperCase()}</h2>
+              <span className="navbar__link-text">{item}</span>
             </NavLink>
           ))}
         </div>
 
         <div className="navbar__toggle-button">
-          <button onClick={toggleNavbar}>
+          <button
+            type="button"
+            onClick={toggleNavbar}
+            aria-label="Toggle navigation"
+          >
             <CiMenuFries />
           </button>
         </div>
@@ -44,7 +52,7 @@ const Navbar = () => {
               <li key={item}>
                 <NavLink to={`/${item}`} className={linkClass}>
                   <span className="navbar__dropdown-text">
-                    {item.toUpperCase()}
+                    {item}
                   </span>
                 </NavLink>
               </li>

@@ -1,7 +1,8 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(17, 16, 15, 0.86);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +17,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 250, 244, 0.08);
 }
 
 .modal-image {
@@ -23,12 +27,15 @@
   object-fit: contain;
   height: auto;
   display: block;
-  border-radius: 0.25rem;
+  border-radius: var(--radius-sm);
 }
 
 .modal-navigation .navigation-arrow {
   color: var(--white);
   margin-top: 1rem;
+  background: transparent;
+  border-color: rgba(255, 250, 244, 0.18);
+  box-shadow: none;
 }
 
 .no-scroll {

@@ -23,14 +23,27 @@ const NavigationArrows = ({
 }: NavigationArrowsProps) => {
   return (
     <div className={`navigation-arrows ${className}`}>
-      <div>
+      <div className="navigation-arrows__side navigation-arrows__side--start">
         {prev?.to ? (
-          <Link className="navigation-arrow" to={prev.to}>
+          <Link
+            className={`navigation-arrow ${
+              !prev.label ? "navigation-arrow--iconOnly" : ""
+            }`}
+            to={prev.to}
+            aria-label={prev.label ?? "Previous"}
+          >
             <span className="arrow-symbol">&#10094;&nbsp;</span>
             <span className="arrow-label">{prev.label}</span>
           </Link>
         ) : prev?.onClick ? (
-          <button className="navigation-arrow" onClick={prev.onClick}>
+          <button
+            type="button"
+            className={`navigation-arrow ${
+              !prev.label ? "navigation-arrow--iconOnly" : ""
+            }`}
+            onClick={prev.onClick}
+            aria-label={prev.label ?? "Previous"}
+          >
             <span className="arrow-symbol">&#10094;&nbsp;</span>
             <span className="arrow-label">{prev.label}</span>
           </button>
@@ -39,14 +52,27 @@ const NavigationArrows = ({
 
       {center && <div className="navigation-center">{center}</div>}
 
-      <div>
+      <div className="navigation-arrows__side navigation-arrows__side--end">
         {next?.to ? (
-          <Link className="navigation-arrow" to={next.to}>
+          <Link
+            className={`navigation-arrow ${
+              !next.label ? "navigation-arrow--iconOnly" : ""
+            }`}
+            to={next.to}
+            aria-label={next.label ?? "Next"}
+          >
             <span className="arrow-label">{next.label}</span>
             <span className="arrow-symbol">&nbsp;&#10095;</span>
           </Link>
         ) : next?.onClick ? (
-          <button className="navigation-arrow" onClick={next.onClick}>
+          <button
+            type="button"
+            className={`navigation-arrow ${
+              !next.label ? "navigation-arrow--iconOnly" : ""
+            }`}
+            onClick={next.onClick}
+            aria-label={next.label ?? "Next"}
+          >
             <span className="arrow-label">{next.label}</span>
             <span className="arrow-symbol">&nbsp;&#10095;</span>
           </button>

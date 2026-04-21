@@ -23,6 +23,7 @@ const GalleryPage = () => {
   return (
     <div className="gallery">
       <section className="gallery__intro">
+        <p className="page__eyebrow">Observation</p>
         <h1 className="typing-cursor">{titleText}</h1>
         <p>
           A collection of moments, perspectives, and stories—captured through my

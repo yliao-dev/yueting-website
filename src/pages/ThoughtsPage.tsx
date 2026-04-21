@@ -19,6 +19,7 @@ const ThoughtsPage = () => {
   return (
     <div className="thoughts">
       <section className="thoughts__intro">
+        <p className="page__eyebrow">Refinement</p>
         <h1 className="typing-cursor">{titleText}</h1>
         <p>
           A space for ideas, lessons, and personal reflections—from everyday

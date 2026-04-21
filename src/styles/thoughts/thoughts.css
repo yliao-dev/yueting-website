@@ -3,47 +3,74 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  gap: 0.8rem;
 }
 
 .thoughts__intro {
   display: flex;
   text-align: left;
   flex-direction: column;
+  max-width: 50rem;
+  align-self: flex-start;
 }
 
 .thoughts__category {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 15vw;
+  gap: 1rem;
+  width: min(100%, var(--reading-width));
+  flex-wrap: wrap;
+}
+
+.thoughts__category-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  border: 1px solid rgba(23, 22, 20, 0.08);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform var(--transition-standard),
+    border-color var(--transition-standard);
 }
 
 .thoughts__category-button svg {
-  background: none;
-  border: none;
   cursor: pointer;
   font-size: 2.5rem;
   color: var(--text-secondary);
 }
 
-.thoughts__category-button svg:hover {
-  transform: scale(1.1);
+.thoughts__category-button:hover {
+  transform: translateY(-3px);
+  border-color: rgba(162, 122, 80, 0.32);
+}
+
+.thoughts__category-button:hover svg {
   color: var(--hover);
 }
 
-/* Thoughts posts section */
 .thoughts__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1rem;
-  gap: 1rem;
+  width: min(100%, var(--reading-width));
+  padding: 1rem 0 2rem;
+  gap: 1.5rem;
 }
 
 .thoughts__post {
-  max-width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  border: 1px solid rgba(23, 22, 20, 0.08);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -56,15 +83,14 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  padding: 0.5em;
-  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-  border: 0.01rem solid var(--light-oak);
-  border-radius: 0.2rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(23, 22, 20, 0.08);
+  border-radius: var(--radius-sm);
 }
 
 .thoughts__post__text {
   text-align: left;
-  margin-left: 0.5rem;
+  margin-left: 0;
   margin-top: 1rem;
 }
 
@@ -91,7 +117,9 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
-  margin-left: 0.5rem;
+  margin-left: 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(23, 22, 20, 0.08);
 }
 
 .thoughts__readMore {
@@ -105,32 +133,15 @@
   cursor: pointer;
 }
 
-/* Tablet and above */
 @media (min-width: 768px) {
-  .thoughts__contentBlock {
-    width: 90%;
-  }
-
-  .thoughts__post {
-    max-width: 80%;
-  }
-
   .thoughts__post__text h2 {
     font-size: 1.4rem;
   }
 }
 
-/* Desktop and above */
 @media (min-width: 1024px) {
   .thoughts__category-button svg {
-    font-size: 3.5rem;
-  }
-
-  .thoughts__contentBlock {
-    width: 70%;
-  }
-  .thoughts__post {
-    max-width: 70%;
+    font-size: 3rem;
   }
   .thoughts__post__text h2 {
     font-size: 1.6rem;

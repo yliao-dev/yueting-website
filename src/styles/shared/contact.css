@@ -3,16 +3,18 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  gap: 0.8rem;
 }
 
 .contact__intro__text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 38rem;
 }
 
 .contact__intro__text p {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .email-copy-row {
@@ -22,6 +24,11 @@
   gap: 0.5rem;
   cursor: pointer;
   user-select: none;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(23, 22, 20, 0.08);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
 }
 
 .clipboard-icon {
@@ -36,15 +43,15 @@
 
 .copied-msg {
   font-size: 0.9rem;
-  color: var(--light-oak);
+  color: var(--hover);
   opacity: 1;
   transition: opacity 0.3s ease;
 }
 
 .email-text {
   font-size: 0.9rem;
-  font-weight: var(--font-weight-light);
-  letter-spacing: 0.1rem;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.06rem;
 }
 
 .social-media-icons {
@@ -62,6 +69,26 @@
 .social-media-icons img {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.social-media-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid rgba(23, 22, 20, 0.08);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform var(--transition-standard),
+    border-color var(--transition-standard);
+}
+
+.social-media-icons a:hover {
+  transform: translateY(-3px);
+  border-color: rgba(162, 122, 80, 0.32);
 }
 
 .social-media-icons svg:hover {
@@ -90,9 +117,11 @@
 .contact__facts {
   display: flex;
   flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  align-items: center;
 }
 
-/* Bison card flip effect */
 .flip-card {
   cursor: pointer;
   width: 100%;
@@ -115,6 +144,10 @@
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(23, 22, 20, 0.08);
 }
 
 .flip-card-front img {
@@ -123,23 +156,28 @@
 }
 
 .flip-card-back {
-  background: white;
+  background: var(--surface);
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 .contact__facts__text {
   list-style-type: disc;
   line-height: 1.8;
-  margin-left: 1.5rem;
+  margin-left: 0;
+  padding: 1.25rem;
+  border: 1px solid rgba(23, 22, 20, 0.08);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
 }
 .contact__facts__text h2 {
   font-size: 1.4rem;
 }
 
-/* Tablet and above */
 @media (min-width: 768px) {
   .contact__intro {
     display: flex;
@@ -155,6 +193,7 @@
 
   .contact__facts {
     flex-direction: row-reverse;
+    align-items: stretch;
   }
 
   .contact__facts__text {
@@ -192,7 +231,6 @@
   }
 }
 
-/* Desktop and above */
 @media (min-width: 1024px) {
   .social-media-icons svg,
   .social-media-icons img {
@@ -202,7 +240,7 @@
 
   .contact__facts__text {
     line-height: 2;
-    margin-left: 5rem;
+    margin-left: 0;
   }
 
   .contact__facts__text li {

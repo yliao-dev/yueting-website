@@ -12,6 +12,7 @@
 .pageNotFound img {
   max-width: 30%;
   margin-top: 2rem;
+  border-radius: var(--radius-md);
   --slide-distance: 400px;
   animation: slide-in 1s ease forwards;
 }
@@ -19,10 +20,12 @@
 .pageNotFound__back {
   display: inline-block;
   margin-top: 2rem;
-  padding: 0.5rem 1.2rem;
-  border-radius: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  border: none;
   background-color: var(--primary);
   color: white;
+  box-shadow: var(--shadow-soft);
 }
 
 .pageNotFound__back:hover {

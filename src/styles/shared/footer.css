@@ -1,59 +1,80 @@
 .footer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  margin-top: 3rem;
+  background: var(--surface-dark);
+  color: rgba(255, 250, 244, 0.8);
+}
+
+.footer__inner {
+  width: min(92%, var(--content-width));
+  margin: 0 auto;
+  padding: 1.6rem 0 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__backToTop {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-top: 0.1rem solid var(--black);
+  border: 1px solid rgba(255, 250, 244, 0.16);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--white);
+  transition:
+    transform var(--transition-standard),
+    color var(--transition-standard),
+    border-color var(--transition-standard);
 }
 
-.navigation-arrow svg {
-  font-size: 2.5rem;
+.footer__backToTop:hover {
+  transform: translateY(-2px);
+  color: var(--nav-hover);
+  border-color: rgba(162, 122, 80, 0.55);
 }
 
-.footer__info {
-  width: 100%;
+.footer__eyebrow {
+  margin: 0 0 0.45rem;
+  color: rgba(255, 250, 244, 0.52);
+  font-size: 0.72rem;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
 }
 
 .footer__info h2 {
-  font-size: 0.85rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   margin: 0;
-}
-
-.footer__copyright {
-  cursor: default;
-  transition: opacity 0.2s ease;
-}
-
-.footer__copyright:hover {
-  opacity: 0.8;
+  font-size: 1rem;
+  color: var(--white);
 }
 
 .footer__updated {
-  font-size: 0.75rem;
-  opacity: 0.5;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: rgba(255, 250, 244, 0.48);
 }
 
 .footer__info a {
-  color: inherit;
-  text-decoration: none;
-  transition: text-decoration 0.2s ease;
+  color: var(--nav-hover);
 }
 
 .footer__info a:hover {
   text-decoration: underline;
 }
 
-/* Desktop layout */
 @media (min-width: 768px) {
+  .footer__inner {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .footer__info {
+    text-align: right;
+  }
+
   .footer__info h2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-end;
   }
 }

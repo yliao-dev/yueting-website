@@ -3,12 +3,15 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  gap: 0.8rem;
 }
 
 .gallery__intro {
   display: flex;
   text-align: left;
   flex-direction: column;
+  max-width: 50rem;
+  align-self: flex-start;
 }
 
 .masonry-grid {
@@ -20,12 +23,18 @@
 .masonry__item {
   display: inline-grid;
   width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 4rem;
-  background-color: var(--light-oak);
+  padding: 0.6rem;
+  margin-bottom: 2rem;
+  background-color: var(--surface);
+  border: 1px solid rgba(23, 22, 20, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
   break-inside: avoid;
   box-sizing: border-box;
   opacity: 0;
+  transition:
+    transform var(--transition-standard),
+    box-shadow var(--transition-standard);
 }
 
 .masonry__item img {
@@ -33,16 +42,23 @@
   height: auto;
   display: block;
   object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.masonry__item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-strong);
 }
 
 .masonry__item:hover img {
   transform: scale(1.02);
-  opacity: 0.8;
+  opacity: 0.88;
 }
 
 .gallery__collection h2 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
 }
 
 .gallery__pagination {
