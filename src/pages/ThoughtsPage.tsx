@@ -28,7 +28,7 @@ const ThoughtsPage = () => {
       </section>
 
       <ThoughtsCategory onSelect={setCategory} />
-      <LineBreak />
+      <LineBreak width="min(100%, 58rem)" />
 
       {typingDone && (
         <section className="thoughts__content">

@@ -43,14 +43,11 @@ const PhotoMasonry = ({ photoData }: PhotoMasonryProps) => {
             <div
               key={photo.id || index}
               className={`masonry__item ${
-                visibleIndexes.has(index) ? "masonry__item--visible" : ""
+                visibleIndexes.has(index) ? "animate-fade-slide-up" : ""
               }`}
               data-index={index}
               ref={(el) => {
                 if (el) scrollRefs.current[index] = el;
-              }}
-              style={{
-                animationDelay: `${Math.min(index * 70, 420)}ms`,
               }}
               onClick={() => openViewer(index)}
             >

@@ -19,7 +19,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  width: min(100%, var(--page-measure));
+  width: min(100%, 58rem);
   flex-wrap: wrap;
 }
 
