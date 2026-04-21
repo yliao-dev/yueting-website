@@ -22,7 +22,6 @@ const Navbar = () => {
           <img className="navbar__logo" src="/logo.svg" alt="Logo" />
           <div className="navbar__brand">
             <span className="navbar__brand-name">Yueting Liao</span>
-            <span className="navbar__brand-tag">Code / Kendo / Lens</span>
           </div>
         </NavLink>
 
