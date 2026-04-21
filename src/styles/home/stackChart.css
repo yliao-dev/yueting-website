@@ -15,6 +15,7 @@
   min-height: 2.9rem;
   clip-path: polygon(0 0, calc(100% - 0.9rem) 0, 100% 50%, calc(100% - 0.9rem) 100%, 0 100%);
   padding-left: 1rem;
+  border: 1px solid rgba(255, 250, 244, 0.08);
   cursor: pointer;
   transition:
     width 0.5s ease-out,
