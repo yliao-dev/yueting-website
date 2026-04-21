@@ -23,7 +23,6 @@
 .navbar__logo {
   width: 2.5rem;
   flex-shrink: 0;
-  filter: brightness(0) invert(1);
 }
 
 .navbar__brand {
@@ -55,13 +54,17 @@
 
 .navbar__link--inactive,
 .navbar__link--active {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.55rem 0.9rem;
   color: rgba(255, 250, 244, 0.72);
 }
 
 .navbar__link-text,
 .navbar__dropdown-text {
+  position: relative;
+  display: inline-block;
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.14rem;
@@ -72,13 +75,12 @@
   color: var(--white);
 }
 
-.navbar__link--inactive::after,
-.navbar__link--active::after {
+.navbar__link-text::after {
   content: "";
   position: absolute;
-  left: 0.9rem;
-  right: 0.9rem;
-  bottom: 0.2rem;
+  left: 0;
+  width: 100%;
+  bottom: -0.42rem;
   height: 2px;
   background: linear-gradient(90deg, var(--hover), var(--light-oak));
   transform: scaleX(0);
@@ -91,8 +93,8 @@
   color: var(--nav-hover);
 }
 
-.navbar__link--inactive:hover::after,
-.navbar__link--active::after {
+.navbar__link--inactive:hover .navbar__link-text::after,
+.navbar__link--active .navbar__link-text::after {
   transform: scaleX(1);
 }
 

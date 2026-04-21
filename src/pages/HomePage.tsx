@@ -72,7 +72,7 @@ const HomePage = () => {
           />
         </div>
 
-        <section className="home__skills__text">
+        <div className="home__skills__text">
           {selectedSkill && (
             <>
               <p className="page__eyebrow">Current Focus</p>
@@ -89,7 +89,7 @@ const HomePage = () => {
               )}
             </>
           )}
-        </section>
+        </div>
       </section>
 
       <LineBreak />
@@ -116,7 +116,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <section className="home__journey__legend">
+        <div className="home__journey__legend">
           <div>
             <span className="legend__box lived" />
             <p> Lived</p>
@@ -125,12 +125,12 @@ const HomePage = () => {
             <span className="legend__box travelled" />
             <p> Travelled</p>
           </div>
-        </section>
+        </div>
 
-        <section className="home__journey__map">
+        <div className="home__journey__map">
           <MapChart setTooltipContent={setContent} />
           <Tooltip id="map-tooltip" content={content} />
-        </section>
+        </div>
       </section>
     </div>
   );

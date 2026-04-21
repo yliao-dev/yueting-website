@@ -17,27 +17,34 @@ function ThoughtsPost({
   const [thoughtsLoaded, setThoughtsLoaded] = useState(false);
   return (
     <>
-      <div
-        className={`thoughts__post ${thoughtsLoaded ? "loaded" : ""}`}
-        onLoad={() => setThoughtsLoaded(true)}
-      >
-        <img className="thoughts__post__cover" src={coverImage} />
-        <div className="thoughts__post__text">
-          <h2 onClick={() => navigate(`/thoughts/post/${id}`)}>{title}</h2>
-          <p> {description} </p>
-        </div>
+      <div className="thoughts__post-shell">
+        <div
+          className={`thoughts__post ${thoughtsLoaded ? "loaded" : ""}`}
+          onLoad={() => setThoughtsLoaded(true)}
+        >
+          <img className="thoughts__post__cover" src={coverImage} />
+          <div className="thoughts__post__text">
+            <h2 onClick={() => navigate(`/thoughts/post/${id}`)}>{title}</h2>
+            <p> {description} </p>
+          </div>
 
-        <div className="thoughts__detail">
-          <p
-            className="thoughts__readMore"
-            onClick={() => navigate(`/thoughts/post/${id}`)}
-          >
-            Read More &#10095;
-          </p>
-          <ThoughtsAuthor author={author} date={date} />
+          <div className="thoughts__detail">
+            <p
+              className="thoughts__readMore"
+              onClick={() => navigate(`/thoughts/post/${id}`)}
+            >
+              Read More &#10095;
+            </p>
+            <ThoughtsAuthor author={author} date={date} />
+          </div>
         </div>
+        <LineBreak
+          variant="gradient"
+          width="100%"
+          spacing="0.8rem"
+          spacerColor="transparent"
+        />
       </div>
-      <LineBreak variant="gradient" />
     </>
   );
 }

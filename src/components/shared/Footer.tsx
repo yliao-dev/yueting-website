@@ -26,7 +26,7 @@ const Footer = () => {
         </button>
 
         <div className="footer__info">
-          <p className="footer__eyebrow">Forged through code, kendo, and travel</p>
+          <p className="footer__eyebrow">Forged through code, Kendo, and travel</p>
           <h2>
             <span
               className="footer__copyright"

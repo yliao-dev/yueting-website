@@ -33,7 +33,7 @@ const GalleryPage = () => {
           One.
         </p>
       </section>
-      <LineBreak />
+      <LineBreak spacerColor="transparent" />
 
       {typingDone &&
         visibleCollections.map((collection: GalleryCollectionProps, index) => (
@@ -41,7 +41,7 @@ const GalleryPage = () => {
             <h2>{collection.title}</h2>
             <PhotoMasonry photoData={collection.photos} />
             {index < visibleCollections.length - 1 && (
-              <LineBreak width="100%" />
+              <LineBreak spacerColor="transparent" />
             )}
           </section>
         ))}

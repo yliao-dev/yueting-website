@@ -12,35 +12,36 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 1.6rem 0 0.2rem;
-  max-width: 50rem;
+  width: min(100%, var(--page-measure));
+  max-width: var(--page-measure);
 }
 
 .portfolio__timeline {
   display: flex;
-  width: 100%;
+  width: min(100%, var(--page-measure));
   align-self: center;
   padding: 1rem 0;
 }
 
 .portfolio__project-list {
   display: grid;
-  width: 100%;
-  gap: 2rem;
+  width: min(100%, var(--page-measure));
+  gap: 1.5rem;
   grid-template-columns: repeat(1, 1fr);
 }
 
 .portfolio__project {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(23, 22, 20, 0.08);
+  padding: 0.85rem;
+  box-shadow: none;
+  border: 1px solid rgba(162, 122, 80, 0.28);
   border-radius: var(--radius-md);
   background: var(--surface);
   opacity: 0;
   transition:
+    opacity 0.5s ease,
     transform var(--transition-standard),
-    box-shadow var(--transition-standard),
     border-color var(--transition-standard);
   position: relative;
   overflow: hidden;
@@ -50,33 +51,43 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(162, 122, 80, 0.2);
+  transition:
+    transform var(--transition-standard),
+    opacity var(--transition-standard);
 }
 
 .portfolio__project:hover {
-  transform: translateY(-6px);
-  border-color: rgba(162, 122, 80, 0.32);
-  box-shadow: var(--shadow-strong);
+  transform: translateY(-3px);
+  border-color: rgba(138, 36, 50, 0.36);
+  box-shadow: none;
+}
+
+.portfolio__project:hover img {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 .portfolio__project__text {
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
-  min-height: 6rem;
+  margin-top: 0;
+  padding: 0.9rem 0 0;
+  min-height: 5.2rem;
 }
 
 .portfolio__project__text h2 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.06rem;
   color: var(--light-oak);
 }
 
 .portfolio__project__text p {
-  font-size: 0.9rem;
+  font-size: 0.84rem;
+  line-height: 1.65;
 }
 
 @media (min-width: 768px) {
@@ -85,11 +96,5 @@
   }
   .portfolio__project-list {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .portfolio__project-list {
-    grid-template-columns: repeat(3, 1fr);
   }
 }

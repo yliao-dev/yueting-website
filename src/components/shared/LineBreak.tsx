@@ -2,16 +2,18 @@ type LineBreakProps = {
   variant?: "plain" | "gradient";
   spacing?: string;
   width?: string;
+  spacerColor?: string;
 };
 
 const LineBreak = ({
   variant = "plain",
   spacing = "1rem",
-  width = "90%",
+  width = "min(100%, var(--page-measure))",
+  spacerColor = "var(--white)",
 }: LineBreakProps) => {
   const whiteSpaceStyle = {
     height: spacing,
-    backgroundColor: "var(--white)",
+    backgroundColor: spacerColor,
   };
   const lineStyle = {
     width,

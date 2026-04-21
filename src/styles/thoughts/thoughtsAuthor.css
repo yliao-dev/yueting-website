@@ -8,10 +8,7 @@
 .thoughts__author__icon {
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 50%;
-  border: 1px solid rgba(23, 22, 20, 0.08);
-  background: var(--surface-muted);
-  padding: 0.2rem;
+  object-fit: contain;
 }
 
 .thoughts__author__info {

@@ -10,8 +10,8 @@
   display: flex;
   text-align: left;
   flex-direction: column;
-  max-width: 50rem;
-  align-self: flex-start;
+  width: min(100%, var(--page-measure));
+  align-self: center;
 }
 
 .thoughts__category {
@@ -19,7 +19,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  width: min(100%, var(--reading-width));
+  width: min(100%, var(--page-measure));
   flex-wrap: wrap;
 }
 
@@ -57,46 +57,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min(100%, var(--reading-width));
+  width: min(100%, var(--page-measure));
   padding: 1rem 0 2rem;
-  gap: 1.5rem;
+  gap: 0.5rem;
+}
+
+.thoughts__post-shell {
+  width: min(100%, 58rem);
 }
 
 .thoughts__post {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  border: 1px solid rgba(23, 22, 20, 0.08);
-  border-radius: var(--radius-lg);
+  padding: 0.85rem;
+  border: 1px solid rgba(162, 122, 80, 0.28);
+  border-radius: var(--radius-md);
   background: var(--surface);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform var(--transition-standard),
+    border-color var(--transition-standard);
 }
 
 .thoughts__post.loaded {
   opacity: 1;
 }
 
+.thoughts__post:hover {
+  transform: translateY(-3px);
+  border-color: rgba(138, 36, 50, 0.36);
+}
+
 .thoughts__post__cover {
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(23, 22, 20, 0.08);
+  border: 1px solid rgba(162, 122, 80, 0.2);
   border-radius: var(--radius-sm);
 }
 
 .thoughts__post__text {
   text-align: left;
   margin-left: 0;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
 }
 
 .thoughts__post__text h2 {
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   cursor: pointer;
+  margin-bottom: 0.75rem;
 }
 
 .thoughts__post__text h2:hover {
@@ -104,9 +116,9 @@
 }
 
 .thoughts__post__text p {
-  max-height: 4rem;
-  font-size: 1rem;
-  line-height: 1.4rem;
+  max-height: 3.8rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -116,16 +128,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
   margin-left: 0;
-  padding-top: 0.9rem;
+  padding-top: 0.8rem;
   border-top: 1px solid rgba(23, 22, 20, 0.08);
+  gap: 0.8rem;
 }
 
 .thoughts__readMore {
   transition: color 0.2s ease;
   color: var(--hover);
-  font-size: 1rem;
+  font-size: 0.92rem;
 }
 
 .thoughts__readMore:hover {
@@ -135,7 +148,7 @@
 
 @media (min-width: 768px) {
   .thoughts__post__text h2 {
-    font-size: 1.4rem;
+    font-size: 1.18rem;
   }
 }
 
@@ -144,6 +157,6 @@
     font-size: 3rem;
   }
   .thoughts__post__text h2 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 }

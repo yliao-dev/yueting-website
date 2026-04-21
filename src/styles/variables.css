@@ -44,6 +44,7 @@
   --shadow-soft: 0 12px 30px rgba(23, 22, 20, 0.08);
   --shadow-strong: 0 18px 42px rgba(23, 22, 20, 0.14);
   --content-width: 76rem;
+  --page-measure: 68rem;
   --reading-width: 58rem;
   --transition-standard: 0.24s ease;
 }
