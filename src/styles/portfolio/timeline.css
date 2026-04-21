@@ -1,6 +1,9 @@
 .timeline-container {
-  overflow-x: hidden;
+  width: 100%;
+  overflow-x: auto;
   scroll-snap-type: y mandatory;
+  display: flex;
+  justify-content: center;
 }
 
 .timeline-wrapper {
@@ -66,6 +69,7 @@
     flex-direction: row;
     align-items: center;
     width: max-content;
+    margin: 0 auto;
   }
 
   .timeline-step {
@@ -122,7 +126,7 @@
 /* Desktop and above */
 @media (min-width: 1024px) {
   .timeline-container {
-    width: 90%;
+    width: 100%;
   }
   .timeline-dot {
     width: 1rem;

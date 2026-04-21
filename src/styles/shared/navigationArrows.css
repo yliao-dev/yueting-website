@@ -40,6 +40,10 @@
   justify-content: center;
 }
 
+.navigation-arrows__side--start .navigation-arrow {
+  clip-path: polygon(0.7rem 0, 100% 0, 100% 100%, 0.7rem 100%, 0 50%);
+}
+
 .navigation-arrow:hover {
   transform: translateY(-2px);
   color: var(--hover);
@@ -61,6 +65,10 @@
   font-size: 0.86rem;
   letter-spacing: 0.08rem;
   text-transform: uppercase;
+}
+
+.navigation-arrows__side--start .arrow-symbol {
+  order: -1;
 }
 
 .navigation-center {

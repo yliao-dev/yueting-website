@@ -43,11 +43,6 @@ const HomePage = () => {
             photography that captures how I see the world. I'm based in the
             United States, often between lines of code and a dojo floor.
           </p>
-          <div className="home__about__marks">
-            <span>Code</span>
-            <span>Kendo</span>
-            <span>Photography</span>
-          </div>
         </div>
         <div className="home__about__frame">
           <img
