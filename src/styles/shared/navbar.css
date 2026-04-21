@@ -1,3 +1,9 @@
+.navbar-shell {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
 .navbar {
   min-height: 4.75rem;
   padding: 0.8rem 1.2rem;
@@ -7,9 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 50;
   gap: 1rem;
 }
 
@@ -128,6 +131,7 @@
   display: none;
   background: rgba(24, 21, 18, 0.98);
   border-bottom: 1px solid rgba(255, 250, 244, 0.08);
+  backdrop-filter: blur(14px);
 }
 
 .navbar__dropdown-links.show {

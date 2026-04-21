@@ -16,7 +16,7 @@ const Navbar = () => {
   const navItems = ["portfolio", "gallery", "thoughts", "contact"];
 
   return (
-    <>
+    <div className="navbar-shell">
       <nav className="navbar">
         <NavLink className="logo" to="/" aria-label="Yueting Liao home">
           <img className="navbar__logo" src="/logo.svg" alt="Logo" />
@@ -38,6 +38,7 @@ const Navbar = () => {
             type="button"
             onClick={toggleNavbar}
             aria-label="Toggle navigation"
+            aria-expanded={expandNavbar}
           >
             <CiMenuFries />
           </button>
@@ -50,16 +51,14 @@ const Navbar = () => {
             {navItems.map((item) => (
               <li key={item}>
                 <NavLink to={`/${item}`} className={linkClass}>
-                  <span className="navbar__dropdown-text">
-                    {item}
-                  </span>
+                  <span className="navbar__dropdown-text">{item}</span>
                 </NavLink>
               </li>
             ))}
           </ul>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
