@@ -4,7 +4,7 @@ import { Tooltip } from "react-tooltip";
 import MapChart from "../components/home/JourneyWorldMap";
 import { useScrollEffect } from "../hooks/useScrollEffect";
 import { useTypingEffect } from "../hooks/useTypingEffect";
-import portraitImg from "../assets/images/portrait.webp";
+import landingHumanTigerImg from "../assets/images/landing-human-tiger-halftone.webp";
 import StackChart from "../components/home/StackChart";
 import { skillsData, SkillData } from "../data/home/skillData";
 
@@ -44,11 +44,22 @@ const HomePage = () => {
             United States, often between lines of code and a dojo floor.
           </p>
         </div>
-        <div className="home__about__frame">
+        <div
+          className="home__about__frame"
+          role="img"
+          aria-label="Yueting Liao portrait diagonally split with a spiritual flying tiger"
+        >
           <img
-            src={portraitImg}
-            className="home__about__image"
-            alt="portrait"
+            src={landingHumanTigerImg}
+            className="home__about__image home__about__image--upper"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            src={landingHumanTigerImg}
+            className="home__about__image home__about__image--lower"
+            alt=""
+            aria-hidden="true"
           />
         </div>
       </section>

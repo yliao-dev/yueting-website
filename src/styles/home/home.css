@@ -41,31 +41,69 @@
 
 .home__about__frame {
   position: relative;
+  aspect-ratio: 3 / 4;
   padding: 0.9rem;
   border-radius: var(--radius-md);
   background:
     linear-gradient(145deg, rgba(70, 85, 108, 0.14), rgba(162, 122, 80, 0.14));
   box-shadow: var(--shadow-strong);
   animation: frame-settle 1s ease-out both;
+  overflow: hidden;
 }
 
 .home__about__frame::before {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 3;
   background: linear-gradient(135deg, transparent 68%, rgba(70, 85, 108, 0.18) 68%);
   pointer-events: none;
   animation: frame-sweep 4.8s ease-in-out infinite;
 }
 
-.home__about__image {
-  margin-top: 0;
-  max-width: 100%;
+.home__about__frame::after {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  top: 0.9rem;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  left: 0.9rem;
   border-radius: var(--radius-md);
-  filter: saturate(0.92) contrast(1.02);
-  animation: fade-slide-up 1.2s ease-out;
-  animation-delay: 1s;
-  animation-fill-mode: both;
+  background: linear-gradient(
+    135deg,
+    transparent calc(50% - 1px),
+    rgba(255, 244, 204, 0.88) 50%,
+    transparent calc(50% + 1px)
+  );
+  opacity: 0;
+  pointer-events: none;
+  animation: diagonal-seam 1.7s ease-out 0.25s both;
+}
+
+.home__about__image {
+  position: absolute;
+  inset: 0.9rem;
+  width: calc(100% - 1.8rem);
+  height: calc(100% - 1.8rem);
+  margin-top: 0;
+  max-width: none;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  filter: contrast(1.03) saturate(1.02);
+  will-change: transform;
+}
+
+.home__about__image--upper {
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  animation: diagonal-split-upper 1.35s cubic-bezier(0.2, 0.8, 0.2, 1) 0.25s both;
+}
+
+.home__about__image--lower {
+  z-index: 2;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  animation: diagonal-split-lower 1.35s cubic-bezier(0.2, 0.8, 0.2, 1) 0.25s both;
 }
 
 .home__skills {
@@ -246,5 +284,52 @@
   }
   50% {
     opacity: 0.68;
+  }
+}
+
+@keyframes diagonal-split-upper {
+  0% {
+    transform: translate(28px, -28px);
+  }
+
+  72% {
+    transform: translate(-2px, 2px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes diagonal-split-lower {
+  0% {
+    transform: translate(-28px, 28px);
+  }
+
+  72% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes diagonal-seam {
+  0%,
+  70% {
+    opacity: 0.72;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home__about__image--upper,
+  .home__about__image--lower,
+  .home__about__frame::after {
+    animation: none;
   }
 }
