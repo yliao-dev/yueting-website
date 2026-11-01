@@ -35,23 +35,17 @@
   border-color: rgba(162, 122, 80, 0.55);
 }
 
-.footer__eyebrow {
-  margin: 0 0 0.45rem;
-  color: rgba(255, 250, 244, 0.52);
-  font-size: 0.72rem;
-  letter-spacing: 0.14rem;
-  text-transform: uppercase;
-}
-
-.footer__info h2 {
+.footer__copyrightRow {
   margin: 0;
-  font-size: 1rem;
   color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .footer__updated {
-  margin-top: 0.35rem;
-  font-size: 0.85rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.75rem;
   color: rgba(255, 250, 244, 0.48);
 }
 
@@ -73,7 +67,7 @@
     text-align: right;
   }
 
-  .footer__info h2 {
+  .footer__copyrightRow {
     display: flex;
     justify-content: flex-end;
   }

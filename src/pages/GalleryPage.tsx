@@ -38,7 +38,7 @@ const GalleryPage = () => {
       {typingDone &&
         visibleCollections.map((collection: GalleryCollectionProps, index) => (
           <section className="gallery__collection" key={collection.slug}>
-            <h2>{collection.title}</h2>
+            <h2 className="page__section-title">{collection.title}</h2>
             <PhotoMasonry photoData={collection.photos} />
             {index < visibleCollections.length - 1 && (
               <LineBreak spacerColor="transparent" />

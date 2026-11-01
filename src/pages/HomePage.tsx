@@ -2,139 +2,55 @@ import { useState } from "react";
 import LineBreak from "../components/shared/LineBreak";
 import { Tooltip } from "react-tooltip";
 import MapChart from "../components/home/JourneyWorldMap";
-import { useScrollEffect } from "../hooks/useScrollEffect";
-import { useTypingEffect } from "../hooks/useTypingEffect";
-import landingHumanTigerImg from "../assets/images/landing-human-tiger-halftone.webp";
-import StackChart from "../components/home/StackChart";
-import { skillsData, SkillData } from "../data/home/skillData";
+import landingPortraitImg from "../assets/images/landing-portrait-halftone-light.webp";
 
 const HomePage = () => {
-  const [selectedSkill, setSelectedSkill] = useState<SkillData | null>(
-    skillsData[0]
-  );
   const [content, setContent] = useState("");
-  const [visibleIndexes, setVisibleIndexes] = useState(new Set<number>());
-
-  const scrollRefs = useScrollEffect(
-    (index) => {
-      setVisibleIndexes((prev) => new Set(prev).add(index));
-    },
-    {
-      threshold: 0.5,
-      rootMargin: "-10% 0px -40% 0px",
-    }
-  );
-
-  const titleText = useTypingEffect(
-    "Developer  |  Swordsman  |  Photographer",
-    30
-  );
 
   return (
     <div className="home">
-      <section className="home__about">
-        <div className="home__about__text">
-          <p className="page__eyebrow">Way Of Practice</p>
-          <h1>About</h1>
-          <h2 className="typing-cursor">{titleText}</h2>
-          <p>
+      <section className="home__hero">
+        <div className="home__hero__text">
+          <p className="page__eyebrow">Code · Kendo · Photography</p>
+          <h1>
+            Yueting <span>Liao</span>
+          </h1>
+          <h2>Developer. Swordsman. Photographer.</h2>
+          <p className="home__hero__intro">
             I'm on a path toward harmony between mind, body, and observation.
-            Here you’ll find coding projects, reflections shaped by Kendo, and
-            photography that captures how I see the world. I'm based in the
-            United States, often between lines of code and a dojo floor.
+            I build practical software, practice Kendo, and photograph the
+            details that make a place feel alive.
           </p>
         </div>
-        <div
-          className="home__about__frame"
-          role="img"
-          aria-label="Yueting Liao portrait diagonally split with a spiritual flying tiger"
-        >
+        <figure className="home__hero__portrait">
           <img
-            src={landingHumanTigerImg}
-            className="home__about__image home__about__image--upper"
-            alt=""
-            aria-hidden="true"
+            src={landingPortraitImg}
+            alt="Yueting Liao in a warm, vintage halftone portrait"
           />
-          <img
-            src={landingHumanTigerImg}
-            className="home__about__image home__about__image--lower"
-            alt=""
-            aria-hidden="true"
-          />
-        </div>
+        </figure>
       </section>
 
-      <LineBreak />
-
-      <section className="home__skills">
-        <div
-          className="home__skills__chart"
-          data-index={0}
-          ref={(el) => {
-            if (el) scrollRefs.current[0] = el;
-          }}
-        >
-          <p className="page__eyebrow">Disciplines</p>
-          <h1>Skills</h1>
-          <StackChart
-            onSelect={(data) => setSelectedSkill(data)}
-            items={skillsData}
-            animate={visibleIndexes.has(0)}
-          />
-        </div>
-
-        <div className="home__skills__text">
-          {selectedSkill && (
-            <>
-              <p className="page__eyebrow">Current Focus</p>
-              <h2>{selectedSkill.label}</h2>
-              {selectedSkill.paragraphs.map((p: string, i: number) => (
-                <p key={i}>{p}</p>
-              ))}
-              {selectedSkill.list && (
-                <ul>
-                  {selectedSkill.list.map((item: string, i: number) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              )}
-            </>
-          )}
-        </div>
-      </section>
-
-      <LineBreak />
+      <LineBreak spacerColor="transparent" />
 
       <section className="home__journey">
-        <p className="page__eyebrow">Movement</p>
-        <h1>Journey</h1>
-        <div
-          className={`home__journey__text ${
-            visibleIndexes.has(1) ? "animate-slide-left" : ""
-          }`}
-          data-index={1}
-          ref={(el) => {
-            if (el) scrollRefs.current[1] = el;
-          }}
-        >
+        <div className="home__journey__intro">
+          <p className="page__eyebrow">Movement</p>
+          <h2 className="page__section-title">Journey</h2>
           <p>
             I’ve spent meaningful time in both the U.S. and China, each offering
             its own rhythm and way of life. From cities like New York, Los
-            Angeles, Troy, Provo, Houston, and to places abroad, every move
-            shaped how I see and live. Each place left something with me — a
-            lifestyle, a perspective, a different way to pursue harmony. But
-            meeting people along the way has always been the best part.
+            Angeles, Troy, Provo, and Houston to places abroad, every move has
+            shaped how I see and live.
           </p>
-        </div>
-
-        <div className="home__journey__legend">
-          <div>
-            <span className="legend__box lived" />
-            <p> Lived</p>
-          </div>
-          <div>
-            <span className="legend__box travelled" />
-            <p> Travelled</p>
+          <div className="home__journey__legend">
+            <div>
+              <span className="legend__box lived" />
+              <p>Lived</p>
+            </div>
+            <div>
+              <span className="legend__box travelled" />
+              <p>Travelled</p>
+            </div>
           </div>
         </div>
 

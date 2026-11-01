@@ -93,10 +93,10 @@ section {
 
 h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 5.8vw, 4.6rem);
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  line-height: 0.95;
+  font-size: clamp(2.15rem, 4.4vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -108,6 +108,17 @@ h2 {
   letter-spacing: -0.03em;
   line-height: 1.15;
   margin-bottom: 1.5rem;
+}
+
+.page__section-title {
+  margin: 0 0 1.25rem;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.7vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  text-align: left;
 }
 
 p {

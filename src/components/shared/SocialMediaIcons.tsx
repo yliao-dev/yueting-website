@@ -1,5 +1,4 @@
 import { LinkedIn, GitHub, Instagram } from "@mui/icons-material";
-import DuolingoIcon from "../../assets/icons/duolingo.svg";
 
 const SocialMediaIcons = () => {
   return (
@@ -8,6 +7,7 @@ const SocialMediaIcons = () => {
         href="https://www.linkedin.com/in/yueting-liao-83b216171/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="LinkedIn"
       >
         <LinkedIn className="linkedin-icon" />
       </a>
@@ -15,21 +15,15 @@ const SocialMediaIcons = () => {
         href="https://www.instagram.com/_yuetingl/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Instagram"
       >
         <Instagram className="instagram-icon" />
       </a>
       <a
-        href="https://www.duolingo.com/profile/YuetingLiao"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img src={DuolingoIcon} alt="Duolingo Icon" className="duolingo-icon" />
-      </a>
-
-      <a
         href="https://github.com/yliao-dev"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="GitHub"
       >
         <GitHub className="github-icon" />
       </a>

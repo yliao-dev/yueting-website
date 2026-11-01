@@ -26,16 +26,12 @@ const Footer = () => {
         </button>
 
         <div className="footer__info">
-          <p className="footer__eyebrow">Forged through code, Kendo, and travel</p>
-          <h2>
-            <span
-              className="footer__copyright"
-              title={`Last updated: ${formattedDate}`}
-            >
+          <p className="footer__copyrightRow">
+            <span title={`Last updated: ${formattedDate}`}>
               &copy; {today.getFullYear()} Yueting Liao |{" "}
               <Link to="/contact">Contact</Link>
             </span>
-          </h2>
+          </p>
           <p className="footer__updated">Last updated: {formattedDate}</p>
         </div>
       </div>
