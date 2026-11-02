@@ -36,13 +36,6 @@
   color: var(--hover);
 }
 
-.home__hero h2 {
-  margin: 0 0 1.2rem;
-  color: var(--text-primary);
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
-  letter-spacing: -0.02em;
-}
-
 .home__hero__intro {
   max-width: 35rem;
   margin: 0;
@@ -56,8 +49,7 @@
 
 .home__hero__portrait img {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
+  height: auto;
   border-radius: var(--radius-sm);
 }
 
@@ -148,6 +140,16 @@
 @media (min-width: 768px) {
   .home__hero {
     grid-template-columns: minmax(0, 1.08fr) minmax(18rem, 0.92fr);
-    align-items: center;
+    align-items: start;
+  }
+
+  .home__hero__text {
+    transform: translateY(clamp(2.25rem, 3.5vw, 3rem));
+  }
+
+  .home__hero__portrait {
+    justify-self: end;
+    margin: 0;
+    transform: translateY(clamp(2.25rem, 3.5vw, 3rem));
   }
 }

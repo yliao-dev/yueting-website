@@ -34,31 +34,12 @@
   text-transform: uppercase;
 }
 
-.contact__channels {
-  width: min(100%, var(--page-measure));
-  padding: 0 1.2rem;
-  border-bottom: 1px solid rgba(162, 122, 80, 0.3);
-}
-
-.contact__channel {
-  padding: clamp(1.5rem, 3vw, 2.2rem) 0;
-}
-
-.contact__channel--combined {
-  display: grid;
-  gap: 1.25rem;
-}
-
-.contact__channelCopy > p {
-  max-width: 28rem;
-  margin: 0.55rem 0 0;
-}
-
-.contact__channelActions {
+.contact__actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.8rem;
+  margin-top: 1.5rem;
 }
 
 .email-copy-row {
@@ -160,7 +141,7 @@
 .contact__facts {
   display: grid;
   width: min(100%, var(--page-measure));
-  gap: clamp(2rem, 5vw, 4rem);
+  gap: clamp(1rem, 2vw, 1.5rem);
   align-items: center;
   padding: clamp(2.5rem, 5vw, 4.5rem) 1.2rem;
 }
@@ -257,21 +238,17 @@
 }
 
 @media (min-width: 768px) {
-  .contact__channel--combined {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: end;
-  }
-
-  .contact__channelActions {
-    justify-content: flex-end;
-  }
-
-  .contact__facts {
-    grid-template-columns: minmax(0, 1fr) 15rem;
-  }
-
   .flip-card {
-    justify-self: end;
+    justify-self: start;
+  }
+
+  .flip-card-front {
+    align-items: flex-start;
+  }
+
+  .flip-card-hint {
+    width: 68%;
+    text-align: center;
   }
 }
 

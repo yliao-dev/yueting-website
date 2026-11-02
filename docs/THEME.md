@@ -101,4 +101,4 @@ Before merging a visual change, confirm:
 - Global typography and base styles: `src/styles/index.css`
 - Navigation: `src/styles/shared/navbar.css`
 - Landing page: `src/styles/home/home.css`
-- Current landing portrait: `src/assets/images/landing-portrait-halftone-light.webp`
+- Current landing portrait: `src/assets/images/landing-portrait-halftone-right.webp`

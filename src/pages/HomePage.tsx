@@ -2,7 +2,7 @@ import { useState } from "react";
 import LineBreak from "../components/shared/LineBreak";
 import { Tooltip } from "react-tooltip";
 import MapChart from "../components/home/JourneyWorldMap";
-import landingPortraitImg from "../assets/images/landing-portrait-halftone-light.webp";
+import landingPortraitImg from "../assets/images/landing-portrait-halftone-right.webp";
 
 const HomePage = () => {
   const [content, setContent] = useState("");
@@ -15,7 +15,6 @@ const HomePage = () => {
           <h1>
             Yueting <span>Liao</span>
           </h1>
-          <h2>Developer. Swordsman. Photographer.</h2>
           <p className="home__hero__intro">
             I'm on a path toward harmony between mind, body, and observation.
             I build practical software, practice Kendo, and photograph the

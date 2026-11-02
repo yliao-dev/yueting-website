@@ -26,29 +26,20 @@ const ContactPage = () => {
           <span>Houston, Texas</span>
           <span>Open to meaningful conversations</span>
         </div>
-      </section>
-
-      <section className="contact__channels" aria-label="Ways to connect">
-        <div className="contact__channel contact__channel--combined">
-          <div className="contact__channelCopy">
-            <h2 className="page__section-title">Email and online</h2>
-            <p>Email is the cleanest starting point, or find me elsewhere online.</p>
-          </div>
-          <div className="contact__channelActions">
-            <button
-              type="button"
-              className="email-copy-row"
-              onClick={handleCopy}
-              title="Copy email address"
-            >
-              <span className="clipboard-icon" aria-hidden="true">
-                📋
-              </span>
-              <code className="email-text">ytliaodev@gmail.com</code>
-              {copied && <span className="copied-msg">Copied</span>}
-            </button>
-            <SocialMediaIcons />
-          </div>
+        <div className="contact__actions" aria-label="Ways to connect">
+          <button
+            type="button"
+            className="email-copy-row"
+            onClick={handleCopy}
+            title="Copy email address"
+          >
+            <span className="clipboard-icon" aria-hidden="true">
+              📋
+            </span>
+            <code className="email-text">ytliaodev@gmail.com</code>
+            {copied && <span className="copied-msg">Copied</span>}
+          </button>
+          <SocialMediaIcons />
         </div>
       </section>
 
